@@ -12,12 +12,16 @@ const pgSession = require("connect-pg-simple")(session);
 const { Pool } = require("pg");
 const app = express();
 
-const db = new Pool({
-    user: "haziqhanif",
-    host: "localhost",
-    database: "ziqtech",
-    port: 5432
-});
+const db = process.env.DATABASE_URL
+    ? new Pool({
+        connectionString: process.env.DATABASE_URL
+    })
+    : new Pool({
+        user: "haziqhanif",
+        host: "localhost",
+        database: "ziqtech",
+        port: 5432
+    });
 
 db.on("error", (error) => {
     console.error("❌ PostgreSQL error:", error.message);
