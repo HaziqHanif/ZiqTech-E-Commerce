@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart — ZiqTech</title>
+<style>
+:root{
+    --bg:#f5f5f7;
+    --card:rgba(255,255,255,.88);
+    --text:#1d1d1f;
+    --muted:#6e6e73;
+    --line:rgba(0,0,0,.08);
+    --blue:#0071e3;
+    --blue-dark:#005bb5;
+    --red:#d92d20;
+    --shadow:0 24px 70px rgba(0,0,0,.08);
+    --radius:28px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;
+    background:
+        radial-gradient(circle at 15% -5%,rgba(0,113,227,.10),transparent 30%),
+        radial-gradient(circle at 90% 10%,rgba(88,86,214,.08),transparent 28%),
+        var(--bg);
+    color:var(--text);
+    min-height:100vh;
+}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+.topbar{
+    position:sticky;top:0;z-index:50;
+    height:66px;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 max(22px,5vw);
+    background:rgba(255,255,255,.78);
+    backdrop-filter:blur(24px) saturate(180%);
+    border-bottom:1px solid rgba(0,0,0,.06);
+}
+.brand{
+    font-size:22px;font-weight:850;letter-spacing:-.6px;
+}
+.brand span{color:var(--blue)}
+.nav-actions{display:flex;align-items:center;gap:8px}
+.nav-link{
+    display:inline-flex;align-items:center;gap:8px;
+    min-height:40px;padding:0 14px;border-radius:999px;
+    color:#424245;font-size:13px;font-weight:650;
+    transition:.2s ease;
+}
+.nav-link:hover{background:#f1f1f3;color:#111}
+.nav-badge{
+    min-width:22px;height:22px;padding:0 6px;border-radius:999px;
+    display:inline-flex;align-items:center;justify-content:center;
+    background:#111;color:#fff;font-size:11px;font-weight:800;
+}
+.shell{max-width:1240px;margin:0 auto;padding:46px 22px 80px}
+.hero{
+    position:relative;overflow:hidden;
+    padding:42px 44px;margin-bottom:28px;
+    background:linear-gradient(135deg,#101114 0%,#20242b 58%,#102a45 100%);
+    color:#fff;border-radius:34px;
+    box-shadow:0 30px 80px rgba(0,0,0,.18);
+}
+.hero::after{
+    content:"";position:absolute;right:-100px;top:-150px;
+    width:380px;height:380px;border-radius:50%;
+    background:radial-gradient(circle,rgba(0,113,227,.65),rgba(0,113,227,0) 68%);
+}
+.eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:#9ed0ff;margin-bottom:14px;
+}
+.hero h1{font-size:clamp(38px,6vw,68px);letter-spacing:-3px;line-height:.96;max-width:700px}
+.hero p{max-width:620px;color:rgba(255,255,255,.7);font-size:16px;line-height:1.65;margin-top:18px}
+.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.meta-pill{
+    padding:8px 12px;border:1px solid rgba(255,255,255,.13);
+    background:rgba(255,255,255,.07);border-radius:999px;
+    color:rgba(255,255,255,.82);font-size:12px;font-weight:650;
+}
+.layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(310px,.7fr);gap:26px;align-items:start}
+.panel{
+    background:var(--card);backdrop-filter:blur(22px);
+    border:1px solid rgba(255,255,255,.75);
+    border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.items-panel{padding:14px}
+.panel-head{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 18px 16px;
+}
+.panel-head h2{font-size:20px;letter-spacing:-.4px}
+.clear-btn{
+    border:0;background:transparent;color:#8b8b90;font-size:12px;font-weight:700;
+    cursor:pointer;padding:8px 10px;border-radius:10px;
+}
+.clear-btn:hover{background:#fff1f0;color:var(--red)}
+.cart-list{display:grid;gap:12px}
+.cart-item{
+    display:grid;grid-template-columns:138px minmax(0,1fr) auto;
+    gap:22px;align-items:center;
+    padding:18px;background:#fff;border:1px solid var(--line);border-radius:22px;
+    transition:.22s ease;
+}
+.cart-item:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.07)}
+.image-wrap{
+    width:138px;height:138px;border-radius:18px;background:#f7f7f9;
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
+}
+.image-wrap img{width:100%;height:100%;object-fit:contain;padding:10px}
+.item-main{min-width:0}
+.item-kicker{color:var(--blue);font-size:10px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px}
+.item-name{font-size:20px;font-weight:800;letter-spacing:-.45px;line-height:1.2}
+.item-name a:hover{color:var(--blue)}
+.variant-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+.variant-chip{
+    display:inline-flex;padding:6px 9px;border-radius:999px;
+    background:#f1f1f3;color:#5e5e63;font-size:11px;font-weight:700;
+}
+.stock{margin-top:10px;font-size:12px;color:#1f8a4c;font-weight:700}
+.stock.low{color:#b54708}
+.item-bottom{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:16px}
+.qty{
+    display:inline-flex;align-items:center;border:1px solid #dedee2;border-radius:999px;
+    overflow:hidden;background:#fafafa;
+}
+.qty button{
+    width:36px;height:34px;border:0;background:transparent;cursor:pointer;font-size:18px;color:#333;
+}
+.qty button:hover{background:#eeeef0}
+.qty strong{min-width:34px;text-align:center;font-size:13px}
+.remove-btn{
+    border:0;background:transparent;color:#86868b;font-size:12px;font-weight:700;cursor:pointer;
+}
+.remove-btn:hover{color:var(--red)}
+.item-price{text-align:right;align-self:center;min-width:120px}
+.item-price strong{display:block;font-size:20px;letter-spacing:-.4px}
+.item-price small{display:block;color:var(--muted);margin-top:5px;font-size:11px}
+.summary{position:sticky;top:92px;padding:26px}
+.summary h2{font-size:23px;letter-spacing:-.6px;margin-bottom:22px}
+.summary-row{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:11px 0;font-size:14px;color:#4d4d51;
+}
+.summary-row strong{color:#111}
+.summary-row.total{
+    border-top:1px solid var(--line);margin-top:10px;padding-top:20px;
+    font-size:18px;color:#111;
+}
+.summary-row.total strong{font-size:25px;letter-spacing:-.6px}
+.checkout-btn{
+    width:100%;border:0;border-radius:16px;padding:16px 18px;margin-top:20px;
+    color:#fff;background:linear-gradient(135deg,var(--blue),#0058b8);
+    font-weight:800;font-size:15px;cursor:pointer;
+    box-shadow:0 12px 28px rgba(0,113,227,.24);
+    transition:.2s;
+}
+.checkout-btn:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,113,227,.3)}
+.checkout-btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.continue{
+    display:flex;align-items:center;justify-content:center;
+    margin-top:12px;padding:12px;color:#555;font-size:13px;font-weight:700;
+}
+.assurance{
+    margin-top:20px;padding-top:18px;border-top:1px solid var(--line);
+    display:grid;gap:10px;
+}
+.assurance div{display:flex;gap:10px;align-items:flex-start;color:#6e6e73;font-size:11px;line-height:1.45}
+.empty{
+    text-align:center;padding:74px 20px 80px;
+}
+.empty-icon{
+    width:86px;height:86px;margin:0 auto 20px;border-radius:26px;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,#eef6ff,#f6f0ff);font-size:34px;
+}
+.empty h2{font-size:28px;letter-spacing:-.7px}
+.empty p{color:var(--muted);max-width:430px;margin:10px auto 22px;line-height:1.6}
+.empty a{
+    display:inline-flex;padding:13px 19px;border-radius:14px;background:#111;color:#fff;font-weight:750;font-size:13px;
+}
+.loading{text-align:center;padding:60px;color:var(--muted)}
+.spinner{
+    width:30px;height:30px;border:3px solid #e6e6ea;border-top-color:var(--blue);
+    border-radius:50%;margin:0 auto 14px;animation:spin .8s linear infinite;
+}
+.toast{
+    position:fixed;left:50%;bottom:28px;z-index:99;
+    transform:translate(-50%,18px);opacity:0;pointer-events:none;
+    background:#111;color:#fff;padding:12px 18px;border-radius:999px;
+    font-size:12px;font-weight:750;box-shadow:0 16px 36px rgba(0,0,0,.2);
+    transition:.25s ease;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:900px){
+    .layout{grid-template-columns:1fr}
+    .summary{position:static}
+}
+@media(max-width:650px){
+    .topbar{padding:0 16px}
+    .nav-link .label{display:none}
+    .shell{padding:28px 14px 60px}
+    .hero{padding:32px 24px;border-radius:26px}
+    .hero h1{letter-spacing:-2px}
+    .cart-item{grid-template-columns:92px minmax(0,1fr);gap:14px}
+    .image-wrap{width:92px;height:92px}
+    .item-price{grid-column:2;text-align:left;min-width:0}
+    .item-price strong{font-size:17px}
+    .items-panel{padding:8px}
+    .panel-head{padding:14px 12px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+    <a class="brand" href="index.html">Ziq<span>Tech</span></a>
+    <div class="nav-actions">
+        <a class="nav-link" href="wishlist.html"><span>♡</span><span class="label">Wishlist</span></a>
+        <a class="nav-link" href="profile.html"><span>◯</span><span class="label">Account</span></a>
+        <a class="nav-link" href="cart.html"><span>Cart</span><span class="nav-badge" id="cartCount">0</span></a>
+    </div>
+</header>
+
+<main class="shell">
+    <section class="hero">
+        <div class="eyebrow">ZiqTech Shopping Bag</div>
+        <h1>Your Cart.<br>Ready when you are.</h1>
+        <p>Review your selected products, variants and quantities before continuing to checkout.</p>
+        <div class="hero-meta">
+            <span class="meta-pill">✓ Variant-aware cart</span>
+            <span class="meta-pill">✓ Live stock check</span>
+            <span class="meta-pill">✓ Secure checkout flow</span>
+        </div>
+    </section>
+
+    <div class="layout">
+        <section class="panel items-panel">
+            <div class="panel-head">
+                <h2>Your items</h2>
+                <button class="clear-btn" id="clearCartButton" onclick="clearCart()">Clear Cart</button>
+            </div>
+            <div id="cart-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Loading your cart...
+                </div>
+            </div>
+        </section>
+
+        <aside class="panel summary">
+            <h2>Order Summary</h2>
+            <div class="summary-row">
+                <span>Items</span>
+                <strong id="summaryItems">0</strong>
+            </div>
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="summarySubtotal">RM 0.00</strong>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <strong>Calculated at checkout</strong>
+            </div>
+            <div class="summary-row total">
+                <span>Total</span>
+                <strong id="summaryTotal">RM 0.00</strong>
+            </div>
+
+            <button class="checkout-btn" id="checkoutButton" onclick="checkout()">
+                Continue to Checkout →
+            </button>
+            <a class="continue" href="index.html">← Continue shopping</a>
+
+            <div class="assurance">
+                <div><span>🔒</span><span>Your account session and checkout flow stay protected.</span></div>
+                <div><span>📦</span><span>Stock is checked against the latest product data.</span></div>
+                <div><span>↻</span><span>You can change quantity or remove products any time before checkout.</span></div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/store.js"></script>
+<script>
+let cart = [];
+let products = [];
+
+function getCurrentUser() {
+    try {
+        return JSON.parse(localStorage.getItem("ziqtech_current_user"));
+    } catch {
+        return null;
+    }
+}
+
+function getCartKey() {
+    const user = getCurrentUser();
+    if (user && user.id) {
+        return `ziqtech_cart_user_${user.id}`;
+    }
+    if (user && user.email) {
+        return `ziqtech_cart_user_${String(user.email).toLowerCase()}`;
+    }
+    return "ziqtech_cart_guest";
+}
+
+function readCart() {
+    if (window.ZiqStore && typeof ZiqStore.readCart === "function") {
+        return ZiqStore.readCart() || [];
+    }
+    try {
+        const value = JSON.parse(localStorage.getItem(getCartKey()));
+        return Array.isArray(value) ? value : [];
+    } catch {
+        return [];
+    }
+}
+
+function saveCart() {
+    localStorage.setItem(getCartKey(), JSON.stringify(cart));
+}
+
+function normalizeProductsResponse(data) {
+    if (Array.isArray(data)) return data;
+    if (data && Array.isArray(data.products)) return data.products;
+    if (data && Array.isArray(data.data)) return data.data;
+    return [];
+}
+
+function getProduct(productId) {
+    return products.find(p => String(p.id) === String(productId));
+}
+
+function getVariant(product, variantId) {
+    if (!product || variantId === null || variantId === undefined || !Array.isArray(product.variants)) return null;
+    return product.variants.find(v => String(v.id) === String(variantId)) || null;
+}
+
+function getPrice(product, variantId) {
+    const variant = getVariant(product, variantId);
+    const value = Number(variant?.price ?? product?.price ?? 0);
+    return Number.isFinite(value) ? value : 0;
+}
+
+function getStock(product, variantId) {
+    const variant = getVariant(product, variantId);
+    const value = Number(variant?.stock ?? product?.stock ?? 0);
+    return Number.isFinite(value) ? Math.max(0, Math.floor(value)) : 0;
+}
+
+function getVariantName(product, item) {
+    const variant = getVariant(product, item.variantId);
+    return variant?.name || item.variantName || "";
+}
+
+function formatMoney(value) {
+    return "RM " + Number(value || 0).toLocaleString("en-MY", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    });
+}
+
+function escapeHtml(value) {
+    return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+}
+
+function showToast(message) {
+    const toast = document.getElementById("toast");
+    toast.textContent = message;
+    toast.classList.add("show");
+    clearTimeout(showToast.timer);
+    showToast.timer = setTimeout(() => toast.classList.remove("show"), 2200);
+}
+
+function renderEmptyCart() {
+    const container = document.getElementById("cart-container");
+    container.innerHTML = `
+        <div class="empty">
+            <div class="empty-icon">🛍️</div>
+            <h2>Your cart is empty.</h2>
+            <p>Explore ZiqTech and add something you love. Your selected products will appear here.</p>
+            <a href="index.html">Explore products →</a>
+        </div>
+    `;
+    updateSummary();
+    document.getElementById("clearCartButton").style.display = "none";
+    document.getElementById("checkoutButton").disabled = true;
+}
+
+function updateSummary() {
+    let totalItems = 0;
+    let subtotal = 0;
+
+    cart.forEach(item => {
+        const product = getProduct(item.productId ?? item.id);
+        const quantity = Math.max(1, Number(item.quantity || 1));
+        totalItems += quantity;
+        if (product) {
+            subtotal += getPrice(product, item.variantId) * quantity;
+        }
+    });
+
+    document.getElementById("cartCount").textContent = String(totalItems);
+    document.getElementById("summaryItems").textContent = String(totalItems);
+    document.getElementById("summarySubtotal").textContent = formatMoney(subtotal);
+    document.getElementById("summaryTotal").textContent = formatMoney(subtotal);
+}
+
+function renderCart() {
+    const container = document.getElementById("cart-container");
+
+    if (!cart.length) {
+        renderEmptyCart();
+        return;
+    }
+
+    document.getElementById("clearCartButton").style.display = "";
+    document.getElementById("checkoutButton").disabled = false;
+
+    container.innerHTML = `<div class="cart-list">${cart.map(item => {
+        const productId = item.productId ?? item.id;
+        const product = getProduct(productId);
+
+        if (!product) {
+            return `
+                <article class="cart-item">
+                    <div class="image-wrap"></div>
+                    <div class="item-main">
+                        <div class="item-kicker">Unavailable</div>
+                        <div class="item-name">Product unavailable</div>
+                        <div class="item-bottom">
+                            <button class="remove-btn" onclick="removeFromCart('${escapeHtml(productId)}','${escapeHtml(item.variantId ?? "")}')">Remove</button>
+                        </div>
+                    </div>
+                    <div class="item-price"><strong>—</strong></div>
+                </article>
+            `;
+        }
+
+        const variant = getVariant(product, item.variantId);
+        const variantName = getVariantName(product, item);
+        const stock = getStock(product, item.variantId);
+        const quantity = Math.max(1, Math.floor(Number(item.quantity || 1)));
+        const unitPrice = getPrice(product, item.variantId);
+        const lineTotal = unitPrice * quantity;
+        const image = variant?.image || item.variantImage || product.image || "";
+        const stockClass = stock <= 5 ? "stock low" : "stock";
+        const stockText = stock > 0 ? `${stock} in stock` : "Out of stock";
+
+        const chips = [];
+        if (variantName) chips.push(variantName);
+        const attrs = variant?.attributes || item.variantAttributes || {};
+        ["storage", "color", "ram", "size", "type"].forEach(key => {
+            const val = attrs?.[key];
+            if (val && !chips.some(c => String(c).includes(String(val)))) chips.push(val);
+        });
+
+        return `
+            <article class="cart-item">
+                <a class="image-wrap" href="product.html?id=${encodeURIComponent(product.id)}">
+                    ${image ? `<img src="${escapeHtml(image)}" alt="${escapeHtml(product.name)}">` : ""}
+                </a>
+
+                <div class="item-main">
+                    <div class="item-kicker">ZiqTech</div>
+                    <div class="item-name">
+                        <a href="product.html?id=${encodeURIComponent(product.id)}">${escapeHtml(product.name)}</a>
+                    </div>
+
+                    ${chips.length ? `
+                        <div class="variant-row">
+                            ${chips.slice(0,4).map(chip => `<span class="variant-chip">${escapeHtml(chip)}</span>`).join("")}
+                        </div>
+                    ` : ""}
+
+                    <div class="${stockClass}">${escapeHtml(stockText)}</div>
+
+                    <div class="item-bottom">
+                        <div class="qty">
+                            <button type="button" aria-label="Decrease quantity"
+                                onclick="changeQuantity('${escapeHtml(product.id)}','${escapeHtml(item.variantId ?? "")}',-1)">−</button>
+                            <strong>${quantity}</strong>
+                            <button type="button" aria-label="Increase quantity"
+                                onclick="changeQuantity('${escapeHtml(product.id)}','${escapeHtml(item.variantId ?? "")}',1)">+</button>
+                        </div>
+
+                        <button class="remove-btn"
+                            onclick="removeFromCart('${escapeHtml(product.id)}','${escapeHtml(item.variantId ?? "")}')">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+
+                <div class="item-price">
+                    <strong>${formatMoney(lineTotal)}</strong>
+                    <small>${formatMoney(unitPrice)} each</small>
+                </div>
+            </article>
+        `;
+    }).join("")}</div>`;
+
+    updateSummary();
+}
+
+function findCartIndex(productId, variantId) {
+    return cart.findIndex(item =>
+        String(item.productId ?? item.id) === String(productId) &&
+        String(item.variantId ?? "") === String(variantId ?? "")
+    );
+}
+
+function changeQuantity(productId, variantId, delta) {
+    const index = findCartIndex(productId, variantId);
+    if (index < 0) return;
+
+    const item = cart[index];
+    const product = getProduct(productId);
+    const stock = getStock(product, item.variantId);
+    let next = Math.max(1, Math.floor(Number(item.quantity || 1)) + Number(delta));
+
+    if (next > stock) {
+        next = stock;
+        showToast(`Maximum available stock: ${stock}`);
+    }
+
+    if (next < 1 || stock <= 0) return;
+
+    item.quantity = next;
+    saveCart();
+    renderCart();
+}
+
+function removeFromCart(productId, variantId) {
+    const index = findCartIndex(productId, variantId);
+    if (index < 0) return;
+    cart.splice(index, 1);
+    saveCart();
+    renderCart();
+    showToast("Item removed from cart");
+}
+
+function clearCart() {
+    if (!cart.length) return;
+    if (!window.confirm("Clear semua produk dalam cart?")) return;
+    cart = [];
+    saveCart();
+    renderCart();
+}
+
+function checkout() {
+    cart = readCart();
+    if (!cart.length) {
+        window.alert("Cart kosong!");
+        return;
+    }
+    window.location.href = "checkout.html";
+}
+
+async function loadCart() {
+    const container = document.getElementById("cart-container");
+    cart = readCart();
+
+    if (!cart.length) {
+        renderEmptyCart();
+        return;
+    }
+
+    try {
+        const response = await fetch("/api/products", {
+            method: "GET",
+            headers: { "Accept": "application/json" },
+            credentials: "include"
+        });
+
+        if (!response.ok) {
+            throw new Error(`Unable to load products. HTTP ${response.status}`);
+        }
+
+        products = normalizeProductsResponse(await response.json());
+        renderCart();
+    } catch (error) {
+        console.error("Cart load error:", error);
+        container.innerHTML = `
+            <div class="empty">
+                <div class="empty-icon">!</div>
+                <h2>Unable to load your cart.</h2>
+                <p>Please make sure the ZiqTech server is running, then refresh this page.</p>
+                <a href="javascript:location.reload()">Try again</a>
+            </div>
+        `;
+    }
+}
+
+loadCart();
+</script>
+</body>
+</html>

@@ -1,0 +1,2431 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile — ZiqTech</title>
+
+<style>
+:root {
+    --brand: #0071e3;
+    --brand-dark: #0058b0;
+    --ink: #161617;
+    --muted: #6e6e73;
+    --surface: rgba(255,255,255,.88);
+    --surface-solid: #ffffff;
+    --line: rgba(17,24,39,.08);
+    --soft: #f5f5f7;
+    --danger: #c62828;
+    --radius-xl: 28px;
+    --radius-lg: 20px;
+    --radius-md: 14px;
+    --shadow-lg: 0 24px 70px rgba(16,24,40,.10);
+    --shadow-md: 0 12px 35px rgba(16,24,40,.07);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", sans-serif;
+    color: var(--ink);
+    background:
+        radial-gradient(circle at 7% 2%, rgba(0,113,227,.12), transparent 28rem),
+        radial-gradient(circle at 93% 18%, rgba(120,92,255,.10), transparent 27rem),
+        linear-gradient(180deg, #fbfbfd 0%, #f4f6f9 100%);
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: linear-gradient(rgba(255,255,255,.18) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,.18) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,.22), transparent 58%);
+    z-index: -1;
+}
+
+header {
+    height: 68px;
+    padding: 0 clamp(20px, 5vw, 72px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250,250,252,.78);
+    backdrop-filter: blur(22px) saturate(160%);
+    -webkit-backdrop-filter: blur(22px) saturate(160%);
+    border-bottom: 1px solid rgba(17,24,39,.07);
+}
+
+.logo {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 850;
+    letter-spacing: -1px;
+}
+
+.logo::after {
+    content: ".";
+    color: var(--brand);
+}
+
+.back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 13px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #3a3a3c;
+    background: rgba(255,255,255,.74);
+    border: 1px solid rgba(17,24,39,.08);
+    font-size: 13px;
+    font-weight: 700;
+    transition: .22s ease;
+}
+
+.back:hover {
+    transform: translateY(-1px);
+    background: #fff;
+    box-shadow: 0 8px 22px rgba(16,24,40,.08);
+}
+
+.container {
+    width: min(1160px, calc(100% - 32px));
+    margin: 44px auto 70px;
+}
+
+.title {
+    margin-bottom: 24px;
+}
+
+.title::before {
+    content: "ACCOUNT CENTER";
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--brand);
+    font-size: 11px;
+    font-weight: 850;
+    letter-spacing: 1.6px;
+}
+
+.title h1 {
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.04;
+    letter-spacing: -2.1px;
+    font-weight: 820;
+}
+
+.title p {
+    margin-top: 10px;
+    max-width: 620px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.profile-card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    min-height: 190px;
+    margin-bottom: 22px;
+    padding: 34px;
+    color: #fff;
+    border-radius: var(--radius-xl);
+    background:
+        linear-gradient(118deg, rgba(255,255,255,.06), transparent 44%),
+        linear-gradient(135deg, #101827 0%, #182845 54%, #006ad8 125%);
+    box-shadow: 0 28px 80px rgba(11,25,48,.22);
+}
+
+.profile-card::before,
+.profile-card::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.profile-card::before {
+    width: 290px;
+    height: 290px;
+    right: -70px;
+    top: -140px;
+    background: rgba(61,159,255,.24);
+    filter: blur(8px);
+}
+
+.profile-card::after {
+    width: 220px;
+    height: 220px;
+    right: 140px;
+    bottom: -180px;
+    background: rgba(144,105,255,.18);
+    filter: blur(4px);
+}
+
+.avatar-wrapper,
+.profile-info {
+    position: relative;
+    z-index: 2;
+}
+
+.avatar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    flex: 0 0 auto;
+}
+
+.avatar {
+    width: 108px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(135deg, #1878ef, #7a5cff);
+    border: 4px solid rgba(255,255,255,.82);
+    box-shadow: 0 14px 34px rgba(0,0,0,.24), 0 0 0 6px rgba(255,255,255,.10);
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.035);
+    box-shadow: 0 18px 38px rgba(0,0,0,.28), 0 0 0 7px rgba(255,255,255,.12);
+}
+
+.avatar.has-photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.photo-button,
+.remove-photo {
+    width: auto;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 700;
+    transition: .2s ease;
+}
+
+.photo-button {
+    color: rgba(255,255,255,.92);
+}
+
+.photo-button:hover {
+    background: rgba(255,255,255,.10);
+}
+
+.remove-photo {
+    color: #ffb0b0;
+}
+
+.remove-photo:hover {
+    background: rgba(255,82,82,.10);
+}
+
+.profile-info {
+    min-width: 0;
+}
+
+.profile-info h2 {
+    font-size: clamp(26px, 4vw, 34px);
+    line-height: 1.08;
+    letter-spacing: -1.2px;
+    font-weight: 800;
+}
+
+.profile-info p {
+    margin-top: 8px;
+    color: rgba(255,255,255,.70);
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    padding: 7px 11px;
+    border-radius: 999px;
+    color: #fff;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.16);
+    backdrop-filter: blur(10px);
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .2px;
+}
+
+.badge::before {
+    content: "●";
+    color: #67e8a5;
+    font-size: 8px;
+}
+
+.section {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 28px;
+    border-radius: var(--radius-xl);
+    background: var(--surface);
+    border: 1px solid rgba(17,24,39,.07);
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 780;
+    letter-spacing: -.45px;
+}
+
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.profile-detail {
+    position: relative;
+    min-height: 88px;
+    padding: 17px 18px;
+    border-radius: 17px;
+    background: linear-gradient(180deg, #fafbfc, #f6f7f9);
+    border: 1px solid rgba(17,24,39,.055);
+    transition: .2s ease;
+}
+
+.profile-detail:hover {
+    transform: translateY(-1px);
+    border-color: rgba(0,113,227,.18);
+    box-shadow: 0 8px 20px rgba(16,24,40,.05);
+}
+
+.profile-detail.full {
+    grid-column: 1 / -1;
+}
+
+.profile-detail-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #8a8a90;
+    font-size: 11px;
+    font-weight: 760;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.profile-detail-value {
+    color: #1f2328;
+    font-size: 15px;
+    font-weight: 650;
+    line-height: 1.55;
+    word-break: break-word;
+}
+
+#profileEditSection {
+    display: none;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field.full {
+    grid-column: 1 / -1;
+}
+
+.field label {
+    color: #55565a;
+    font-size: 12px;
+    font-weight: 760;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #dedfe3;
+    border-radius: 14px;
+    outline: none;
+    background: rgba(255,255,255,.86);
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.field input:hover,
+.field textarea:hover {
+    border-color: #c9ccd2;
+}
+
+.field input:focus,
+.field textarea:focus {
+    border-color: rgba(0,113,227,.72);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(0,113,227,.10);
+}
+
+.field input:disabled {
+    color: #888a90;
+    background: #f3f4f6;
+    cursor: not-allowed;
+}
+
+.field textarea {
+    min-height: 112px;
+    resize: vertical;
+}
+
+.email-note {
+    margin-top: 2px;
+    color: #999ba1;
+    font-size: 11px;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+}
+
+.edit-profile-btn,
+.save-btn,
+.cancel-edit-btn,
+.reset-btn,
+.logout {
+    border-radius: 13px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 760;
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.edit-profile-btn,
+.save-btn {
+    color: #fff;
+    background: linear-gradient(135deg, #111827, #27364d);
+    box-shadow: 0 8px 20px rgba(17,24,39,.15);
+}
+
+.edit-profile-btn:hover,
+.save-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(17,24,39,.20);
+}
+
+.cancel-edit-btn,
+.reset-btn {
+    color: #404248;
+    background: #eff0f3;
+}
+
+.cancel-edit-btn:hover,
+.reset-btn:hover {
+    background: #e7e8ec;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.stat {
+    position: relative;
+    overflow: hidden;
+    min-height: 128px;
+    padding: 24px 20px;
+    border-radius: 20px;
+    text-align: left;
+    background: linear-gradient(145deg, #fff, #f7f8fa);
+    border: 1px solid rgba(17,24,39,.06);
+    transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.stat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(16,24,40,.08);
+}
+
+.stat::before {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.stat:nth-child(1)::before { content: "◫"; color: #0071e3; }
+.stat:nth-child(2)::before { content: "♡"; color: #d43f72; }
+.stat:nth-child(3)::before { content: "▱"; color: #7a5cff; }
+
+.stat strong {
+    display: block;
+    color: #17181b;
+    font-size: 29px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.stat span {
+    display: block;
+    margin-top: 8px;
+    color: #7a7c82;
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.links {
+    display: grid;
+    gap: 10px;
+}
+
+.account-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 16px 17px;
+    border-radius: 16px;
+    color: #25272b;
+    background: linear-gradient(180deg, #fbfbfc, #f7f8fa);
+    border: 1px solid rgba(17,24,39,.055);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 680;
+    transition: .2s ease;
+}
+
+.account-link:hover {
+    transform: translateX(3px);
+    border-color: rgba(0,113,227,.18);
+    background: #fff;
+    box-shadow: 0 9px 24px rgba(16,24,40,.06);
+}
+
+.account-link span:last-child {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: var(--brand);
+    background: rgba(0,113,227,.08);
+    font-size: 20px;
+    line-height: 1;
+}
+
+.logout {
+    width: 100%;
+    color: #b42318;
+    background: #fff4f2;
+    border: 1px solid #ffd8d3;
+}
+
+.logout:hover {
+    transform: translateY(-1px);
+    background: #ffecea;
+    box-shadow: 0 9px 22px rgba(180,35,24,.08);
+}
+
+.toast {
+    position: fixed;
+    left: 50%;
+    bottom: 28px;
+    z-index: 999;
+    min-width: min(360px, calc(100vw - 32px));
+    padding: 13px 18px;
+    border-radius: 14px;
+    color: #fff;
+    background: rgba(17,24,39,.94);
+    border: 1px solid rgba(255,255,255,.10);
+    box-shadow: 0 16px 40px rgba(0,0,0,.22);
+    backdrop-filter: blur(16px);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(20px) scale(.98);
+    transition: .25s ease;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+}
+
+@media (max-width: 760px) {
+    header {
+        height: 62px;
+        padding: 0 16px;
+    }
+
+    .back {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .container {
+        width: min(100% - 24px, 1160px);
+        margin-top: 28px;
+    }
+
+    .title {
+        margin-bottom: 18px;
+    }
+
+    .title h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .profile-card {
+        align-items: flex-start;
+        gap: 18px;
+        min-height: 0;
+        padding: 24px 20px;
+        border-radius: 24px;
+    }
+
+    .avatar {
+        width: 82px;
+        height: 82px;
+        border-width: 3px;
+        font-size: 27px;
+    }
+
+    .photo-button,
+    .remove-photo {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+
+    .profile-info h2 {
+        font-size: 24px;
+    }
+
+    .profile-info p {
+        font-size: 12px;
+    }
+
+    .section {
+        padding: 20px;
+        border-radius: 22px;
+    }
+
+    .profile-details,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-detail.full,
+    .field.full {
+        grid-column: auto;
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .stat {
+        min-height: 108px;
+        padding: 16px 12px;
+    }
+
+    .stat::before {
+        margin-bottom: 11px;
+        font-size: 17px;
+    }
+
+    .stat strong {
+        font-size: 23px;
+    }
+
+    .stat span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .back {
+        background: transparent;
+        border-color: transparent;
+        padding-right: 0;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-info {
+        width: 100%;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat {
+        min-height: 0;
+        display: grid;
+        grid-template-columns: 34px 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 12px;
+        text-align: left;
+        align-items: center;
+    }
+
+    .stat::before {
+        grid-row: 1 / span 2;
+        margin: 0;
+    }
+
+    .stat strong,
+    .stat span {
+        grid-column: 2;
+    }
+
+    .stat span {
+        margin-top: 3px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .edit-profile-btn,
+    .save-btn,
+    .cancel-edit-btn,
+    .reset-btn {
+        width: 100%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="logo">
+    ZiqTech
+</a>
+
+<a href="index.html" class="back">
+    ← Back to Store
+</a>
+
+</header>
+
+<main class="container">
+
+<div class="title">
+
+    <h1>My Account</h1>
+
+    <p>
+        Manage your profile, delivery details and account activity in one place.
+    </p>
+
+</div>
+
+
+<!-- PROFILE -->
+
+<section class="profile-card">
+
+    <div class="avatar-wrapper">
+
+    <div
+        class="avatar"
+        id="avatar"
+        onclick="document.getElementById('profilePhotoInput').click()"
+        title="Change profile picture"
+    >
+        ?
+    </div>
+
+    <input
+        type="file"
+        id="profilePhotoInput"
+        accept="image/*"
+        hidden
+        onchange="changeProfilePhoto(event)"
+    >
+
+    <button
+        type="button"
+        class="photo-button"
+        onclick="document.getElementById('profilePhotoInput').click()"
+    >
+        Change Photo
+    </button>
+
+    <button
+        type="button"
+        class="remove-photo"
+        onclick="removeProfilePhoto()"
+    >
+        Remove
+    </button>
+
+</div>
+
+    <div class="profile-info">
+
+        <h2 id="displayName">
+            Customer
+        </h2>
+
+        <p id="displayEmail">
+            -
+        </p>
+
+        <span class="badge">
+            Customer
+        </span>
+
+    </div>
+
+</section>
+
+<!-- PERSONAL INFORMATION -->
+
+<section class="section">
+
+    <h2>
+        Personal Information
+    </h2>
+
+    <!-- DISPLAY MODE -->
+
+    <div id="profileDisplaySection">
+
+        <div class="profile-details">
+
+            <div class="profile-detail">
+
+                <span class="profile-detail-label">
+                    Full Name
+                </span>
+
+                <div
+                    class="profile-detail-value"
+                    id="profileDisplayName"
+                >
+                    -
+                </div>
+
+            </div>
+
+
+            <div class="profile-detail">
+
+                <span class="profile-detail-label">
+                    Email
+                </span>
+
+                <div
+                    class="profile-detail-value"
+                    id="profileDisplayEmail"
+                >
+                    -
+                </div>
+
+            </div>
+
+
+            <div class="profile-detail">
+
+                <span class="profile-detail-label">
+                    Phone
+                </span>
+
+                <div
+                    class="profile-detail-value"
+                    id="profileDisplayPhone"
+                >
+                    -
+                </div>
+
+            </div>
+
+
+            <div class="profile-detail">
+
+                <span class="profile-detail-label">
+                    Postcode
+                </span>
+
+                <div
+                    class="profile-detail-value"
+                    id="profileDisplayPostcode"
+                >
+                    -
+                </div>
+
+            </div>
+
+
+            <div class="profile-detail full">
+
+                <span class="profile-detail-label">
+                    Address
+                </span>
+
+                <div
+                    class="profile-detail-value"
+                    id="profileDisplayAddress"
+                >
+                    -
+                </div>
+
+            </div>
+
+
+            <div class="profile-detail">
+
+                <span class="profile-detail-label">
+                    City
+                </span>
+
+                <div
+                    class="profile-detail-value"
+                    id="profileDisplayCity"
+                >
+                    -
+                </div>
+
+            </div>
+
+
+            <div class="profile-detail">
+
+                <span class="profile-detail-label">
+                    State
+                </span>
+
+                <div
+                    class="profile-detail-value"
+                    id="profileDisplayState"
+                >
+                    -
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="actions">
+
+            <button
+                type="button"
+                class="edit-profile-btn"
+                onclick="openProfileEdit()"
+            >
+                ✏️ Edit Profile
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- EDIT MODE -->
+
+    <div id="profileEditSection">
+
+        <div class="form-grid">
+
+            <div class="field">
+
+                <label>
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="nameInput"
+                    autocomplete="name"
+                    placeholder="Your name"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="emailInput"
+                    disabled
+                >
+
+                <span class="email-note">
+                    Email is linked to your account.
+                </span>
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    Phone
+                </label>
+
+                <input
+                    type="tel"
+                    id="phoneInput"
+                    autocomplete="tel"
+                    placeholder="e.g. 0123456789"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    Postcode
+                </label>
+
+                <input
+                    type="text"
+                    id="postcodeInput"
+                    inputmode="numeric"
+                    autocomplete="postal-code"
+                    placeholder="e.g. 84000"
+                >
+
+            </div>
+
+
+            <div class="field full">
+
+                <label>
+                    Shipping Address
+                </label>
+
+                <textarea
+                    id="addressInput"
+                    autocomplete="street-address"
+                    placeholder="Enter your full shipping address"
+                ></textarea>
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    City
+                </label>
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    autocomplete="address-level2"
+                    placeholder="City"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    State
+                </label>
+
+                <input
+                    type="text"
+                    id="stateInput"
+                    autocomplete="address-level1"
+                    placeholder="State"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="actions">
+
+            <button
+                type="button"
+                class="save-btn"
+                onclick="saveProfile()"
+            >
+                Save Changes
+            </button>
+
+            <button
+                type="button"
+                class="cancel-edit-btn"
+                onclick="cancelProfileEdit()"
+            >
+                Cancel
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ACCOUNT STATS -->
+
+<section class="section">
+
+    <h2>
+        Account Overview
+    </h2>
+
+    <div class="stats">
+
+        <div class="stat">
+
+            <strong id="orderCount">
+                0
+            </strong>
+
+            <span>
+                Orders
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong id="wishlistCount">
+                0
+            </strong>
+
+            <span>
+                Wishlist
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong id="cartCount">
+                0
+            </strong>
+
+            <span>
+                Cart Items
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUICK LINKS -->
+
+<section class="section">
+
+    <h2>
+        Account
+    </h2>
+
+    <div class="links">
+
+        <a
+            href="order.html"
+            class="account-link"
+        >
+            <span>📦 My Orders</span>
+            <span>›</span>
+        </a>
+
+
+        <a
+            href="wishlist.html"
+            class="account-link"
+        >
+            <span>❤️ My Wishlist</span>
+            <span>›</span>
+        </a>
+
+
+        <a
+            href="cart.html"
+            class="account-link"
+        >
+            <span>🛒 My Cart</span>
+            <span>›</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- LOGOUT -->
+
+<section class="section">
+
+    <button
+        class="logout"
+        onclick="logout()"
+    >
+        Logout
+    </button>
+
+</section>
+
+</main>
+
+<div
+    class="toast"
+    id="toast"
+></div>
+
+<script src="js/store.js"></script>
+
+<script>
+
+const USER_KEY = "ziqtech_current_user";
+
+
+function getUser() {
+
+    try {
+
+        const raw =
+            localStorage.getItem(USER_KEY);
+
+        if (!raw) {
+            return null;
+        }
+
+        const user =
+            JSON.parse(raw);
+
+        if (
+            !user ||
+            typeof user !== "object"
+        ) {
+            return null;
+        }
+
+        return user;
+
+    } catch (error) {
+
+        return null;
+    }
+}
+
+
+/* =========================================================
+   LOAD PROFILE
+========================================================= */
+
+async function loadProfile() {
+
+    try {
+
+        const response =
+            await fetch(
+                "/api/auth/me",
+                {
+                    method: "GET",
+                    credentials: "include"
+                }
+            );
+
+        const result =
+            await response.json();
+
+     console.log("PROFILE AUTH RESULT:", result);
+
+if (
+    !response.ok ||
+    !result.success ||
+    !result.loggedIn ||
+    !result.user
+) {
+    console.log("PROFILE REDIRECT: SESSION NOT VALID");
+    localStorage.removeItem(USER_KEY);
+    window.location.href = "login.html";
+    return;
+}  
+
+        const user =
+            result.user;
+
+
+        /* =========================
+           SYNC LOCAL STORAGE
+        ========================= */
+
+        localStorage.setItem(
+            USER_KEY,
+            JSON.stringify(user)
+        );
+
+
+        /* =========================
+           PROFILE HEADER
+        ========================= */
+
+        const name =
+            user.name ||
+            "Customer";
+
+        const displayName =
+            document.getElementById(
+                "displayName"
+            );
+
+        const displayEmail =
+            document.getElementById(
+                "displayEmail"
+            );
+
+        if (displayName) {
+
+            displayName.textContent =
+                name;
+        }
+
+        if (displayEmail) {
+
+            displayEmail.textContent =
+                user.email || "";
+        }
+
+
+        /* =========================
+           AVATAR
+        ========================= */
+
+        const avatar =
+            document.getElementById(
+                "avatar"
+            );
+
+        const initials =
+            name
+                .trim()
+                .split(/\s+/)
+                .map(
+                    word =>
+                        word.charAt(0)
+                )
+                .join("")
+                .slice(0, 2)
+                .toUpperCase();
+
+
+        if (avatar) {
+
+            if (user.profilePhoto) {
+
+                avatar.textContent =
+                    "";
+
+                avatar.style.backgroundImage =
+                    `url("${user.profilePhoto}")`;
+
+                avatar.classList.add(
+                    "has-photo"
+                );
+
+            } else {
+
+                avatar.style.backgroundImage =
+                    "";
+
+                avatar.classList.remove(
+                    "has-photo"
+                );
+
+                avatar.textContent =
+                    initials || "?";
+            }
+        }
+
+
+        /* =========================
+           FORM
+        ========================= */
+
+        const nameInput =
+            document.getElementById(
+                "nameInput"
+            );
+
+        const emailInput =
+            document.getElementById(
+                "emailInput"
+            );
+
+        const phoneInput =
+            document.getElementById(
+                "phoneInput"
+            );
+
+        const postcodeInput =
+            document.getElementById(
+                "postcodeInput"
+            );
+
+        const addressInput =
+            document.getElementById(
+                "addressInput"
+            );
+
+        const cityInput =
+            document.getElementById(
+                "cityInput"
+            );
+
+        const stateInput =
+            document.getElementById(
+                "stateInput"
+            );
+
+
+        if (nameInput) {
+
+            nameInput.value =
+                user.name || "";
+        }
+
+        if (emailInput) {
+
+            emailInput.value =
+                user.email || "";
+        }
+
+        if (phoneInput) {
+
+            phoneInput.value =
+                user.phone || "";
+        }
+
+        if (postcodeInput) {
+
+            postcodeInput.value =
+                user.postcode || "";
+        }
+
+        if (addressInput) {
+
+            addressInput.value =
+                user.address || "";
+        }
+
+        if (cityInput) {
+
+            cityInput.value =
+                user.city || "";
+        }
+
+        if (stateInput) {
+
+            stateInput.value =
+                user.state || "";
+        }
+
+/* =========================
+   PROFILE DISPLAY
+========================= */
+
+const profileDisplayName =
+    document.getElementById(
+        "profileDisplayName"
+    );
+
+const profileDisplayEmail =
+    document.getElementById(
+        "profileDisplayEmail"
+    );
+
+const profileDisplayPhone =
+    document.getElementById(
+        "profileDisplayPhone"
+    );
+
+const profileDisplayPostcode =
+    document.getElementById(
+        "profileDisplayPostcode"
+    );
+
+const profileDisplayAddress =
+    document.getElementById(
+        "profileDisplayAddress"
+    );
+
+const profileDisplayCity =
+    document.getElementById(
+        "profileDisplayCity"
+    );
+
+const profileDisplayState =
+    document.getElementById(
+        "profileDisplayState"
+    );
+
+
+if (profileDisplayName) {
+    profileDisplayName.textContent =
+        user.name || "-";
+}
+
+if (profileDisplayEmail) {
+    profileDisplayEmail.textContent =
+        user.email || "-";
+}
+
+if (profileDisplayPhone) {
+    profileDisplayPhone.textContent =
+        user.phone || "-";
+}
+
+if (profileDisplayPostcode) {
+    profileDisplayPostcode.textContent =
+        user.postcode || "-";
+}
+
+if (profileDisplayAddress) {
+    profileDisplayAddress.textContent =
+        user.address || "-";
+}
+
+if (profileDisplayCity) {
+    profileDisplayCity.textContent =
+        user.city || "-";
+}
+
+if (profileDisplayState) {
+    profileDisplayState.textContent =
+        user.state || "-";
+}
+
+
+
+        /* =========================
+           STATS
+        ========================= */
+
+        updateStats();
+
+    } catch (error) {
+
+        console.error(
+            "Load profile error:",
+            error
+        );
+
+        alert(
+            "Gagal mengambil data profile dari server."
+        );
+    }
+}
+
+
+/* =========================================================
+   CHANGE PROFILE PHOTO
+========================================================= */
+
+async function changeProfilePhoto(event) {
+
+    const file =
+        event.target.files?.[0];
+
+    if (!file) {
+        return;
+    }
+
+
+    if (
+        !file.type.startsWith("image/")
+    ) {
+
+        showToast(
+            "Please select an image."
+        );
+
+        return;
+    }
+
+
+    const maxSize =
+        5 * 1024 * 1024;
+
+    if (file.size > maxSize) {
+
+        showToast(
+            "Image must be smaller than 5MB."
+        );
+
+        return;
+    }
+
+
+    const reader =
+        new FileReader();
+
+
+    reader.onload =
+        async function () {
+
+            const user =
+                getUser();
+
+            if (!user) {
+
+                window.location.href =
+                    "login.html";
+
+                return;
+            }
+
+
+            const profilePhoto =
+                reader.result;
+
+
+            /* =========================
+               UPDATE LOCAL USER
+            ========================= */
+
+            user.profilePhoto =
+                profilePhoto;
+
+            localStorage.setItem(
+                USER_KEY,
+                JSON.stringify(user)
+            );
+
+
+            /* =========================
+               UPDATE AVATAR IMMEDIATELY
+            ========================= */
+
+            const avatar =
+                document.getElementById(
+                    "avatar"
+                );
+
+            if (avatar) {
+
+                avatar.textContent =
+                    "";
+
+                avatar.style.backgroundImage =
+                    `url("${profilePhoto}")`;
+
+                avatar.classList.add(
+                    "has-photo"
+                );
+            }
+
+
+            /* =========================
+               SAVE TO BACKEND
+            ========================= */
+
+            try {
+
+                const response =
+                    await fetch(
+                        "/api/auth/profile",
+                        {
+                            method: "PUT",
+
+                            headers: {
+                                "Content-Type":
+                                    "application/json"
+                            },
+
+                            credentials:
+                                "include",
+
+                            body:
+                                JSON.stringify({
+
+                                    name:
+                                        user.name ||
+                                        "",
+
+                                    phone:
+                                        user.phone ||
+                                        "",
+
+                                    address:
+                                        user.address ||
+                                        "",
+
+                                    postcode:
+                                        user.postcode ||
+                                        "",
+
+                                    city:
+                                        user.city ||
+                                        "",
+
+                                    state:
+                                        user.state ||
+                                        "",
+
+                                    profilePhoto:
+                                        profilePhoto
+                                })
+                        }
+                    );
+
+
+                const result =
+                    await response.json();
+
+
+                if (
+                    !response.ok ||
+                    !result.success
+                ) {
+
+                    throw new Error(
+                        result.message ||
+                        "Gagal menyimpan profile picture."
+                    );
+                }
+
+
+                /* =========================
+                   SYNC BACKEND → LOCAL
+                ========================= */
+
+                if (result.user) {
+
+                    localStorage.setItem(
+                        USER_KEY,
+                        JSON.stringify(
+                            result.user
+                        )
+                    );
+                }
+
+
+                showToast(
+                    "Profile picture saved ✓"
+                );
+
+
+            } catch (error) {
+
+                console.error(
+                    "Save profile photo error:",
+                    error
+                );
+
+                showToast(
+                    "Profile picture gagal disimpan."
+                );
+            }
+        };
+
+
+    reader.readAsDataURL(file);
+}
+
+/* =========================================================
+   REMOVE PROFILE PHOTO
+========================================================= */
+
+function removeProfilePhoto() {
+
+    const user =
+        getUser();
+
+    if (!user) {
+        return;
+    }
+
+    delete user.profilePhoto;
+
+    localStorage.setItem(
+        USER_KEY,
+        JSON.stringify(user)
+    );
+
+
+    const avatar =
+        document.getElementById(
+            "avatar"
+        );
+
+    const name =
+        user.name ||
+        "Customer";
+
+    const initials =
+        name
+            .trim()
+            .split(/\s+/)
+            .map(
+                word =>
+                    word.charAt(0)
+            )
+            .join("")
+            .slice(0, 2)
+            .toUpperCase();
+
+
+    if (avatar) {
+
+        avatar.style.backgroundImage =
+            "";
+
+        avatar.classList.remove(
+            "has-photo"
+        );
+
+        avatar.textContent =
+            initials || "?";
+    }
+
+    showToast(
+        "Profile picture removed"
+    );
+}
+
+/* =========================================================
+   PROFILE EDIT MODE
+========================================================= */
+
+function openProfileEdit() {
+
+    const displaySection =
+        document.getElementById(
+            "profileDisplaySection"
+        );
+
+    const editSection =
+        document.getElementById(
+            "profileEditSection"
+        );
+
+    if (displaySection) {
+        displaySection.style.display = "none";
+    }
+
+    if (editSection) {
+        editSection.style.display = "block";
+    }
+}
+
+
+function cancelProfileEdit() {
+
+    const displaySection =
+        document.getElementById(
+            "profileDisplaySection"
+        );
+
+    const editSection =
+        document.getElementById(
+            "profileEditSection"
+        );
+
+    if (editSection) {
+        editSection.style.display = "none";
+    }
+
+    if (displaySection) {
+        displaySection.style.display = "block";
+    }
+
+    // Restore original values from the authenticated session
+    loadProfile();
+}
+
+
+
+/* =========================================================
+   SAVE PROFILE
+========================================================= */
+
+async function saveProfile(event) {
+
+    if (event) {
+        event.preventDefault();
+    }
+
+    const currentUser =
+        getUser();
+
+    if (!currentUser) {
+
+        alert(
+            "Sila login terlebih dahulu."
+        );
+
+        window.location.href =
+            "login.html";
+
+        return;
+    }
+
+
+    const name =
+        document
+            .getElementById("nameInput")
+            ?.value
+            .trim() || "";
+
+    const phone =
+        document
+            .getElementById("phoneInput")
+            ?.value
+            .trim() || "";
+
+    const address =
+        document
+            .getElementById("addressInput")
+            ?.value
+            .trim() || "";
+
+    const postcode =
+        document
+            .getElementById("postcodeInput")
+            ?.value
+            .trim() || "";
+
+    const city =
+        document
+            .getElementById("cityInput")
+            ?.value
+            .trim() || "";
+
+    const state =
+        document
+            .getElementById("stateInput")
+            ?.value
+            .trim() || "";
+
+
+    if (!name) {
+
+        alert(
+            "Nama diperlukan."
+        );
+
+        return;
+    }
+
+
+    try {
+
+        const response =
+            await fetch(
+                "/api/auth/profile",
+                {
+                    method: "PUT",
+
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    credentials:
+                        "include",
+
+                    body:
+                        JSON.stringify({
+                            name,
+                            phone,
+                            address,
+                            postcode,
+                            city,
+                            state,
+                            profilePhoto:
+                                currentUser.profilePhoto ||
+                                null
+                        })
+                }
+            );
+
+
+        const result =
+            await response.json();
+
+
+        if (
+            !response.ok ||
+            !result.success
+        ) {
+
+            throw new Error(
+                result.message ||
+                "Gagal menyimpan profile."
+            );
+        }
+
+
+        /*
+         * Sync backend → localStorage
+         */
+
+        localStorage.setItem(
+            USER_KEY,
+            JSON.stringify(
+                result.user
+            )
+        );
+
+
+        /*
+         * Reload profile
+         */
+
+        await loadProfile();
+
+
+        showToast(
+            "Profile berjaya dikemaskini ✓"
+        );
+
+
+    } catch (error) {
+
+        console.error(
+            "Save profile error:",
+            error
+        );
+
+        alert(
+            error.message ||
+            "Gagal menyimpan profile."
+        );
+    }
+}
+
+
+/* =========================================================
+   UPDATE STATS
+========================================================= */
+
+function updateStats() {
+
+
+    /* =========================
+       WISHLIST
+    ========================= */
+
+    let wishlist = [];
+
+    try {
+
+        wishlist =
+            JSON.parse(
+                localStorage.getItem(
+                    "ziqtech_wishlist"
+                )
+            ) || [];
+
+    } catch {
+
+        wishlist = [];
+    }
+
+
+    const wishlistCount =
+        document.getElementById(
+            "wishlistCount"
+        );
+
+    if (wishlistCount) {
+
+        wishlistCount.textContent =
+            Array.isArray(wishlist)
+                ? wishlist.length
+                : 0;
+    }
+
+
+    /* =========================
+       CART
+    ========================= */
+
+    let cart = [];
+
+    if (
+        window.ZiqStore &&
+        typeof ZiqStore.readCart ===
+            "function"
+    ) {
+
+        cart =
+            ZiqStore.readCart() || [];
+    }
+
+
+    const cartQuantity =
+        Array.isArray(cart)
+            ? cart.reduce(
+                (
+                    total,
+                    item
+                ) =>
+                    total +
+                    Number(
+                        item.quantity || 0
+                    ),
+                0
+            )
+            : 0;
+
+
+    const cartCount =
+        document.getElementById(
+            "cartCount"
+        );
+
+    if (cartCount) {
+
+        cartCount.textContent =
+            cartQuantity;
+    }
+}
+
+/* =========================================================
+   ORDERS
+========================================================= */
+
+async function loadOrderCount() {
+
+    const orderCount =
+        document.getElementById(
+            "orderCount"
+        );
+
+    if (!orderCount) {
+        return;
+    }
+
+    try {
+
+        const response =
+            await fetch(
+                "/api/my-orders",
+                {
+                    method: "GET",
+                    credentials: "include",
+                    headers: {
+                        "Accept":
+                            "application/json"
+                    }
+                }
+            );
+
+        const result =
+            await response.json();
+
+        console.log(
+            "📦 PROFILE ORDERS:",
+            result
+        );
+
+        if (
+            !response.ok ||
+            !result.success
+        ) {
+
+            orderCount.textContent = "0";
+
+            return;
+        }
+
+        const orders =
+            Array.isArray(result.orders)
+                ? result.orders
+                : [];
+
+        orderCount.textContent =
+            String(orders.length);
+
+    } catch (error) {
+
+        console.error(
+            "Unable to load order count:",
+            error
+        );
+
+        orderCount.textContent = "0";
+    }
+}
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+async function logout() {
+
+    try {
+
+        await fetch(
+            "/api/auth/logout",
+            {
+                method: "POST",
+                credentials: "include"
+            }
+        );
+
+    } catch (error) {
+
+        console.error(
+            "Logout error:",
+            error
+        );
+
+    }
+
+    window.location.href =
+        "login.html";
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+function showToast(message) {
+
+    const toast =
+        document.getElementById(
+            "toast"
+        );
+
+    if (!toast) {
+        return;
+    }
+
+    toast.textContent =
+        message;
+
+    toast.classList.add(
+        "show"
+    );
+
+
+    setTimeout(
+        () => {
+
+            toast.classList.remove(
+                "show"
+            );
+
+        },
+        2500
+    );
+}
+
+
+/* =========================================================
+   START
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        loadProfile();
+
+        loadOrderCount();
+
+    }
+);
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const postcodeInput =
+        document.getElementById("postcodeInput");
+
+    const cityInput =
+        document.getElementById("cityInput");
+
+    const stateInput =
+        document.getElementById("stateInput");
+
+    if (!postcodeInput || !cityInput || !stateInput) {
+        console.warn("Profile postcode fields not found.");
+        return;
+    }
+
+    let postcodeTimer = null;
+
+    const status =
+        document.createElement("div");
+
+    status.style.fontSize = "12px";
+    status.style.marginTop = "6px";
+    status.style.minHeight = "18px";
+
+    postcodeInput.insertAdjacentElement(
+        "afterend",
+        status
+    );
+
+
+    async function detectPostcode() {
+
+        const postcode =
+            postcodeInput.value
+                .replace(/\D/g, "")
+                .slice(0, 5);
+
+        postcodeInput.value = postcode;
+
+        if (postcode.length !== 5) {
+            status.textContent = "";
+            return;
+        }
+
+        status.textContent =
+            "Checking postcode...";
+
+        try {
+
+            const response =
+                await fetch(
+                    `/api/postcode/${encodeURIComponent(postcode)}`
+                );
+
+            const data =
+                await response.json();
+
+            if (!response.ok || !data.success) {
+
+                cityInput.value = "";
+                stateInput.value = "";
+
+                status.textContent =
+                    "Postcode not found.";
+
+                return;
+            }
+
+            cityInput.value =
+                data.city || "";
+
+            stateInput.value =
+                data.state || "";
+
+            status.textContent =
+                `${data.city}, ${data.state} ✓`;
+
+        } catch (error) {
+
+            console.error(
+                "Postcode lookup error:",
+                error
+            );
+
+            status.textContent =
+                "Unable to check postcode.";
+        }
+    }
+
+
+    postcodeInput.addEventListener(
+        "input",
+        () => {
+
+            clearTimeout(postcodeTimer);
+
+            postcodeTimer =
+                setTimeout(
+                    detectPostcode,
+                    350
+                );
+        }
+    );
+
+
+    postcodeInput.addEventListener(
+        "blur",
+        detectPostcode
+    );
+
+});
+</script>
+</body>
+</html>

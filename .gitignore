@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.sql
+database/users.json
+backend/orders.json
+*-before-*.js
+*-before-*.json
+
+malaysia-postcodes/
+backend/orders-backup.json
+failed-images.txt

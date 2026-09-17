@@ -1,0 +1,5148 @@
+[
+  {
+    "id": 2,
+    "name": "iPhone 16 Pro",
+    "description": "Titanium design with powerful performance and Pro camera system.",
+    "price": 4999,
+    "stock": 152,
+    "category": "iphone",
+    "image": "/images/products/2-iphone-16-pro-main.png",
+    "createdAt": null,
+    "updatedAt": "2026-09-17T18:06:04.979Z",
+    "variants": [
+      {
+        "id": "variant-1789552781871-0nmw7q",
+        "name": "256GB • Natural Titanium",
+        "storage": "256GB",
+        "color": "Natural Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-1hplul",
+        "name": "256GB • Desert Titanium",
+        "storage": "256GB",
+        "color": "Desert Titanium",
+        "price": 5499,
+        "stock": 9,
+        "attributes": {
+          "color": "Desert Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-3ezx9b",
+        "name": "256GB • Black Titanium",
+        "storage": "256GB",
+        "color": "Black Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-3hakse",
+        "name": "1TB • Desert Titanium",
+        "storage": "1TB",
+        "color": "Desert Titanium",
+        "price": 6999,
+        "stock": 7,
+        "attributes": {
+          "color": "Desert Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-4xznxd",
+        "name": "512GB • Desert Titanium",
+        "storage": "512GB",
+        "color": "Desert Titanium",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "color": "Desert Titanium",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-70r3e4",
+        "name": "128GB • Natural Titanium",
+        "storage": "128GB",
+        "color": "Natural Titanium",
+        "price": 4999,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-fgc79r",
+        "name": "128GB • White Titanium",
+        "storage": "128GB",
+        "color": "White Titanium",
+        "price": 4999,
+        "stock": 9,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-gejyt9",
+        "name": "1TB • Black Titanium",
+        "storage": "1TB",
+        "color": "Black Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-l6doni",
+        "name": "1TB • White Titanium",
+        "storage": "1TB",
+        "color": "White Titanium",
+        "price": 6999,
+        "stock": 9,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-mbz9aa",
+        "name": "512GB • Black Titanium",
+        "storage": "512GB",
+        "color": "Black Titanium",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-trbq2g",
+        "name": "128GB • Black Titanium",
+        "storage": "128GB",
+        "color": "Black Titanium",
+        "price": 4999,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-tvejs3",
+        "name": "256GB • White Titanium",
+        "storage": "256GB",
+        "color": "White Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-tz3lku",
+        "name": "512GB • Natural Titanium",
+        "storage": "512GB",
+        "color": "Natural Titanium",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-w19wtd",
+        "name": "512GB • White Titanium",
+        "storage": "512GB",
+        "color": "White Titanium",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-yeexoq",
+        "name": "128GB • Desert Titanium",
+        "storage": "128GB",
+        "color": "Desert Titanium",
+        "price": 4999,
+        "stock": 8,
+        "attributes": {
+          "color": "Desert Titanium",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "variant-1789552781871-z7nsye",
+        "name": "1TB • Natural Titanium",
+        "storage": "1TB",
+        "color": "Natural Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "1TB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "AirPods Pro 3",
+    "description": "Immersive sound with Active Noise Cancellation, heart rate sensing, and an improved in-ear design.",
+    "price": 999,
+    "stock": 7,
+    "category": "audio",
+    "image": "/images/products/3-airpods-pro-3-official.jpg",
+    "createdAt": null,
+    "updatedAt": "2026-09-17T18:31:51.341Z",
+    "variants": []
+  },
+  {
+    "id": 4,
+    "name": "MacBook Air M3",
+    "description": "Thin, light and powerful laptop with Apple M3 chip.",
+    "price": 4499,
+    "stock": 301,
+    "category": "mac",
+    "image": "/images/products/4-macbook-air-m3-main.png",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "4-m3-16gb-1tb-midnight",
+        "name": "M3 - 16GB - 1TB - Midnight",
+        "storage": "1TB",
+        "color": "Midnight",
+        "price": 6499,
+        "stock": 17,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M3",
+          "color": "Midnight",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "4-m3-16gb-1tb-silver",
+        "name": "M3 - 16GB - 1TB - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 6499,
+        "stock": 28,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M3",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "4-m3-16gb-1tb-space-gray",
+        "name": "M3 - 16GB - 1TB - Space Gray",
+        "storage": "1TB",
+        "color": "Space Gray",
+        "price": 6499,
+        "stock": 13,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M3",
+          "color": "Space Gray",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "4-m3-16gb-1tb-starlight",
+        "name": "M3 - 16GB - 1TB - Starlight",
+        "storage": "1TB",
+        "color": "Starlight",
+        "price": 6499,
+        "stock": 11,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M3",
+          "color": "Starlight",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "4-m3-16gb-512gb-midnight",
+        "name": "M3 - 16GB - 512GB - Midnight",
+        "storage": "512GB",
+        "color": "Midnight",
+        "price": 5499,
+        "stock": 13,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M3",
+          "color": "Midnight",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "4-m3-16gb-512gb-silver",
+        "name": "M3 - 16GB - 512GB - Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 5499,
+        "stock": 13,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M3",
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "4-m3-16gb-512gb-space-gray",
+        "name": "M3 - 16GB - 512GB - Space Gray",
+        "storage": "512GB",
+        "color": "Space Gray",
+        "price": 5499,
+        "stock": 12,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M3",
+          "color": "Space Gray",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "4-m3-16gb-512gb-starlight",
+        "name": "M3 - 16GB - 512GB - Starlight",
+        "storage": "512GB",
+        "color": "Starlight",
+        "price": 5499,
+        "stock": 20,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M3",
+          "color": "Starlight",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "4-m3-24gb-2tb-midnight",
+        "name": "M3 - 24GB - 2TB - Midnight",
+        "storage": "2TB",
+        "color": "Midnight",
+        "price": 7999,
+        "stock": 20,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M3",
+          "color": "Midnight",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "4-m3-24gb-2tb-silver",
+        "name": "M3 - 24GB - 2TB - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 7999,
+        "stock": 28,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M3",
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "4-m3-24gb-2tb-space-gray",
+        "name": "M3 - 24GB - 2TB - Space Gray",
+        "storage": "2TB",
+        "color": "Space Gray",
+        "price": 7999,
+        "stock": 17,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M3",
+          "color": "Space Gray",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "4-m3-24gb-2tb-starlight",
+        "name": "M3 - 24GB - 2TB - Starlight",
+        "storage": "2TB",
+        "color": "Starlight",
+        "price": 7999,
+        "stock": 27,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M3",
+          "color": "Starlight",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "4-m3-8gb-256gb-midnight",
+        "name": "M3 - 8GB - 256GB - Midnight",
+        "storage": "256GB",
+        "color": "Midnight",
+        "price": 4499,
+        "stock": 17,
+        "attributes": {
+          "ram": "8GB",
+          "chip": "M3",
+          "color": "Midnight",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "4-m3-8gb-256gb-silver",
+        "name": "M3 - 8GB - 256GB - Silver",
+        "storage": "256GB",
+        "color": "Silver",
+        "price": 4499,
+        "stock": 30,
+        "attributes": {
+          "ram": "8GB",
+          "chip": "M3",
+          "color": "Silver",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "4-m3-8gb-256gb-space-gray",
+        "name": "M3 - 8GB - 256GB - Space Gray",
+        "storage": "256GB",
+        "color": "Space Gray",
+        "price": 4499,
+        "stock": 18,
+        "attributes": {
+          "ram": "8GB",
+          "chip": "M3",
+          "color": "Space Gray",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "4-m3-8gb-256gb-starlight",
+        "name": "M3 - 8GB - 256GB - Starlight",
+        "storage": "256GB",
+        "color": "Starlight",
+        "price": 4499,
+        "stock": 17,
+        "attributes": {
+          "ram": "8GB",
+          "chip": "M3",
+          "color": "Starlight",
+          "storage": "256GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "MacBook Pro 14",
+    "description": "Professional performance with advanced Apple Silicon power.",
+    "price": 7999,
+    "stock": 331,
+    "category": "mac",
+    "image": "/images/products/5-macbook-pro-14-official.jpg",
+    "createdAt": null,
+    "updatedAt": "2026-09-17T15:33:47.534Z",
+    "variants": [
+      {
+        "id": "5-m3max-128-8tb-silver",
+        "name": "M3 Max - 128GB - 8TB - Silver",
+        "storage": "8TB",
+        "color": "Silver",
+        "price": 20999,
+        "stock": 28,
+        "attributes": {
+          "ram": "128GB",
+          "chip": "M3 Max",
+          "color": "Silver",
+          "storage": "8TB"
+        }
+      },
+      {
+        "id": "5-m3max-128-8tb-space-black",
+        "name": "M3 Max - 128GB - 8TB - Space Black",
+        "storage": "8TB",
+        "color": "Space Black",
+        "price": 20999,
+        "stock": 30,
+        "attributes": {
+          "ram": "128GB",
+          "chip": "M3 Max",
+          "color": "Space Black",
+          "storage": "8TB"
+        }
+      },
+      {
+        "id": "5-m3max-36-1tb-silver",
+        "name": "M3 Max - 36GB - 1TB - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 10999,
+        "stock": 29,
+        "attributes": {
+          "ram": "36GB",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "5-m3max-36-1tb-spaceblack",
+        "name": "M3 Max - 36GB - 1TB - Space Black",
+        "storage": "1TB",
+        "color": "Space Black",
+        "price": 10999,
+        "stock": 27,
+        "attributes": {
+          "ram": "36GB",
+          "color": "Space Black",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "5-m3max-48-2tb-silver",
+        "name": "M3 Max - 48GB - 2TB - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 12999,
+        "stock": 26,
+        "attributes": {
+          "ram": "48GB",
+          "chip": "M3 Max",
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "5-m3max-48-2tb-space-black",
+        "name": "M3 Max - 48GB - 2TB - Space Black",
+        "storage": "2TB",
+        "color": "Space Black",
+        "price": 12999,
+        "stock": 17,
+        "attributes": {
+          "ram": "48GB",
+          "chip": "M3 Max",
+          "color": "Space Black",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "5-m3max-64-4tb-silver",
+        "name": "M3 Max - 64GB - 4TB - Silver",
+        "storage": "4TB",
+        "color": "Silver",
+        "price": 15999,
+        "stock": 13,
+        "attributes": {
+          "ram": "64GB",
+          "chip": "M3 Max",
+          "color": "Silver",
+          "storage": "4TB"
+        }
+      },
+      {
+        "id": "5-m3max-64-4tb-space-black",
+        "name": "M3 Max - 64GB - 4TB - Space Black",
+        "storage": "4TB",
+        "color": "Space Black",
+        "price": 15999,
+        "stock": 29,
+        "attributes": {
+          "ram": "64GB",
+          "chip": "M3 Max",
+          "color": "Space Black",
+          "storage": "4TB"
+        }
+      },
+      {
+        "id": "5-m3pro-18-1tb-silver",
+        "name": "M3 Pro - 18GB - 1TB - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 8999,
+        "stock": 20,
+        "attributes": {
+          "ram": "18GB",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "5-m3pro-18-1tb-spaceblack",
+        "name": "M3 Pro - 18GB - 1TB - Space Black",
+        "storage": "1TB",
+        "color": "Space Black",
+        "price": 8999,
+        "stock": 24,
+        "attributes": {
+          "ram": "18GB",
+          "color": "Space Black",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "5-m3pro-18-512-silver",
+        "name": "M3 Pro - 18GB - 512GB - Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 7999,
+        "stock": 29,
+        "attributes": {
+          "ram": "18GB",
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "5-m3pro-18-512-spaceblack",
+        "name": "M3 Pro - 18GB - 512GB - Space Black",
+        "storage": "512GB",
+        "color": "Space Black",
+        "price": 7999,
+        "stock": 19,
+        "attributes": {
+          "ram": "18GB",
+          "color": "Space Black",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "5-m3pro-36-2tb-silver",
+        "name": "M3 Pro - 36GB - 2TB - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 10999,
+        "stock": 29,
+        "attributes": {
+          "ram": "36GB",
+          "chip": "M3 Pro",
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "5-m3pro-36-2tb-space-black",
+        "name": "M3 Pro - 36GB - 2TB - Space Black",
+        "storage": "2TB",
+        "color": "Space Black",
+        "price": 10999,
+        "stock": 11,
+        "attributes": {
+          "ram": "36GB",
+          "chip": "M3 Pro",
+          "color": "Space Black",
+          "storage": "2TB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "iMac 24-inch",
+    "description": "All-in-one desktop with a stunning 24-inch 4.5K Retina display and Apple M4 chip.",
+    "price": 5799,
+    "stock": 541,
+    "category": "mac",
+    "image": "/images/products/6-imac-24-inch-official.jpg",
+    "createdAt": null,
+    "updatedAt": "2026-09-17T18:16:30.823Z",
+    "variants": [
+      {
+        "id": "6-16gb-256gb-blue",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Blue",
+        "storage": "256GB",
+        "color": "Blue",
+        "price": 5799,
+        "stock": 16,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Blue",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-green",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Green",
+        "storage": "256GB",
+        "color": "Green",
+        "price": 5799,
+        "stock": 28,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Green",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-orange",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Orange",
+        "storage": "256GB",
+        "color": "Orange",
+        "price": 5799,
+        "stock": 26,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Orange",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-pink",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Pink",
+        "storage": "256GB",
+        "color": "Pink",
+        "price": 5799,
+        "stock": 14,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Pink",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-purple",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Purple",
+        "storage": "256GB",
+        "color": "Purple",
+        "price": 5799,
+        "stock": 13,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Purple",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-silver",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Silver",
+        "storage": "256GB",
+        "color": "Silver",
+        "price": 5799,
+        "stock": 16,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Silver",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-yellow",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Yellow",
+        "storage": "256GB",
+        "color": "Yellow",
+        "price": 5799,
+        "stock": 25,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Yellow",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "6-m4-16gb-512gb-blue",
+        "name": "10-Core CPU - 10-Core GPU - 16GB - 512GB - Blue",
+        "storage": "512GB",
+        "color": "Blue",
+        "price": 7199,
+        "stock": 13,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M4",
+          "color": "Blue",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "6-m4-16gb-512gb-green",
+        "name": "10-Core CPU - 10-Core GPU - 16GB - 512GB - Green",
+        "storage": "512GB",
+        "color": "Green",
+        "price": 7199,
+        "stock": 22,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M4",
+          "color": "Green",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "6-m4-16gb-512gb-orange",
+        "name": "10-Core CPU - 10-Core GPU - 16GB - 512GB - Orange",
+        "storage": "512GB",
+        "color": "Orange",
+        "price": 7199,
+        "stock": 19,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M4",
+          "color": "Orange",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "6-m4-16gb-512gb-pink",
+        "name": "10-Core CPU - 10-Core GPU - 16GB - 512GB - Pink",
+        "storage": "512GB",
+        "color": "Pink",
+        "price": 7199,
+        "stock": 28,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M4",
+          "color": "Pink",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "6-m4-16gb-512gb-purple",
+        "name": "10-Core CPU - 10-Core GPU - 16GB - 512GB - Purple",
+        "storage": "512GB",
+        "color": "Purple",
+        "price": 7199,
+        "stock": 26,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M4",
+          "color": "Purple",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "6-m4-16gb-512gb-silver",
+        "name": "10-Core CPU - 10-Core GPU - 16GB - 512GB - Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 7199,
+        "stock": 24,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M4",
+          "color": "Silver",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "6-m4-16gb-512gb-yellow",
+        "name": "10-Core CPU - 10-Core GPU - 16GB - 512GB - Yellow",
+        "storage": "512GB",
+        "color": "Yellow",
+        "price": 7199,
+        "stock": 28,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M4",
+          "color": "Yellow",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "6-m4-24gb-1tb-blue",
+        "name": "10-Core CPU - 10-Core GPU - 24GB - 1TB - Blue",
+        "storage": "1TB",
+        "color": "Blue",
+        "price": 7999,
+        "stock": 16,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Blue",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "6-m4-24gb-1tb-green",
+        "name": "10-Core CPU - 10-Core GPU - 24GB - 1TB - Green",
+        "storage": "1TB",
+        "color": "Green",
+        "price": 7999,
+        "stock": 12,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Green",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "6-m4-24gb-1tb-orange",
+        "name": "10-Core CPU - 10-Core GPU - 24GB - 1TB - Orange",
+        "storage": "1TB",
+        "color": "Orange",
+        "price": 7999,
+        "stock": 14,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Orange",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "6-m4-24gb-1tb-pink",
+        "name": "10-Core CPU - 10-Core GPU - 24GB - 1TB - Pink",
+        "storage": "1TB",
+        "color": "Pink",
+        "price": 7999,
+        "stock": 12,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Pink",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "6-m4-24gb-1tb-purple",
+        "name": "10-Core CPU - 10-Core GPU - 24GB - 1TB - Purple",
+        "storage": "1TB",
+        "color": "Purple",
+        "price": 7999,
+        "stock": 24,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Purple",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "6-m4-24gb-1tb-silver",
+        "name": "10-Core CPU - 10-Core GPU - 24GB - 1TB - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 7999,
+        "stock": 23,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Silver",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "6-m4-24gb-1tb-yellow",
+        "name": "10-Core CPU - 10-Core GPU - 24GB - 1TB - Yellow",
+        "storage": "1TB",
+        "color": "Yellow",
+        "price": 7999,
+        "stock": 12,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Yellow",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "6-m4-32gb-2tb-blue",
+        "name": "10-Core CPU - 10-Core GPU - 32GB - 2TB - Blue",
+        "storage": "2TB",
+        "color": "Blue",
+        "price": 9499,
+        "stock": 17,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Blue",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "6-m4-32gb-2tb-green",
+        "name": "10-Core CPU - 10-Core GPU - 32GB - 2TB - Green",
+        "storage": "2TB",
+        "color": "Green",
+        "price": 9499,
+        "stock": 13,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Green",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "6-m4-32gb-2tb-orange",
+        "name": "10-Core CPU - 10-Core GPU - 32GB - 2TB - Orange",
+        "storage": "2TB",
+        "color": "Orange",
+        "price": 9499,
+        "stock": 30,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Orange",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "6-m4-32gb-2tb-pink",
+        "name": "10-Core CPU - 10-Core GPU - 32GB - 2TB - Pink",
+        "storage": "2TB",
+        "color": "Pink",
+        "price": 9499,
+        "stock": 13,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Pink",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "6-m4-32gb-2tb-purple",
+        "name": "10-Core CPU - 10-Core GPU - 32GB - 2TB - Purple",
+        "storage": "2TB",
+        "color": "Purple",
+        "price": 9499,
+        "stock": 25,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Purple",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "6-m4-32gb-2tb-silver",
+        "name": "10-Core CPU - 10-Core GPU - 32GB - 2TB - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 9499,
+        "stock": 13,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Silver",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "6-m4-32gb-2tb-yellow",
+        "name": "10-Core CPU - 10-Core GPU - 32GB - 2TB - Yellow",
+        "storage": "2TB",
+        "color": "Yellow",
+        "price": 9499,
+        "stock": 19,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Yellow",
+          "cpuGpu": "10-Core CPU - 10-Core GPU",
+          "storage": "2TB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Mac mini M4",
+    "description": "Compact desktop with powerful performance in a tiny design.",
+    "price": 2499,
+    "stock": 159,
+    "category": "mac",
+    "image": "/images/products/7-mac-mini-m4-official.jpg",
+    "createdAt": null,
+    "updatedAt": "2026-09-17T18:28:33.420Z",
+    "variants": [
+      {
+        "id": "7-m4-16gb-256gb",
+        "name": "M4 - 16GB - 256GB - Silver",
+        "storage": "256GB",
+        "color": "Silver",
+        "price": 2499,
+        "stock": 18,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Silver",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "7-m4-16gb-512gb",
+        "name": "M4 - 16GB - 512GB - Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 2999,
+        "stock": 15,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "7-m4-24gb-1tb",
+        "name": "M4 - 24GB - 1TB - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 3999,
+        "stock": 28,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "7-m4-32gb-2tb",
+        "name": "M4 - 32GB - 2TB - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 4999,
+        "stock": 19,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "7-m4pro-24gb-512gb",
+        "name": "M4 Pro - 24GB - 512GB - Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 5999,
+        "stock": 20,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4 Pro",
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "7-m4pro-48gb-1tb",
+        "name": "M4 Pro - 48GB - 1TB - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 7499,
+        "stock": 19,
+        "attributes": {
+          "ram": "48GB",
+          "chip": "M4 Pro",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "7-m4pro-64gb-2tb",
+        "name": "M4 Pro - 64GB - 2TB - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 8999,
+        "stock": 15,
+        "attributes": {
+          "ram": "64GB",
+          "chip": "M4 Pro",
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "7-m4pro-64gb-8tb",
+        "name": "M4 Pro - 64GB - 8TB - Silver",
+        "storage": "8TB",
+        "color": "Silver",
+        "price": 12999,
+        "stock": 25,
+        "attributes": {
+          "ram": "64GB",
+          "chip": "M4 Pro",
+          "color": "Silver",
+          "storage": "8TB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "iPhone 16",
+    "description": "Powerful performance, advanced camera and stunning design with the A18 chip.",
+    "price": 3799,
+    "stock": 298,
+    "category": "iphone",
+    "image": "/images/products/8-iphone-16-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "8-128-black",
+        "name": "128GB - Black",
+        "storage": "128GB",
+        "color": "Black",
+        "price": 3799,
+        "stock": 19,
+        "attributes": {
+          "color": "Black",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "8-128-pink",
+        "name": "128GB - Pink",
+        "storage": "128GB",
+        "color": "Pink",
+        "price": 3799,
+        "stock": 29,
+        "attributes": {
+          "color": "Pink",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "8-128-teal",
+        "name": "128GB - Teal",
+        "storage": "128GB",
+        "color": "Teal",
+        "price": 3799,
+        "stock": 19,
+        "attributes": {
+          "color": "Teal",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "8-128-ultramarine",
+        "name": "128GB - Ultramarine",
+        "storage": "128GB",
+        "color": "Ultramarine",
+        "price": 3799,
+        "stock": 17,
+        "attributes": {
+          "color": "Ultramarine",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "8-128-white",
+        "name": "128GB - White",
+        "storage": "128GB",
+        "color": "White",
+        "price": 3799,
+        "stock": 19,
+        "attributes": {
+          "color": "White",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "8-256-black",
+        "name": "256GB - Black",
+        "storage": "256GB",
+        "color": "Black",
+        "price": 4499,
+        "stock": 26,
+        "attributes": {
+          "color": "Black",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "8-256-pink",
+        "name": "256GB - Pink",
+        "storage": "256GB",
+        "color": "Pink",
+        "price": 4499,
+        "stock": 19,
+        "attributes": {
+          "color": "Pink",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "8-256-teal",
+        "name": "256GB - Teal",
+        "storage": "256GB",
+        "color": "Teal",
+        "price": 4499,
+        "stock": 12,
+        "attributes": {
+          "color": "Teal",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "8-256-ultramarine",
+        "name": "256GB - Ultramarine",
+        "storage": "256GB",
+        "color": "Ultramarine",
+        "price": 4499,
+        "stock": 18,
+        "attributes": {
+          "color": "Ultramarine",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "8-256-white",
+        "name": "256GB - White",
+        "storage": "256GB",
+        "color": "White",
+        "price": 4499,
+        "stock": 21,
+        "attributes": {
+          "color": "White",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "8-512-black",
+        "name": "512GB - Black",
+        "storage": "512GB",
+        "color": "Black",
+        "price": 5499,
+        "stock": 22,
+        "attributes": {
+          "color": "Black",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "8-512-pink",
+        "name": "512GB - Pink",
+        "storage": "512GB",
+        "color": "Pink",
+        "price": 5499,
+        "stock": 29,
+        "attributes": {
+          "color": "Pink",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "8-512-teal",
+        "name": "512GB - Teal",
+        "storage": "512GB",
+        "color": "Teal",
+        "price": 5499,
+        "stock": 13,
+        "attributes": {
+          "color": "Teal",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "8-512-ultramarine",
+        "name": "512GB - Ultramarine",
+        "storage": "512GB",
+        "color": "Ultramarine",
+        "price": 5499,
+        "stock": 14,
+        "attributes": {
+          "color": "Ultramarine",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "8-512-white",
+        "name": "512GB - White",
+        "storage": "512GB",
+        "color": "White",
+        "price": 5499,
+        "stock": 21,
+        "attributes": {
+          "color": "White",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "iPhone 16 Pro Max",
+    "description": "The ultimate iPhone experience with a large Pro display and powerful cameras.",
+    "price": 5999,
+    "stock": 15,
+    "category": "iphone",
+    "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "9-1tb-black",
+        "name": "1TB - Black Titanium",
+        "storage": "1TB",
+        "color": "Black Titanium",
+        "price": 7999,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "9-1tb-desert",
+        "name": "1TB - Desert Titanium",
+        "storage": "1TB",
+        "color": "Desert Titanium",
+        "price": 7999,
+        "stock": 10,
+        "attributes": {
+          "color": "Desert Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "9-1tb-natural",
+        "name": "1TB - Natural Titanium",
+        "storage": "1TB",
+        "color": "Natural Titanium",
+        "price": 7999,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "9-1tb-white",
+        "name": "1TB - White Titanium",
+        "storage": "1TB",
+        "color": "White Titanium",
+        "price": 7999,
+        "stock": 10,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "9-256-black",
+        "name": "256GB - Black Titanium",
+        "storage": "256GB",
+        "color": "Black Titanium",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "9-256-desert",
+        "name": "256GB - Desert Titanium",
+        "storage": "256GB",
+        "color": "Desert Titanium",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Desert Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "9-256-natural",
+        "name": "256GB - Natural Titanium",
+        "storage": "256GB",
+        "color": "Natural Titanium",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "9-256-white",
+        "name": "256GB - White Titanium",
+        "storage": "256GB",
+        "color": "White Titanium",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "9-512-black",
+        "name": "512GB - Black Titanium",
+        "storage": "512GB",
+        "color": "Black Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "9-512-desert",
+        "name": "512GB - Desert Titanium",
+        "storage": "512GB",
+        "color": "Desert Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Desert Titanium",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "9-512-natural",
+        "name": "512GB - Natural Titanium",
+        "storage": "512GB",
+        "color": "Natural Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "9-512-white",
+        "name": "512GB - White Titanium",
+        "storage": "512GB",
+        "color": "White Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "iPhone 17",
+    "description": "A powerful everyday iPhone with an advanced dual-camera system and A19 chip.",
+    "price": 4299,
+    "stock": 20,
+    "category": "iphone",
+    "image": "/images/products/10-iphone-17-10-256-black.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "10-256-black",
+        "name": "256GB - Black",
+        "storage": "256GB",
+        "color": "Black",
+        "price": 4299,
+        "stock": 10,
+        "attributes": {
+          "color": "Black",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "10-256-lavender",
+        "name": "256GB - Lavender",
+        "storage": "256GB",
+        "color": "Lavender",
+        "price": 4299,
+        "stock": 10,
+        "attributes": {
+          "color": "Lavender",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "10-256-mist-blue",
+        "name": "256GB - Mist Blue",
+        "storage": "256GB",
+        "color": "Mist Blue",
+        "price": 4299,
+        "stock": 10,
+        "attributes": {
+          "color": "Mist Blue",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "10-256-sage",
+        "name": "256GB - Sage",
+        "storage": "256GB",
+        "color": "Sage",
+        "price": 4299,
+        "stock": 10,
+        "attributes": {
+          "color": "Sage",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "10-256-white",
+        "name": "256GB - White",
+        "storage": "256GB",
+        "color": "White",
+        "price": 4299,
+        "stock": 10,
+        "attributes": {
+          "color": "White",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "10-512-black",
+        "name": "512GB - Black",
+        "storage": "512GB",
+        "color": "Black",
+        "price": 5299,
+        "stock": 10,
+        "attributes": {
+          "color": "Black",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "10-512-lavender",
+        "name": "512GB - Lavender",
+        "storage": "512GB",
+        "color": "Lavender",
+        "price": 5299,
+        "stock": 10,
+        "attributes": {
+          "color": "Lavender",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "10-512-mist-blue",
+        "name": "512GB - Mist Blue",
+        "storage": "512GB",
+        "color": "Mist Blue",
+        "price": 5299,
+        "stock": 10,
+        "attributes": {
+          "color": "Mist Blue",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "10-512-sage",
+        "name": "512GB - Sage",
+        "storage": "512GB",
+        "color": "Sage",
+        "price": 5299,
+        "stock": 10,
+        "attributes": {
+          "color": "Sage",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "10-512-white",
+        "name": "512GB - White",
+        "storage": "512GB",
+        "color": "White",
+        "price": 5299,
+        "stock": 10,
+        "attributes": {
+          "color": "White",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "AirPods 4",
+    "description": "Comfortable wireless earbuds with rich sound and a refined design.",
+    "price": 599,
+    "stock": 19,
+    "category": "audio",
+    "image": "/images/products/11-airpods-4-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 12,
+    "name": "AirPods Max 2",
+    "description": "Premium over-ear headphones with high-fidelity audio, Adaptive Audio and advanced Active Noise Cancellation.",
+    "price": 2299,
+    "stock": 49,
+    "category": "audio",
+    "image": "/images/products/12-airpods-max-2-official.jpg",
+    "createdAt": null,
+    "updatedAt": "2026-09-17T19:15:21.763Z",
+    "variants": [
+      {
+        "id": "12-blue",
+        "name": "Blue",
+        "storage": "",
+        "color": "",
+        "price": 2299,
+        "stock": 10,
+        "attributes": {
+          "label": "Blue"
+        }
+      },
+      {
+        "id": "12-midnight",
+        "name": "Midnight",
+        "storage": "",
+        "color": "",
+        "price": 2299,
+        "stock": 10,
+        "attributes": {
+          "label": "Midnight"
+        }
+      },
+      {
+        "id": "12-orange",
+        "name": "Orange",
+        "storage": "",
+        "color": "",
+        "price": 2299,
+        "stock": 10,
+        "attributes": {
+          "label": "Orange"
+        }
+      },
+      {
+        "id": "12-purple",
+        "name": "Purple",
+        "storage": "",
+        "color": "",
+        "price": 2299,
+        "stock": 10,
+        "attributes": {
+          "label": "Purple"
+        }
+      },
+      {
+        "id": "12-starlight",
+        "name": "Starlight",
+        "storage": "",
+        "color": "",
+        "price": 2299,
+        "stock": 9,
+        "attributes": {
+          "label": "Starlight"
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Beats Studio Pro",
+    "description": "Premium wireless headphones with immersive sound, Active Noise Cancellation and personalised spatial audio.",
+    "price": 1449,
+    "stock": 10,
+    "category": "audio",
+    "image": "/images/products/13-beats-studio-pro-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "13-black",
+        "name": "Black",
+        "storage": "",
+        "color": "",
+        "price": 1449,
+        "stock": 10,
+        "attributes": {
+          "label": "Black"
+        }
+      },
+      {
+        "id": "13-deep-brown",
+        "name": "Deep Brown",
+        "storage": "",
+        "color": "",
+        "price": 1449,
+        "stock": 10,
+        "attributes": {
+          "label": "Deep Brown"
+        }
+      },
+      {
+        "id": "13-navy",
+        "name": "Navy",
+        "storage": "",
+        "color": "",
+        "price": 1449,
+        "stock": 10,
+        "attributes": {
+          "label": "Navy"
+        }
+      },
+      {
+        "id": "13-sandstone",
+        "name": "Sandstone",
+        "storage": "",
+        "color": "",
+        "price": 1449,
+        "stock": 10,
+        "attributes": {
+          "label": "Sandstone"
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Magic Mouse",
+    "description": "Wireless rechargeable mouse with a smooth Multi-Touch surface.",
+    "price": 399,
+    "stock": 18,
+    "category": "accessories",
+    "image": "/images/products/14-magic-mouse-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "14-black",
+        "name": "Black Multi-Touch Surface",
+        "storage": "",
+        "color": "",
+        "price": 399,
+        "stock": 10,
+        "attributes": {
+          "label": "Black Multi-Touch Surface"
+        }
+      },
+      {
+        "id": "14-white",
+        "name": "White Multi-Touch Surface",
+        "storage": "",
+        "color": "",
+        "price": 399,
+        "stock": 10,
+        "attributes": {
+          "label": "White Multi-Touch Surface"
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Magic Keyboard",
+    "description": "Elegant wireless keyboard with a comfortable and precise typing experience.",
+    "price": 399,
+    "stock": 13,
+    "category": "accessories",
+    "image": "/images/products/15-magic-keyboard-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "15-black",
+        "name": "Black",
+        "storage": "",
+        "color": "",
+        "price": 399,
+        "stock": 10,
+        "attributes": {
+          "label": "Black"
+        }
+      },
+      {
+        "id": "15-white",
+        "name": "White",
+        "storage": "",
+        "color": "",
+        "price": 399,
+        "stock": 10,
+        "attributes": {
+          "label": "White"
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "MagSafe Charger (1m)",
+    "description": "Wireless magnetic charger designed for fast and convenient charging.",
+    "price": 219,
+    "stock": 25,
+    "category": "accessories",
+    "image": "/images/products/16-magsafe-charger-1m-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 17,
+    "name": "USB-C Power Adapter 35W",
+    "description": "Compact dual-port USB-C power adapter for charging your devices.",
+    "price": 269,
+    "stock": 22,
+    "category": "accessories",
+    "image": "/images/products/17-usb-c-power-adapter-35w-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 18,
+    "name": "USB-C to Lightning Cable",
+    "description": "Durable charging and data cable for compatible Apple devices.",
+    "price": 129,
+    "stock": 29,
+    "category": "accessories",
+    "image": "/images/products/18-usb-c-to-lightning-cable-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 19,
+    "name": "USB-C Digital AV Multiport Adapter",
+    "description": "Multi-port USB-C adapter for connecting displays, storage and accessories.",
+    "price": 349,
+    "stock": 14,
+    "category": "accessories",
+    "image": "/images/products/19-usb-c-digital-av-multiport-adapter-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 20,
+    "name": "Apple Watch Series 10",
+    "description": "Advanced health, fitness and smart features in a refined design.",
+    "price": 1799,
+    "stock": 14,
+    "category": "accessories",
+    "image": "/images/products/20-apple-watch-series-10-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "20-42mm-jet-black",
+        "name": "42mm - Jet Black Aluminium",
+        "storage": "",
+        "color": "Jet Black Aluminium",
+        "price": 1799,
+        "stock": 10,
+        "attributes": {
+          "size": "42mm",
+          "color": "Jet Black Aluminium"
+        }
+      },
+      {
+        "id": "20-42mm-rose-gold",
+        "name": "42mm - Rose Gold Aluminium",
+        "storage": "",
+        "color": "Rose Gold Aluminium",
+        "price": 1799,
+        "stock": 10,
+        "attributes": {
+          "size": "42mm",
+          "color": "Rose Gold Aluminium"
+        }
+      },
+      {
+        "id": "20-42mm-silver",
+        "name": "42mm - Silver Aluminium",
+        "storage": "",
+        "color": "Silver Aluminium",
+        "price": 1799,
+        "stock": 10,
+        "attributes": {
+          "size": "42mm",
+          "color": "Silver Aluminium"
+        }
+      },
+      {
+        "id": "20-46mm-jet-black",
+        "name": "46mm - Jet Black Aluminium",
+        "storage": "",
+        "color": "Jet Black Aluminium",
+        "price": 2099,
+        "stock": 10,
+        "attributes": {
+          "size": "46mm",
+          "color": "Jet Black Aluminium"
+        }
+      },
+      {
+        "id": "20-46mm-rose-gold",
+        "name": "46mm - Rose Gold Aluminium",
+        "storage": "",
+        "color": "Rose Gold Aluminium",
+        "price": 2099,
+        "stock": 10,
+        "attributes": {
+          "size": "46mm",
+          "color": "Rose Gold Aluminium"
+        }
+      },
+      {
+        "id": "20-46mm-silver",
+        "name": "46mm - Silver Aluminium",
+        "storage": "",
+        "color": "Silver Aluminium",
+        "price": 2099,
+        "stock": 10,
+        "attributes": {
+          "size": "46mm",
+          "color": "Silver Aluminium"
+        }
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "MacBook Air M2",
+    "description": "Slim and silent everyday laptop powered by Apple M2 chip.",
+    "price": 4799,
+    "stock": 359,
+    "category": "mac",
+    "image": "/images/products/21-macbook-air-m2-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "21-16gb-1tb-midnight",
+        "name": "16GB RAM - 1TB SSD - Midnight",
+        "storage": "1TB",
+        "color": "Midnight",
+        "price": 6799,
+        "stock": 30,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M2",
+          "color": "Midnight",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "21-16gb-1tb-silver",
+        "name": "16GB RAM - 1TB SSD - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 6799,
+        "stock": 13,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M2",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "21-16gb-1tb-space-gray",
+        "name": "16GB RAM - 1TB SSD - Space Gray",
+        "storage": "1TB",
+        "color": "Space Gray",
+        "price": 6799,
+        "stock": 23,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M2",
+          "color": "Space Gray",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "21-16gb-1tb-starlight",
+        "name": "16GB RAM - 1TB SSD - Starlight",
+        "storage": "1TB",
+        "color": "Starlight",
+        "price": 6799,
+        "stock": 15,
+        "attributes": {
+          "ram": "16GB",
+          "chip": "M2",
+          "color": "Starlight",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "21-16gb-512gb-midnight",
+        "name": "16GB RAM - 512GB SSD - Midnight",
+        "storage": "512GB",
+        "color": "Midnight",
+        "price": 5799,
+        "stock": 29,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Midnight",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "21-16gb-512gb-silver",
+        "name": "16GB RAM - 512GB SSD - Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 5799,
+        "stock": 17,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "21-16gb-512gb-space-gray",
+        "name": "16GB RAM - 512GB SSD - Space Gray",
+        "storage": "512GB",
+        "color": "Space Gray",
+        "price": 5799,
+        "stock": 28,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Space Gray",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "21-16gb-512gb-starlight",
+        "name": "16GB RAM - 512GB SSD - Starlight",
+        "storage": "512GB",
+        "color": "Starlight",
+        "price": 5799,
+        "stock": 30,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Starlight",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "21-24gb-2tb-midnight",
+        "name": "24GB RAM - 2TB SSD - Midnight",
+        "storage": "2TB",
+        "color": "Midnight",
+        "price": 8299,
+        "stock": 17,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M2",
+          "color": "Midnight",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "21-24gb-2tb-silver",
+        "name": "24GB RAM - 2TB SSD - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 8299,
+        "stock": 13,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M2",
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "21-24gb-2tb-space-gray",
+        "name": "24GB RAM - 2TB SSD - Space Gray",
+        "storage": "2TB",
+        "color": "Space Gray",
+        "price": 8299,
+        "stock": 18,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M2",
+          "color": "Space Gray",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "21-24gb-2tb-starlight",
+        "name": "24GB RAM - 2TB SSD - Starlight",
+        "storage": "2TB",
+        "color": "Starlight",
+        "price": 8299,
+        "stock": 20,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M2",
+          "color": "Starlight",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "21-8gb-256gb-midnight",
+        "name": "8GB RAM - 256GB SSD - Midnight",
+        "storage": "256GB",
+        "color": "Midnight",
+        "price": 4799,
+        "stock": 28,
+        "attributes": {
+          "ram": "8GB",
+          "color": "Midnight",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "21-8gb-256gb-silver",
+        "name": "8GB RAM - 256GB SSD - Silver",
+        "storage": "256GB",
+        "color": "Silver",
+        "price": 4799,
+        "stock": 18,
+        "attributes": {
+          "ram": "8GB",
+          "color": "Silver",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "21-8gb-256gb-space-gray",
+        "name": "8GB RAM - 256GB SSD - Space Gray",
+        "storage": "256GB",
+        "color": "Space Gray",
+        "price": 4799,
+        "stock": 30,
+        "attributes": {
+          "ram": "8GB",
+          "color": "Space Gray",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "21-8gb-256gb-starlight",
+        "name": "8GB RAM - 256GB SSD - Starlight",
+        "storage": "256GB",
+        "color": "Starlight",
+        "price": 4799,
+        "stock": 30,
+        "attributes": {
+          "ram": "8GB",
+          "color": "Starlight",
+          "storage": "256GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "MacBook Air M4",
+    "description": "Next-generation MacBook Air with powerful M4 performance.",
+    "price": 4499,
+    "stock": 296,
+    "category": "mac",
+    "image": "/images/products/22-macbook-air-m4-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "22-16gb-256gb-midnight",
+        "name": "16GB RAM - 256GB SSD - Midnight",
+        "storage": "256GB",
+        "color": "Midnight",
+        "price": 4499,
+        "stock": 29,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Midnight",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "22-16gb-256gb-silver",
+        "name": "16GB RAM - 256GB SSD - Silver",
+        "storage": "256GB",
+        "color": "Silver",
+        "price": 4499,
+        "stock": 30,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Silver",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "22-16gb-256gb-sky-blue",
+        "name": "16GB RAM - 256GB SSD - Sky Blue",
+        "storage": "256GB",
+        "color": "Sky Blue",
+        "price": 4499,
+        "stock": 26,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Sky Blue",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "22-16gb-256gb-starlight",
+        "name": "16GB RAM - 256GB SSD - Starlight",
+        "storage": "256GB",
+        "color": "Starlight",
+        "price": 4499,
+        "stock": 20,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Starlight",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "22-24gb-1tb-midnight",
+        "name": "24GB RAM - 1TB SSD - Midnight",
+        "storage": "1TB",
+        "color": "Midnight",
+        "price": 6799,
+        "stock": 16,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Midnight",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "22-24gb-1tb-silver",
+        "name": "24GB RAM - 1TB SSD - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 6799,
+        "stock": 24,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "22-24gb-1tb-sky-blue",
+        "name": "24GB RAM - 1TB SSD - Sky Blue",
+        "storage": "1TB",
+        "color": "Sky Blue",
+        "price": 6799,
+        "stock": 17,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Sky Blue",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "22-24gb-1tb-starlight",
+        "name": "24GB RAM - 1TB SSD - Starlight",
+        "storage": "1TB",
+        "color": "Starlight",
+        "price": 6799,
+        "stock": 15,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M4",
+          "color": "Starlight",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "22-24gb-512gb-midnight",
+        "name": "24GB RAM - 512GB SSD - Midnight",
+        "storage": "512GB",
+        "color": "Midnight",
+        "price": 5799,
+        "stock": 15,
+        "attributes": {
+          "ram": "24GB",
+          "color": "Midnight",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "22-24gb-512gb-silver",
+        "name": "24GB RAM - 512GB SSD - Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 5799,
+        "stock": 13,
+        "attributes": {
+          "ram": "24GB",
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "22-24gb-512gb-sky-blue",
+        "name": "24GB RAM - 512GB SSD - Sky Blue",
+        "storage": "512GB",
+        "color": "Sky Blue",
+        "price": 5799,
+        "stock": 12,
+        "attributes": {
+          "ram": "24GB",
+          "color": "Sky Blue",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "22-24gb-512gb-starlight",
+        "name": "24GB RAM - 512GB SSD - Starlight",
+        "storage": "512GB",
+        "color": "Starlight",
+        "price": 5799,
+        "stock": 14,
+        "attributes": {
+          "ram": "24GB",
+          "color": "Starlight",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "22-32gb-2tb-midnight",
+        "name": "32GB RAM - 2TB SSD - Midnight",
+        "storage": "2TB",
+        "color": "Midnight",
+        "price": 8299,
+        "stock": 12,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Midnight",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "22-32gb-2tb-silver",
+        "name": "32GB RAM - 2TB SSD - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 8299,
+        "stock": 22,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "22-32gb-2tb-sky-blue",
+        "name": "32GB RAM - 2TB SSD - Sky Blue",
+        "storage": "2TB",
+        "color": "Sky Blue",
+        "price": 8299,
+        "stock": 18,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Sky Blue",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "22-32gb-2tb-starlight",
+        "name": "32GB RAM - 2TB SSD - Starlight",
+        "storage": "2TB",
+        "color": "Starlight",
+        "price": 8299,
+        "stock": 13,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M4",
+          "color": "Starlight",
+          "storage": "2TB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "MacBook Pro 16",
+    "description": "Large professional notebook built for demanding creative workflows.",
+    "price": 11999,
+    "stock": 311,
+    "category": "mac",
+    "image": "/images/products/23-macbook-pro-16-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "23-m3max-128-8tb-silver",
+        "name": "M3 Max - 128GB - 8TB - Silver",
+        "storage": "8TB",
+        "color": "Silver",
+        "price": 25999,
+        "stock": 13,
+        "attributes": {
+          "ram": "128GB",
+          "chip": "M3 Max",
+          "color": "Silver",
+          "storage": "8TB"
+        }
+      },
+      {
+        "id": "23-m3max-128-8tb-space-black",
+        "name": "M3 Max - 128GB - 8TB - Space Black",
+        "storage": "8TB",
+        "color": "Space Black",
+        "price": 25999,
+        "stock": 16,
+        "attributes": {
+          "ram": "128GB",
+          "chip": "M3 Max",
+          "color": "Space Black",
+          "storage": "8TB"
+        }
+      },
+      {
+        "id": "23-m3max-36-1tb-silver",
+        "name": "M3 Max - 36GB - 1TB - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 14999,
+        "stock": 29,
+        "attributes": {
+          "ram": "36GB",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "23-m3max-36-1tb-space-black",
+        "name": "M3 Max - 36GB - 1TB - Space Black",
+        "storage": "1TB",
+        "color": "Space Black",
+        "price": 14999,
+        "stock": 28,
+        "attributes": {
+          "ram": "36GB",
+          "color": "Space Black",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "23-m3max-48-1tb-silver",
+        "name": "M3 Max - 48GB - 1TB - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 16999,
+        "stock": 21,
+        "attributes": {
+          "ram": "48GB",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "23-m3max-48-1tb-space-black",
+        "name": "M3 Max - 48GB - 1TB - Space Black",
+        "storage": "1TB",
+        "color": "Space Black",
+        "price": 16999,
+        "stock": 14,
+        "attributes": {
+          "ram": "48GB",
+          "color": "Space Black",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "23-m3max-48-2tb-silver",
+        "name": "M3 Max - 48GB - 2TB - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 17999,
+        "stock": 30,
+        "attributes": {
+          "ram": "48GB",
+          "chip": "M3 Max",
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "23-m3max-48-2tb-space-black",
+        "name": "M3 Max - 48GB - 2TB - Space Black",
+        "storage": "2TB",
+        "color": "Space Black",
+        "price": 17999,
+        "stock": 29,
+        "attributes": {
+          "ram": "48GB",
+          "chip": "M3 Max",
+          "color": "Space Black",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "23-m3max-64-4tb-silver",
+        "name": "M3 Max - 64GB - 4TB - Silver",
+        "storage": "4TB",
+        "color": "Silver",
+        "price": 20999,
+        "stock": 28,
+        "attributes": {
+          "ram": "64GB",
+          "chip": "M3 Max",
+          "color": "Silver",
+          "storage": "4TB"
+        }
+      },
+      {
+        "id": "23-m3max-64-4tb-space-black",
+        "name": "M3 Max - 64GB - 4TB - Space Black",
+        "storage": "4TB",
+        "color": "Space Black",
+        "price": 20999,
+        "stock": 14,
+        "attributes": {
+          "ram": "64GB",
+          "chip": "M3 Max",
+          "color": "Space Black",
+          "storage": "4TB"
+        }
+      },
+      {
+        "id": "23-m3pro-18-512-silver",
+        "name": "M3 Pro - 18GB - 512GB - Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 11999,
+        "stock": 14,
+        "attributes": {
+          "ram": "18GB",
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "23-m3pro-18-512-space-black",
+        "name": "M3 Pro - 18GB - 512GB - Space Black",
+        "storage": "512GB",
+        "color": "Space Black",
+        "price": 11999,
+        "stock": 23,
+        "attributes": {
+          "ram": "18GB",
+          "color": "Space Black",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "23-m3pro-36-2tb-silver",
+        "name": "M3 Pro - 36GB - 2TB - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 15999,
+        "stock": 22,
+        "attributes": {
+          "ram": "36GB",
+          "chip": "M3 Pro",
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "23-m3pro-36-2tb-space-black",
+        "name": "M3 Pro - 36GB - 2TB - Space Black",
+        "storage": "2TB",
+        "color": "Space Black",
+        "price": 15999,
+        "stock": 30,
+        "attributes": {
+          "ram": "36GB",
+          "chip": "M3 Pro",
+          "color": "Space Black",
+          "storage": "2TB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Mac Studio",
+    "description": "Powerful desktop workstation designed for professional performance with Apple silicon.",
+    "price": 10999,
+    "stock": 111,
+    "category": "mac",
+    "image": "/images/products/24-mac-studio-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "24-m5max-128-8tb",
+        "name": "M5 Max - 128GB - 8TB SSD",
+        "storage": "8TB",
+        "color": "Silver",
+        "price": 22999,
+        "stock": 13,
+        "attributes": {
+          "ram": "128GB",
+          "chip": "M5 Max",
+          "color": "Silver",
+          "storage": "8TB"
+        }
+      },
+      {
+        "id": "24-m5max-36-512",
+        "name": "M5 Max - 36GB - 512GB SSD",
+        "storage": "512GB SSD",
+        "color": "Silver",
+        "price": 10999,
+        "stock": 15,
+        "attributes": {
+          "ram": "36GB",
+          "chip": "M5 Max",
+          "color": "Silver",
+          "storage": "512GB SSD"
+        }
+      },
+      {
+        "id": "24-m5max-64-1tb",
+        "name": "M5 Max - 64GB - 1TB SSD",
+        "storage": "1TB SSD",
+        "color": "Silver",
+        "price": 13999,
+        "stock": 22,
+        "attributes": {
+          "ram": "64GB",
+          "chip": "M5 Max",
+          "color": "Silver",
+          "storage": "1TB SSD"
+        }
+      },
+      {
+        "id": "24-m5ultra-256-4tb",
+        "name": "M5 Ultra - 256GB - 4TB SSD",
+        "storage": "4TB",
+        "color": "Silver",
+        "price": 29999,
+        "stock": 12,
+        "attributes": {
+          "ram": "256GB",
+          "chip": "M5 Ultra",
+          "color": "Silver",
+          "storage": "4TB"
+        }
+      },
+      {
+        "id": "24-m5ultra-512-16tb",
+        "name": "M5 Ultra - 512GB - 16TB SSD",
+        "storage": "16TB",
+        "color": "Silver",
+        "price": 44999,
+        "stock": 20,
+        "attributes": {
+          "ram": "512GB",
+          "chip": "M5 Ultra",
+          "color": "Silver",
+          "storage": "16TB"
+        }
+      },
+      {
+        "id": "24-m5ultra-96-1tb",
+        "name": "M5 Ultra - 96GB - 1TB SSD",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 18999,
+        "stock": 29,
+        "attributes": {
+          "ram": "96GB",
+          "chip": "M5 Ultra",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Studio Display",
+    "description": "27-inch 5K Retina display designed for creative professionals with a 12MP Center Stage camera.",
+    "price": 6499,
+    "stock": 10,
+    "category": "mac",
+    "image": "/images/products/25-studio-display-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 26,
+    "name": "iPhone 16 Plus",
+    "description": "Large display iPhone with powerful performance, advanced camera system and excellent battery life.",
+    "price": 4499,
+    "stock": 149,
+    "category": "iphone",
+    "image": "/images/products/26-iphone-16-plus-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "26-128-black",
+        "name": "128GB - Black",
+        "storage": "128GB",
+        "color": "Black",
+        "price": 4499,
+        "stock": 9,
+        "attributes": {
+          "color": "Black",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "26-128-pink",
+        "name": "128GB - Pink",
+        "storage": "128GB",
+        "color": "Pink",
+        "price": 4499,
+        "stock": 10,
+        "attributes": {
+          "color": "Pink",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "26-128-teal",
+        "name": "128GB - Teal",
+        "storage": "128GB",
+        "color": "Teal",
+        "price": 4499,
+        "stock": 10,
+        "attributes": {
+          "color": "Teal",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "26-128-ultramarine",
+        "name": "128GB - Ultramarine",
+        "storage": "128GB",
+        "color": "Ultramarine",
+        "price": 4499,
+        "stock": 10,
+        "attributes": {
+          "color": "Ultramarine",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "26-128-white",
+        "name": "128GB - White",
+        "storage": "128GB",
+        "color": "White",
+        "price": 4499,
+        "stock": 10,
+        "attributes": {
+          "color": "White",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "26-256-black",
+        "name": "256GB - Black",
+        "storage": "256GB",
+        "color": "Black",
+        "price": 4999,
+        "stock": 10,
+        "attributes": {
+          "color": "Black",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "26-256-pink",
+        "name": "256GB - Pink",
+        "storage": "256GB",
+        "color": "Pink",
+        "price": 4999,
+        "stock": 10,
+        "attributes": {
+          "color": "Pink",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "26-256-teal",
+        "name": "256GB - Teal",
+        "storage": "256GB",
+        "color": "Teal",
+        "price": 4999,
+        "stock": 10,
+        "attributes": {
+          "color": "Teal",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "26-256-ultramarine",
+        "name": "256GB - Ultramarine",
+        "storage": "256GB",
+        "color": "Ultramarine",
+        "price": 4999,
+        "stock": 10,
+        "attributes": {
+          "color": "Ultramarine",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "26-256-white",
+        "name": "256GB - White",
+        "storage": "256GB",
+        "color": "White",
+        "price": 4999,
+        "stock": 10,
+        "attributes": {
+          "color": "White",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "26-512-black",
+        "name": "512GB - Black",
+        "storage": "512GB",
+        "color": "Black",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Black",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "26-512-pink",
+        "name": "512GB - Pink",
+        "storage": "512GB",
+        "color": "Pink",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Pink",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "26-512-teal",
+        "name": "512GB - Teal",
+        "storage": "512GB",
+        "color": "Teal",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Teal",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "26-512-ultramarine",
+        "name": "512GB - Ultramarine",
+        "storage": "512GB",
+        "color": "Ultramarine",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Ultramarine",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "26-512-white",
+        "name": "512GB - White",
+        "storage": "512GB",
+        "color": "White",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "White",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "iPhone 15 Pro",
+    "description": "Pro performance with titanium design and advanced camera system.",
+    "price": 5499,
+    "stock": 12,
+    "category": "iphone",
+    "image": "/images/products/27-iphone-15-pro-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "27-128-black",
+        "name": "128GB - Black Titanium",
+        "storage": "128GB",
+        "color": "Black Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "27-128-blue",
+        "name": "128GB - Blue Titanium",
+        "storage": "128GB",
+        "color": "Blue Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "color": "Blue Titanium",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "27-128-natural",
+        "name": "128GB - Natural Titanium",
+        "storage": "128GB",
+        "color": "Natural Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "27-128-white",
+        "name": "128GB - White Titanium",
+        "storage": "128GB",
+        "color": "White Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "27-1tb-black",
+        "name": "1TB - Black Titanium",
+        "storage": "1TB",
+        "color": "Black Titanium",
+        "price": 7499,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "27-1tb-blue",
+        "name": "1TB - Blue Titanium",
+        "storage": "1TB",
+        "color": "Blue Titanium",
+        "price": 7499,
+        "stock": 10,
+        "attributes": {
+          "color": "Blue Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "27-1tb-natural",
+        "name": "1TB - Natural Titanium",
+        "storage": "1TB",
+        "color": "Natural Titanium",
+        "price": 7499,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "27-1tb-white",
+        "name": "1TB - White Titanium",
+        "storage": "1TB",
+        "color": "White Titanium",
+        "price": 7499,
+        "stock": 10,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "27-256-black",
+        "name": "256GB - Black Titanium",
+        "storage": "256GB",
+        "color": "Black Titanium",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "27-256-blue",
+        "name": "256GB - Blue Titanium",
+        "storage": "256GB",
+        "color": "Blue Titanium",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Blue Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "27-256-natural",
+        "name": "256GB - Natural Titanium",
+        "storage": "256GB",
+        "color": "Natural Titanium",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "27-256-white",
+        "name": "256GB - White Titanium",
+        "storage": "256GB",
+        "color": "White Titanium",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "27-512-black",
+        "name": "512GB - Black Titanium",
+        "storage": "512GB",
+        "color": "Black Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Black Titanium",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "27-512-blue",
+        "name": "512GB - Blue Titanium",
+        "storage": "512GB",
+        "color": "Blue Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Blue Titanium",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "27-512-natural",
+        "name": "512GB - Natural Titanium",
+        "storage": "512GB",
+        "color": "Natural Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Natural Titanium",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "27-512-white",
+        "name": "512GB - White Titanium",
+        "storage": "512GB",
+        "color": "White Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "White Titanium",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "iPhone 17 Pro Max",
+    "description": "Premium iPhone with a large Pro display, advanced camera system and powerful A19 Pro performance.",
+    "price": 5999,
+    "stock": 10,
+    "category": "iphone",
+    "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "28-1tb-cosmic-orange",
+        "name": "1TB - Cosmic Orange",
+        "storage": "1TB",
+        "color": "Cosmic Orange",
+        "price": 7999,
+        "stock": 10,
+        "attributes": {
+          "color": "Cosmic Orange",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "28-1tb-deep-blue",
+        "name": "1TB - Deep Blue",
+        "storage": "1TB",
+        "color": "Deep Blue",
+        "price": 7999,
+        "stock": 10,
+        "attributes": {
+          "color": "Deep Blue",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "28-1tb-silver",
+        "name": "1TB - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 7999,
+        "stock": 10,
+        "attributes": {
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "28-256-cosmic-orange",
+        "name": "256GB - Cosmic Orange",
+        "storage": "256GB",
+        "color": "Cosmic Orange",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Cosmic Orange",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "28-256-deep-blue",
+        "name": "256GB - Deep Blue",
+        "storage": "256GB",
+        "color": "Deep Blue",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Deep Blue",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "28-256-silver",
+        "name": "256GB - Silver",
+        "storage": "256GB",
+        "color": "Silver",
+        "price": 5999,
+        "stock": 10,
+        "attributes": {
+          "color": "Silver",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "28-2tb-cosmic-orange",
+        "name": "2TB - Cosmic Orange",
+        "storage": "2TB",
+        "color": "Cosmic Orange",
+        "price": 9999,
+        "stock": 10,
+        "attributes": {
+          "color": "Cosmic Orange",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "28-2tb-deep-blue",
+        "name": "2TB - Deep Blue",
+        "storage": "2TB",
+        "color": "Deep Blue",
+        "price": 9999,
+        "stock": 10,
+        "attributes": {
+          "color": "Deep Blue",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "28-2tb-silver",
+        "name": "2TB - Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 9999,
+        "stock": 10,
+        "attributes": {
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "28-512-cosmic-orange",
+        "name": "512GB - Cosmic Orange",
+        "storage": "512GB",
+        "color": "Cosmic Orange",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Cosmic Orange",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "28-512-deep-blue",
+        "name": "512GB - Deep Blue",
+        "storage": "512GB",
+        "color": "Deep Blue",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Deep Blue",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "28-512-silver",
+        "name": "512GB - Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "iPhone 17 Pro",
+    "description": "Professional iPhone with advanced cameras, ProMotion display and A19 Pro performance.",
+    "price": 5499,
+    "stock": 15,
+    "category": "iphone",
+    "image": "/images/products/29-iphone-17-pro-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "29-1tb-cosmic-orange",
+        "name": "1TB - Cosmic Orange",
+        "storage": "1TB",
+        "color": "Cosmic Orange",
+        "price": 7499,
+        "stock": 10,
+        "attributes": {
+          "color": "Cosmic Orange",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "29-1tb-deep-blue",
+        "name": "1TB - Deep Blue",
+        "storage": "1TB",
+        "color": "Deep Blue",
+        "price": 7499,
+        "stock": 10,
+        "attributes": {
+          "color": "Deep Blue",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "29-1tb-silver",
+        "name": "1TB - Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 7499,
+        "stock": 10,
+        "attributes": {
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "29-256-cosmic-orange",
+        "name": "256GB - Cosmic Orange",
+        "storage": "256GB",
+        "color": "Cosmic Orange",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "color": "Cosmic Orange",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "29-256-deep-blue",
+        "name": "256GB - Deep Blue",
+        "storage": "256GB",
+        "color": "Deep Blue",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "color": "Deep Blue",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "29-256-silver",
+        "name": "256GB - Silver",
+        "storage": "256GB",
+        "color": "Silver",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "color": "Silver",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "29-512-cosmic-orange",
+        "name": "512GB - Cosmic Orange",
+        "storage": "512GB",
+        "color": "Cosmic Orange",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "color": "Cosmic Orange",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "29-512-deep-blue",
+        "name": "512GB - Deep Blue",
+        "storage": "512GB",
+        "color": "Deep Blue",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "color": "Deep Blue",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "29-512-silver",
+        "name": "512GB - Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "iPhone 15",
+    "description": "Reliable everyday iPhone with a Super Retina XDR display and advanced dual-camera system.",
+    "price": 4399,
+    "stock": 17,
+    "category": "iphone",
+    "image": "/images/products/30-iphone-15-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "30-128-black",
+        "name": "128GB - Black",
+        "storage": "128GB",
+        "color": "Black",
+        "price": 4399,
+        "stock": 10,
+        "attributes": {
+          "color": "Black",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "30-128-blue",
+        "name": "128GB - Blue",
+        "storage": "128GB",
+        "color": "Blue",
+        "price": 4399,
+        "stock": 10,
+        "attributes": {
+          "color": "Blue",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "30-128-green",
+        "name": "128GB - Green",
+        "storage": "128GB",
+        "color": "Green",
+        "price": 4399,
+        "stock": 10,
+        "attributes": {
+          "color": "Green",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "30-128-pink",
+        "name": "128GB - Pink",
+        "storage": "128GB",
+        "color": "Pink",
+        "price": 4399,
+        "stock": 10,
+        "attributes": {
+          "color": "Pink",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "30-128-yellow",
+        "name": "128GB - Yellow",
+        "storage": "128GB",
+        "color": "Yellow",
+        "price": 4399,
+        "stock": 10,
+        "attributes": {
+          "color": "Yellow",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "30-256-black",
+        "name": "256GB - Black",
+        "storage": "256GB",
+        "color": "Black",
+        "price": 4899,
+        "stock": 10,
+        "attributes": {
+          "color": "Black",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "30-256-blue",
+        "name": "256GB - Blue",
+        "storage": "256GB",
+        "color": "Blue",
+        "price": 4899,
+        "stock": 10,
+        "attributes": {
+          "color": "Blue",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "30-256-green",
+        "name": "256GB - Green",
+        "storage": "256GB",
+        "color": "Green",
+        "price": 4899,
+        "stock": 10,
+        "attributes": {
+          "color": "Green",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "30-256-pink",
+        "name": "256GB - Pink",
+        "storage": "256GB",
+        "color": "Pink",
+        "price": 4899,
+        "stock": 10,
+        "attributes": {
+          "color": "Pink",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "30-256-yellow",
+        "name": "256GB - Yellow",
+        "storage": "256GB",
+        "color": "Yellow",
+        "price": 4899,
+        "stock": 10,
+        "attributes": {
+          "color": "Yellow",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "30-512-black",
+        "name": "512GB - Black",
+        "storage": "512GB",
+        "color": "Black",
+        "price": 5899,
+        "stock": 10,
+        "attributes": {
+          "color": "Black",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "30-512-blue",
+        "name": "512GB - Blue",
+        "storage": "512GB",
+        "color": "Blue",
+        "price": 5899,
+        "stock": 10,
+        "attributes": {
+          "color": "Blue",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "30-512-green",
+        "name": "512GB - Green",
+        "storage": "512GB",
+        "color": "Green",
+        "price": 5899,
+        "stock": 10,
+        "attributes": {
+          "color": "Green",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "30-512-pink",
+        "name": "512GB - Pink",
+        "storage": "512GB",
+        "color": "Pink",
+        "price": 5899,
+        "stock": 10,
+        "attributes": {
+          "color": "Pink",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "30-512-yellow",
+        "name": "512GB - Yellow",
+        "storage": "512GB",
+        "color": "Yellow",
+        "price": 5899,
+        "stock": 10,
+        "attributes": {
+          "color": "Yellow",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "iPhone 15 Plus",
+    "description": "Large-screen iPhone with excellent battery life and a Super Retina XDR display.",
+    "price": 4899,
+    "stock": 11,
+    "category": "iphone",
+    "image": "/images/products/31-iphone-15-plus-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "31-128-black",
+        "name": "128GB - Black",
+        "storage": "128GB",
+        "color": "Black",
+        "price": 4899,
+        "stock": 10,
+        "attributes": {
+          "color": "Black",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "31-128-blue",
+        "name": "128GB - Blue",
+        "storage": "128GB",
+        "color": "Blue",
+        "price": 4899,
+        "stock": 10,
+        "attributes": {
+          "color": "Blue",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "31-128-green",
+        "name": "128GB - Green",
+        "storage": "128GB",
+        "color": "Green",
+        "price": 4899,
+        "stock": 10,
+        "attributes": {
+          "color": "Green",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "31-128-pink",
+        "name": "128GB - Pink",
+        "storage": "128GB",
+        "color": "Pink",
+        "price": 4899,
+        "stock": 10,
+        "attributes": {
+          "color": "Pink",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "31-128-yellow",
+        "name": "128GB - Yellow",
+        "storage": "128GB",
+        "color": "Yellow",
+        "price": 4899,
+        "stock": 10,
+        "attributes": {
+          "color": "Yellow",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "31-256-black",
+        "name": "256GB - Black",
+        "storage": "256GB",
+        "color": "Black",
+        "price": 5399,
+        "stock": 10,
+        "attributes": {
+          "color": "Black",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "31-256-blue",
+        "name": "256GB - Blue",
+        "storage": "256GB",
+        "color": "Blue",
+        "price": 5399,
+        "stock": 10,
+        "attributes": {
+          "color": "Blue",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "31-256-green",
+        "name": "256GB - Green",
+        "storage": "256GB",
+        "color": "Green",
+        "price": 5399,
+        "stock": 10,
+        "attributes": {
+          "color": "Green",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "31-256-pink",
+        "name": "256GB - Pink",
+        "storage": "256GB",
+        "color": "Pink",
+        "price": 5399,
+        "stock": 10,
+        "attributes": {
+          "color": "Pink",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "31-256-yellow",
+        "name": "256GB - Yellow",
+        "storage": "256GB",
+        "color": "Yellow",
+        "price": 5399,
+        "stock": 10,
+        "attributes": {
+          "color": "Yellow",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "31-512-black",
+        "name": "512GB - Black",
+        "storage": "512GB",
+        "color": "Black",
+        "price": 6399,
+        "stock": 10,
+        "attributes": {
+          "color": "Black",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "31-512-blue",
+        "name": "512GB - Blue",
+        "storage": "512GB",
+        "color": "Blue",
+        "price": 6399,
+        "stock": 10,
+        "attributes": {
+          "color": "Blue",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "31-512-green",
+        "name": "512GB - Green",
+        "storage": "512GB",
+        "color": "Green",
+        "price": 6399,
+        "stock": 10,
+        "attributes": {
+          "color": "Green",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "31-512-pink",
+        "name": "512GB - Pink",
+        "storage": "512GB",
+        "color": "Pink",
+        "price": 6399,
+        "stock": 10,
+        "attributes": {
+          "color": "Pink",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "31-512-yellow",
+        "name": "512GB - Yellow",
+        "storage": "512GB",
+        "color": "Yellow",
+        "price": 6399,
+        "stock": 10,
+        "attributes": {
+          "color": "Yellow",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "iPhone SE (3rd generation)",
+    "description": "Compact iPhone with powerful A15 Bionic performance and classic design.",
+    "price": 2099,
+    "stock": 14,
+    "category": "iphone",
+    "image": "/images/products/32-iphone-se-3rd-generation-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "32-128-midnight",
+        "name": "128GB - Midnight",
+        "storage": "128GB",
+        "color": "Midnight",
+        "price": 2399,
+        "stock": 10,
+        "attributes": {
+          "color": "Midnight",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "32-128-red",
+        "name": "128GB - PRODUCT(RED)",
+        "storage": "128GB",
+        "color": "PRODUCT(RED)",
+        "price": 2399,
+        "stock": 10,
+        "attributes": {
+          "color": "PRODUCT(RED)",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "32-128-starlight",
+        "name": "128GB - Starlight",
+        "storage": "128GB",
+        "color": "Starlight",
+        "price": 2399,
+        "stock": 10,
+        "attributes": {
+          "color": "Starlight",
+          "storage": "128GB"
+        }
+      },
+      {
+        "id": "32-256-midnight",
+        "name": "256GB - Midnight",
+        "storage": "256GB",
+        "color": "Midnight",
+        "price": 2699,
+        "stock": 10,
+        "attributes": {
+          "color": "Midnight",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "32-256-red",
+        "name": "256GB - PRODUCT(RED)",
+        "storage": "256GB",
+        "color": "PRODUCT(RED)",
+        "price": 2699,
+        "stock": 10,
+        "attributes": {
+          "color": "PRODUCT(RED)",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "32-256-starlight",
+        "name": "256GB - Starlight",
+        "storage": "256GB",
+        "color": "Starlight",
+        "price": 2699,
+        "stock": 10,
+        "attributes": {
+          "color": "Starlight",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "32-64-midnight",
+        "name": "64GB - Midnight",
+        "storage": "64GB",
+        "color": "Midnight",
+        "price": 2099,
+        "stock": 10,
+        "attributes": {
+          "color": "Midnight",
+          "storage": "64GB"
+        }
+      },
+      {
+        "id": "32-64-red",
+        "name": "64GB - PRODUCT(RED)",
+        "storage": "64GB",
+        "color": "PRODUCT(RED)",
+        "price": 2099,
+        "stock": 10,
+        "attributes": {
+          "color": "PRODUCT(RED)",
+          "storage": "64GB"
+        }
+      },
+      {
+        "id": "32-64-starlight",
+        "name": "64GB - Starlight",
+        "storage": "64GB",
+        "color": "Starlight",
+        "price": 2099,
+        "stock": 10,
+        "attributes": {
+          "color": "Starlight",
+          "storage": "64GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "AirPods 4 with Active Noise Cancellation",
+    "description": "Wireless earbuds with Active Noise Cancellation, personalised spatial audio and a comfortable open-ear design.",
+    "price": 829,
+    "stock": 18,
+    "category": "audio",
+    "image": "/images/products/33-airpods-4-with-active-noise-cancellation-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 34,
+    "name": "AirPods 3",
+    "description": "Wireless earbuds with personalised spatial audio, a lightweight design and MagSafe charging case.",
+    "price": 699,
+    "stock": 16,
+    "category": "audio",
+    "image": "/images/products/34-airpods-3-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 35,
+    "name": "Beats Solo 4",
+    "description": "Wireless on-ear headphones with personalised spatial audio, powerful sound and up to 50 hours of battery life.",
+    "price": 899,
+    "stock": 12,
+    "category": "audio",
+    "image": "/images/products/35-beats-solo-4-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "35-cloud-pink",
+        "name": "Cloud Pink",
+        "storage": "",
+        "color": "",
+        "price": 899,
+        "stock": 10,
+        "attributes": {
+          "label": "Cloud Pink"
+        }
+      },
+      {
+        "id": "35-matte-black",
+        "name": "Matte Black",
+        "storage": "",
+        "color": "",
+        "price": 899,
+        "stock": 10,
+        "attributes": {
+          "label": "Matte Black"
+        }
+      },
+      {
+        "id": "35-slate-blue",
+        "name": "Slate Blue",
+        "storage": "",
+        "color": "",
+        "price": 899,
+        "stock": 10,
+        "attributes": {
+          "label": "Slate Blue"
+        }
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Beats Fit Pro",
+    "description": "Secure wireless earbuds designed for workouts and active lifestyles with a comfortable wingtip design.",
+    "price": 899,
+    "stock": 13,
+    "category": "audio",
+    "image": "/images/products/36-beats-fit-pro-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 37,
+    "name": "HomePod mini",
+    "description": "Compact smart speaker delivering rich sound with Siri, multi-room audio and smart home features.",
+    "price": 599,
+    "stock": 15,
+    "category": "audio",
+    "image": "/images/products/37-homepod-mini-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "37-blue",
+        "name": "Blue",
+        "storage": "",
+        "color": "",
+        "price": 599,
+        "stock": 10,
+        "attributes": {
+          "label": "Blue"
+        }
+      },
+      {
+        "id": "37-midnight",
+        "name": "Midnight",
+        "storage": "",
+        "color": "",
+        "price": 599,
+        "stock": 10,
+        "attributes": {
+          "label": "Midnight"
+        }
+      },
+      {
+        "id": "37-orange",
+        "name": "Orange",
+        "storage": "",
+        "color": "",
+        "price": 599,
+        "stock": 10,
+        "attributes": {
+          "label": "Orange"
+        }
+      },
+      {
+        "id": "37-white",
+        "name": "White",
+        "storage": "",
+        "color": "",
+        "price": 599,
+        "stock": 10,
+        "attributes": {
+          "label": "White"
+        }
+      },
+      {
+        "id": "37-yellow",
+        "name": "Yellow",
+        "storage": "",
+        "color": "",
+        "price": 599,
+        "stock": 10,
+        "attributes": {
+          "label": "Yellow"
+        }
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Apple Watch Ultra 2",
+    "description": "Rugged and capable smartwatch built for adventure, demanding workouts and outdoor activities.",
+    "price": 3299,
+    "stock": 10,
+    "category": "accessories",
+    "image": "/images/products/38-apple-watch-ultra-2-main.png",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "38-49-black",
+        "name": "49mm - Black Titanium",
+        "storage": "",
+        "color": "Black Titanium",
+        "price": 3399,
+        "stock": 10,
+        "attributes": {
+          "size": "49mm",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "38-49-natural",
+        "name": "49mm - Natural Titanium",
+        "storage": "",
+        "color": "Natural Titanium",
+        "price": 3299,
+        "stock": 10,
+        "attributes": {
+          "size": "49mm",
+          "color": "Natural Titanium"
+        }
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Apple Watch SE 3",
+    "description": "Essential Apple Watch features for fitness, communication, health and everyday use.",
+    "price": 1049,
+    "stock": 16,
+    "category": "accessories",
+    "image": "/images/products/39-apple-watch-se-3-main.png",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "39-40-midnight",
+        "name": "40mm - Midnight Aluminium",
+        "storage": "",
+        "color": "Midnight Aluminium",
+        "price": 1049,
+        "stock": 10,
+        "attributes": {
+          "size": "40mm",
+          "color": "Midnight Aluminium"
+        }
+      },
+      {
+        "id": "39-40-starlight",
+        "name": "40mm - Starlight Aluminium",
+        "storage": "",
+        "color": "Starlight Aluminium",
+        "price": 1049,
+        "stock": 10,
+        "attributes": {
+          "size": "40mm",
+          "color": "Starlight Aluminium"
+        }
+      },
+      {
+        "id": "39-44-midnight",
+        "name": "44mm - Midnight Aluminium",
+        "storage": "",
+        "color": "Midnight Aluminium",
+        "price": 1199,
+        "stock": 10,
+        "attributes": {
+          "size": "44mm",
+          "color": "Midnight Aluminium"
+        }
+      },
+      {
+        "id": "39-44-starlight",
+        "name": "44mm - Starlight Aluminium",
+        "storage": "",
+        "color": "Starlight Aluminium",
+        "price": 1199,
+        "stock": 10,
+        "attributes": {
+          "size": "44mm",
+          "color": "Starlight Aluminium"
+        }
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Magic Trackpad",
+    "description": "Wireless rechargeable trackpad with a large edge-to-edge Multi-Touch surface and Force Touch.",
+    "price": 489,
+    "stock": 12,
+    "category": "accessories",
+    "image": "/images/products/40-magic-trackpad-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "40-black",
+        "name": "Black Multi-Touch Surface",
+        "storage": "",
+        "color": "",
+        "price": 599,
+        "stock": 10,
+        "attributes": {
+          "label": "Black Multi-Touch Surface"
+        }
+      },
+      {
+        "id": "40-white",
+        "name": "White Multi-Touch Surface",
+        "storage": "",
+        "color": "",
+        "price": 489,
+        "stock": 10,
+        "attributes": {
+          "label": "White Multi-Touch Surface"
+        }
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Magic Keyboard with Touch ID",
+    "description": "Wireless rechargeable keyboard with Touch ID, designed for Mac models with Apple silicon.",
+    "price": 599,
+    "stock": 11,
+    "category": "accessories",
+    "image": "/images/products/41-magic-keyboard-with-touch-id-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "41-black",
+        "name": "Black Keys",
+        "storage": "",
+        "color": "",
+        "price": 599,
+        "stock": 10,
+        "attributes": {
+          "label": "Black Keys"
+        }
+      },
+      {
+        "id": "41-white",
+        "name": "White Keys",
+        "storage": "",
+        "color": "",
+        "price": 599,
+        "stock": 10,
+        "attributes": {
+          "label": "White Keys"
+        }
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "USB-C Power Adapter 67W",
+    "description": "Compact USB-C power adapter designed for fast and efficient charging of compatible devices.",
+    "price": 299,
+    "stock": 20,
+    "category": "accessories",
+    "image": "/images/products/42-usb-c-power-adapter-67w-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 43,
+    "name": "USB-C Power Adapter 96W",
+    "description": "High-performance USB-C power adapter designed for larger MacBook models and fast charging.",
+    "price": 319,
+    "stock": 14,
+    "category": "accessories",
+    "image": "/images/products/43-usb-c-power-adapter-96w-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 44,
+    "name": "MagSafe Battery Pack",
+    "description": "Magnetic portable battery designed to provide additional power while on the go.",
+    "price": 499,
+    "stock": 12,
+    "category": "accessories",
+    "image": "/images/products/44-magsafe-battery-pack-official.png",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 45,
+    "name": "iPhone 17 Pro Max Silicone Case with MagSafe",
+    "description": "Apple-designed silicone case with MagSafe, soft-touch exterior and microfibre lining for protection.",
+    "price": 209,
+    "stock": 25,
+    "category": "accessories",
+    "image": "/images/products/45-iphone-17-pro-max-silicone-case-with-magsafe-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "45-black",
+        "name": "Black",
+        "storage": "",
+        "color": "",
+        "price": 209,
+        "stock": 10,
+        "attributes": {
+          "label": "Black"
+        }
+      },
+      {
+        "id": "45-green",
+        "name": "Green",
+        "storage": "",
+        "color": "",
+        "price": 209,
+        "stock": 10,
+        "attributes": {
+          "label": "Green"
+        }
+      },
+      {
+        "id": "45-orange",
+        "name": "Orange",
+        "storage": "",
+        "color": "",
+        "price": 209,
+        "stock": 10,
+        "attributes": {
+          "label": "Orange"
+        }
+      },
+      {
+        "id": "45-pink",
+        "name": "Pink",
+        "storage": "",
+        "color": "",
+        "price": 209,
+        "stock": 10,
+        "attributes": {
+          "label": "Pink"
+        }
+      },
+      {
+        "id": "45-vanilla",
+        "name": "Vanilla",
+        "storage": "",
+        "color": "",
+        "price": 209,
+        "stock": 10,
+        "attributes": {
+          "label": "Vanilla"
+        }
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "USB-C Charge Cable (2m)",
+    "description": "Durable 2-metre USB-C charging and data cable for compatible Mac, iPad, iPhone and other USB-C devices.",
+    "price": 129,
+    "stock": 30,
+    "category": "accessories",
+    "image": "/images/products/46-usb-c-charge-cable-2m.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 47,
+    "name": "Thunderbolt 4 Pro Cable (1.8m)",
+    "description": "Professional high-speed Thunderbolt cable designed for displays, storage devices, docks and other compatible peripherals.",
+    "price": 299,
+    "stock": 18,
+    "category": "accessories",
+    "image": "/images/products/47-thunderbolt-4-pro-cable-1-8m.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 48,
+    "name": "USB-C Digital AV Multiport Adapter",
+    "description": "Compact adapter with HDMI, USB and USB-C ports for displays, USB devices and charging.",
+    "price": 349,
+    "stock": 16,
+    "category": "accessories",
+    "image": "/images/products/48-usb-c-digital-av-multiport-adapter-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 49,
+    "name": "iPhone 16 Clear Case with MagSafe",
+    "description": "Thin and lightweight Apple-designed clear case with MagSafe compatibility and protection for iPhone 16.",
+    "price": 209,
+    "stock": 24,
+    "category": "accessories",
+    "image": "/images/products/49-iphone-16-clear-case-with-magsafe-main.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 50,
+    "name": "iPhone 16 Pro Silicone Case with MagSafe",
+    "description": "Apple-designed silicone case with MagSafe, a soft-touch exterior and a protective microfibre lining.",
+    "price": 239,
+    "stock": 18,
+    "category": "accessories",
+    "image": "/images/products/50-iphone-16-pro-silicone-case-with-magsafe-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "50-black",
+        "name": "Black",
+        "storage": "",
+        "color": "",
+        "price": 239,
+        "stock": 10,
+        "attributes": {
+          "label": "Black"
+        }
+      },
+      {
+        "id": "50-brown",
+        "name": "Brown",
+        "storage": "",
+        "color": "",
+        "price": 239,
+        "stock": 10,
+        "attributes": {
+          "label": "Brown"
+        }
+      },
+      {
+        "id": "50-stone-grey",
+        "name": "Stone Grey",
+        "storage": "",
+        "color": "",
+        "price": 239,
+        "stock": 10,
+        "attributes": {
+          "label": "Stone Grey"
+        }
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Apple Pencil Pro",
+    "description": "Advanced creative stylus with precise control, squeeze, barrel roll, haptic feedback and Apple Pencil hover.",
+    "price": 549,
+    "stock": 15,
+    "category": "accessories",
+    "image": "/images/products/51-apple-pencil-pro-official.jpg",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": []
+  },
+  {
+    "id": 52,
+    "name": "MacBook Air M5",
+    "description": "MacBook Air powered by the Apple M5 chip, combining exceptional performance, long battery life and an incredibly thin and light design.",
+    "price": 4699,
+    "stock": 305,
+    "category": "mac",
+    "image": "/images/products/52-macbook-air-m5-main.png",
+    "createdAt": null,
+    "updatedAt": null,
+    "variants": [
+      {
+        "id": "52-m5-24gb-1tb-midnight",
+        "name": "1TB • Midnight • 24GB",
+        "storage": "1TB",
+        "color": "Midnight",
+        "price": 6199,
+        "stock": 15,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M5",
+          "color": "Midnight",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "52-m5-24gb-1tb-silver",
+        "name": "1TB • Silver • 24GB",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 6199,
+        "stock": 11,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M5",
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "52-m5-24gb-1tb-sky-blue",
+        "name": "1TB • Sky Blue • 24GB",
+        "storage": "1TB",
+        "color": "Sky Blue",
+        "price": 6199,
+        "stock": 21,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M5",
+          "color": "Sky Blue",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "52-m5-24gb-1tb-starlight",
+        "name": "1TB • Starlight • 24GB",
+        "storage": "1TB",
+        "color": "Starlight",
+        "price": 6199,
+        "stock": 20,
+        "attributes": {
+          "ram": "24GB",
+          "chip": "M5",
+          "color": "Starlight",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "52-m5-32gb-2tb-midnight",
+        "name": "2TB • Midnight • 32GB",
+        "storage": "2TB",
+        "color": "Midnight",
+        "price": 7699,
+        "stock": 12,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M5",
+          "color": "Midnight",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "52-m5-32gb-2tb-silver",
+        "name": "2TB • Silver • 32GB",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 7699,
+        "stock": 27,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M5",
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "52-m5-32gb-2tb-sky-blue",
+        "name": "2TB • Sky Blue • 32GB",
+        "storage": "2TB",
+        "color": "Sky Blue",
+        "price": 7699,
+        "stock": 16,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M5",
+          "color": "Sky Blue",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "52-m5-32gb-2tb-starlight",
+        "name": "2TB • Starlight • 32GB",
+        "storage": "2TB",
+        "color": "Starlight",
+        "price": 7699,
+        "stock": 23,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M5",
+          "color": "Starlight",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "52-m5-32gb-4tb-midnight",
+        "name": "4TB • Midnight • 32GB",
+        "storage": "4TB",
+        "color": "Midnight",
+        "price": 9699,
+        "stock": 16,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M5",
+          "color": "Midnight",
+          "storage": "4TB"
+        }
+      },
+      {
+        "id": "52-m5-32gb-4tb-silver",
+        "name": "4TB • Silver • 32GB",
+        "storage": "4TB",
+        "color": "Silver",
+        "price": 9699,
+        "stock": 28,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M5",
+          "color": "Silver",
+          "storage": "4TB"
+        }
+      },
+      {
+        "id": "52-m5-32gb-4tb-sky-blue",
+        "name": "4TB • Sky Blue • 32GB",
+        "storage": "4TB",
+        "color": "Sky Blue",
+        "price": 9699,
+        "stock": 17,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M5",
+          "color": "Sky Blue",
+          "storage": "4TB"
+        }
+      },
+      {
+        "id": "52-m5-32gb-4tb-starlight",
+        "name": "4TB • Starlight • 32GB",
+        "storage": "4TB",
+        "color": "Starlight",
+        "price": 9699,
+        "stock": 17,
+        "attributes": {
+          "ram": "32GB",
+          "chip": "M5",
+          "color": "Starlight",
+          "storage": "4TB"
+        }
+      },
+      {
+        "id": "product-1789487851700-13-midnight",
+        "name": "512GB • Midnight • 16GB",
+        "storage": "512GB",
+        "color": "Midnight",
+        "price": 4699,
+        "stock": 16,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Midnight",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "product-1789487851700-13-silver",
+        "name": "512GB • Silver • 16GB",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 4699,
+        "stock": 25,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "product-1789487851700-13-sky-blue",
+        "name": "512GB • Sky Blue • 16GB",
+        "storage": "512GB",
+        "color": "Sky Blue",
+        "price": 4699,
+        "stock": 19,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Sky Blue",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "product-1789487851700-13-starlight",
+        "name": "512GB • Starlight • 16GB",
+        "storage": "512GB",
+        "color": "Starlight",
+        "price": 4699,
+        "stock": 22,
+        "attributes": {
+          "ram": "16GB",
+          "color": "Starlight",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "iPhone 18 Pro",
+    "description": "The iPhone 18 Pro is a powerful new smartphone featuring a fast A20 Pro chip and a new 48MP main camera with a variable aperture.",
+    "price": 5499,
+    "stock": 338,
+    "category": "iphone",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC9FKvoXTLR_cOmwcSTQyZLJR-z2MprT3ilVV9eSLG8ZxiPdq-k9nxWklN&s=10",
+    "createdAt": null,
+    "updatedAt": "2026-09-17T19:32:17.730Z",
+    "variants": [
+      {
+        "id": "53-1tb-black",
+        "name": "1TB • Black",
+        "storage": "1TB",
+        "color": "Black",
+        "price": 8499,
+        "stock": 11,
+        "attributes": {
+          "color": "Black",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "53-1tb-burgundy",
+        "name": "1TB • Burgundy",
+        "storage": "1TB",
+        "color": "Burgundy",
+        "price": 8499,
+        "stock": 12,
+        "attributes": {
+          "color": "Burgundy",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "53-1tb-glacier",
+        "name": "1TB • Glacier",
+        "storage": "1TB",
+        "color": "Glacier",
+        "price": 8499,
+        "stock": 18,
+        "attributes": {
+          "color": "Glacier",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "53-1tb-silver",
+        "name": "1TB • Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 8499,
+        "stock": 12,
+        "attributes": {
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "53-256gb-black",
+        "name": "256GB • Black",
+        "storage": "256GB",
+        "color": "Black",
+        "price": 5499,
+        "stock": 26,
+        "attributes": {
+          "color": "Black",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "53-256gb-burgundy",
+        "name": "256GB • Burgundy",
+        "storage": "256GB",
+        "color": "Burgundy",
+        "price": 5499,
+        "stock": 23,
+        "attributes": {
+          "color": "Burgundy",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "53-256gb-glacier",
+        "name": "256GB • Glacier",
+        "storage": "256GB",
+        "color": "Glacier",
+        "price": 5499,
+        "stock": 22,
+        "attributes": {
+          "color": "Glacier",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "53-256gb-silver",
+        "name": "256GB • Silver",
+        "storage": "256GB",
+        "color": "Silver",
+        "price": 5499,
+        "stock": 23,
+        "attributes": {
+          "color": "Silver",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "53-2tb-black",
+        "name": "2TB • Black",
+        "storage": "2TB",
+        "color": "Black",
+        "price": 11499,
+        "stock": 30,
+        "attributes": {
+          "color": "Black",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "53-2tb-burgundy",
+        "name": "2TB • Burgundy",
+        "storage": "2TB",
+        "color": "Burgundy",
+        "price": 11499,
+        "stock": 30,
+        "attributes": {
+          "color": "Burgundy",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "53-2tb-glacier",
+        "name": "2TB • Glacier",
+        "storage": "2TB",
+        "color": "Glacier",
+        "price": 11499,
+        "stock": 11,
+        "attributes": {
+          "color": "Glacier",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "53-2tb-silver",
+        "name": "2TB • Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 11499,
+        "stock": 18,
+        "attributes": {
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "53-512gb-black",
+        "name": "512GB • Black",
+        "storage": "512GB",
+        "color": "Black",
+        "price": 6499,
+        "stock": 30,
+        "attributes": {
+          "color": "Black",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "53-512gb-burgundy",
+        "name": "512GB • Burgundy",
+        "storage": "512GB",
+        "color": "Burgundy",
+        "price": 6499,
+        "stock": 22,
+        "attributes": {
+          "color": "Burgundy",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "53-512gb-glacier",
+        "name": "512GB • Glacier",
+        "storage": "512GB",
+        "color": "Glacier",
+        "price": 6499,
+        "stock": 28,
+        "attributes": {
+          "color": "Glacier",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "53-512gb-silver",
+        "name": "512GB • Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 6499,
+        "stock": 22,
+        "attributes": {
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "iPhone 18 Pro Max",
+    "description": "The Apple iPhone 18 Pro Max is a large and powerful smartphone built with a big screen, a fast processor, and a long-lasting battery.",
+    "price": 5999,
+    "stock": 317,
+    "category": "iphone",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHQc9YDOFgQ-9GrXPfVBexyYYc5IFJWHupNnQU2OUDqcJY7fSJ-IlMcc&s=10",
+    "createdAt": null,
+    "updatedAt": "2026-09-17T19:32:24.281Z",
+    "variants": [
+      {
+        "id": "54-1tb-black",
+        "name": "1TB • Black",
+        "storage": "1TB",
+        "color": "Black",
+        "price": 8999,
+        "stock": 19,
+        "attributes": {
+          "color": "Black",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "54-1tb-burgundy",
+        "name": "1TB • Burgundy",
+        "storage": "1TB",
+        "color": "Burgundy",
+        "price": 8999,
+        "stock": 21,
+        "attributes": {
+          "color": "Burgundy",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "54-1tb-glacier",
+        "name": "1TB • Glacier",
+        "storage": "1TB",
+        "color": "Glacier",
+        "price": 8999,
+        "stock": 18,
+        "attributes": {
+          "color": "Glacier",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "54-1tb-silver",
+        "name": "1TB • Silver",
+        "storage": "1TB",
+        "color": "Silver",
+        "price": 8999,
+        "stock": 12,
+        "attributes": {
+          "color": "Silver",
+          "storage": "1TB"
+        }
+      },
+      {
+        "id": "54-256gb-black",
+        "name": "256GB • Black",
+        "storage": "256GB",
+        "color": "Black",
+        "price": 5999,
+        "stock": 29,
+        "attributes": {
+          "color": "Black",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "54-256gb-burgundy",
+        "name": "256GB • Burgundy",
+        "storage": "256GB",
+        "color": "Burgundy",
+        "price": 5999,
+        "stock": 26,
+        "attributes": {
+          "color": "Burgundy",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "54-256gb-glacier",
+        "name": "256GB • Glacier",
+        "storage": "256GB",
+        "color": "Glacier",
+        "price": 5999,
+        "stock": 22,
+        "attributes": {
+          "color": "Glacier",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "54-256gb-silver",
+        "name": "256GB • Silver",
+        "storage": "256GB",
+        "color": "Silver",
+        "price": 5999,
+        "stock": 26,
+        "attributes": {
+          "color": "Silver",
+          "storage": "256GB"
+        }
+      },
+      {
+        "id": "54-2tb-black",
+        "name": "2TB • Black",
+        "storage": "2TB",
+        "color": "Black",
+        "price": 11999,
+        "stock": 29,
+        "attributes": {
+          "color": "Black",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "54-2tb-burgundy",
+        "name": "2TB • Burgundy",
+        "storage": "2TB",
+        "color": "Burgundy",
+        "price": 11999,
+        "stock": 18,
+        "attributes": {
+          "color": "Burgundy",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "54-2tb-glacier",
+        "name": "2TB • Glacier",
+        "storage": "2TB",
+        "color": "Glacier",
+        "price": 11999,
+        "stock": 21,
+        "attributes": {
+          "color": "Glacier",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "54-2tb-silver",
+        "name": "2TB • Silver",
+        "storage": "2TB",
+        "color": "Silver",
+        "price": 11999,
+        "stock": 18,
+        "attributes": {
+          "color": "Silver",
+          "storage": "2TB"
+        }
+      },
+      {
+        "id": "54-512gb-black",
+        "name": "512GB • Black",
+        "storage": "512GB",
+        "color": "Black",
+        "price": 6999,
+        "stock": 22,
+        "attributes": {
+          "color": "Black",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "54-512gb-burgundy",
+        "name": "512GB • Burgundy",
+        "storage": "512GB",
+        "color": "Burgundy",
+        "price": 6999,
+        "stock": 11,
+        "attributes": {
+          "color": "Burgundy",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "54-512gb-glacier",
+        "name": "512GB • Glacier",
+        "storage": "512GB",
+        "color": "Glacier",
+        "price": 6999,
+        "stock": 14,
+        "attributes": {
+          "color": "Glacier",
+          "storage": "512GB"
+        }
+      },
+      {
+        "id": "54-512gb-silver",
+        "name": "512GB • Silver",
+        "storage": "512GB",
+        "color": "Silver",
+        "price": 6999,
+        "stock": 11,
+        "attributes": {
+          "color": "Silver",
+          "storage": "512GB"
+        }
+      }
+    ]
+  }
+]

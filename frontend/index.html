@@ -1,0 +1,9064 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZiqTech — Premium Technology Store</title>
+
+    <style>
+        /* =========================================================
+           ZIQTECH PREMIUM HOME
+        ========================================================= */
+
+        :root {
+            --blue: #0071e3;
+            --blue-dark: #005bb5;
+            --black: #1d1d1f;
+            --gray: #6e6e73;
+            --light: #f5f5f7;
+            --white: #ffffff;
+            --border: rgba(0,0,0,.08);
+            --shadow: 0 20px 60px rgba(0,0,0,.08);
+            --radius: 28px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "SF Pro Display",
+                "Helvetica Neue",
+                Arial,
+                sans-serif;
+
+            background: var(--light);
+            color: var(--black);
+            overflow-x: hidden;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        select {
+            font-family: inherit;
+        }
+
+        button {
+            border: 0;
+        }
+
+        /* =========================================================
+           GLOBAL
+        ========================================================= */
+
+        .container {
+            width: min(1240px, calc(100% - 40px));
+            margin: auto;
+        }
+
+        .eyebrow {
+            color: var(--blue);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(38px, 5vw, 62px);
+            line-height: 1;
+            letter-spacing: -3px;
+            font-weight: 800;
+        }
+
+        .muted {
+            color: var(--gray);
+        }
+
+        .profile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    border-radius: 12px;
+
+    background: #f5f5f7;
+    color: #1d1d1f;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: .2s ease;
+}
+
+.profile-link:hover {
+    background: #e8e8ed;
+    transform: translateY(-1px);
+}
+
+        /* =========================================================
+           NAVBAR
+        ========================================================= */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 5000;
+
+            height: 66px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 5%;
+
+            background: rgba(255,255,255,.78);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+
+            border-bottom: 1px solid rgba(0,0,0,.06);
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: 850;
+            letter-spacing: -1px;
+            white-space: nowrap;
+        }
+
+        .logo span {
+            color: var(--blue);
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav ul a {
+            position: relative;
+            color: #424245;
+            font-size: 13px;
+            font-weight: 500;
+            transition: .25s ease;
+        }
+
+        nav ul a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -7px;
+            width: 0;
+            height: 2px;
+            border-radius: 10px;
+            background: var(--blue);
+            transition: .25s;
+        }
+
+        nav ul a:hover {
+            color: var(--blue);
+        }
+
+        nav ul a:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            background: #f5f5f7;
+            cursor: pointer;
+
+            transition: .25s;
+        }
+
+        .nav-icon:hover {
+            transform: translateY(-2px);
+            background: #e9e9ed;
+        }
+
+        .nav-cart {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 10px 16px;
+
+            background: var(--black);
+            color: white;
+
+            border-radius: 999px;
+
+            cursor: pointer;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            transition: .25s;
+        }
+
+        .nav-cart:hover {
+            transform: translateY(-2px);
+            background: #000;
+            box-shadow: 0 8px 25px rgba(0,0,0,.18);
+        }
+
+        .nav-cart-count {
+            min-width: 20px;
+            height: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 0 5px;
+
+            background: var(--blue);
+            color: white;
+
+            border-radius: 50px;
+
+            font-size: 11px;
+        }
+
+        .hamburger {
+            display: none;
+
+            width: 42px;
+            height: 42px;
+
+            border-radius: 50%;
+            background: #f5f5f7;
+
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            position: relative;
+            min-height: 760px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 50% 25%,
+                    rgba(0,113,227,.18),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 15% 70%,
+                    rgba(94,92,230,.10),
+                    transparent 25%
+                ),
+                radial-gradient(
+                    circle at 85% 65%,
+                    rgba(52,199,89,.08),
+                    transparent 25%
+                ),
+                linear-gradient(
+                    180deg,
+                    #fff 0%,
+                    #f5f5f7 100%
+                );
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+
+            width: 700px;
+            height: 700px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(0,113,227,.07);
+
+            animation: heroOrbit 18s linear infinite;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+
+            width: 480px;
+            height: 480px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(0,113,227,.06);
+
+            animation: heroOrbit 12s linear infinite reverse;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+
+            width: min(950px, 90%);
+
+            animation: heroIn 1s ease forwards;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 9px 15px;
+
+            border: 1px solid rgba(0,113,227,.18);
+
+            background: rgba(255,255,255,.68);
+
+            backdrop-filter: blur(14px);
+
+            border-radius: 999px;
+
+            color: var(--blue);
+
+            font-size: 12px;
+            font-weight: 750;
+
+            margin-bottom: 28px;
+
+            box-shadow: 0 10px 30px rgba(0,113,227,.08);
+        }
+
+        .hero h1 {
+            font-size: clamp(58px, 9vw, 110px);
+            line-height: .91;
+            letter-spacing: -7px;
+
+            font-weight: 850;
+
+            margin-bottom: 32px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #090909 0%,
+                    #454545 48%,
+                    #0071e3 100%
+                );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            width: min(680px, 100%);
+            margin: auto;
+
+            color: var(--gray);
+
+            font-size: clamp(17px, 2vw, 21px);
+            line-height: 1.65;
+            margin-bottom: 36px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .primary-button,
+        .secondary-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 50px;
+            padding: 0 23px;
+
+            border-radius: 999px;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            transition: .3s ease;
+        }
+
+        .primary-button {
+            background: var(--blue);
+            color: white;
+            box-shadow: 0 12px 30px rgba(0,113,227,.25);
+        }
+
+        .primary-button:hover {
+            transform: translateY(-4px);
+            background: #0077ed;
+            box-shadow: 0 18px 38px rgba(0,113,227,.35);
+        }
+
+        .secondary-button {
+            background: rgba(255,255,255,.75);
+            border: 1px solid #d2d2d7;
+        }
+
+        .secondary-button:hover {
+            transform: translateY(-4px);
+            background: white;
+            box-shadow: 0 12px 30px rgba(0,0,0,.08);
+        }
+
+        .hero-glow {
+            position: absolute;
+
+            width: 550px;
+            height: 550px;
+
+            border-radius: 50%;
+
+            background: rgba(0,113,227,.08);
+
+            filter: blur(100px);
+
+            bottom: -390px;
+            left: 50%;
+
+            transform: translateX(-50%);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 28px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+
+            color: #86868b;
+
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .scroll-line {
+            width: 1px;
+            height: 32px;
+            background: linear-gradient(#0071e3, transparent);
+        }
+
+        /* =========================================================
+           TRUST / STATS
+        ========================================================= */
+
+        .trust-strip {
+            position: relative;
+            z-index: 5;
+
+            width: min(1050px, calc(100% - 40px));
+
+            margin: -35px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            background: rgba(255,255,255,.88);
+            backdrop-filter: blur(20px);
+
+            border: 1px solid rgba(0,0,0,.07);
+
+            border-radius: 24px;
+
+            box-shadow: 0 20px 60px rgba(0,0,0,.08);
+
+            overflow: hidden;
+        }
+
+        .trust-item {
+            padding: 24px;
+            text-align: center;
+        }
+
+        .trust-item + .trust-item {
+            border-left: 1px solid rgba(0,0,0,.07);
+        }
+
+        .trust-item strong {
+            display: block;
+            font-size: 19px;
+            margin-bottom: 5px;
+        }
+
+        .trust-item span {
+            color: var(--gray);
+            font-size: 12px;
+        }
+
+        /* =========================================================
+           CATEGORIES
+        ========================================================= */
+
+        .categories {
+            padding: 125px 0 70px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-heading p {
+            max-width: 600px;
+            margin: 17px auto 0;
+
+            color: var(--gray);
+
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 17px;
+        }
+
+        .category-card {
+            position: relative;
+
+            min-height: 210px;
+
+            display: flex;
+            align-items: flex-end;
+
+            padding: 25px;
+
+            border-radius: var(--radius);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #fff,
+                    #f0f0f3
+                );
+
+            border: 1px solid rgba(0,0,0,.06);
+
+            overflow: hidden;
+
+            cursor: pointer;
+
+            transition:
+                transform .35s ease,
+                box-shadow .35s ease;
+        }
+
+        .category-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 170px;
+            height: 170px;
+
+            border-radius: 50%;
+
+            right: -50px;
+            top: -55px;
+
+            background: rgba(0,113,227,.08);
+
+            transition: .4s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 60px rgba(0,0,0,.11);
+        }
+
+        .category-card:hover::before {
+            transform: scale(1.35);
+        }
+
+        .category-icon {
+            position: absolute;
+
+            right: 22px;
+            top: 20px;
+
+            font-size: 68px;
+
+            opacity: .16;
+
+            transition: .4s;
+        }
+
+        .category-card:hover .category-icon {
+            transform: scale(1.12) rotate(-5deg);
+            opacity: .25;
+        }
+
+        .category-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .category-card h3 {
+            font-size: 24px;
+            letter-spacing: -.7px;
+            margin-bottom: 6px;
+        }
+
+        .category-card p {
+            color: var(--gray);
+            font-size: 13px;
+        }
+
+        .category-arrow {
+            margin-top: 14px;
+            display: inline-block;
+            color: var(--blue);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* =========================================================
+           PRODUCTS
+        ========================================================= */
+
+        .products-section {
+            padding: 90px 0 110px;
+        }
+
+        .products-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            margin-bottom: 32px;
+        }
+
+        .products-header-left .eyebrow {
+            margin-bottom: 10px;
+        }
+
+        .view-all {
+            color: var(--blue);
+            font-size: 14px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        /* =========================================================
+           SHOP TOOLS
+        ========================================================= */
+
+        .shop-tools {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 12px;
+
+            margin-bottom: 30px;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-icon {
+            position: absolute;
+
+            left: 17px;
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            color: #8b8b91;
+
+            pointer-events: none;
+        }
+
+        .shop-tools input,
+        .shop-tools select {
+            width: 100%;
+            height: 52px;
+
+            border: 1px solid #d5d5da;
+
+            border-radius: 16px;
+
+            background: rgba(255,255,255,.85);
+
+            padding: 0 16px;
+
+            outline: none;
+
+            font-size: 14px;
+
+            transition: .25s;
+        }
+
+        .shop-tools input {
+            padding-left: 47px;
+        }
+
+        .shop-tools input:focus,
+        .shop-tools select:focus {
+            border-color: var(--blue);
+            box-shadow: 0 0 0 4px rgba(0,113,227,.10);
+            background: white;
+        }
+
+        .shop-tools select {
+            width: 190px;
+            cursor: pointer;
+        }
+
+        .filter-pills {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+
+            margin-bottom: 28px;
+        }
+
+        .filter-pill {
+            padding: 9px 15px;
+
+            border-radius: 999px;
+
+            background: white;
+            border: 1px solid #dedee3;
+
+            color: #555;
+
+            font-size: 12px;
+            font-weight: 650;
+
+            cursor: pointer;
+
+            transition: .2s;
+        }
+
+        .filter-pill:hover,
+        .filter-pill.active {
+            background: var(--black);
+            color: white;
+            border-color: var(--black);
+        }
+
+        /* =========================================================
+           PRODUCT GRID
+        ========================================================= */
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .product-card {
+            position: relative;
+
+            background: white;
+
+            border: 1px solid rgba(0,0,0,.065);
+
+            border-radius: 30px;
+
+            padding: 17px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 7px 25px rgba(0,0,0,.035);
+
+            transition:
+                transform .4s ease,
+                box-shadow .4s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-9px);
+            box-shadow:
+                0 25px 65px rgba(0,0,0,.12);
+        }
+
+    
+    .product-image-wrap {
+        position: relative;
+
+        height: 285px;
+
+        margin-bottom: 20px;
+
+        border-radius: 23px;
+
+        background:
+            radial-gradient(
+                circle at center,
+                #fff,
+                #f0f0f3
+            );
+
+        overflow: hidden;
+    }
+
+    .product-image-wrap::after {
+        content: "";
+
+        position: absolute;
+
+        width: 130px;
+        height: 130px;
+
+        border-radius: 50%;
+
+        background: rgba(0,113,227,.06);
+
+        filter: blur(25px);
+
+        pointer-events: none;
+
+        z-index: 1;
+    }
+
+    .product-image-slider {
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+
+        width: 100%;
+        height: 100%;
+
+        overflow-x: auto;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        scrollbar-width: none;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .product-image-slider::-webkit-scrollbar {
+        display: none;
+    }
+    .product-image-arrow {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.85);
+
+    color: #1d1d1f;
+
+    font-size: 28px;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.12);
+
+    opacity: 0;
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease,
+        background .25s ease;
+}
+
+.product-image-wrap:hover .product-image-arrow {
+    opacity: 1;
+}
+
+.product-image-arrow:hover {
+    background: white;
+}
+
+.product-image-prev {
+    left: 10px;
+}
+
+.product-image-next {
+    right: 10px;
+}
+
+    .product-image-slide {
+        flex: 0 0 100%;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 15px;
+
+        object-fit: contain;
+
+        scroll-snap-align: center;
+
+        user-select: none;
+        -webkit-user-drag: none;
+
+        transition:
+            transform .4s cubic-bezier(.2,.8,.2,1);
+    }
+
+    .product-card:hover .product-image-slide {
+        transform: scale(1.05);
+    }
+
+    .product-slide-dots {
+        position: absolute;
+
+        z-index: 5;
+
+        left: 50%;
+        bottom: 10px;
+
+        transform: translateX(-50%);
+
+        display: flex;
+
+        gap: 6px;
+
+        pointer-events: none;
+    }
+
+    .slide-dot {
+        width: 6px;
+        height: 6px;
+
+        border-radius: 50%;
+
+        background: rgba(0,0,0,.22);
+
+        transition:
+            width .25s ease,
+            background .25s ease;
+    }
+
+    .slide-dot.active {
+        width: 18px;
+
+        background: #0071e3;
+
+        border-radius: 10px;
+    }
+
+
+        .wishlist-btn {
+            position: absolute;
+
+            top: 14px;
+            right: 14px;
+
+            z-index: 5;
+
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: rgba(255,255,255,.88);
+            backdrop-filter: blur(10px);
+
+            cursor: pointer;
+
+            font-size: 17px;
+
+            box-shadow: 0 6px 20px rgba(0,0,0,.08);
+
+            transition: .25s;
+        }
+
+        .wishlist-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .wishlist-btn.active {
+            color: #ff2d55;
+        }
+
+        .product-badge {
+            position: absolute;
+
+            top: 16px;
+            left: 16px;
+
+            z-index: 4;
+
+            padding: 7px 10px;
+
+            border-radius: 999px;
+
+            background: rgba(255,255,255,.85);
+
+            backdrop-filter: blur(10px);
+
+            color: var(--blue);
+
+            font-size: 10px;
+            font-weight: 800;
+
+            text-transform: uppercase;
+            letter-spacing: .6px;
+        }
+
+        .product-info {
+            padding: 0 5px 5px;
+        }
+
+        .product-tag {
+            color: var(--blue);
+
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            margin-bottom: 7px;
+        }
+
+        .product-card h3 {
+            font-size: 23px;
+            line-height: 1.1;
+            letter-spacing: -.7px;
+
+            margin-bottom: 9px;
+        }
+
+        .product-card h3 a:hover {
+            color: var(--blue);
+        }
+
+        .description {
+            min-height: 44px;
+
+            color: var(--gray);
+
+            font-size: 13px;
+            line-height: 1.55;
+
+            margin-bottom: 17px;
+        }
+
+        .stock-row {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+
+            margin-bottom: 14px;
+
+            font-size: 11px;
+            font-weight: 650;
+
+            color: #6e6e73;
+        }
+
+        .stock-dot {
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #34c759;
+        }
+
+        .stock-dot.low {
+            background: #ff9500;
+        }
+
+        .stock-dot.out {
+            background: #ff3b30;
+        }
+
+        .product-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .price {
+            font-size: 19px;
+            font-weight: 800;
+            letter-spacing: -.4px;
+        }
+
+        .add-cart {
+            padding: 11px 16px;
+
+            background: var(--blue);
+            color: white;
+
+            border-radius: 999px;
+
+            cursor: pointer;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            transition: .25s;
+        }
+
+        .add-cart:hover:not(:disabled) {
+            background: #0077ed;
+            transform: scale(1.05);
+        }
+
+        .add-cart:disabled {
+            background: #d2d2d7;
+            cursor: not-allowed;
+        }
+
+        /* =========================================================
+           LOADING
+        ========================================================= */
+
+        .loading {
+            grid-column: 1 / -1;
+
+            min-height: 300px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            color: var(--gray);
+
+            text-align: center;
+        }
+
+        .loading-spinner {
+            width: 38px;
+            height: 38px;
+
+            margin-bottom: 18px;
+
+            border: 3px solid #ddd;
+            border-top-color: var(--blue);
+
+            border-radius: 50%;
+
+            animation: spin .8s linear infinite;
+        }
+
+        /* =========================================================
+           PROMO
+        ========================================================= */
+
+        .promo {
+            position: relative;
+
+            width: min(1200px, calc(100% - 40px));
+
+            margin: 0 auto 110px;
+
+            padding: 90px 35px;
+
+            text-align: center;
+
+            color: white;
+
+            border-radius: 38px;
+
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(0,113,227,.7),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 85% 80%,
+                    rgba(94,92,230,.45),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    135deg,
+                    #080808,
+                    #222
+                );
+
+            box-shadow:
+                0 30px 80px rgba(0,0,0,.15);
+        }
+
+        .promo::before {
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border: 1px solid rgba(255,255,255,.1);
+
+            border-radius: 50%;
+
+            top: -160px;
+            right: -70px;
+        }
+
+        .promo::after {
+            content: "";
+
+            position: absolute;
+
+            width: 220px;
+            height: 220px;
+
+            border: 1px solid rgba(255,255,255,.08);
+
+            border-radius: 50%;
+
+            bottom: -120px;
+            left: -70px;
+        }
+
+        .promo-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .promo-label {
+            color: #66b3ff;
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 1.8px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 14px;
+        }
+
+        .promo h2 {
+            font-size: clamp(38px, 6vw, 68px);
+
+            letter-spacing: -3px;
+
+            line-height: 1;
+
+            margin-bottom: 18px;
+        }
+
+        .promo p {
+            max-width: 610px;
+
+            margin: auto auto 30px;
+
+            color: #b7b7bd;
+
+            font-size: 15px;
+            line-height: 1.65;
+        }
+
+        .promo-button {
+            display: inline-flex;
+            align-items: center;
+
+            min-height: 48px;
+
+            padding: 0 22px;
+
+            background: white;
+            color: #111;
+
+            border-radius: 999px;
+
+            font-size: 13px;
+            font-weight: 800;
+
+            transition: .3s;
+        }
+
+        .promo-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(255,255,255,.12);
+        }
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            background: #1d1d1f;
+            color: #86868b;
+
+            padding: 65px 0 35px;
+        }
+
+        .footer-inner {
+            width: min(1200px, calc(100% - 40px));
+            margin: auto;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+
+            padding-bottom: 45px;
+
+            border-bottom: 1px solid #3a3a3c;
+        }
+
+        .footer-brand h2 {
+            color: white;
+
+            font-size: 25px;
+            letter-spacing: -.7px;
+
+            margin-bottom: 12px;
+        }
+
+        .footer-brand p {
+            max-width: 350px;
+
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 80px;
+        }
+
+        .footer-column h4 {
+            color: white;
+
+            font-size: 13px;
+
+            margin-bottom: 15px;
+        }
+
+        .footer-column a {
+            display: block;
+
+            margin-bottom: 10px;
+
+            font-size: 12px;
+
+            transition: .2s;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+        .copyright {
+            padding-top: 25px;
+
+            text-align: center;
+
+            font-size: 11px;
+        }
+
+        /* =========================================================
+           FLOATING CART
+        ========================================================= */
+
+        .cart-box {
+            position: fixed;
+
+            right: 22px;
+            bottom: 22px;
+
+            z-index: 4000;
+
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            padding: 13px 17px;
+
+            background: rgba(29,29,31,.94);
+            backdrop-filter: blur(15px);
+
+            color: white;
+
+            border-radius: 999px;
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,.25);
+
+            cursor: pointer;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            transition: .3s;
+        }
+
+        .cart-box:hover {
+            transform: translateY(-4px) scale(1.02);
+        }
+
+        .cart-floating-total {
+            color: #b7b7bd;
+        }
+
+        /* =========================================================
+           TOAST
+        ========================================================= */
+
+        .toast {
+            position: fixed;
+
+            left: 50%;
+            bottom: 90px;
+
+            transform: translate(-50%, 20px);
+
+            z-index: 99999;
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 13px 18px;
+
+            background: rgba(29,29,31,.95);
+            backdrop-filter: blur(18px);
+
+            color: white;
+
+            border-radius: 999px;
+
+            font-size: 12px;
+            font-weight: 650;
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,.25);
+
+            opacity: 0;
+            pointer-events: none;
+
+            transition: .35s ease;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+
+        .toast-icon {
+            width: 20px;
+            height: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #34c759;
+
+            color: white;
+
+            font-size: 11px;
+        }
+
+        /* =========================================================
+           MOBILE MENU
+        ========================================================= */
+
+        .mobile-menu {
+            position: fixed;
+
+            top: 0;
+            right: -100%;
+
+            width: min(350px, 88%);
+
+            height: 100vh;
+
+            z-index: 10000;
+
+            background: rgba(255,255,255,.97);
+            backdrop-filter: blur(25px);
+
+            box-shadow: -15px 0 50px rgba(0,0,0,.15);
+
+            transition: right .35s cubic-bezier(.2,.8,.2,1);
+
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu-header {
+            height: 75px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 22px;
+
+            border-bottom: 1px solid #eee;
+
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .mobile-menu-header button {
+            width: 40px;
+            height: 40px;
+
+            border-radius: 50%;
+
+            background: #f5f5f7;
+
+            cursor: pointer;
+
+            font-size: 17px;
+        }
+
+        .mobile-menu-links {
+            display: flex;
+            flex-direction: column;
+
+            padding: 18px;
+        }
+
+        .mobile-menu-links a {
+            min-height: 58px;
+
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            padding: 0 15px;
+
+            border-radius: 15px;
+
+            color: #111;
+
+            font-size: 15px;
+            font-weight: 650;
+
+            transition: .2s;
+        }
+
+        .mobile-menu-links a:hover {
+            background: #f5f5f7;
+        }
+
+        .mobile-cart-count {
+            margin-left: auto;
+
+            min-width: 25px;
+            height: 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: var(--black);
+            color: white;
+
+            font-size: 11px;
+        }
+
+        .menu-overlay {
+            position: fixed;
+            inset: 0;
+
+            z-index: 9999;
+
+            background: rgba(0,0,0,.42);
+
+            opacity: 0;
+            visibility: hidden;
+
+            transition: .3s;
+        }
+
+        .menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* =========================================================
+           REVEAL
+        ========================================================= */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(25px);
+
+            transition:
+                opacity .7s ease,
+                transform .7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =========================================================
+           ANIMATIONS
+        ========================================================= */
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes heroIn {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heroOrbit {
+            from {
+                transform: rotate(0deg) scale(1);
+            }
+
+            50% {
+                transform: rotate(180deg) scale(1.05);
+            }
+
+            to {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        /* =========================================================
+           TABLET
+        ========================================================= */
+
+        @media (max-width: 1050px) {
+
+            nav {
+                padding: 0 3%;
+            }
+
+            nav ul {
+                gap: 18px;
+            }
+
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-top {
+                flex-direction: column;
+            }
+        }
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 700px) {
+
+            .container {
+                width: min(100% - 30px, 1240px);
+            }
+
+            nav {
+                height: 60px;
+                padding: 0 15px;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .nav-actions {
+                margin-left: auto;
+            }
+
+            .nav-icon {
+                display: none;
+            }
+
+            .nav-cart {
+                padding: 9px 12px;
+            }
+
+            .hamburger {
+                display: block;
+                margin-left: 4px;
+            }
+
+            .hero {
+                min-height: 680px;
+                padding: 75px 15px;
+            }
+
+            .hero h1 {
+                font-size: 57px;
+                letter-spacing: -4px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero::before {
+                width: 450px;
+                height: 450px;
+            }
+
+            .hero::after {
+                width: 300px;
+                height: 300px;
+            }
+
+            .trust-strip {
+                grid-template-columns: 1fr;
+
+                margin-top: -20px;
+
+                border-radius: 20px;
+            }
+
+            .trust-item + .trust-item {
+                border-left: 0;
+                border-top: 1px solid rgba(0,0,0,.07);
+            }
+
+            .categories {
+                padding-top: 90px;
+            }
+
+            .section-title {
+                letter-spacing: -2px;
+            }
+
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .category-card {
+                min-height: 180px;
+            }
+
+            .products-section {
+                padding-top: 65px;
+            }
+
+            .products-header {
+                display: block;
+            }
+
+            .products-header .section-title {
+                margin-bottom: 14px;
+            }
+
+            .shop-tools {
+                grid-template-columns: 1fr;
+            }
+
+            .shop-tools select {
+                width: 100%;
+            }
+
+            .filter-pills {
+                overflow-x: auto;
+                flex-wrap: nowrap;
+
+                padding-bottom: 5px;
+            }
+
+            .filter-pill {
+                flex: 0 0 auto;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            .product-image-wrap {
+                height: 280px;
+            }
+
+            .promo {
+                padding: 70px 24px;
+                border-radius: 28px;
+            }
+
+            .promo h2 {
+                letter-spacing: -2px;
+            }
+
+            .footer-links {
+                gap: 45px;
+                flex-wrap: wrap;
+            }
+
+            .cart-box {
+                right: 14px;
+                bottom: 14px;
+            }
+
+            .toast {
+                width: calc(100% - 30px);
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 400px) {
+
+            .hero h1 {
+                font-size: 49px;
+            }
+
+            .product-bottom {
+                align-items: flex-end;
+            }
+
+            .add-cart {
+                padding: 10px 12px;
+            }
+        }
+    </style>
+
+<style>
+/* ZIQTECH WELCOME USER - CENTERED PREMIUM CARD */
+.welcome-user {
+    position: relative;
+    width: fit-content;
+    min-width: 270px;
+    max-width: min(360px, 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+    margin: 0 auto 18px;
+    padding: 15px 24px 14px;
+
+    text-align: center;
+
+    border: 1px solid rgba(0,113,227,.13);
+    border-radius: 21px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.94),
+            rgba(255,255,255,.68)
+        );
+
+    backdrop-filter: blur(18px) saturate(165%);
+    -webkit-backdrop-filter: blur(18px) saturate(165%);
+
+    box-shadow:
+        0 14px 38px rgba(0,0,0,.065),
+        inset 0 1px 0 rgba(255,255,255,.9);
+
+    overflow: hidden;
+}
+
+.welcome-user::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 54px;
+    height: 3px;
+    transform: translateX(-50%);
+    border-radius: 0 0 999px 999px;
+    background: linear-gradient(90deg, #57a8ff, #0071e3);
+    box-shadow: 0 4px 14px rgba(0,113,227,.2);
+}
+
+.welcome-user[hidden] {
+    display: none !important;
+}
+
+.welcome-user-kicker {
+    color: #86868b;
+    font-size: 9px;
+    font-weight: 850;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+.welcome-user-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    color: #1d1d1f;
+    font-size: 18px;
+    font-weight: 690;
+    letter-spacing: -.35px;
+    line-height: 1.25;
+}
+
+.welcome-user strong {
+    color: #0071e3;
+    font-size: 19px;
+    font-weight: 850;
+}
+
+.welcome-user-wave {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    line-height: 1;
+}
+
+@media (max-width: 700px) {
+    .welcome-user {
+        min-width: 235px;
+        margin-bottom: 14px;
+        padding: 13px 18px 12px;
+        border-radius: 18px;
+    }
+
+    .welcome-user-main {
+        font-size: 15px;
+    }
+
+    .welcome-user strong {
+        font-size: 16px;
+    }
+
+    .welcome-user-wave {
+        font-size: 15px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<nav>
+
+    <a href="#" class="logo">
+        Ziq<span>Tech</span>
+    </a>
+
+
+    <ul id="desktopNav">
+    
+<a href="profile.html" class="profile-link" id="profileLink">
+    👤 My Profile
+</a>
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li> 
+<li>
+    <a href="login.html" id="accountLink">
+        Login
+    </a>
+</li>
+
+
+        <li><a href="order.html">Orders</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">Support</a></li>
+    </ul>
+
+    <div class="nav-actions">
+
+        <div
+            class="nav-icon"
+            title="Wishlist"
+            onclick="window.location.href='wishlist.html'"
+        >
+            ♡
+        </div>
+
+        <div
+            class="nav-cart"
+            onclick="window.location.href='cart.html'"
+        >
+            🛒
+            <span class="nav-cart-count" id="cartCount">0</span>
+        </div>
+
+        <button
+            class="hamburger"
+            id="hamburgerBtn"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</nav>
+
+<!-- =========================================================
+     MOBILE MENU
+========================================================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-header">
+
+        <span>ZiqTech</span>
+
+        <button id="closeMenu">
+            ✕
+        </button>
+
+    </div>
+
+    <div class="mobile-menu-links">
+
+        <a href="#">
+            🏠
+            <span>Home</span>
+        </a>
+
+        <a href="#products">
+            🛍️
+            <span>Products</span>
+        </a>
+
+        <a href="wishlist.html">
+            ❤️
+            <span>Wishlist</span>
+        </a>
+
+        <a href="order.html">
+            📦
+            <span>Orders</span>
+        </a>
+
+        <a href="profile.html">
+    👤
+    <span>My Profile</span>
+</a>
+
+        <a href="login.html" id="mobileAccountLink">
+            👤
+            <span>Login</span>
+        </a>
+
+        <a href="#categories">
+            📂
+            <span>Categories</span>
+        </a>
+
+        <a href="#about">
+            ℹ️
+            <span>Support</span>
+        </a>
+
+        <a href="cart.html">
+            🛒
+            <span>Cart</span>
+            <span
+                class="mobile-cart-count"
+                id="mobileCartCount"
+            >
+                0
+            </span>
+        </a>
+
+    </div>
+
+</div>
+
+<div
+    class="menu-overlay"
+    id="menuOverlay"
+></div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div
+            class="welcome-user"
+            id="welcomeUser"
+            hidden
+        >
+            <span class="welcome-user-kicker">Welcome back</span>
+
+            <span class="welcome-user-main">
+                <strong id="welcomeUserName">Customer</strong>
+                <span class="welcome-user-wave">👋</span>
+            </span>
+        </div>
+
+        <div class="hero-badge">
+            ✦ Premium Technology Store
+        </div>
+
+        <h1>
+            Technology.<br>
+            Reimagined.
+        </h1>
+
+        <p>
+            Discover premium devices, powerful performance
+            and accessories designed to elevate the way
+            you work, create and live.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#products"
+                class="primary-button"
+            >
+                Shop ZiqTech →
+            </a>
+
+            <a
+                href="#categories"
+                class="secondary-button"
+            >
+                Explore Collection
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-glow"></div>
+
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TRUST STRIP
+========================================================= -->
+
+<div class="trust-strip">
+
+    <div class="trust-item">
+        <strong>Premium Devices</strong>
+        <span>Curated technology collection</span>
+    </div>
+
+    <div class="trust-item">
+        <strong>Fast & Simple</strong>
+        <span>Easy shopping experience</span>
+    </div>
+
+    <div class="trust-item">
+        <strong>Secure Checkout</strong>
+        <span>Built for a seamless purchase</span>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CATEGORIES
+========================================================= -->
+
+<section
+    class="categories"
+    id="categories"
+>
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Explore
+            </div>
+
+            <h2 class="section-title">
+                Shop by category.
+            </h2>
+
+            <p>
+                Find the technology that fits your lifestyle,
+                from powerful Macs to everyday accessories.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <div
+                class="category-card reveal"
+                onclick="selectCategory('mac')"
+            >
+
+                <div class="category-icon">
+                    💻
+                </div>
+
+                <div class="category-content">
+
+                    <h3>Mac</h3>
+
+                    <p>
+                        Powerful. Elegant.
+                    </p>
+
+                    <span class="category-arrow">
+                        Explore →
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="category-card reveal"
+                onclick="selectCategory('iphone')"
+            >
+
+                <div class="category-icon">
+                    📱
+                </div>
+
+                <div class="category-content">
+
+                    <h3>iPhone</h3>
+
+                    <p>
+                        Smart. Powerful.
+                    </p>
+
+                    <span class="category-arrow">
+                        Explore →
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="category-card reveal"
+                onclick="selectCategory('audio')"
+            >
+
+                <div class="category-icon">
+                    🎧
+                </div>
+
+                <div class="category-content">
+
+                    <h3>Audio</h3>
+
+                    <p>
+                        Hear everything.
+                    </p>
+
+                    <span class="category-arrow">
+                        Explore →
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="category-card reveal"
+                onclick="selectCategory('accessories')"
+            >
+
+                <div class="category-icon">
+                    ⌚
+                </div>
+
+                <div class="category-content">
+
+                    <h3>Accessories</h3>
+
+                    <p>
+                        Complete your setup.
+                    </p>
+
+                    <span class="category-arrow">
+                        Explore →
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRODUCTS
+========================================================= -->
+
+<section
+    class="products-section"
+    id="products"
+>
+
+    <div class="container">
+
+        <div class="products-header reveal">
+
+            <div class="products-header-left">
+
+                <div class="eyebrow">
+                    ZiqTech Collection
+                </div>
+
+                <h2 class="section-title">
+                    Featured products.
+                </h2>
+
+            </div>
+
+            <a
+                href="#products"
+                class="view-all"
+                onclick="resetFilters()"
+            >
+                View all →
+            </a>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="shop-tools reveal">
+
+            <div class="search-box">
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products, devices, accessories..."
+                    oninput="filterProducts()"
+                >
+
+            </div>
+
+            <select
+                id="categoryFilter"
+                onchange="filterProducts()"
+            >
+                <option value="all">
+                    All Products
+                </option>
+
+                <option value="mac">
+                    Mac
+                </option>
+
+                <option value="iphone">
+                    iPhone
+                </option>
+
+                <option value="audio">
+                    Audio
+                </option>
+
+                <option value="accessories">
+                    Accessories
+                </option>
+            </select>
+
+        </div>
+
+
+        <!-- FILTER PILLS -->
+
+        <div class="filter-pills">
+
+            <button
+                class="filter-pill active"
+                data-category="all"
+                onclick="quickFilter('all', this)"
+            >
+                All
+            </button>
+
+            <button
+                class="filter-pill"
+                data-category="mac"
+                onclick="quickFilter('mac', this)"
+            >
+                Mac
+            </button>
+
+            <button
+                class="filter-pill"
+                data-category="iphone"
+                onclick="quickFilter('iphone', this)"
+            >
+                iPhone
+            </button>
+
+            <button
+                class="filter-pill"
+                data-category="audio"
+                onclick="quickFilter('audio', this)"
+            >
+                Audio
+            </button>
+
+            <button
+                class="filter-pill"
+                data-category="accessories"
+                onclick="quickFilter('accessories', this)"
+            >
+                Accessories
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT LIST -->
+
+        <div
+            class="products"
+            id="productList"
+        >
+
+            <div class="loading">
+
+                <div class="loading-spinner"></div>
+
+                <p>
+                    Loading ZiqTech products...
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROMO
+========================================================= -->
+
+<section
+    class="promo reveal"
+    id="about"
+>
+
+    <div class="promo-content">
+
+        <div class="promo-label">
+            The ZiqTech Experience
+        </div>
+
+        <h2>
+            Upgrade your world.
+        </h2>
+
+        <p>
+            From everyday essentials to powerful technology,
+            ZiqTech brings everything you need into one
+            premium shopping experience.
+        </p>
+
+        <a
+            href="#products"
+            class="promo-button"
+        >
+            Start Shopping →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FLOATING CART
+========================================================= -->
+
+<div
+    class="cart-box"
+    onclick="window.location.href='cart.html'"
+>
+
+    🛒
+
+    <span>
+        Cart
+    </span>
+
+    <span>
+        —
+    </span>
+
+    <span
+        class="cart-floating-total"
+        id="cartTotal"
+    >
+        RM 0.00
+    </span>
+
+</div>
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div
+    class="toast"
+    id="toast"
+>
+
+    <span class="toast-icon">
+        ✓
+    </span>
+
+    <span id="toastText">
+        Added to cart
+    </span>
+
+</div>
+<script>
+
+/* =========================================================
+   ZIQTECH STORE
+   CART + ACCOUNT + PRODUCTS + WISHLIST
+========================================================= */
+
+
+/* =========================================================
+   ACCOUNT
+========================================================= */
+
+function updateAccount() {
+
+    const accountLink =
+        document.getElementById("accountLink");
+
+    const mobileAccountLink =
+        document.getElementById(
+            "mobileAccountLink"
+        );
+
+    let currentUser = null;
+
+    try {
+
+        currentUser =
+            JSON.parse(
+                localStorage.getItem(
+                    "ziqtech_current_user"
+                )
+            );
+
+    } catch (error) {
+
+        currentUser = null;
+
+    }
+
+
+    /* =========================
+       DESKTOP
+    ========================= */
+
+    if (accountLink) {
+
+        if (currentUser) {
+
+            accountLink.textContent =
+                "Logout";
+
+            accountLink.removeAttribute(
+                "href"
+            );
+
+            accountLink.onclick =
+                function (event) {
+
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    const confirmLogout =
+                        confirm(
+                            "Logout dari ZiqTech?"
+                        );
+
+                    if (!confirmLogout) {
+                        return;
+                    }
+
+                    performZiqTechLogout();
+                };
+
+        } else {
+
+            accountLink.textContent =
+                "Login";
+
+            accountLink.href =
+                "login.html";
+
+            accountLink.onclick = null;
+
+        }
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    if (mobileAccountLink) {
+
+        if (currentUser) {
+
+            mobileAccountLink.href =
+                "#";
+
+            mobileAccountLink.innerHTML = `
+                👤
+                <span>Logout</span>
+            `;
+
+            mobileAccountLink.onclick =
+                function (event) {
+
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    const confirmLogout =
+                        confirm(
+                            "Logout dari ZiqTech?"
+                        );
+
+                    if (!confirmLogout) {
+                        return;
+                    }
+
+                    performZiqTechLogout();
+                };
+
+        } else {
+
+            mobileAccountLink.href =
+                "login.html";
+
+            mobileAccountLink.innerHTML = `
+                👤
+                <span>Login</span>
+            `;
+
+            mobileAccountLink.onclick = null;
+
+        }
+    }
+
+
+    /* =========================
+       WELCOME USER
+    ========================= */
+
+    const welcomeUser =
+        document.getElementById(
+            "welcomeUser"
+        );
+
+    const welcomeUserName =
+        document.getElementById(
+            "welcomeUserName"
+        );
+
+    if (welcomeUser) {
+
+        if (currentUser) {
+
+            const displayName =
+                String(
+                    currentUser.name ||
+                    currentUser.fullName ||
+                    currentUser.username ||
+                    currentUser.email ||
+                    "Customer"
+                )
+                    .trim();
+
+            const friendlyName =
+                displayName.includes("@")
+                    ? displayName.split("@")[0]
+                    : displayName;
+
+            if (welcomeUserName) {
+                welcomeUserName.textContent =
+                    friendlyName;
+            }
+
+            welcomeUser.hidden = false;
+
+        } else {
+
+            welcomeUser.hidden = true;
+        }
+    }
+}
+
+
+
+async function performZiqTechLogout() {
+
+    try {
+
+        await fetch(
+            "/api/auth/logout",
+            {
+                method: "POST",
+                credentials: "include",
+                headers: {
+                    "Accept":
+                        "application/json"
+                }
+            }
+        );
+
+    } catch (error) {
+
+        console.warn(
+            "Backend logout warning:",
+            error
+        );
+
+    } finally {
+
+        localStorage.removeItem(
+            "ziqtech_current_user"
+        );
+
+        window.location.href =
+            "index.html";
+    }
+}
+
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+function logout(event) {
+
+    if (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+    }
+
+    performZiqTechLogout();
+
+}
+
+
+/* =========================================================
+   ESCAPE HTML
+========================================================= */
+
+function escapeHtml(value) {
+
+    return String(value ?? "")
+        .replace(
+            /&/g,
+            "&amp;"
+        )
+        .replace(
+            /</g,
+            "&lt;"
+        )
+        .replace(
+            />/g,
+            "&gt;"
+        )
+        .replace(
+            /"/g,
+            "&quot;"
+        )
+        .replace(
+            /'/g,
+            "&#039;"
+        );
+
+}
+
+
+/* =========================================================
+   USER-SPECIFIC CART
+========================================================= */
+
+let cart = [];
+
+function getCurrentUser() {
+
+    try {
+
+        return JSON.parse(
+            localStorage.getItem("ziqtech_current_user")
+        );
+
+    } catch {
+
+        return null;
+
+    }
+
+}
+
+
+function getCartKey() {
+
+    const user = getCurrentUser();
+
+    if (user && user.id) {
+
+        return `ziqtech_cart_user_${user.id}`;
+
+    }
+
+    if (user && user.email) {
+
+        return `ziqtech_cart_user_${String(user.email).toLowerCase()}`;
+
+    }
+
+    return "ziqtech_cart_guest";
+
+}
+
+
+/*
+    Migrate old shared cart once.
+    Old:
+        ziqtech_cart
+
+    New:
+        ziqtech_cart_user_ID
+*/
+
+function migrateOldCart() {
+
+    const oldKey = "ziqtech_cart";
+
+    const newKey = getCartKey();
+
+    if (oldKey === newKey) {
+        return;
+    }
+
+    const oldCart =
+        localStorage.getItem(oldKey);
+
+    if (!oldCart) {
+        return;
+    }
+
+    const existingNewCart =
+        localStorage.getItem(newKey);
+
+    if (!existingNewCart) {
+
+        localStorage.setItem(
+            newKey,
+            oldCart
+        );
+
+    }
+
+    localStorage.removeItem(
+        oldKey
+    );
+
+}
+
+
+migrateOldCart();
+
+
+/* =========================================================
+   READ CART
+========================================================= */
+
+function readCart() {
+
+    try {
+
+        const savedCart =
+            JSON.parse(
+                localStorage.getItem(
+                    getCartKey()
+                )
+            );
+
+        if (!Array.isArray(savedCart)) {
+
+            return [];
+
+        }
+
+        return savedCart;
+
+    } catch (error) {
+
+        console.error(
+            "Cart read error:",
+            error
+        );
+
+        return [];
+
+    }
+
+}
+
+
+/* =========================================================
+   SAVE CART
+========================================================= */
+
+function saveCart() {
+
+    localStorage.setItem(
+        getCartKey(),
+        JSON.stringify(cart)
+    );
+
+}
+
+/* =========================================================
+   NORMALIZE CART
+========================================================= */
+
+function normalizeCart(items) {
+
+    if (!Array.isArray(items)) {
+
+        return [];
+
+    }
+
+    return items
+        .map(item => {
+
+            const productId =
+                Number(
+                    item.productId ??
+                    item.id
+                );
+
+            const quantity =
+                Number(
+                    item.quantity || 0
+                );
+
+            const variantId =
+                item.variantId ?? null;
+
+            return {
+                productId,
+                quantity,
+                variantId
+            };
+
+        })
+        .filter(item =>
+
+            Number.isFinite(
+                item.productId
+            ) &&
+
+            item.productId > 0 &&
+
+            item.quantity > 0
+
+        );
+
+}
+
+
+/* =========================================================
+   FIND CART ITEM
+========================================================= */
+
+function findCartItem(
+    productId,
+    variantId = null
+) {
+
+    return cart.find(item => {
+
+        return (
+
+            Number(item.productId) ===
+                Number(productId) &&
+
+            String(
+                item.variantId ?? ""
+            ) ===
+
+            String(
+                variantId ?? ""
+            )
+
+        );
+
+    });
+
+}
+
+
+/* =========================================================
+   PRODUCT PRICE
+========================================================= */
+
+function getProductPrice(
+    product,
+    variantId = null
+) {
+
+    if (!product) {
+
+        return 0;
+
+    }
+
+
+    if (
+        variantId !== null &&
+        Array.isArray(product.variants)
+    ) {
+
+        const variant =
+            product.variants.find(
+                item =>
+                    String(item.id) ===
+                    String(variantId)
+            );
+
+        if (variant) {
+
+            const variantPrice =
+                Number(
+                    variant.price
+                );
+
+            if (
+                Number.isFinite(
+                    variantPrice
+                )
+            ) {
+
+                return variantPrice;
+
+            }
+
+        }
+
+    }
+
+
+    const price =
+        Number(
+            product.price || 0
+        );
+
+    return Number.isFinite(price)
+        ? price
+        : 0;
+
+}
+
+
+/* =========================================================
+   ADD TO CART
+========================================================= */
+
+function addToCart(
+    productId,
+    quantity = 1,
+    stock = 0,
+    variantId = null,
+    variantAttributes = {},
+    variantName = ""
+) {
+
+    productId = Number(productId);
+    quantity = Number(quantity);
+    stock = Number(stock);
+
+    if (
+        !Number.isFinite(productId) ||
+        productId <= 0
+    ) {
+        return {
+            ok: false,
+            reason: "invalid_product"
+        };
+    }
+
+    if (
+        !Number.isFinite(quantity) ||
+        quantity < 1
+    ) {
+        return {
+            ok: false,
+            reason: "invalid_quantity"
+        };
+    }
+
+    if (
+        !Number.isFinite(stock) ||
+        stock <= 0
+    ) {
+        return {
+            ok: false,
+            reason: "out_of_stock"
+        };
+    }
+
+    const existing =
+        findCartItem(
+            productId,
+            variantId
+        );
+
+    const currentQuantity =
+        existing
+            ? Number(existing.quantity || 0)
+            : 0;
+
+    const newQuantity =
+        currentQuantity + quantity;
+
+    if (newQuantity > stock) {
+        return {
+            ok: false,
+            reason: "max_stock",
+            stock
+        };
+    }
+
+    if (existing) {
+
+        existing.quantity =
+            newQuantity;
+
+        existing.variantAttributes =
+            variantAttributes;
+
+        existing.variantName =
+            variantName;
+
+    } else {
+
+        cart.push({
+
+            productId,
+            quantity,
+            variantId,
+
+            variantAttributes,
+
+            variantName
+
+        });
+    }
+
+    saveCart();
+
+    return {
+        ok: true,
+        cart
+    };
+}
+
+
+
+/* =========================================================
+   UPDATE CART UI
+========================================================= */
+
+function updateCart() {
+
+    cart =
+        normalizeCart(
+            readCart()
+        );
+
+
+    let totalItems = 0;
+
+    let totalPrice = 0;
+
+
+    cart.forEach(item => {
+
+        const product =
+            allProducts.find(
+                product =>
+                    Number(product.id) ===
+                    Number(item.productId)
+            );
+
+
+        const quantity =
+            Number(
+                item.quantity || 0
+            );
+
+
+        totalItems +=
+            quantity;
+
+
+        if (!product) {
+
+            return;
+
+        }
+
+
+        const price =
+            getProductPrice(
+                product,
+                item.variantId
+            );
+
+
+        totalPrice +=
+            price * quantity;
+
+    });
+
+
+    const formattedTotal =
+        totalPrice.toLocaleString(
+            "en-MY",
+            {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            }
+        );
+
+
+    const cartCount =
+        document.getElementById(
+            "cartCount"
+        );
+
+
+    const mobileCartCount =
+        document.getElementById(
+            "mobileCartCount"
+        );
+
+
+    const cartTotal =
+        document.getElementById(
+            "cartTotal"
+        );
+
+
+    if (cartCount) {
+
+        cartCount.textContent =
+            totalItems;
+
+    }
+
+
+    if (mobileCartCount) {
+
+        mobileCartCount.textContent =
+            totalItems;
+
+    }
+
+
+    if (cartTotal) {
+
+        cartTotal.textContent =
+            "RM " +
+            formattedTotal;
+
+    }
+
+}
+
+
+/* =========================================================
+   PRODUCTS
+========================================================= */
+
+let allProducts = [];
+
+
+/* =========================================================
+   LOAD PRODUCTS
+========================================================= */
+
+async function loadProducts() {
+
+    const productList =
+        document.getElementById(
+            "productList"
+        );
+
+
+    if (!productList) {
+
+        console.error(
+            "productList element not found."
+        );
+
+        return;
+
+    }
+
+
+    try {
+
+        const response =
+            await fetch(
+                "/api/products",
+                {
+                    method: "GET",
+                    headers: {
+                        "Accept":
+                            "application/json"
+                    }
+                }
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Server returned an error: " +
+                response.status
+            );
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        console.log(
+            "ZiqTech products API:",
+            data
+        );
+
+
+        /*
+         ========================================================
+         IMPORTANT FIX
+
+         Backend boleh return:
+
+         1. [
+                {...},
+                {...}
+            ]
+
+         ATAU
+
+         2. {
+                success: true,
+                products: [...]
+            }
+
+         ATAU
+
+         3. {
+                data: [...]
+            }
+
+         Kita support semua format.
+         ========================================================
+        */
+
+
+        let products = [];
+
+
+        if (Array.isArray(data)) {
+
+            products =
+                data;
+
+        } else if (
+            data &&
+            Array.isArray(
+                data.products
+            )
+        ) {
+
+            products =
+                data.products;
+
+        } else if (
+            data &&
+            Array.isArray(
+                data.data
+            )
+        ) {
+
+            products =
+                data.data;
+
+        } else {
+
+            throw new Error(
+                "Invalid product data received from server."
+            );
+
+        }
+
+
+        /*
+         ========================================================
+         CLEAN PRODUCT DATA
+         ========================================================
+        */
+
+        allProducts =
+            products.filter(
+                product =>
+                    product &&
+                    (
+                        product.id !==
+                        undefined
+                    )
+            );
+
+
+        console.log(
+            "Products loaded:",
+            allProducts.length
+        );
+
+
+        /*
+         ========================================================
+         RENDER
+         ========================================================
+        */
+
+        renderProducts(
+            allProducts
+        );
+        document
+    .querySelectorAll("#productList .product-card")
+    .forEach(card => {
+
+        const slider =
+            card.querySelector(".product-image-slider");
+
+        const prevButton =
+            card.querySelector(".product-image-prev");
+
+        const nextButton =
+            card.querySelector(".product-image-next");
+
+        if (!slider || !prevButton || !nextButton) {
+            return;
+        }
+
+        prevButton.addEventListener("click", () => {
+
+            slider.scrollBy({
+                left: -slider.clientWidth,
+                behavior: "smooth"
+            });
+
+        });
+
+        nextButton.addEventListener("click", () => {
+
+            slider.scrollBy({
+                left: slider.clientWidth,
+                behavior: "smooth"
+            });
+
+        });
+
+    });
+
+
+        try {
+            updateCart();
+        } catch (cartError) {
+            console.error(
+                "Cart UI update error:",
+                cartError
+            );
+        }
+
+
+    } catch (error) {
+
+        console.error(
+            "Product loading error:",
+            error
+        );
+
+
+        const alreadyRenderedProducts =
+            productList.querySelector(
+                ".product-card"
+            );
+
+        if (alreadyRenderedProducts) {
+            return;
+        }
+
+
+        productList.innerHTML = `
+
+            <div class="loading">
+
+                <div
+                    style="
+                        font-size:40px;
+                        margin-bottom:15px;
+                    "
+                >
+                    ⚠️
+                </div>
+
+                <p>
+                    Unable to load products.
+                </p>
+
+                <small>
+                    ${escapeHtml(
+                        error.message
+                    )}
+                </small>
+
+            </div>
+
+        `;
+
+    }
+
+}
+
+
+/* =========================================================
+   RENDER PRODUCTS
+========================================================= */
+
+/* =========================================================
+RENDER PRODUCTS
+========================================================= */
+
+function renderProducts(products) {
+
+    const productList =
+        document.getElementById("productList");
+
+    if (!productList) {
+        console.error("productList element not found.");
+        return;
+    }
+
+    productList.innerHTML = "";
+
+    if (
+        !Array.isArray(products) ||
+        products.length === 0
+    ) {
+
+        productList.innerHTML = `
+            <div class="loading">
+                <div
+                    style="
+                        font-size:42px;
+                        margin-bottom:15px;
+                    "
+                >
+                    🔍
+                </div>
+
+                <p>No products found.</p>
+
+                <small>
+                    Try another search or category.
+                </small>
+            </div>
+        `;
+
+        return;
+    }
+
+
+    products.forEach(product => {
+
+        const card =
+            document.createElement("div");
+
+        card.className =
+            "product-card reveal";
+
+
+        /* =========================
+           STOCK
+        ========================= */
+
+        const stock =
+            Number(product.stock || 0);
+
+        const outOfStock =
+            stock <= 0;
+
+        const lowStock =
+            stock > 0 &&
+            stock <= 5;
+
+        let stockText =
+            "In stock";
+
+        if (outOfStock) {
+
+            stockText =
+                "Out of stock";
+
+        } else if (lowStock) {
+
+            stockText =
+                `Only ${stock} left`;
+
+        } else {
+
+            stockText =
+                `${stock} available`;
+
+        }
+
+
+        /* =========================
+           MAIN IMAGE
+        ========================= */
+
+        const image =
+            product.image ||
+            "https://via.placeholder.com/500";
+
+
+        /* =========================
+           PRICE
+        ========================= */
+
+        const price =
+            Number(product.price || 0).toLocaleString(
+                "en-MY",
+                {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                }
+            );
+
+
+        /* =========================
+           CATEGORY
+        ========================= */
+
+        const category =
+            String(
+                product.category ||
+                "technology"
+            );
+
+
+        /* =========================
+           WISHLIST
+        ========================= */
+
+        const isWishlisted =
+            wishlist.some(
+                item =>
+                    Number(item.id) ===
+                    Number(product.id)
+            );
+
+
+        /* =========================
+           BUILD UNIQUE IMAGES
+        ========================= */
+
+        const imageList = [];
+
+        function addImage(src, name) {
+
+            if (!src) {
+                return;
+            }
+
+            const cleanSrc =
+                String(src).trim();
+
+            if (!cleanSrc) {
+                return;
+            }
+
+            /*
+             Prevent duplicate images.
+            */
+
+            const alreadyExists =
+                imageList.some(
+                    item =>
+                        item.src === cleanSrc
+                );
+
+            if (alreadyExists) {
+                return;
+            }
+
+            imageList.push({
+                src: cleanSrc,
+                name:
+                    name ||
+                    product.name ||
+                    "Product"
+            });
+        }
+
+
+        /*
+         Main product image first
+        */
+
+        addImage(
+            image,
+            product.name
+        );
+
+
+        /*
+         Variant images
+        */
+
+        if (
+            Array.isArray(product.variants)
+        ) {
+
+            product.variants.forEach(
+                variant => {
+
+                    if (!variant) {
+                        return;
+                    }
+
+                    addImage(
+                        variant.image,
+                        variant.name ||
+                        product.name
+                    );
+
+                }
+            );
+
+        }
+
+
+        /*
+         Make sure at least one image exists
+        */
+
+        if (imageList.length === 0) {
+
+            addImage(
+                "https://via.placeholder.com/500",
+                product.name
+            );
+
+        }
+
+
+        const hasMultipleImages =
+            imageList.length > 1;
+
+
+        /* =========================
+           IMAGE HTML
+        ========================= */
+
+        const imagesHTML =
+            imageList.map(
+                (item, index) => {
+
+                    return `
+                        <img
+                            class="product-image-slide"
+                            src="${escapeHtml(
+                                item.src
+                            )}"
+                            alt="${escapeHtml(
+                                item.name
+                            )}"
+                            ${
+                                index === 0
+                                    ? ""
+                                    : 'loading="lazy"'
+                            }
+                            draggable="false"
+                        >
+                    `;
+
+                }
+            ).join("");
+
+
+        /* =========================
+           DOTS
+        ========================= */
+
+        const dotsHTML =
+            hasMultipleImages
+                ? `
+                    <div class="product-slide-dots">
+
+                        ${imageList.map(
+                            (_, index) => `
+                                <span
+                                    class="
+                                        slide-dot
+                                        ${
+                                            index === 0
+                                                ? "active"
+                                                : ""
+                                        }
+                                    "
+                                ></span>
+                            `
+                        ).join("")}
+
+                    </div>
+                `
+                : "";
+
+
+        /* =========================
+           ARROWS
+        ========================= */
+
+        const arrowsHTML =
+            hasMultipleImages
+                ? `
+                    <button
+                        class="
+                            product-image-arrow
+                            product-image-prev
+                        "
+                        type="button"
+                        aria-label="Previous image"
+                    >
+                        ‹
+                    </button>
+
+                    <button
+                        class="
+                            product-image-arrow
+                            product-image-next
+                        "
+                        type="button"
+                        aria-label="Next image"
+                    >
+                        ›
+                    </button>
+                `
+                : "";
+
+
+        /* =========================
+           CARD HTML
+        ========================= */
+
+        card.innerHTML = `
+
+            <div class="product-image-wrap">
+
+                ${arrowsHTML}
+
+                <div
+                    class="product-image-slider"
+                >
+
+                    ${imagesHTML}
+
+                </div>
+
+                ${dotsHTML}
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div class="product-tag">
+                    ${escapeHtml(category)}
+                </div>
+
+
+                <h3>
+
+                    <a
+                        href="product.html?id=${encodeURIComponent(
+                            product.id
+                        )}"
+                    >
+                        ${escapeHtml(
+                            product.name ||
+                            "Unnamed Product"
+                        )}
+                    </a>
+
+                </h3>
+
+
+                <p class="description">
+
+                    ${escapeHtml(
+                        product.description ||
+                        ""
+                    )}
+
+                </p>
+
+
+                <div class="stock-row">
+
+                    <span
+                        class="
+                            stock-dot
+                            ${
+                                outOfStock
+                                    ? "out"
+                                    : lowStock
+                                        ? "low"
+                                        : ""
+                            }
+                        "
+                    ></span>
+
+
+                    <span>
+                        ${escapeHtml(
+                            stockText
+                        )}
+                    </span>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                    <div>
+
+                        <div class="price">
+                            RM ${price}
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="add-cart"
+                        ${
+                            outOfStock
+                                ? "disabled"
+                                : ""
+                        }
+                        onclick="
+                            addToCartById(
+                                ${Number(product.id)}
+                            )
+                        "
+                    >
+                        ${
+                            outOfStock
+                                ? "Sold Out"
+                                : (
+                                    Array.isArray(
+                                        product.variants
+                                    ) &&
+                                    product.variants.length > 0
+                                )
+                                    ? "View Options"
+                                    : "Add to Cart"
+                        }
+                    </button>
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        productList.appendChild(card);
+
+
+        /* =====================================================
+           IMAGE SLIDER CONTROLS
+           ===================================================== */
+
+        const slider =
+            card.querySelector(
+                ".product-image-slider"
+            );
+
+        const prevButton =
+            card.querySelector(
+                ".product-image-prev"
+            );
+
+        const nextButton =
+            card.querySelector(
+                ".product-image-next"
+            );
+
+        const dots =
+            card.querySelectorAll(
+                ".slide-dot"
+            );
+
+        const slides =
+            card.querySelectorAll(
+                ".product-image-slide"
+            );
+
+
+        if (!slider || slides.length <= 1) {
+            return;
+        }
+
+
+        let currentIndex = 0;
+
+
+        /* =========================
+           GO TO SLIDE
+        ========================= */
+
+        function goToSlide(index) {
+
+            const total =
+                slides.length;
+
+            if (total === 0) {
+                return;
+            }
+
+
+            /*
+             Loop around
+            */
+
+            if (index < 0) {
+                index = total - 1;
+            }
+
+            if (index >= total) {
+                index = 0;
+            }
+
+
+            currentIndex = index;
+
+
+            slider.scrollTo({
+                left:
+                    slider.clientWidth *
+                    currentIndex,
+                behavior: "smooth"
+            });
+
+
+            dots.forEach(
+                (dot, dotIndex) => {
+
+                    dot.classList.toggle(
+                        "active",
+                        dotIndex === currentIndex
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* =========================
+           PREVIOUS
+        ========================= */
+
+        if (prevButton) {
+
+            prevButton.addEventListener(
+                "click",
+                event => {
+
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    goToSlide(
+                        currentIndex - 1
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* =========================
+           NEXT
+        ========================= */
+
+        if (nextButton) {
+
+            nextButton.addEventListener(
+                "click",
+                event => {
+
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    goToSlide(
+                        currentIndex + 1
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* =========================
+           SWIPE / SCROLL
+        ========================= */
+
+        slider.addEventListener(
+            "scroll",
+            () => {
+
+                const slideWidth =
+                    slider.clientWidth;
+
+                if (!slideWidth) {
+                    return;
+                }
+
+
+                const index =
+                    Math.round(
+                        slider.scrollLeft /
+                        slideWidth
+                    );
+
+
+                if (
+                    index >= 0 &&
+                    index < slides.length
+                ) {
+
+                    currentIndex =
+                        index;
+
+                }
+
+
+                dots.forEach(
+                    (dot, dotIndex) => {
+
+                        dot.classList.toggle(
+                            "active",
+                            dotIndex === currentIndex
+                        );
+
+                    }
+                );
+
+            },
+            {
+                passive: true
+            }
+        );
+
+
+        /* =========================
+           DOT CLICK
+        ========================= */
+
+        dots.forEach(
+            (dot, index) => {
+
+                dot.style.pointerEvents =
+                    "auto";
+
+                dot.addEventListener(
+                    "click",
+                    event => {
+
+                        event.preventDefault();
+                        event.stopPropagation();
+
+                        goToSlide(index);
+
+                    }
+                );
+
+            }
+        );
+
+    });
+
+
+    /* =====================================================
+       REVEAL ANIMATION
+       ===================================================== */
+
+    requestAnimationFrame(() => {
+
+        document
+            .querySelectorAll(
+                "#productList .reveal"
+            )
+            .forEach(
+                (
+                    element,
+                    index
+                ) => {
+
+                    setTimeout(() => {
+
+                        element.classList.add(
+                            "visible"
+                        );
+
+                    }, index * 45);
+
+                }
+            );
+
+    });
+
+}
+/* =========================================================
+   ADD PRODUCT TO CART
+========================================================= */
+
+function addToCartById(
+    productId
+) {
+
+    const product =
+        allProducts.find(
+            item =>
+                Number(item.id) ===
+                Number(productId)
+        );
+
+
+    if (!product) {
+
+        showToast(
+            "Product not found."
+        );
+
+        return;
+
+    }
+
+
+    const stock =
+        Number(
+            product.stock || 0
+        );
+
+
+    if (stock <= 0) {
+
+        showToast(
+            product.name +
+            " is currently out of stock."
+        );
+
+        return;
+
+    }
+
+
+    if (
+        Array.isArray(
+            product.variants
+        ) &&
+        product.variants.length > 0
+    ) {
+
+        window.location.href =
+            "product.html?id=" +
+            encodeURIComponent(
+                product.id
+            );
+
+        return;
+
+    }
+
+
+    const result =
+        addToCart(
+            product.id,
+            1,
+            stock,
+            null
+        );
+
+
+    if (!result.ok) {
+
+        if (
+            result.reason ===
+            "stock_limit"
+        ) {
+
+            showToast(
+                "Maximum available stock: " +
+                result.stock
+            );
+
+        } else {
+
+            showToast(
+                "Unable to add product."
+            );
+
+        }
+
+        return;
+
+    }
+
+
+    cart =
+        result.cart;
+
+
+    updateCart();
+
+
+    showToast(
+        product.name +
+        " added to cart"
+    );
+
+}
+
+
+/* =========================================================
+   SEARCH + FILTER
+========================================================= */
+
+function filterProducts() {
+
+    const searchInput =
+        document.getElementById(
+            "searchInput"
+        );
+
+
+    const categoryFilter =
+        document.getElementById(
+            "categoryFilter"
+        );
+
+
+    if (
+        !searchInput ||
+        !categoryFilter
+    ) {
+
+        return;
+
+    }
+
+
+    const search =
+        searchInput.value
+            .toLowerCase()
+            .trim();
+
+
+    const category =
+        categoryFilter.value;
+
+
+    const filtered =
+        allProducts.filter(
+            product => {
+
+                const name =
+                    String(
+                        product.name ||
+                        ""
+                    ).toLowerCase();
+
+
+                const description =
+                    String(
+                        product.description ||
+                        ""
+                    ).toLowerCase();
+
+
+                const productCategory =
+                    String(
+                        product.category ||
+                        ""
+                    ).toLowerCase();
+
+
+                const text =
+                    name +
+                    " " +
+                    description +
+                    " " +
+                    productCategory;
+
+
+                const matchesSearch =
+                    text.includes(
+                        search
+                    );
+
+
+                let matchesCategory =
+                    true;
+
+
+                if (
+                    category !==
+                    "all"
+                ) {
+
+                    matchesCategory =
+                        productCategory ===
+                        category;
+
+                }
+
+
+                return (
+                    matchesSearch &&
+                    matchesCategory
+                );
+
+            }
+        );
+
+
+    renderProducts(
+        filtered
+    );
+
+
+    updateActivePill(
+        category
+    );
+
+}
+
+
+/* =========================================================
+   QUICK FILTER
+========================================================= */
+
+function quickFilter(
+    category,
+    button
+) {
+
+    const categoryFilter =
+        document.getElementById(
+            "categoryFilter"
+        );
+
+
+    const searchInput =
+        document.getElementById(
+            "searchInput"
+        );
+
+
+    if (categoryFilter) {
+
+        categoryFilter.value =
+            category;
+
+    }
+
+
+    if (searchInput) {
+
+        searchInput.value =
+            "";
+
+    }
+
+
+    document
+        .querySelectorAll(
+            ".filter-pill"
+        )
+        .forEach(
+            pill => {
+
+                pill.classList.remove(
+                    "active"
+                );
+
+            }
+        );
+
+
+    if (button) {
+
+        button.classList.add(
+            "active"
+        );
+
+    }
+
+
+    filterProducts();
+
+}
+
+
+/* =========================================================
+   UPDATE FILTER PILL
+========================================================= */
+
+function updateActivePill(
+    category
+) {
+
+    document
+        .querySelectorAll(
+            ".filter-pill"
+        )
+        .forEach(
+            pill => {
+
+                pill.classList.toggle(
+                    "active",
+                    pill.dataset.category ===
+                    category
+                );
+
+            }
+        );
+
+}
+
+
+/* =========================================================
+   SELECT CATEGORY
+========================================================= */
+
+function selectCategory(
+    category
+) {
+
+    const categoryFilter =
+        document.getElementById(
+            "categoryFilter"
+        );
+
+
+    const searchInput =
+        document.getElementById(
+            "searchInput"
+        );
+
+
+    if (categoryFilter) {
+
+        categoryFilter.value =
+            category;
+
+    }
+
+
+    if (searchInput) {
+
+        searchInput.value =
+            "";
+
+    }
+
+
+    updateActivePill(
+        category
+    );
+
+
+    filterProducts();
+
+
+    const productsSection =
+        document.getElementById(
+            "products"
+        );
+
+
+    if (productsSection) {
+
+        productsSection.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }
+
+}
+
+
+/* =========================================================
+   RESET FILTER
+========================================================= */
+
+function resetFilters(event) {
+
+    if (event) {
+
+        event.preventDefault();
+
+    }
+
+
+    const searchInput =
+        document.getElementById(
+            "searchInput"
+        );
+
+
+    const categoryFilter =
+        document.getElementById(
+            "categoryFilter"
+        );
+
+
+    if (searchInput) {
+
+        searchInput.value =
+            "";
+
+    }
+
+
+    if (categoryFilter) {
+
+        categoryFilter.value =
+            "all";
+
+    }
+
+
+    updateActivePill(
+        "all"
+    );
+
+
+    renderProducts(
+        allProducts
+    );
+
+}
+
+
+/* =========================================================
+   WISHLIST
+========================================================= */
+
+let wishlist = [];
+
+
+function loadWishlist() {
+
+    try {
+
+        const saved =
+            JSON.parse(
+                localStorage.getItem(
+                    "ziqtech_wishlist"
+                )
+            );
+
+
+        wishlist =
+            Array.isArray(saved)
+                ? saved
+                : [];
+
+    } catch (error) {
+
+        wishlist = [];
+
+    }
+
+}
+
+
+function toggleWishlistProduct(
+    productId,
+    event
+) {
+
+    if (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+    }
+
+
+    const product =
+        allProducts.find(
+            item =>
+                Number(item.id) ===
+                Number(productId)
+        );
+
+
+    if (!product) {
+
+        return;
+
+    }
+
+
+const variantId =
+    product.variantId ??
+    product.selectedVariant?.id ??
+    null;
+
+
+const selectedVariant =
+    Array.isArray(product.variants) &&
+    variantId !== null
+        ? product.variants.find(
+            variant =>
+                String(variant.id) ===
+                String(variantId)
+        )
+        : (
+            product.selectedVariant ||
+            null
+        );
+
+
+const existing =
+    wishlist.find(
+        item => {
+
+            const itemProductId =
+                item.productId ??
+                item.id;
+
+            const itemVariantId =
+                item.variantId ??
+                null;
+
+            return (
+                String(itemProductId) ===
+                String(productId) &&
+
+                String(itemVariantId ?? "") ===
+                String(variantId ?? "")
+            );
+
+        }
+    );
+
+
+if (existing) {
+
+    wishlist =
+        wishlist.filter(
+            item => {
+
+                const itemProductId =
+                    item.productId ??
+                    item.id;
+
+                const itemVariantId =
+                    item.variantId ??
+                    null;
+
+                return !(
+                    String(itemProductId) ===
+                    String(productId) &&
+
+                    String(itemVariantId ?? "") ===
+                    String(variantId ?? "")
+                );
+
+            }
+        );
+
+
+    showToast(
+        product.name +
+        " removed from wishlist"
+    );
+
+
+} else {
+
+    const wishlistItem = {
+
+        ...product,
+
+        id:
+            product.id,
+
+        productId:
+            product.id,
+
+        variantId:
+            variantId,
+
+        variantName:
+            product.variantName ||
+            selectedVariant?.variantName ||
+            selectedVariant?.name ||
+            "",
+
+        attributes:
+            selectedVariant?.attributes &&
+            typeof selectedVariant.attributes ===
+                "object"
+                ? {
+                    ...selectedVariant.attributes
+                }
+                : (
+                    product.attributes &&
+                    typeof product.attributes ===
+                        "object"
+                        ? {
+                            ...product.attributes
+                        }
+                        : {}
+                ),
+
+        variantImage:
+            product.variantImage ||
+            selectedVariant?.image ||
+            product.image ||
+            "",
+
+        variantPrice:
+            selectedVariant?.price !== undefined
+                ? Number(
+                    selectedVariant.price
+                )
+                : (
+                    product.variantPrice !==
+                    undefined
+                        ? Number(
+                            product.variantPrice
+                        )
+                        : Number(
+                            product.price || 0
+                        )
+                ),
+
+        quantity:
+            Number(product.quantity || 1)
+
+    };
+
+
+    wishlist.push(
+        wishlistItem
+    );
+
+
+    showToast(
+        product.name +
+        " added to wishlist ♥"
+    );
+
+}
+
+    const currentCategory =
+        document.getElementById(
+            "categoryFilter"
+        )?.value ||
+        "all";
+
+
+    const currentSearch =
+        document.getElementById(
+            "searchInput"
+        )?.value ||
+        "";
+
+
+    if (
+        currentCategory !== "all" ||
+        currentSearch
+    ) {
+
+        filterProducts();
+
+    } else {
+
+        renderProducts(
+            allProducts
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+let toastTimer = null;
+
+
+function showToast(
+    message
+) {
+
+    const toast =
+        document.getElementById(
+            "toast"
+        );
+
+
+    const toastText =
+        document.getElementById(
+            "toastText"
+        );
+
+
+    if (
+        !toast ||
+        !toastText
+    ) {
+
+        return;
+
+    }
+
+
+    toastText.textContent =
+        message;
+
+
+    toast.classList.add(
+        "show"
+    );
+
+
+    clearTimeout(
+        toastTimer
+    );
+
+
+    toastTimer =
+        setTimeout(
+            () => {
+
+                toast.classList.remove(
+                    "show"
+                );
+
+            },
+            2400
+        );
+
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+        const hamburgerBtn =
+            document.getElementById(
+                "hamburgerBtn"
+            );
+
+
+        const closeMenu =
+            document.getElementById(
+                "closeMenu"
+            );
+
+
+        const mobileMenu =
+            document.getElementById(
+                "mobileMenu"
+            );
+
+
+        const menuOverlay =
+            document.getElementById(
+                "menuOverlay"
+            );
+
+
+        function openMobileMenu() {
+
+            if (!mobileMenu) {
+
+                return;
+
+            }
+
+
+            mobileMenu.classList.add(
+                "active"
+            );
+
+
+            menuOverlay?.classList.add(
+                "active"
+            );
+
+
+            document.body.classList.add(
+                "menu-open"
+            );
+
+        }
+
+
+        function closeMobileMenu() {
+
+            mobileMenu?.classList.remove(
+                "active"
+            );
+
+
+            menuOverlay?.classList.remove(
+                "active"
+            );
+
+
+            document.body.classList.remove(
+                "menu-open"
+            );
+
+        }
+
+
+        hamburgerBtn?.addEventListener(
+            "click",
+            openMobileMenu
+        );
+
+
+        closeMenu?.addEventListener(
+            "click",
+            closeMobileMenu
+        );
+
+
+        menuOverlay?.addEventListener(
+            "click",
+            closeMobileMenu
+        );
+
+
+        document
+            .querySelectorAll(
+                ".mobile-menu-links a"
+            )
+            .forEach(
+                link => {
+
+                    link.addEventListener(
+                        "click",
+                        closeMobileMenu
+                    );
+
+                }
+            );
+
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (
+                    event.key ===
+                    "Escape"
+                ) {
+
+                    closeMobileMenu();
+
+                }
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+function initReveal() {
+
+    const elements =
+        document.querySelectorAll(
+            ".reveal"
+        );
+
+
+    if (
+        !(
+            "IntersectionObserver"
+            in window
+        )
+    ) {
+
+        elements.forEach(
+            element =>
+                element.classList.add(
+                    "visible"
+                )
+        );
+
+        return;
+
+    }
+
+
+    const observer =
+        new IntersectionObserver(
+            entries => {
+
+                entries.forEach(
+                    entry => {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target.classList.add(
+                                "visible"
+                            );
+
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    elements.forEach(
+        element =>
+            observer.observe(
+                element
+            )
+    );
+
+}
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+loadWishlist();
+
+
+updateAccount();
+
+
+cart =
+    normalizeCart(
+        readCart()
+    );
+
+
+saveCart();
+
+
+loadProducts();
+
+
+updateCart();
+
+
+document.addEventListener(
+    "DOMContentLoaded",
+    initReveal
+);
+
+</script>
+
+<!-- =========================================================
+     ZIQTECH SMART Q&A
+========================================================= -->
+
+<section class="smart-qna" id="qna">
+
+    <div class="smart-qna-container">
+
+        <!-- HEADER -->
+        <div class="smart-qna-header">
+
+            <div class="smart-qna-badge">
+                <span class="badge-dot"></span>
+                ZIQTECH SUPPORT
+            </div>
+
+            <h2>
+                Got questions?
+                <span>We've got answers.</span>
+            </h2>
+
+            <p>
+                Find quick answers about products, orders,
+                payments and delivery.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+        <div class="qna-search-box">
+
+            <span class="qna-search-icon">⌕</span>
+
+            <input
+                type="text"
+                id="qnaSearch"
+                placeholder="Search your question..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                id="clearQnaSearch"
+                class="qna-clear"
+                aria-label="Clear search"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- CATEGORIES -->
+        <div class="qna-categories">
+
+            <button
+                class="qna-category active"
+                data-category="all"
+            >
+                All
+            </button>
+
+            <button
+                class="qna-category"
+                data-category="products"
+            >
+                Products
+            </button>
+
+            <button
+                class="qna-category"
+                data-category="orders"
+            >
+                Orders
+            </button>
+
+            <button
+                class="qna-category"
+                data-category="payment"
+            >
+                Payment
+            </button>
+
+            <button
+                class="qna-category"
+                data-category="delivery"
+            >
+                Delivery
+            </button>
+
+        </div>
+
+
+        <!-- RESULTS INFO -->
+        <div class="qna-results-info">
+            <span id="qnaResultCount">8</span> questions
+        </div>
+
+
+        <!-- QUESTIONS -->
+        <div class="smart-qna-list" id="smartQnaList">
+
+
+            <!-- 01 -->
+            <div
+                class="smart-qna-item"
+                data-category="products"
+                data-search="products sell technology smartphone laptop gaming accessories"
+            >
+
+                <button class="smart-qna-question">
+
+                    <div class="qna-question-left">
+
+                        <span class="qna-number">01</span>
+
+                        <span>
+                            What products does ZiqTech sell?
+                        </span>
+
+                    </div>
+
+                    <span class="smart-qna-plus">+</span>
+
+                </button>
+
+                <div class="smart-qna-answer">
+
+                    <p>
+                        ZiqTech offers a range of technology products,
+                        including smartphones, laptops, gaming products,
+                        computer components, accessories and other
+                        premium tech products.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 02 -->
+            <div
+                class="smart-qna-item"
+                data-category="products"
+                data-search="product warranty original genuine warranty"
+            >
+
+                <button class="smart-qna-question">
+
+                    <div class="qna-question-left">
+
+                        <span class="qna-number">02</span>
+
+                        <span>
+                            Are ZiqTech products covered by warranty?
+                        </span>
+
+                    </div>
+
+                    <span class="smart-qna-plus">+</span>
+
+                </button>
+
+                <div class="smart-qna-answer">
+
+                    <p>
+                        Warranty coverage depends on the individual
+                        product and manufacturer. Please check the
+                        product information or contact our support team
+                        before purchasing if you need specific warranty
+                        details.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 03 -->
+            <div
+                class="smart-qna-item"
+                data-category="orders"
+                data-search="order place buy purchase shopping checkout"
+            >
+
+                <button class="smart-qna-question">
+
+                    <div class="qna-question-left">
+
+                        <span class="qna-number">03</span>
+
+                        <span>
+                            How can I place an order?
+                        </span>
+
+                    </div>
+
+                    <span class="smart-qna-plus">+</span>
+
+                </button>
+
+                <div class="smart-qna-answer">
+
+                    <p>
+                        Browse the products you want, add them to your
+                        cart and proceed to checkout. Review your order
+                        details and complete the checkout process.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 04 -->
+            <div
+                class="smart-qna-item"
+                data-category="orders"
+                data-search="cancel order cancellation cancel purchase"
+            >
+
+                <button class="smart-qna-question">
+
+                    <div class="qna-question-left">
+
+                        <span class="qna-number">04</span>
+
+                        <span>
+                            Can I cancel my order?
+                        </span>
+
+                    </div>
+
+                    <span class="smart-qna-plus">+</span>
+
+                </button>
+
+                <div class="smart-qna-answer">
+
+                    <p>
+                        If your order has not been processed yet,
+                        cancellation may be possible. Contact ZiqTech
+                        support as soon as possible with your order
+                        details.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 05 -->
+            <div
+                class="smart-qna-item"
+                data-category="payment"
+                data-search="payment pay card online payment method"
+            >
+
+                <button class="smart-qna-question">
+
+                    <div class="qna-question-left">
+
+                        <span class="qna-number">05</span>
+
+                        <span>
+                            What payment methods are available?
+                        </span>
+
+                    </div>
+
+                    <span class="smart-qna-plus">+</span>
+
+                </button>
+
+                <div class="smart-qna-answer">
+
+                    <p>
+                        Available payment methods are shown during
+                        checkout. Select your preferred method and
+                        follow the instructions displayed on screen.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 06 -->
+            <div
+                class="smart-qna-item"
+                data-category="payment"
+                data-search="payment secure security card information safe"
+            >
+
+                <button class="smart-qna-question">
+
+                    <div class="qna-question-left">
+
+                        <span class="qna-number">06</span>
+
+                        <span>
+                            Is my payment information secure?
+                        </span>
+
+                    </div>
+
+                    <span class="smart-qna-plus">+</span>
+
+                </button>
+
+                <div class="smart-qna-answer">
+
+                    <p>
+                        Payment information should always be handled
+                        through the payment method presented during
+                        checkout. Never share your password, OTP or
+                        sensitive account information with anyone.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 07 -->
+            <div
+                class="smart-qna-item"
+                data-category="delivery"
+                data-search="delivery shipping shipping time parcel arrive"
+            >
+
+                <button class="smart-qna-question">
+
+                    <div class="qna-question-left">
+
+                        <span class="qna-number">07</span>
+
+                        <span>
+                            How long does delivery take?
+                        </span>
+
+                    </div>
+
+                    <span class="smart-qna-plus">+</span>
+
+                </button>
+
+                <div class="smart-qna-answer">
+
+                    <p>
+                        Delivery time depends on your location,
+                        product availability and the selected delivery
+                        service. Relevant delivery information will be
+                        provided with your order.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 08 -->
+            <div
+                class="smart-qna-item"
+                data-category="delivery"
+                data-search="delivery tracking track parcel shipment"
+            >
+
+                <button class="smart-qna-question">
+
+                    <div class="qna-question-left">
+
+                        <span class="qna-number">08</span>
+
+                        <span>
+                            Can I track my order?
+                        </span>
+
+                    </div>
+
+                    <span class="smart-qna-plus">+</span>
+
+                </button>
+
+                <div class="smart-qna-answer">
+
+                    <p>
+                        If tracking is available for your delivery,
+                        tracking information will be provided with
+                        your order or shipment details.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- NO RESULT -->
+            <div
+                class="qna-no-result"
+                id="qnaNoResult"
+            >
+
+                <div class="no-result-icon">
+                    ?
+                </div>
+
+                <h3>No questions found</h3>
+
+                <p>
+                    Try searching with a different keyword.
+                </p>
+
+                <button
+                    type="button"
+                    id="resetQna"
+                >
+                    Show all questions
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUPPORT CARD -->
+        <div class="qna-support-card">
+
+            <div class="support-card-content">
+
+                <div class="support-icon">
+                    ✦
+                </div>
+
+                <div>
+                    <span>CAN'T FIND YOUR ANSWER?</span>
+
+                    <h3>
+                        We're here to help.
+                    </h3>
+
+                    <p>
+                        Our support team is ready to help you
+                        with your ZiqTech experience.
+                    </p>
+                </div>
+
+            </div>
+
+            <a href="https://wa.me/0177640425?text=Hello%20%2C%20May%20I%20Ask%20About%20Your%20Product%20In%20ZiqTech%20%3F%20%20" class="qna-support-button">
+                Contact Whatsapp Support
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<style>
+
+/* =========================================================
+   ZIQTECH SMART Q&A
+========================================================= */
+
+.smart-qna {
+
+    position: relative;
+
+    padding: 120px 20px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255,255,255,0.9),
+            transparent 45%
+        ),
+        #f5f5f7;
+
+    color: #1d1d1f;
+
+    overflow: hidden;
+}
+
+
+.smart-qna-container {
+
+    width: 100%;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+}
+
+
+/* HEADER */
+
+.smart-qna-header {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+.smart-qna-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    border-radius: 100px;
+
+    background: rgba(0,0,0,0.05);
+
+    color: #6e6e73;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+
+}
+
+
+.badge-dot {
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #34c759;
+
+    box-shadow:
+        0 0 0 4px rgba(52,199,89,0.12);
+
+}
+
+
+.smart-qna-header h2 {
+
+    margin: 22px 0 15px;
+
+    font-size: clamp(38px, 6vw, 64px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    font-weight: 700;
+
+}
+
+
+.smart-qna-header h2 span {
+
+    display: block;
+
+    color: #86868b;
+
+}
+
+
+.smart-qna-header p {
+
+    max-width: 560px;
+
+    margin: auto;
+
+    color: #6e6e73;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+}
+
+
+/* SEARCH */
+
+.qna-search-box {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    height: 62px;
+
+    margin-bottom: 24px;
+
+    background: rgba(255,255,255,0.9);
+
+    border: 1px solid rgba(0,0,0,0.08);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.06);
+
+    transition: 0.3s ease;
+
+}
+
+
+.qna-search-box:focus-within {
+
+    border-color: rgba(0,0,0,0.2);
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,0.09);
+
+    transform: translateY(-1px);
+
+}
+
+
+.qna-search-icon {
+
+    margin-left: 21px;
+
+    font-size: 28px;
+
+    color: #86868b;
+
+    transform: rotate(-20deg);
+
+}
+
+
+.qna-search-box input {
+
+    flex: 1;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 0 15px;
+
+    color: #1d1d1f;
+
+    font-size: 16px;
+
+}
+
+
+.qna-search-box input::placeholder {
+
+    color: #a1a1a6;
+
+}
+
+
+.qna-clear {
+
+    display: none;
+
+    width: 30px;
+
+    height: 30px;
+
+    margin-right: 15px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #e5e5ea;
+
+    color: #555;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    line-height: 1;
+
+}
+
+
+.qna-clear.show {
+
+    display: block;
+
+}
+
+
+/* CATEGORIES */
+
+.qna-categories {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.qna-category {
+
+    border: 1px solid rgba(0,0,0,0.08);
+
+    background: rgba(255,255,255,0.7);
+
+    color: #6e6e73;
+
+    padding: 10px 18px;
+
+    border-radius: 100px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.qna-category:hover {
+
+    background: #fff;
+
+    color: #1d1d1f;
+
+    transform: translateY(-1px);
+
+}
+
+
+.qna-category.active {
+
+    background: #1d1d1f;
+
+    color: white;
+
+    border-color: #1d1d1f;
+
+}
+
+
+/* RESULT COUNT */
+
+.qna-results-info {
+
+    margin-bottom: 12px;
+
+    color: #86868b;
+
+    font-size: 12px;
+
+    text-align: right;
+
+}
+
+
+/* LIST */
+
+.smart-qna-list {
+
+    border-top: 1px solid #d2d2d7;
+
+}
+
+
+/* ITEM */
+
+.smart-qna-item {
+
+    border-bottom: 1px solid #d2d2d7;
+
+}
+
+
+.smart-qna-item.hidden {
+
+    display: none;
+
+}
+
+
+/* QUESTION */
+
+.smart-qna-question {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 26px 8px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #1d1d1f;
+
+    cursor: pointer;
+
+    text-align: left;
+
+}
+
+
+.qna-question-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+}
+
+
+.qna-number {
+
+    color: #a1a1a6;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    min-width: 25px;
+
+}
+
+
+.smart-qna-plus {
+
+    flex-shrink: 0;
+
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.055);
+
+    color: #555;
+
+    font-size: 23px;
+
+    font-weight: 300;
+
+    transition: 0.35s ease;
+
+}
+
+
+/* HOVER */
+
+.smart-qna-question:hover {
+
+    color: #555;
+
+}
+
+
+.smart-qna-question:hover .smart-qna-plus {
+
+    background: #1d1d1f;
+
+    color: white;
+
+}
+
+
+/* ANSWER */
+
+.smart-qna-answer {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+        max-height 0.45s ease,
+        opacity 0.3s ease;
+
+}
+
+
+.smart-qna-answer p {
+
+    margin: 0;
+
+    padding:
+
+        0
+        70px
+        28px
+        55px;
+
+    color: #6e6e73;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+}
+
+
+/* ACTIVE */
+
+.smart-qna-item.active
+.smart-qna-answer {
+
+    max-height: 400px;
+
+    opacity: 1;
+
+}
+
+
+.smart-qna-item.active
+.smart-qna-plus {
+
+    transform: rotate(45deg);
+
+    background: #1d1d1f;
+
+    color: white;
+
+}
+
+
+/* NO RESULT */
+
+.qna-no-result {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+
+.qna-no-result.show {
+
+    display: block;
+
+}
+
+
+.no-result-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e5e5ea;
+
+    color: #777;
+
+    font-size: 22px;
+
+}
+
+
+.qna-no-result h3 {
+
+    margin-bottom: 8px;
+
+    font-size: 21px;
+
+}
+
+
+.qna-no-result p {
+
+    margin-bottom: 20px;
+
+    color: #86868b;
+
+}
+
+
+.qna-no-result button {
+
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 100px;
+
+    background: #1d1d1f;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+/* SUPPORT CARD */
+
+.qna-support-card {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-top: 65px;
+
+    padding: 32px;
+
+    border-radius: 25px;
+
+    background: #1d1d1f;
+
+    color: white;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.16);
+
+}
+
+
+.support-card-content {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.support-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.1);
+
+    font-size: 22px;
+
+}
+
+
+.support-card-content span {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #a1a1a6;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.support-card-content h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 23px;
+
+}
+
+
+.support-card-content p {
+
+    margin: 0;
+
+    color: #a1a1a6;
+
+    font-size: 13px;
+
+}
+
+
+.qna-support-button {
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 20px;
+
+    border-radius: 100px;
+
+    background: white;
+
+    color: #1d1d1f;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.25s ease;
+
+}
+
+
+.qna-support-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(255,255,255,0.15);
+
+}
+
+
+.qna-support-button span {
+
+    font-size: 18px;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .smart-qna {
+
+        padding: 85px 18px;
+
+    }
+
+
+    .smart-qna-header h2 {
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .qna-search-box {
+
+        height: 58px;
+
+    }
+
+
+    .qna-categories {
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        flex-wrap: nowrap;
+
+        padding-bottom: 5px;
+
+    }
+
+
+    .qna-category {
+
+        flex-shrink: 0;
+
+    }
+
+
+    .qna-question-left {
+
+        gap: 12px;
+
+        font-size: 15px;
+
+    }
+
+
+    .qna-number {
+
+        display: none;
+
+    }
+
+
+    .smart-qna-answer p {
+
+        padding:
+
+            0
+            45px
+            25px
+            0;
+
+        font-size: 14px;
+
+    }
+
+
+    .qna-support-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 25px;
+
+    }
+
+
+    .support-card-content {
+
+        align-items: flex-start;
+
+    }
+
+
+    .qna-support-button {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+}
+
+</style>
+
+
+<script>
+
+/* =========================================================
+   ZIQTECH SMART Q&A JAVASCRIPT
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const searchInput =
+        document.getElementById("qnaSearch");
+
+    const clearButton =
+        document.getElementById("clearQnaSearch");
+
+    const categories =
+        document.querySelectorAll(".qna-category");
+
+    const items =
+        document.querySelectorAll(".smart-qna-item");
+
+    const resultCount =
+        document.getElementById("qnaResultCount");
+
+    const noResult =
+        document.getElementById("qnaNoResult");
+
+    const resetButton =
+        document.getElementById("resetQna");
+
+    let currentCategory = "all";
+
+
+    /* ==========================================
+       ACCORDION
+    ========================================== */
+
+    document
+        .querySelectorAll(".smart-qna-question")
+        .forEach(function (button) {
+
+            button.addEventListener("click", function () {
+
+                const item =
+                    button.closest(".smart-qna-item");
+
+                const isActive =
+                    item.classList.contains("active");
+
+
+                // Close all
+                items.forEach(function (otherItem) {
+
+                    otherItem.classList.remove("active");
+
+                });
+
+
+                // Open clicked item
+                if (!isActive) {
+
+                    item.classList.add("active");
+
+                }
+
+            });
+
+        });
+
+
+    /* ==========================================
+       FILTER FUNCTION
+    ========================================== */
+
+    function filterQuestions() {
+
+        const search =
+            searchInput.value
+                .toLowerCase()
+                .trim();
+
+        let visible = 0;
+
+
+        items.forEach(function (item) {
+
+            const category =
+                item.dataset.category;
+
+            const searchData =
+                item.dataset.search.toLowerCase();
+
+            const questionText =
+                item
+                    .querySelector(".smart-qna-question")
+                    .innerText
+                    .toLowerCase();
+
+
+            const categoryMatch =
+                currentCategory === "all" ||
+                category === currentCategory;
+
+
+            const searchMatch =
+                search === "" ||
+                searchData.includes(search) ||
+                questionText.includes(search);
+
+
+            if (categoryMatch && searchMatch) {
+
+                item.classList.remove("hidden");
+
+                visible++;
+
+            } else {
+
+                item.classList.add("hidden");
+
+                item.classList.remove("active");
+
+            }
+
+        });
+
+
+        resultCount.innerText = visible;
+
+
+        if (visible === 0) {
+
+            noResult.classList.add("show");
+
+        } else {
+
+            noResult.classList.remove("show");
+
+        }
+
+
+        if (search.length > 0) {
+
+            clearButton.classList.add("show");
+
+        } else {
+
+            clearButton.classList.remove("show");
+
+        }
+
+    }
+
+
+    /* ==========================================
+       SEARCH
+    ========================================== */
+
+    searchInput.addEventListener(
+        "input",
+        filterQuestions
+    );
+
+
+    /* ==========================================
+       CATEGORIES
+    ========================================== */
+
+    categories.forEach(function (categoryButton) {
+
+        categoryButton.addEventListener(
+            "click",
+            function () {
+
+                categories.forEach(function (button) {
+
+                    button.classList.remove("active");
+
+                });
+
+
+                categoryButton.classList.add("active");
+
+
+                currentCategory =
+                    categoryButton.dataset.category;
+
+
+                filterQuestions();
+
+            }
+        );
+
+    });
+
+
+    /* ==========================================
+       CLEAR SEARCH
+    ========================================== */
+
+    clearButton.addEventListener(
+        "click",
+        function () {
+
+            searchInput.value = "";
+
+            filterQuestions();
+
+            searchInput.focus();
+
+        }
+    );
+
+
+    /* ==========================================
+       RESET
+    ========================================== */
+
+    resetButton.addEventListener(
+        "click",
+        function () {
+
+            searchInput.value = "";
+
+            currentCategory = "all";
+
+
+            categories.forEach(function (button) {
+
+                button.classList.remove("active");
+
+            });
+
+
+            document
+                .querySelector('[data-category="all"]')
+                .classList.add("active");
+
+
+            filterQuestions();
+
+        }
+    );
+
+
+    /* Initial count */
+
+    filterQuestions();
+
+});
+
+</script>
+
+<!-- =========================================================
+     ZIQTECH AI SUPPORT CHAT
+========================================================= -->
+
+<section class="ziq-ai-section" id="ai-support">
+
+    <div class="ziq-ai-container">
+
+        <!-- HEADER -->
+        <div class="ziq-ai-header">
+
+            <div class="ziq-ai-orb">
+                <span></span>
+            </div>
+            <div>
+                <span class="ziq-ai-label">
+                    ZIQTECH AI
+                </span>
+
+                <h2>
+                    How can we help?
+                </h2>
+
+                <p>
+                    Ask anything about products, orders,
+                    payments or delivery.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- CHAT WINDOW -->
+        <div class="ziq-ai-chat">
+
+            <!-- TOP BAR -->
+            <div class="ziq-ai-topbar">
+
+                <div class="ziq-ai-status">
+
+                    <span class="ziq-online-dot"></span>
+
+                    <div>
+                        <strong>
+                            ZiqTech Assistant
+                        </strong>
+
+                        <small>
+                            Online • Ready to help
+                        </small>
+                    </div>
+
+                </div>
+
+                <button
+                    class="ziq-ai-reset"
+                    id="ziqAiReset"
+                    title="Clear chat"
+                >
+                    ↻
+                </button>
+
+            </div>
+
+
+            <!-- MESSAGES -->
+            <div
+                class="ziq-ai-messages"
+                id="ziqAiMessages"
+            >
+
+                <!-- Welcome -->
+                <div class="ziq-message ziq-ai-message">
+
+                    <div class="ziq-avatar">
+                        Z
+                    </div>
+
+                    <div class="ziq-bubble">
+
+                        <p>
+                            Hey! 👋 I'm the ZiqTech Assistant.
+                        </p>
+
+                        <p>
+                            Ask me about our products, orders,
+                            payments or delivery.
+                        </p>
+
+                        <div class="ziq-suggestions">
+
+                            <button
+                                data-question="What products does ZiqTech sell?"
+                            >
+                                🛍️ Products
+                            </button>
+
+                            <button
+                                data-question="How can I place an order?"
+                            >
+                                🛒 How to order
+                            </button>
+
+                            <button
+                                data-question="How long does delivery take?"
+                            >
+                                🚚 Delivery
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TYPING -->
+            <div
+                class="ziq-typing"
+                id="ziqTyping"
+            >
+
+                <div class="ziq-avatar">
+                    Z
+                </div>
+
+                <div class="ziq-typing-bubble">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- INPUT -->
+            <div class="ziq-ai-input-area">
+
+                <input
+                    type="text"
+                    id="ziqAiInput"
+                    placeholder="Ask ZiqTech anything..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="ziqAiSend"
+                    class="ziq-ai-send"
+                    aria-label="Send"
+                >
+                    <span>↑</span>
+                </button>
+
+            </div>
+
+
+            <div class="ziq-ai-disclaimer">
+                ZiqTech Assistant provides general information.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<style>
+
+/* =========================================================
+   ZIQTECH AI SUPPORT
+========================================================= */
+
+.ziq-ai-section {
+
+    padding: 100px 20px 130px;
+
+    background: #f5f5f7;
+
+}
+
+
+.ziq-ai-container {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+
+/* HEADER */
+
+.ziq-ai-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.ziq-ai-orb {
+
+    position: relative;
+
+    width: 64px;
+
+    height: 64px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #ffffff,
+            #dcdce1 45%,
+            #1d1d1f 100%
+        );
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.15);
+
+    animation:
+        ziqOrbFloat 3s ease-in-out infinite;
+
+}
+
+
+.ziq-ai-orb::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.7);
+
+}
+
+
+.ziq-ai-orb span {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 8px;
+
+    height: 8px;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    box-shadow:
+        0 0 18px rgba(255,255,255,0.9);
+
+}
+
+
+@keyframes ziqOrbFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+}
+
+
+.ziq-ai-label {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #86868b;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.ziq-ai-header h2 {
+
+    margin: 0;
+
+    font-size: clamp(30px, 5vw, 45px);
+
+    letter-spacing: -2px;
+
+}
+
+
+.ziq-ai-header p {
+
+    margin: 8px 0 0;
+
+    color: #86868b;
+
+    font-size: 15px;
+
+}
+
+
+/* CHAT */
+
+.ziq-ai-chat {
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background: rgba(255,255,255,0.92);
+
+    border: 1px solid rgba(0,0,0,0.08);
+
+    box-shadow:
+        0 30px 90px rgba(0,0,0,0.12);
+
+}
+
+
+/* TOPBAR */
+
+.ziq-ai-topbar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px 22px;
+
+    border-bottom: 1px solid #e5e5e7;
+
+    background: rgba(250,250,252,0.8);
+
+}
+
+
+.ziq-ai-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+}
+
+
+.ziq-online-dot {
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #34c759;
+
+    box-shadow:
+        0 0 0 4px rgba(52,199,89,0.12);
+
+}
+
+
+.ziq-ai-status strong {
+
+    display: block;
+
+    font-size: 14px;
+
+}
+
+
+.ziq-ai-status small {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color: #86868b;
+
+    font-size: 11px;
+
+}
+
+
+.ziq-ai-reset {
+
+    width: 35px;
+
+    height: 35px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #e9e9ed;
+
+    color: #555;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: 0.2s;
+
+}
+
+
+.ziq-ai-reset:hover {
+
+    transform: rotate(45deg);
+
+    background: #1d1d1f;
+
+    color: #fff;
+
+}
+
+
+/* MESSAGES */
+
+.ziq-ai-messages {
+
+    height: 430px;
+
+    padding: 25px;
+
+    overflow-y: auto;
+
+    scroll-behavior: smooth;
+
+}
+
+
+/* MESSAGE */
+
+.ziq-message {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    animation:
+        ziqMessageIn 0.3s ease;
+
+}
+
+
+@keyframes ziqMessageIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(8px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+.ziq-avatar {
+
+    width: 32px;
+
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1d1d1f;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* AI */
+
+.ziq-ai-message {
+
+    justify-content: flex-start;
+
+}
+
+
+.ziq-bubble {
+
+    max-width: 75%;
+
+    padding: 15px 17px;
+
+    border-radius: 18px 18px 18px 5px;
+
+    background: #f1f1f4;
+
+    color: #1d1d1f;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+}
+
+
+.ziq-bubble p {
+
+    margin: 0 0 8px;
+
+}
+
+
+.ziq-bubble p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* USER */
+
+.ziq-user-message {
+
+    justify-content: flex-end;
+
+}
+
+
+.ziq-user-message .ziq-avatar {
+
+    display: none;
+
+}
+
+
+.ziq-user-bubble {
+
+    max-width: 75%;
+
+    padding: 13px 17px;
+
+    border-radius: 18px 18px 5px 18px;
+
+    background: #1d1d1f;
+
+    color: white;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+/* SUGGESTIONS */
+
+.ziq-suggestions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 13px;
+
+}
+
+
+.ziq-suggestions button {
+
+    padding: 8px 11px;
+
+    border: 1px solid #d2d2d7;
+
+    border-radius: 100px;
+
+    background: white;
+
+    color: #555;
+
+    cursor: pointer;
+
+    font-size: 11px;
+
+    transition: 0.2s;
+
+}
+
+
+.ziq-suggestions button:hover {
+
+    background: #1d1d1f;
+
+    color: white;
+
+    border-color: #1d1d1f;
+
+}
+
+
+/* TYPING */
+
+.ziq-typing {
+
+    display: none;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 25px 15px;
+
+}
+
+
+.ziq-typing.show {
+
+    display: flex;
+
+}
+
+
+.ziq-typing-bubble {
+
+    display: flex;
+
+    gap: 4px;
+
+    padding: 13px 15px;
+
+    border-radius: 15px;
+
+    background: #f1f1f4;
+
+}
+
+
+.ziq-typing-bubble span {
+
+    width: 5px;
+
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #999;
+
+    animation:
+        ziqTyping 1.2s infinite;
+
+}
+
+
+.ziq-typing-bubble span:nth-child(2) {
+
+    animation-delay: 0.15s;
+
+}
+
+
+.ziq-typing-bubble span:nth-child(3) {
+
+    animation-delay: 0.3s;
+
+}
+
+
+@keyframes ziqTyping {
+
+    0%, 60%, 100% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-5px);
+    }
+
+}
+
+
+/* INPUT */
+
+.ziq-ai-input-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0 18px;
+
+    padding: 10px 10px 10px 17px;
+
+    border: 1px solid #d2d2d7;
+
+    border-radius: 18px;
+
+    background: white;
+
+}
+
+
+.ziq-ai-input-area input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    height: 40px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #1d1d1f;
+
+    font-size: 14px;
+
+}
+
+
+.ziq-ai-input-area input::placeholder {
+
+    color: #a1a1a6;
+
+}
+
+
+.ziq-ai-send {
+
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    border-radius: 13px;
+
+    background: #1d1d1f;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.ziq-ai-send:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+.ziq-ai-send:active {
+
+    transform: scale(0.94);
+
+}
+
+
+.ziq-ai-send span {
+
+    font-size: 20px;
+
+}
+
+
+/* DISCLAIMER */
+
+.ziq-ai-disclaimer {
+
+    padding: 12px 20px 18px;
+
+    text-align: center;
+
+    color: #a1a1a6;
+
+    font-size: 10px;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .ziq-ai-section {
+
+        padding:
+            75px
+            15px
+            90px;
+
+    }
+
+
+    .ziq-ai-header {
+
+        align-items: flex-start;
+
+    }
+
+
+    .ziq-ai-orb {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+
+    .ziq-ai-header h2 {
+
+        font-size: 31px;
+
+    }
+
+
+    .ziq-ai-messages {
+
+        height: 420px;
+
+        padding: 20px 15px;
+
+    }
+
+
+    .ziq-bubble,
+    .ziq-user-bubble {
+
+        max-width: 88%;
+
+    }
+
+
+    .ziq-suggestions {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .ziq-suggestions button {
+
+        width: 100%;
+
+        text-align: left;
+
+    }
+
+}
+
+</style>
+
+
+<script>
+
+/* =========================================================
+   ZIQTECH AI ASSISTANT
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const input =
+        document.getElementById("ziqAiInput");
+
+    const sendButton =
+        document.getElementById("ziqAiSend");
+
+    const messages =
+        document.getElementById("ziqAiMessages");
+
+    const typing =
+        document.getElementById("ziqTyping");
+
+    const resetButton =
+        document.getElementById("ziqAiReset");
+
+
+    /* ==========================================
+       FAQ KNOWLEDGE
+    ========================================== */
+
+    const knowledge = [
+
+        {
+            keywords: [
+                "product",
+                "products",
+                "jual",
+                "sell",
+                "barang",
+                "item"
+            ],
+
+            answer:
+                "ZiqTech offers technology products including smartphones, laptops, gaming products, computer components, accessories and other premium tech products."
+        },
+
+        {
+            keywords: [
+                "warranty",
+                "waranti",
+                "jaminan"
+            ],
+
+            answer:
+                "Warranty coverage depends on the individual product and manufacturer. Check the product information or contact ZiqTech support for specific warranty details."
+        },
+
+        {
+            keywords: [
+                "order",
+                "ordering",
+                "buy",
+                "purchase",
+                "beli",
+                "pesanan"
+            ],
+
+            answer:
+                "To place an order, choose your product, add it to your cart and proceed to checkout. Review your order details before completing the checkout process."
+        },
+
+        {
+            keywords: [
+                "cancel",
+                "cancellation",
+                "batal",
+                "batalkan"
+            ],
+
+            answer:
+                "If your order has not been processed yet, cancellation may be possible. Contact ZiqTech support as soon as possible with your order details."
+        },
+
+        {
+            keywords: [
+                "payment",
+                "pay",
+                "bayar",
+                "pembayaran",
+                "card"
+            ],
+
+            answer:
+                "Available payment methods are displayed during checkout. Choose your preferred payment method and follow the instructions shown on screen."
+        },
+
+        {
+            keywords: [
+                "secure",
+                "security",
+                "selamat",
+                "safe",
+                "otp",
+                "password"
+            ],
+
+            answer:
+                "Always use the official checkout/payment flow. Never share your password, OTP or sensitive account information with anyone."
+        },
+
+        {
+            keywords: [
+                "delivery",
+                "shipping",
+                "ship",
+                "hantar",
+                "penghantaran",
+                "courier",
+                "parcel"
+            ],
+
+            answer:
+                "Delivery time depends on your location, product availability and the selected delivery service. Relevant delivery information will be provided with your order."
+        },
+
+        {
+            keywords: [
+                "track",
+                "tracking",
+                "parcel",
+                "shipment",
+                "tracking number"
+            ],
+
+            answer:
+                "If tracking is available for your delivery, tracking information will be provided with your order or shipment details."
+        },
+
+        {
+            keywords: [
+                "contact",
+                "support",
+                "help",
+                "bantuan",
+                "hubungi"
+            ],
+
+            answer:
+                "You can contact the ZiqTech support team through the contact information provided on the website."
+        }
+
+    ];
+
+
+    /* ==========================================
+       FIND ANSWER
+    ========================================== */
+
+    function getAnswer(question) {
+
+        const text =
+            question.toLowerCase();
+
+
+        let bestMatch = null;
+
+        let highestScore = 0;
+
+
+        knowledge.forEach(function (item) {
+
+            let score = 0;
+
+
+            item.keywords.forEach(function (keyword) {
+
+                if (text.includes(keyword)) {
+
+                    score++;
+
+                }
+
+            });
+
+
+            if (score > highestScore) {
+
+                highestScore = score;
+
+                bestMatch = item;
+
+            }
+
+        });
+
+
+        if (bestMatch) {
+
+            return bestMatch.answer;
+
+        }
+
+
+        return `
+            I'm not completely sure about that yet. 🤔
+            <br><br>
+            Try asking me about:
+            <br>
+            • Products
+            <br>
+            • Orders
+            <br>
+            • Payment
+            <br>
+            • Delivery
+            <br>
+            • Warranty
+        `;
+
+    }
+
+
+    /* ==========================================
+       ADD USER MESSAGE
+    ========================================== */
+
+    function addUserMessage(text) {
+
+        const message =
+            document.createElement("div");
+
+        message.className =
+            "ziq-message ziq-user-message";
+
+
+        message.innerHTML = `
+            <div class="ziq-user-bubble">
+                ${escapeHtml(text)}
+            </div>
+        `;
+
+
+        messages.appendChild(message);
+
+        scrollChat();
+
+    }
+
+
+    /* ==========================================
+       ADD AI MESSAGE
+    ========================================== */
+
+    function addAiMessage(text) {
+
+        const message =
+            document.createElement("div");
+
+        message.className =
+            "ziq-message ziq-ai-message";
+
+
+        message.innerHTML = `
+            <div class="ziq-avatar">
+                Z
+            </div>
+
+            <div class="ziq-bubble">
+                <p>${text}</p>
+            </div>
+        `;
+
+
+        messages.appendChild(message);
+
+        scrollChat();
+
+    }
+
+
+    /* ==========================================
+       ESCAPE USER INPUT
+    ========================================== */
+
+    function escapeHtml(text) {
+
+        const div =
+            document.createElement("div");
+
+        div.textContent = text;
+
+        return div.innerHTML;
+
+    }
+
+
+    /* ==========================================
+       SEND
+    ========================================== */
+
+    function sendMessage(question) {
+
+        question =
+            question.trim();
+
+
+        if (!question) {
+
+            return;
+
+        }
+
+
+        addUserMessage(question);
+
+
+        input.value = "";
+
+
+        typing.classList.add("show");
+
+        scrollChat();
+
+
+        /*
+         * Small delay to make the assistant
+         * feel more natural.
+         */
+
+        setTimeout(function () {
+
+            typing.classList.remove("show");
+
+
+            const answer =
+                getAnswer(question);
+
+
+            addAiMessage(answer);
+
+        }, 700);
+
+    }
+
+
+    /* ==========================================
+       BUTTON
+    ========================================== */
+
+    sendButton.addEventListener(
+        "click",
+        function () {
+
+            sendMessage(input.value);
+
+        }
+    );
+
+
+    /* ==========================================
+       ENTER KEY
+    ========================================== */
+
+    input.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Enter"
+            ) {
+
+                event.preventDefault();
+
+                sendMessage(input.value);
+
+            }
+
+        }
+    );
+
+
+    /* ==========================================
+       SUGGESTIONS
+    ========================================== */
+
+    document
+        .querySelectorAll(".ziq-suggestions button")
+        .forEach(function (button) {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    sendMessage(
+                        button.dataset.question
+                    );
+
+                }
+            );
+
+        });
+
+
+    /* ==========================================
+       RESET CHAT
+    ========================================== */
+
+    resetButton.addEventListener(
+        "click",
+        function () {
+
+            messages.innerHTML = `
+
+                <div class="ziq-message ziq-ai-message">
+
+                    <div class="ziq-avatar">
+                        Z
+                    </div>
+
+                    <div class="ziq-bubble">
+
+                        <p>
+                            Chat cleared. 👋
+                        </p>
+
+                        <p>
+                            How can I help you?
+                        </p>
+
+                    </div>
+
+                </div>
+
+            `;
+
+        }
+    );
+
+
+    /* ==========================================
+       AUTO SCROLL
+    ========================================== */
+
+    function scrollChat() {
+
+        messages.scrollTop =
+            messages.scrollHeight;
+
+    }
+
+
+});
+
+
+</script>
+
+
+
+<!-- =========================================================
+     ZIQTECH HOME VISUAL UPGRADE 2026
+     Visual/spacing only — store functions remain unchanged.
+========================================================= -->
+<style id="ziqtech-home-2026-upgrade">
+
+/* ---------------------------------------------------------
+   GLOBAL RHYTHM
+--------------------------------------------------------- */
+:root {
+    --zt-surface: rgba(255,255,255,.78);
+    --zt-line: rgba(29,29,31,.075);
+    --zt-soft-shadow: 0 18px 55px rgba(0,0,0,.07);
+    --zt-hover-shadow: 0 28px 75px rgba(0,0,0,.12);
+}
+
+body {
+    background:
+        radial-gradient(circle at 50% -15%, rgba(0,113,227,.06), transparent 28%),
+        #f5f5f7;
+}
+
+.container {
+    width: min(1240px, calc(100% - 36px));
+}
+
+.section-title {
+    font-size: clamp(34px, 4.5vw, 56px);
+    letter-spacing: -2.7px;
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+}
+
+/* ---------------------------------------------------------
+   NAV — cleaner / more premium
+--------------------------------------------------------- */
+nav {
+    height: 62px;
+    border-bottom-color: rgba(0,0,0,.05);
+    box-shadow: 0 1px 0 rgba(255,255,255,.75);
+}
+
+nav ul {
+    gap: 24px;
+}
+
+.profile-link {
+    padding: 8px 13px;
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 999px;
+    background: rgba(245,245,247,.82);
+}
+
+.nav-icon {
+    width: 38px;
+    height: 38px;
+}
+
+.nav-cart {
+    padding: 9px 14px;
+}
+
+/* ---------------------------------------------------------
+   HERO — less empty space, stronger visual impact
+--------------------------------------------------------- */
+.hero {
+    min-height: 620px;
+    padding: 66px 20px 82px;
+    isolation: isolate;
+    background:
+        radial-gradient(circle at 50% 14%, rgba(0,113,227,.19), transparent 27%),
+        radial-gradient(circle at 12% 68%, rgba(94,92,230,.09), transparent 23%),
+        radial-gradient(circle at 88% 66%, rgba(52,199,89,.07), transparent 23%),
+        linear-gradient(180deg, #fff 0%, #f5f5f7 100%);
+}
+
+.hero::before {
+    width: 610px;
+    height: 610px;
+    opacity: .72;
+}
+
+.hero::after {
+    width: 410px;
+    height: 410px;
+    opacity: .7;
+}
+
+.hero-content {
+    width: min(880px, 92%);
+}
+
+.hero-badge {
+    margin-bottom: 18px;
+    padding: 8px 14px;
+    box-shadow: 0 9px 28px rgba(0,113,227,.07);
+}
+
+.hero h1 {
+    font-size: clamp(54px, 8vw, 96px);
+    line-height: .93;
+    letter-spacing: -6px;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: clamp(16px, 1.8vw, 19px);
+    line-height: 1.55;
+    margin-bottom: 27px;
+}
+
+.hero-buttons {
+    gap: 10px;
+}
+
+.primary-button,
+.secondary-button {
+    min-height: 46px;
+    padding: 0 20px;
+}
+
+.scroll-indicator {
+    bottom: 17px;
+}
+
+.scroll-line {
+    height: 24px;
+}
+
+.hero-glow {
+    width: 500px;
+    height: 500px;
+    bottom: -405px;
+}
+
+/* ---------------------------------------------------------
+   TRUST STRIP — compact glass strip
+--------------------------------------------------------- */
+.trust-strip {
+    width: min(990px, calc(100% - 36px));
+    margin-top: -28px;
+    border-radius: 20px;
+    box-shadow: 0 16px 50px rgba(0,0,0,.075);
+}
+
+.trust-item {
+    padding: 18px 22px;
+}
+
+.trust-item strong {
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+/* ---------------------------------------------------------
+   CATEGORIES — tighter, bolder cards
+--------------------------------------------------------- */
+.categories {
+    padding: 78px 0 44px;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading p {
+    margin-top: 11px;
+    line-height: 1.5;
+}
+
+.category-grid {
+    gap: 14px;
+}
+
+.category-card {
+    min-height: 178px;
+    padding: 22px;
+    border-radius: 24px;
+    background:
+        linear-gradient(145deg, rgba(255,255,255,.96), rgba(239,239,243,.9));
+    box-shadow: 0 8px 28px rgba(0,0,0,.035);
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 55px rgba(0,0,0,.10);
+}
+
+.category-icon {
+    right: 18px;
+    top: 14px;
+    font-size: 59px;
+}
+
+.category-card h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.category-arrow {
+    margin-top: 10px;
+}
+
+/* ---------------------------------------------------------
+   PRODUCTS — store-like toolbar & denser premium cards
+--------------------------------------------------------- */
+.products-section {
+    padding: 56px 0 72px;
+}
+
+.products-header {
+    margin-bottom: 22px;
+}
+
+.shop-tools {
+    gap: 10px;
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid var(--zt-line);
+    border-radius: 20px;
+    background: rgba(255,255,255,.58);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 12px 35px rgba(0,0,0,.035);
+}
+
+.shop-tools input,
+.shop-tools select {
+    height: 48px;
+    border-radius: 13px;
+    background: rgba(255,255,255,.94);
+}
+
+.filter-pills {
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.filter-pill {
+    padding: 8px 14px;
+}
+
+.products {
+    gap: 17px;
+}
+
+.product-card {
+    border-radius: 25px;
+    padding: 14px;
+    box-shadow: 0 8px 28px rgba(0,0,0,.035);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--zt-hover-shadow);
+}
+
+.product-image-wrap {
+    height: 255px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.product-info {
+    padding: 0 4px 4px;
+}
+
+.product-tag {
+    margin-bottom: 5px;
+}
+
+.product-card h3 {
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+
+.description {
+    min-height: 39px;
+    line-height: 1.45;
+    margin-bottom: 12px;
+}
+
+.stock-row {
+    margin-bottom: 10px;
+}
+
+.product-bottom {
+    gap: 9px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.add-cart {
+    padding: 10px 14px;
+}
+
+.loading {
+    min-height: 220px;
+}
+
+/* ---------------------------------------------------------
+   PROMO — compact feature banner
+--------------------------------------------------------- */
+.promo {
+    width: min(1180px, calc(100% - 36px));
+    margin: 0 auto 62px;
+    padding: 62px 30px;
+    border-radius: 30px;
+}
+
+.promo-label {
+    margin-bottom: 10px;
+}
+
+.promo h2 {
+    font-size: clamp(36px, 5vw, 60px);
+    margin-bottom: 13px;
+}
+
+.promo p {
+    margin-bottom: 22px;
+    line-height: 1.55;
+}
+
+.promo-button {
+    min-height: 45px;
+}
+
+/* ---------------------------------------------------------
+   SMART Q&A — reduce huge vertical gaps
+--------------------------------------------------------- */
+.smart-qna {
+    padding: 72px 20px 62px;
+}
+
+.smart-qna-container {
+    max-width: 920px;
+}
+
+.smart-qna-header {
+    margin-bottom: 30px;
+}
+
+.smart-qna-header h2 {
+    margin: 15px 0 10px;
+    font-size: clamp(35px, 5vw, 55px);
+    letter-spacing: -2.5px;
+}
+
+.smart-qna-header p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.qna-search-box {
+    height: 56px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+
+.qna-categories {
+    gap: 7px;
+    margin-bottom: 16px;
+}
+
+.qna-category {
+    padding: 8px 15px;
+}
+
+.qna-results-info {
+    margin-bottom: 8px;
+}
+
+.smart-qna-question {
+    padding: 20px 6px;
+}
+
+.smart-qna-answer p {
+    padding: 0 62px 21px 49px;
+    line-height: 1.6;
+}
+
+.qna-support-card {
+    margin-top: 36px;
+    padding: 24px 26px;
+    border-radius: 21px;
+}
+
+.support-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+}
+
+.support-card-content h3 {
+    font-size: 21px;
+}
+
+/* ---------------------------------------------------------
+   AI CHAT — tighter and more app-like
+--------------------------------------------------------- */
+.ziq-ai-section {
+    padding: 58px 20px 76px;
+    background:
+        linear-gradient(180deg, #f5f5f7 0%, #eeeeF2 100%);
+}
+
+.ziq-ai-container {
+    max-width: 880px;
+}
+
+.ziq-ai-header {
+    gap: 17px;
+    margin-bottom: 24px;
+}
+
+.ziq-ai-orb {
+    width: 56px;
+    height: 56px;
+}
+
+.ziq-ai-header h2 {
+    font-size: clamp(30px, 4.5vw, 41px);
+}
+
+.ziq-ai-header p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.ziq-ai-chat {
+    border-radius: 24px;
+    box-shadow: 0 22px 65px rgba(0,0,0,.10);
+}
+
+.ziq-ai-topbar {
+    padding: 15px 19px;
+}
+
+.ziq-ai-messages {
+    height: 350px;
+    padding: 20px;
+}
+
+.ziq-message {
+    margin-bottom: 16px;
+}
+
+.ziq-bubble {
+    padding: 13px 15px;
+}
+
+.ziq-ai-input-area {
+    margin: 0 15px;
+    padding: 8px 8px 8px 15px;
+    border-radius: 16px;
+}
+
+.ziq-ai-disclaimer {
+    padding: 9px 18px 14px;
+}
+
+/* ---------------------------------------------------------
+   FOOTER — less dead space
+--------------------------------------------------------- */
+footer {
+    padding: 46px 0 25px;
+}
+
+.footer-top {
+    gap: 45px;
+    padding-bottom: 30px;
+}
+
+.footer-brand h2 {
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    line-height: 1.55;
+}
+
+.footer-links {
+    gap: 60px;
+}
+
+.footer-column h4 {
+    margin-bottom: 11px;
+}
+
+.footer-column a {
+    margin-bottom: 8px;
+}
+
+.copyright {
+    padding-top: 19px;
+}
+
+/* ---------------------------------------------------------
+   REVEAL — cleaner motion
+--------------------------------------------------------- */
+.reveal {
+    transform: translateY(18px);
+    transition: opacity .6s ease, transform .6s ease;
+}
+
+/* ---------------------------------------------------------
+   MOBILE COMPACTION
+--------------------------------------------------------- */
+@media (max-width: 700px) {
+    .container {
+        width: min(100% - 24px, 1240px);
+    }
+
+    .hero {
+        min-height: 555px;
+        padding: 58px 14px 66px;
+    }
+
+    .hero h1 {
+        font-size: clamp(47px, 16vw, 60px);
+        letter-spacing: -4px;
+        margin-bottom: 17px;
+    }
+
+    .hero-badge {
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        margin-bottom: 22px;
+        line-height: 1.5;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .trust-strip {
+        width: calc(100% - 24px);
+        margin-top: -18px;
+    }
+
+    .trust-item {
+        padding: 14px 18px;
+    }
+
+    .categories {
+        padding: 58px 0 30px;
+    }
+
+    .section-heading {
+        margin-bottom: 23px;
+    }
+
+    .category-grid {
+        gap: 11px;
+    }
+
+    .category-card {
+        min-height: 145px;
+        padding: 19px;
+        border-radius: 20px;
+    }
+
+    .products-section {
+        padding: 43px 0 56px;
+    }
+
+    .products-header {
+        margin-bottom: 17px;
+    }
+
+    .shop-tools {
+        padding: 8px;
+        margin-bottom: 12px;
+        border-radius: 17px;
+    }
+
+    .filter-pills {
+        margin-bottom: 15px;
+    }
+
+    .products {
+        gap: 14px;
+    }
+
+    .product-image-wrap {
+        height: 245px;
+    }
+
+    .promo {
+        width: calc(100% - 24px);
+        margin-bottom: 45px;
+        padding: 48px 22px;
+        border-radius: 24px;
+    }
+
+    .smart-qna {
+        padding: 55px 14px 48px;
+    }
+
+    .smart-qna-header {
+        margin-bottom: 24px;
+    }
+
+    .smart-qna-question {
+        padding: 17px 3px;
+    }
+
+    .qna-support-card {
+        margin-top: 27px;
+        padding: 21px;
+    }
+
+    .ziq-ai-section {
+        padding: 48px 12px 58px;
+    }
+
+    .ziq-ai-header {
+        margin-bottom: 19px;
+    }
+
+    .ziq-ai-messages {
+        height: 340px;
+        padding: 17px 13px;
+    }
+
+    footer {
+        padding: 38px 0 22px;
+    }
+
+    .footer-top {
+        gap: 30px;
+        padding-bottom: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero {
+        min-height: 520px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        min-height: 44px;
+        padding: 0 17px;
+    }
+}
+
+</style>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <h2>
+                    ZiqTech
+                </h2>
+
+                <p>
+                    Premium technology.
+                    Simple experience.
+                    Built for everyone.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div class="footer-column">
+
+                    <h4>Shop</h4>
+
+                    <a href="#products">
+                        Products
+                    </a>
+
+                    <a href="#categories">
+                        Categories
+                    </a>
+
+                    <a href="wishlist.html">
+                        Wishlist
+                    </a>
+
+                    <a href="cart.html">
+                        Cart
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Account</h4>
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                    <a href="order.html">
+                        Orders
+                    </a>
+
+                    <a href="#about">
+                        About ZiqTech
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 ZiqTech. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const profileLink = document.getElementById("profileLink");
+
+    if (!profileLink) return;
+
+    profileLink.addEventListener("click", function (e) {
+
+        const currentUser =
+            localStorage.getItem("ziqtech_current_user");
+
+        // Belum login
+        if (!currentUser) {
+
+            e.preventDefault();
+
+            alert("Please login first.");
+
+            window.location.href = "login.html";
+
+            return;
+        }
+
+        // Dah login → terus ke profile.html
+    });
+
+});
+</script>
+
+
+
+</body>
+</html>

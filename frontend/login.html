@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Sign In — ZiqTech</title>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "SF Pro Display",
+            "SF Pro Text",
+            "Segoe UI",
+            sans-serif;
+
+        min-height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background:
+            linear-gradient(
+                180deg,
+                #ffffff 0%,
+                #f5f5f7 100%
+            );
+
+        color: #1d1d1f;
+
+        padding: 24px;
+    }
+
+    .login-wrapper {
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 28px;
+    }
+
+    .logo h1 {
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: -1.5px;
+        color: #0071e3;
+    }
+
+    .logo p {
+        margin-top: 7px;
+        color: #6e6e73;
+        font-size: 14px;
+    }
+
+    .login-card {
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 28px;
+        padding: 38px 34px;
+
+        box-shadow:
+            0 20px 60px rgba(0, 0, 0, 0.08);
+
+        backdrop-filter: blur(20px);
+    }
+
+    .login-card h2 {
+        text-align: center;
+        font-size: 28px;
+        letter-spacing: -0.8px;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #6e6e73;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .field {
+        margin-bottom: 20px;
+    }
+
+    .field label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #1d1d1f;
+    }
+
+    .field input {
+        width: 100%;
+        height: 52px;
+
+        border: 1px solid #d2d2d7;
+        border-radius: 14px;
+
+        padding: 0 16px;
+
+        font-size: 16px;
+
+        outline: none;
+
+        background: #fff;
+
+        transition:
+            border-color 0.2s,
+            box-shadow 0.2s;
+    }
+
+    .field input:focus {
+        border-color: #0071e3;
+
+        box-shadow:
+            0 0 0 4px rgba(0, 113, 227, 0.12);
+    }
+
+    .login-button {
+        width: 100%;
+        height: 52px;
+
+        border: none;
+        border-radius: 14px;
+
+        background: #0071e3;
+        color: white;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        cursor: pointer;
+
+        margin-top: 4px;
+
+        transition:
+            transform 0.15s,
+            background 0.2s,
+            box-shadow 0.2s;
+    }
+
+    .login-button:hover {
+        background: #0077ed;
+
+        box-shadow:
+            0 8px 22px rgba(0, 113, 227, 0.25);
+    }
+
+    .login-button:active {
+        transform: scale(0.98);
+    }
+
+    #message {
+        min-height: 20px;
+
+        text-align: center;
+
+        color: #d70015;
+
+        font-size: 14px;
+
+        margin-top: 16px;
+    }
+
+    .register {
+        text-align: center;
+
+        margin-top: 24px;
+
+        font-size: 14px;
+
+        color: #6e6e73;
+    }
+
+    .register a {
+        color: #0071e3;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .register a:hover {
+        text-decoration: underline;
+    }
+
+    .secure-note {
+        text-align: center;
+
+        margin-top: 20px;
+
+        font-size: 12px;
+
+        color: #86868b;
+    }
+
+    @media (max-width: 480px) {
+
+        body {
+            padding: 16px;
+        }
+
+        .login-card {
+            padding: 30px 22px;
+            border-radius: 24px;
+        }
+
+        .logo h1 {
+            font-size: 30px;
+        }
+
+        .login-card h2 {
+            font-size: 25px;
+        }
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-wrapper">
+
+    <div class="logo">
+
+        <h1>ZiqTech</h1>
+
+        <p>
+            Technology. Simply better.
+        </p>
+
+    </div>
+
+
+    <div class="login-card">
+
+        <h2>
+            Sign in
+        </h2>
+
+        <p class="subtitle">
+            Sign in to continue to your ZiqTech account.
+        </p>
+
+
+        <form id="loginForm">
+
+            <div class="field">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="login-button"
+            >
+                Sign In
+            </button>
+
+        </form>
+
+
+        <p id="message"></p>
+
+
+        <div class="register">
+
+            Don't have an account?
+
+            <a href="register.html">
+                Create Account
+            </a>
+
+        </div>
+
+
+        <div class="secure-note">
+
+            🔒 Your account information stays private.
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+/* =========================================================
+   MERGE GUEST CART AFTER LOGIN
+========================================================= */
+
+function mergeGuestCartAfterLogin(user) {
+
+    if (!user) {
+        return;
+    }
+
+    const guestKey =
+        "ziqtech_cart_guest";
+
+    const userKey =
+        user.id
+            ? `ziqtech_cart_user_${user.id}`
+            : user.email
+                ? `ziqtech_cart_user_${String(
+                    user.email
+                ).toLowerCase()}`
+                : null;
+
+    if (!userKey) {
+        return;
+    }
+
+    let guestCart = [];
+    let userCart = [];
+
+    try {
+        guestCart =
+            JSON.parse(
+                localStorage.getItem(
+                    guestKey
+                )
+            ) || [];
+    } catch {
+        guestCart = [];
+    }
+
+    if (
+        !Array.isArray(guestCart) ||
+        guestCart.length === 0
+    ) {
+        return;
+    }
+
+    try {
+        userCart =
+            JSON.parse(
+                localStorage.getItem(
+                    userKey
+                )
+            ) || [];
+    } catch {
+        userCart = [];
+    }
+
+    if (!Array.isArray(userCart)) {
+        userCart = [];
+    }
+
+    guestCart.forEach(
+        guestItem => {
+
+            const productId =
+                Number(
+                    guestItem.productId ??
+                    guestItem.id
+                );
+
+            const variantId =
+                String(
+                    guestItem.variantId ??
+                    ""
+                );
+
+            const existing =
+                userCart.find(
+                    userItem =>
+                        Number(
+                            userItem.productId ??
+                            userItem.id
+                        ) === productId &&
+                        String(
+                            userItem.variantId ??
+                            ""
+                        ) === variantId
+                );
+
+            const guestQuantity =
+                Math.max(
+                    1,
+                    Number(
+                        guestItem.quantity
+                    ) || 1
+                );
+
+            if (existing) {
+
+                existing.quantity =
+                    Math.max(
+                        1,
+                        Number(
+                            existing.quantity
+                        ) || 1
+                    ) +
+                    guestQuantity;
+
+            } else {
+
+                userCart.push({
+                    ...guestItem,
+                    productId:
+                        productId,
+                    quantity:
+                        guestQuantity
+                });
+            }
+        }
+    );
+
+    localStorage.setItem(
+        userKey,
+        JSON.stringify(
+            userCart
+        )
+    );
+
+    localStorage.removeItem(
+        guestKey
+    );
+
+    console.log(
+        "✅ Guest cart transferred to:",
+        userKey
+    );
+}
+
+
+
+    document
+        .getElementById("loginForm")
+        .addEventListener(
+            "submit",
+            async function(event) {
+
+                event.preventDefault();
+
+
+                const email =
+                    document
+                        .getElementById("email")
+                        .value
+                        .trim()
+                        .toLowerCase();
+
+
+                const password =
+                    document
+                        .getElementById("password")
+                        .value;
+
+
+                const message =
+                    document.getElementById(
+                        "message"
+                    );
+
+
+                /* =========================
+                   CLEAR MESSAGE
+                ========================= */
+
+                message.textContent = "";
+
+
+                /* =========================
+                   BASIC VALIDATION
+                ========================= */
+
+                if (!email || !password) {
+
+                    message.textContent =
+                        "Please enter your email and password.";
+
+                    return;
+                }
+
+
+                try {
+
+                    /* =========================
+                       LOGIN TO BACKEND
+                    ========================= */
+
+                   const response =
+    await fetch(
+        "/api/auth/login",
+        {
+            method: "POST",
+            credentials: "include",
+            headers: {
+                "Content-Type":
+                    "application/json"
+            },
+            body: JSON.stringify({
+                email: email,
+                password: password
+            })
+        }
+    );
+
+                    const data =
+                        await response.json();
+
+
+                    /* =========================
+                       LOGIN FAILED
+                    ========================= */
+
+                    if (!response.ok) {
+
+                        message.textContent =
+                            data.message ||
+                            "Invalid email or password.";
+
+                        return;
+                    }
+
+
+                    /* =========================
+                       LOGIN SUCCESS
+                    ========================= */
+
+                    if (
+                        !data.success ||
+                        !data.user
+                    ) {
+
+                        message.textContent =
+                            "Login failed.";
+
+                        return;
+                    }
+
+
+                    /* =========================
+                       SAVE USER INFO
+                       NO PASSWORD SAVED
+                    ========================= */
+
+                    localStorage.setItem(
+                        "ziqtech_current_user",
+                        JSON.stringify(
+                            data.user
+                        )
+                    );
+
+                    /*
+                     * Transfer barang guest
+                     * ke cart account selepas login.
+                     */
+                    mergeGuestCartAfterLogin(
+                        data.user
+                    );
+
+
+                    /* =========================
+                       CHECK REDIRECT
+                    ========================= */
+
+                    const params =
+                        new URLSearchParams(
+                            window.location.search
+                        );
+
+
+                    const redirect =
+                        params.get("redirect");
+
+
+                    if (redirect) {
+
+                        window.location.href =
+                            redirect;
+
+                    } else {
+
+                        window.location.href =
+                            "index.html";
+
+                    }
+
+                } catch (error) {
+
+                    console.error(
+                        "Login error:",
+                        error
+                    );
+
+                    message.textContent =
+                        "Unable to connect to server. Please make sure the ZiqTech server is running.";
+
+                }
+
+            }
+        );
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,3512 @@
+[
+  {
+    "id": 2,
+    "name": "iPhone 16 Pro",
+    "description": "Titanium design with powerful performance and Pro camera system.",
+    "price": 4999,
+    "stock": 156,
+    "category": "iphone",
+    "image": "/images/products/2-iphone-16-pro-main.png",
+    "variants": [
+      {
+        "id": "variant-1789552781871-trbq2g",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Black Titanium"
+        },
+        "price": 4999,
+        "stock": 9,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-fgc79r",
+        "attributes": {
+          "storage": "128GB",
+          "color": "White Titanium"
+        },
+        "price": 4999,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-70r3e4",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Natural Titanium"
+        },
+        "price": 4999,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-yeexoq",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Desert Titanium"
+        },
+        "price": 4999,
+        "stock": 7,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-3ezx9b",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Black Titanium"
+        },
+        "price": 5499,
+        "stock": 12,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-tvejs3",
+        "attributes": {
+          "storage": "256GB",
+          "color": "White Titanium"
+        },
+        "price": 5499,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-0nmw7q",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Natural Titanium"
+        },
+        "price": 5499,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-1hplul",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Desert Titanium"
+        },
+        "price": 5499,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-mbz9aa",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Black Titanium"
+        },
+        "price": 6499,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-w19wtd",
+        "attributes": {
+          "storage": "512GB",
+          "color": "White Titanium"
+        },
+        "price": 6499,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-tz3lku",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Natural Titanium"
+        },
+        "price": 6499,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-4xznxd",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Desert Titanium"
+        },
+        "price": 6499,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-gejyt9",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Black Titanium"
+        },
+        "price": 6999,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-l6doni",
+        "attributes": {
+          "storage": "1TB",
+          "color": "White Titanium"
+        },
+        "price": 6999,
+        "stock": 10,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-z7nsye",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Natural Titanium"
+        },
+        "price": 6999,
+        "stock": 9,
+        "image": ""
+      },
+      {
+        "id": "variant-1789552781871-3hakse",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Desert Titanium"
+        },
+        "price": 6999,
+        "stock": 9,
+        "image": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "AirPods Pro 3",
+    "description": "Immersive sound with Active Noise Cancellation, heart rate sensing, and an improved in-ear design.",
+    "price": 999,
+    "stock": 10,
+    "category": "audio",
+    "image": "/images/products/3-airpods-pro-3-official.jpg"
+  },
+  {
+    "id": 4,
+    "name": "MacBook Air M3",
+    "description": "Thin, light and powerful laptop with Apple M3 chip.",
+    "price": 4499,
+    "stock": 158,
+    "category": "mac",
+    "image": "/images/products/4-macbook-air-m3-main.png",
+    "variants": [
+      {
+        "id": "variant-1789552802756-xandws",
+        "storage": "128GB",
+        "color": "Black Titanium",
+        "price": 4999,
+        "stock": 10,
+        "attributes": {
+          "storage": "128GB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802756-joukxc",
+        "storage": "128GB",
+        "color": "White Titanium",
+        "price": 4999,
+        "stock": 10,
+        "attributes": {
+          "storage": "128GB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802756-5vkl7i",
+        "storage": "128GB",
+        "color": "Natural Titanium",
+        "price": 4999,
+        "stock": 9,
+        "attributes": {
+          "storage": "128GB",
+          "color": "Natural Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802756-iy6yrr",
+        "storage": "128GB",
+        "color": "Desert Titanium",
+        "price": 4999,
+        "stock": 10,
+        "attributes": {
+          "storage": "128GB",
+          "color": "Desert Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-3qwq2a",
+        "storage": "256GB",
+        "color": "Black Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "storage": "256GB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-egjss8",
+        "storage": "256GB",
+        "color": "White Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "storage": "256GB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-z7nrtm",
+        "storage": "256GB",
+        "color": "Natural Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "storage": "256GB",
+          "color": "Natural Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-8cnb92",
+        "storage": "256GB",
+        "color": "Desert Titanium",
+        "price": 5499,
+        "stock": 10,
+        "attributes": {
+          "storage": "256GB",
+          "color": "Desert Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-hka9so",
+        "storage": "512GB",
+        "color": "Black Titanium",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "storage": "512GB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-f0h6k0",
+        "storage": "512GB",
+        "color": "White Titanium",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "storage": "512GB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-n5nfes",
+        "storage": "512GB",
+        "color": "Natural Titanium",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "storage": "512GB",
+          "color": "Natural Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-upq75u",
+        "storage": "512GB",
+        "color": "Desert Titanium",
+        "price": 6499,
+        "stock": 10,
+        "attributes": {
+          "storage": "512GB",
+          "color": "Desert Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-ke1f69",
+        "storage": "1TB",
+        "color": "Black Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "storage": "1TB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-5kgzfw",
+        "storage": "1TB",
+        "color": "White Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "storage": "1TB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-qubbf7",
+        "storage": "1TB",
+        "color": "Natural Titanium",
+        "price": 6999,
+        "stock": 10,
+        "attributes": {
+          "storage": "1TB",
+          "color": "Natural Titanium"
+        }
+      },
+      {
+        "id": "variant-1789552802757-k2qgf8",
+        "storage": "1TB",
+        "color": "Desert Titanium",
+        "price": 6999,
+        "stock": 9,
+        "attributes": {
+          "storage": "1TB",
+          "color": "Desert Titanium"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "MacBook Pro 14",
+    "description": "Professional performance with advanced Apple Silicon power.",
+    "price": 7999,
+    "stock": 33,
+    "category": "mac",
+    "image": "/images/products/5-macbook-pro-14-official.jpg",
+    "variants": [
+      {
+        "id": "5-m3pro-18-512-silver",
+        "attributes": {
+          "storage": "18GB",
+          "color": "Silver"
+        },
+        "price": 7999,
+        "stock": 2,
+        "image": "/images/products/5-macbook-pro-14-official.jpg"
+      },
+      {
+        "id": "5-m3pro-18-512-spaceblack",
+        "attributes": {
+          "storage": "18GB",
+          "color": "Space Black"
+        },
+        "price": 7999,
+        "stock": 3,
+        "image": "/images/products/5-macbook-pro-14-official.jpg"
+      },
+      {
+        "id": "5-m3pro-18-1tb-silver",
+        "attributes": {
+          "storage": "18GB",
+          "color": "Silver"
+        },
+        "price": 8999,
+        "stock": 10,
+        "image": "/images/products/5-macbook-pro-14-official.jpg"
+      },
+      {
+        "id": "5-m3pro-18-1tb-spaceblack",
+        "attributes": {
+          "storage": "18GB",
+          "color": "Space Black"
+        },
+        "price": 8999,
+        "stock": 11,
+        "image": "/images/products/5-macbook-pro-14-official.jpg"
+      },
+      {
+        "id": "5-m3max-36-1tb-silver",
+        "attributes": {
+          "storage": "36GB",
+          "color": "Silver"
+        },
+        "price": 10999,
+        "stock": 3,
+        "image": "/images/products/5-macbook-pro-14-official.jpg"
+      },
+      {
+        "id": "5-m3max-36-1tb-spaceblack",
+        "attributes": {
+          "storage": "36GB",
+          "color": "Space Black"
+        },
+        "price": 10999,
+        "stock": 4,
+        "image": "/images/products/5-macbook-pro-14-official.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "iMac 24-inch",
+    "description": "All-in-one desktop with a stunning 24-inch 4.5K Retina display and Apple M4 chip.",
+    "price": 5799,
+    "stock": 68,
+    "category": "mac",
+    "image": "/images/products/6-imac-24-inch-official.jpg",
+    "variants": [
+      {
+        "id": "6-16gb-256gb-blue",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Blue",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/6-imac-24-inch-official.jpg",
+        "storage": "16GB",
+        "color": "Blue",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Blue"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-purple",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Purple",
+        "price": 5799,
+        "stock": 9,
+        "image": "/images/products/6-imac-24-inch-official.jpg",
+        "storage": "16GB",
+        "color": "Purple",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Purple"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-pink",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Pink",
+        "price": 5799,
+        "stock": 9,
+        "image": "/images/products/6-imac-24-inch-official.jpg",
+        "storage": "16GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-orange",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Orange",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/6-imac-24-inch-official.jpg",
+        "storage": "16GB",
+        "color": "Orange",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Orange"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-yellow",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Yellow",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/6-imac-24-inch-official.jpg",
+        "storage": "16GB",
+        "color": "Yellow",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Yellow"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-green",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Green",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/6-imac-24-inch-official.jpg",
+        "storage": "16GB",
+        "color": "Green",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Green"
+        }
+      },
+      {
+        "id": "6-16gb-256gb-silver",
+        "name": "8-Core CPU - 8-Core GPU - 16GB - 256GB - Silver",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/6-imac-24-inch-official.jpg",
+        "storage": "16GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Silver"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Mac mini M4",
+    "description": "Compact desktop with powerful performance in a tiny design.",
+    "price": 2499,
+    "stock": 10,
+    "category": "mac",
+    "image": "/images/products/7-mac-mini-m4-official.jpg",
+    "variants": [
+      {
+        "id": "7-m4-16gb-256gb",
+        "name": "M4 - 16GB - 256GB - Silver",
+        "price": 2499,
+        "stock": 10,
+        "image": "/images/products/7-mac-mini-m4-official.jpg",
+        "storage": "16GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "7-m4-16gb-512gb",
+        "name": "M4 - 16GB - 512GB - Silver",
+        "price": 2999,
+        "stock": 10,
+        "image": "/images/products/7-mac-mini-m4-official.jpg",
+        "storage": "16GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Silver"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "iPhone 16",
+    "description": "Powerful performance, advanced camera and stunning design with the A18 chip.",
+    "price": 3799,
+    "stock": 25,
+    "category": "iphone",
+    "image": "/images/products/8-iphone-16-main.jpg",
+    "variants": [
+      {
+        "id": "8-128-black",
+        "name": "128GB - Black",
+        "price": 3799,
+        "stock": 10,
+        "image": "/images/products/8-iphone-16-main.jpg",
+        "storage": "128GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "8-128-white",
+        "name": "128GB - White",
+        "price": 3799,
+        "stock": 10,
+        "image": "/images/products/8-iphone-16-8-128-white.jpg",
+        "storage": "128GB",
+        "color": "White",
+        "attributes": {
+          "storage": "128GB",
+          "color": "White"
+        }
+      },
+      {
+        "id": "8-128-pink",
+        "name": "128GB - Pink",
+        "price": 3799,
+        "stock": 10,
+        "image": "/images/products/8-iphone-16-8-128-pink.jpg",
+        "storage": "128GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "8-128-teal",
+        "name": "128GB - Teal",
+        "price": 3799,
+        "stock": 10,
+        "image": "/images/products/8-iphone-16-8-128-teal.jpg",
+        "storage": "128GB",
+        "color": "Teal",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Teal"
+        }
+      },
+      {
+        "id": "8-128-ultramarine",
+        "name": "128GB - Ultramarine",
+        "price": 3799,
+        "stock": 10,
+        "image": "/images/products/8-iphone-16-8-128-ultramarine.jpg",
+        "storage": "128GB",
+        "color": "Ultramarine",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Ultramarine"
+        }
+      },
+      {
+        "id": "8-256-black",
+        "name": "256GB - Black",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/8-iphone-16-main.jpg",
+        "storage": "256GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "8-256-white",
+        "name": "256GB - White",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/8-iphone-16-8-128-white.jpg",
+        "storage": "256GB",
+        "color": "White",
+        "attributes": {
+          "storage": "256GB",
+          "color": "White"
+        }
+      },
+      {
+        "id": "8-256-pink",
+        "name": "256GB - Pink",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/8-iphone-16-8-128-pink.jpg",
+        "storage": "256GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "8-256-teal",
+        "name": "256GB - Teal",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/8-iphone-16-8-128-teal.jpg",
+        "storage": "256GB",
+        "color": "Teal",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Teal"
+        }
+      },
+      {
+        "id": "8-256-ultramarine",
+        "name": "256GB - Ultramarine",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/8-iphone-16-8-128-ultramarine.jpg",
+        "storage": "256GB",
+        "color": "Ultramarine",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Ultramarine"
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "iPhone 16 Pro Max",
+    "description": "The ultimate iPhone experience with a large Pro display and powerful cameras.",
+    "price": 5999,
+    "stock": 15,
+    "category": "iphone",
+    "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+    "variants": [
+      {
+        "id": "9-256-black",
+        "name": "256GB - Black Titanium",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "256GB",
+        "color": "Black Titanium",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "9-256-natural",
+        "name": "256GB - Natural Titanium",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "256GB",
+        "color": "Natural Titanium",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Natural Titanium"
+        }
+      },
+      {
+        "id": "9-256-white",
+        "name": "256GB - White Titanium",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "256GB",
+        "color": "White Titanium",
+        "attributes": {
+          "storage": "256GB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "9-256-desert",
+        "name": "256GB - Desert Titanium",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "256GB",
+        "color": "Desert Titanium",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Desert Titanium"
+        }
+      },
+      {
+        "id": "9-512-black",
+        "name": "512GB - Black Titanium",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "512GB",
+        "color": "Black Titanium",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "9-512-natural",
+        "name": "512GB - Natural Titanium",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "512GB",
+        "color": "Natural Titanium",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Natural Titanium"
+        }
+      },
+      {
+        "id": "9-512-white",
+        "name": "512GB - White Titanium",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "512GB",
+        "color": "White Titanium",
+        "attributes": {
+          "storage": "512GB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "9-512-desert",
+        "name": "512GB - Desert Titanium",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "512GB",
+        "color": "Desert Titanium",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Desert Titanium"
+        }
+      },
+      {
+        "id": "9-1tb-black",
+        "name": "1TB - Black Titanium",
+        "price": 7999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "1TB",
+        "color": "Black Titanium",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "9-1tb-natural",
+        "name": "1TB - Natural Titanium",
+        "price": 7999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "1TB",
+        "color": "Natural Titanium",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Natural Titanium"
+        }
+      },
+      {
+        "id": "9-1tb-white",
+        "name": "1TB - White Titanium",
+        "price": 7999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "1TB",
+        "color": "White Titanium",
+        "attributes": {
+          "storage": "1TB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "9-1tb-desert",
+        "name": "1TB - Desert Titanium",
+        "price": 7999,
+        "stock": 10,
+        "image": "/images/products/9-iphone-16-pro-max-official.jpg",
+        "storage": "1TB",
+        "color": "Desert Titanium",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Desert Titanium"
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "iPhone 17",
+    "description": "A powerful everyday iPhone with an advanced dual-camera system and A19 chip.",
+    "price": 4299,
+    "stock": 20,
+    "category": "iphone",
+    "image": "/images/products/10-iphone-17-10-256-black.jpg",
+    "variants": [
+      {
+        "id": "10-256-black",
+        "name": "256GB - Black",
+        "price": 4299,
+        "stock": 10,
+        "image": "/images/products/10-iphone-17-10-256-black.jpg",
+        "storage": "256GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "10-256-white",
+        "name": "256GB - White",
+        "price": 4299,
+        "stock": 10,
+        "image": "/images/products/10-iphone-17-10-256-white.jpg",
+        "storage": "256GB",
+        "color": "White",
+        "attributes": {
+          "storage": "256GB",
+          "color": "White"
+        }
+      },
+      {
+        "id": "10-256-mist-blue",
+        "name": "256GB - Mist Blue",
+        "price": 4299,
+        "stock": 10,
+        "image": "/images/products/10-iphone-17-10-256-black.jpg",
+        "storage": "256GB",
+        "color": "Mist Blue",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Mist Blue"
+        }
+      },
+      {
+        "id": "10-256-sage",
+        "name": "256GB - Sage",
+        "price": 4299,
+        "stock": 10,
+        "image": "/images/products/10-iphone-17-10-256-sage.jpg",
+        "storage": "256GB",
+        "color": "Sage",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Sage"
+        }
+      },
+      {
+        "id": "10-256-lavender",
+        "name": "256GB - Lavender",
+        "price": 4299,
+        "stock": 10,
+        "image": "/images/products/10-iphone-17-10-256-lavender.jpg",
+        "storage": "256GB",
+        "color": "Lavender",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Lavender"
+        }
+      },
+      {
+        "id": "10-512-black",
+        "name": "512GB - Black",
+        "price": 5299,
+        "stock": 10,
+        "image": "/images/products/10-iphone-17-10-256-black.jpg",
+        "storage": "512GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "10-512-white",
+        "name": "512GB - White",
+        "price": 5299,
+        "stock": 10,
+        "image": "/images/products/10-iphone-17-10-256-white.jpg",
+        "storage": "512GB",
+        "color": "White",
+        "attributes": {
+          "storage": "512GB",
+          "color": "White"
+        }
+      },
+      {
+        "id": "10-512-mist-blue",
+        "name": "512GB - Mist Blue",
+        "price": 5299,
+        "stock": 10,
+        "image": "/images/products/10-iphone-17-10-256-black.jpg",
+        "storage": "512GB",
+        "color": "Mist Blue",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Mist Blue"
+        }
+      },
+      {
+        "id": "10-512-sage",
+        "name": "512GB - Sage",
+        "price": 5299,
+        "stock": 10,
+        "image": "/images/products/10-iphone-17-10-256-sage.jpg",
+        "storage": "512GB",
+        "color": "Sage",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Sage"
+        }
+      },
+      {
+        "id": "10-512-lavender",
+        "name": "512GB - Lavender",
+        "price": 5299,
+        "stock": 10,
+        "image": "/images/products/10-iphone-17-10-256-lavender.jpg",
+        "storage": "512GB",
+        "color": "Lavender",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Lavender"
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "AirPods 4",
+    "description": "Comfortable wireless earbuds with rich sound and a refined design.",
+    "price": 599,
+    "stock": 19,
+    "category": "audio",
+    "image": "/images/products/11-airpods-4-official.jpg"
+  },
+  {
+    "id": 12,
+    "name": "AirPods Max 2",
+    "description": "Premium over-ear headphones with high-fidelity audio, Adaptive Audio and advanced Active Noise Cancellation.",
+    "price": 2299,
+    "stock": 10,
+    "category": "audio",
+    "image": "/images/products/12-airpods-max-2-official.jpg",
+    "variants": [
+      {
+        "id": "12-midnight",
+        "name": "Midnight",
+        "price": 2299,
+        "stock": 10,
+        "image": "/images/products/12-airpods-max-2-official.jpg",
+        "attributes": {
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "12-starlight",
+        "name": "Starlight",
+        "price": 2299,
+        "stock": 10,
+        "image": "/images/products/12-airpods-max-2-official.jpg",
+        "attributes": {
+          "color": "Starlight"
+        }
+      },
+      {
+        "id": "12-blue",
+        "name": "Blue",
+        "price": 2299,
+        "stock": 10,
+        "image": "/images/products/12-airpods-max-2-official.jpg",
+        "attributes": {
+          "color": "Blue"
+        }
+      },
+      {
+        "id": "12-purple",
+        "name": "Purple",
+        "price": 2299,
+        "stock": 10,
+        "image": "/images/products/12-airpods-max-2-official.jpg",
+        "attributes": {
+          "color": "Purple"
+        }
+      },
+      {
+        "id": "12-orange",
+        "name": "Orange",
+        "price": 2299,
+        "stock": 10,
+        "image": "/images/products/12-airpods-max-2-official.jpg",
+        "attributes": {
+          "color": "Orange"
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Beats Studio Pro",
+    "description": "Premium wireless headphones with immersive sound, Active Noise Cancellation and personalised spatial audio.",
+    "price": 1449,
+    "stock": 10,
+    "category": "audio",
+    "image": "/images/products/13-beats-studio-pro-main.jpg",
+    "variants": [
+      {
+        "id": "13-black",
+        "name": "Black",
+        "price": 1449,
+        "stock": 10,
+        "image": "/images/products/13-beats-studio-pro-main.jpg",
+        "attributes": {
+          "color": "Black"
+        }
+      },
+      {
+        "id": "13-navy",
+        "name": "Navy",
+        "price": 1449,
+        "stock": 10,
+        "image": "/images/products/13-beats-studio-pro-13-navy.jpg",
+        "attributes": {
+          "color": "Navy"
+        }
+      },
+      {
+        "id": "13-sandstone",
+        "name": "Sandstone",
+        "price": 1449,
+        "stock": 10,
+        "image": "/images/products/13-beats-studio-pro-13-sandstone.jpg",
+        "attributes": {
+          "color": "Sandstone"
+        }
+      },
+      {
+        "id": "13-deep-brown",
+        "name": "Deep Brown",
+        "price": 1449,
+        "stock": 10,
+        "image": "/images/products/13-beats-studio-pro-main.jpg",
+        "attributes": {
+          "color": "Deep Brown"
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Magic Mouse",
+    "description": "Wireless rechargeable mouse with a smooth Multi-Touch surface.",
+    "price": 399,
+    "stock": 18,
+    "category": "accessories",
+    "image": "/images/products/14-magic-mouse-official.jpg",
+    "variants": [
+      {
+        "id": "14-white",
+        "name": "White Multi-Touch Surface",
+        "price": 399,
+        "stock": 10,
+        "image": "/images/products/14-magic-mouse-official.jpg",
+        "attributes": {
+          "color": "White"
+        }
+      },
+      {
+        "id": "14-black",
+        "name": "Black Multi-Touch Surface",
+        "price": 399,
+        "stock": 10,
+        "image": "/images/products/14-magic-mouse-official.jpg",
+        "attributes": {
+          "color": "Black"
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Magic Keyboard",
+    "description": "Elegant wireless keyboard with a comfortable and precise typing experience.",
+    "price": 399,
+    "stock": 13,
+    "category": "accessories",
+    "image": "/images/products/15-magic-keyboard-official.jpg",
+    "variants": [
+      {
+        "id": "15-white",
+        "name": "White",
+        "price": 399,
+        "stock": 10,
+        "image": "/images/products/15-magic-keyboard-official.jpg",
+        "attributes": {
+          "color": "White"
+        }
+      },
+      {
+        "id": "15-black",
+        "name": "Black",
+        "price": 399,
+        "stock": 10,
+        "image": "/images/products/15-magic-keyboard-official.jpg",
+        "attributes": {
+          "color": "Black"
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "MagSafe Charger (1m)",
+    "description": "Wireless magnetic charger designed for fast and convenient charging.",
+    "price": 219,
+    "stock": 25,
+    "category": "accessories",
+    "image": "/images/products/16-magsafe-charger-1m-main.jpg"
+  },
+  {
+    "id": 17,
+    "name": "USB-C Power Adapter 35W",
+    "description": "Compact dual-port USB-C power adapter for charging your devices.",
+    "price": 269,
+    "stock": 22,
+    "category": "accessories",
+    "image": "/images/products/17-usb-c-power-adapter-35w-main.jpg"
+  },
+  {
+    "id": 18,
+    "name": "USB-C to Lightning Cable",
+    "description": "Durable charging and data cable for compatible Apple devices.",
+    "price": 129,
+    "stock": 30,
+    "category": "accessories",
+    "image": "/images/products/18-usb-c-to-lightning-cable-main.jpg"
+  },
+  {
+    "id": 19,
+    "name": "USB-C Digital AV Multiport Adapter",
+    "description": "Multi-port USB-C adapter for connecting displays, storage and accessories.",
+    "price": 349,
+    "stock": 14,
+    "category": "accessories",
+    "image": "/images/products/19-usb-c-digital-av-multiport-adapter-main.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Apple Watch Series 10",
+    "description": "Advanced health, fitness and smart features in a refined design.",
+    "price": 1799,
+    "stock": 14,
+    "category": "accessories",
+    "image": "/images/products/20-apple-watch-series-10-official.jpg",
+    "variants": [
+      {
+        "id": "20-42mm-jet-black",
+        "name": "42mm - Jet Black Aluminium",
+        "price": 1799,
+        "stock": 10,
+        "image": "/images/products/20-apple-watch-series-10-official.jpg",
+        "attributes": {
+          "size": "42mm",
+          "color": "Jet Black"
+        }
+      },
+      {
+        "id": "20-42mm-rose-gold",
+        "name": "42mm - Rose Gold Aluminium",
+        "price": 1799,
+        "stock": 10,
+        "image": "/images/products/20-apple-watch-series-10-official.jpg",
+        "attributes": {
+          "size": "42mm",
+          "color": "Rose Gold"
+        }
+      },
+      {
+        "id": "20-42mm-silver",
+        "name": "42mm - Silver Aluminium",
+        "price": 1799,
+        "stock": 10,
+        "image": "/images/products/20-apple-watch-series-10-official.jpg",
+        "attributes": {
+          "size": "42mm",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "20-46mm-jet-black",
+        "name": "46mm - Jet Black Aluminium",
+        "price": 2099,
+        "stock": 10,
+        "image": "/images/products/20-apple-watch-series-10-official.jpg",
+        "attributes": {
+          "size": "46mm",
+          "color": "Jet Black"
+        }
+      },
+      {
+        "id": "20-46mm-rose-gold",
+        "name": "46mm - Rose Gold Aluminium",
+        "price": 2099,
+        "stock": 10,
+        "image": "/images/products/20-apple-watch-series-10-official.jpg",
+        "attributes": {
+          "size": "46mm",
+          "color": "Rose Gold"
+        }
+      },
+      {
+        "id": "20-46mm-silver",
+        "name": "46mm - Silver Aluminium",
+        "price": 2099,
+        "stock": 10,
+        "image": "/images/products/20-apple-watch-series-10-official.jpg",
+        "attributes": {
+          "size": "46mm",
+          "color": "Silver"
+        }
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "MacBook Air M2",
+    "description": "Slim and silent everyday laptop powered by Apple M2 chip.",
+    "price": 4799,
+    "stock": 14,
+    "category": "mac",
+    "image": "/images/products/21-macbook-air-m2-official.jpg",
+    "variants": [
+      {
+        "id": "21-8gb-256gb-midnight",
+        "name": "8GB RAM - 256GB SSD - Midnight",
+        "price": 4799,
+        "stock": 10,
+        "image": "/images/products/21-macbook-air-m2-official.jpg",
+        "storage": "8GB",
+        "color": "Midnight",
+        "attributes": {
+          "storage": "8GB",
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "21-8gb-256gb-starlight",
+        "name": "8GB RAM - 256GB SSD - Starlight",
+        "price": 4799,
+        "stock": 10,
+        "image": "/images/products/21-macbook-air-m2-official.jpg",
+        "storage": "8GB",
+        "color": "Starlight",
+        "attributes": {
+          "storage": "8GB",
+          "color": "Starlight"
+        }
+      },
+      {
+        "id": "21-8gb-256gb-silver",
+        "name": "8GB RAM - 256GB SSD - Silver",
+        "price": 4799,
+        "stock": 10,
+        "image": "/images/products/21-macbook-air-m2-official.jpg",
+        "storage": "8GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "8GB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "21-8gb-256gb-space-gray",
+        "name": "8GB RAM - 256GB SSD - Space Gray",
+        "price": 4799,
+        "stock": 10,
+        "image": "/images/products/21-macbook-air-m2-official.jpg",
+        "storage": "8GB",
+        "color": "Space Gray",
+        "attributes": {
+          "storage": "8GB",
+          "color": "Space Gray"
+        }
+      },
+      {
+        "id": "21-16gb-512gb-midnight",
+        "name": "16GB RAM - 512GB SSD - Midnight",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/21-macbook-air-m2-official.jpg",
+        "storage": "16GB",
+        "color": "Midnight",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "21-16gb-512gb-starlight",
+        "name": "16GB RAM - 512GB SSD - Starlight",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/21-macbook-air-m2-official.jpg",
+        "storage": "16GB",
+        "color": "Starlight",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Starlight"
+        }
+      },
+      {
+        "id": "21-16gb-512gb-silver",
+        "name": "16GB RAM - 512GB SSD - Silver",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/21-macbook-air-m2-official.jpg",
+        "storage": "16GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "21-16gb-512gb-space-gray",
+        "name": "16GB RAM - 512GB SSD - Space Gray",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/21-macbook-air-m2-official.jpg",
+        "storage": "16GB",
+        "color": "Space Gray",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Space Gray"
+        }
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "MacBook Air M4",
+    "description": "Next-generation MacBook Air with powerful M4 performance.",
+    "price": 4499,
+    "stock": 12,
+    "category": "mac",
+    "image": "/images/products/22-macbook-air-m4-official.jpg",
+    "variants": [
+      {
+        "id": "22-16gb-256gb-sky-blue",
+        "name": "16GB RAM - 256GB SSD - Sky Blue",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/22-macbook-air-m4-official.jpg",
+        "storage": "16GB",
+        "color": "Sky Blue",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Sky Blue"
+        }
+      },
+      {
+        "id": "22-16gb-256gb-midnight",
+        "name": "16GB RAM - 256GB SSD - Midnight",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/22-macbook-air-m4-official.jpg",
+        "storage": "16GB",
+        "color": "Midnight",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "22-16gb-256gb-starlight",
+        "name": "16GB RAM - 256GB SSD - Starlight",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/22-macbook-air-m4-official.jpg",
+        "storage": "16GB",
+        "color": "Starlight",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Starlight"
+        }
+      },
+      {
+        "id": "22-16gb-256gb-silver",
+        "name": "16GB RAM - 256GB SSD - Silver",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/22-macbook-air-m4-official.jpg",
+        "storage": "16GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "16GB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "22-24gb-512gb-sky-blue",
+        "name": "24GB RAM - 512GB SSD - Sky Blue",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/22-macbook-air-m4-official.jpg",
+        "storage": "24GB",
+        "color": "Sky Blue",
+        "attributes": {
+          "storage": "24GB",
+          "color": "Sky Blue"
+        }
+      },
+      {
+        "id": "22-24gb-512gb-midnight",
+        "name": "24GB RAM - 512GB SSD - Midnight",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/22-macbook-air-m4-official.jpg",
+        "storage": "24GB",
+        "color": "Midnight",
+        "attributes": {
+          "storage": "24GB",
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "22-24gb-512gb-starlight",
+        "name": "24GB RAM - 512GB SSD - Starlight",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/22-macbook-air-m4-official.jpg",
+        "storage": "24GB",
+        "color": "Starlight",
+        "attributes": {
+          "storage": "24GB",
+          "color": "Starlight"
+        }
+      },
+      {
+        "id": "22-24gb-512gb-silver",
+        "name": "24GB RAM - 512GB SSD - Silver",
+        "price": 5799,
+        "stock": 10,
+        "image": "/images/products/22-macbook-air-m4-official.jpg",
+        "storage": "24GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "24GB",
+          "color": "Silver"
+        }
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "MacBook Pro 16",
+    "description": "Large professional notebook built for demanding creative workflows.",
+    "price": 11999,
+    "stock": 10,
+    "category": "mac",
+    "image": "/images/products/23-macbook-pro-16-official.jpg",
+    "variants": [
+      {
+        "id": "23-m3pro-18-512-space-black",
+        "name": "M3 Pro - 18GB - 512GB - Space Black",
+        "price": 11999,
+        "stock": 10,
+        "image": "/images/products/23-macbook-pro-16-official.jpg",
+        "storage": "18GB",
+        "color": "Space Black",
+        "attributes": {
+          "storage": "18GB",
+          "color": "Space Black"
+        }
+      },
+      {
+        "id": "23-m3pro-18-512-silver",
+        "name": "M3 Pro - 18GB - 512GB - Silver",
+        "price": 11999,
+        "stock": 10,
+        "image": "/images/products/23-macbook-pro-16-official.jpg",
+        "storage": "18GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "18GB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "23-m3max-36-1tb-space-black",
+        "name": "M3 Max - 36GB - 1TB - Space Black",
+        "price": 14999,
+        "stock": 10,
+        "image": "/images/products/23-macbook-pro-16-official.jpg",
+        "storage": "36GB",
+        "color": "Space Black",
+        "attributes": {
+          "storage": "36GB",
+          "color": "Space Black"
+        }
+      },
+      {
+        "id": "23-m3max-36-1tb-silver",
+        "name": "M3 Max - 36GB - 1TB - Silver",
+        "price": 14999,
+        "stock": 10,
+        "image": "/images/products/23-macbook-pro-16-official.jpg",
+        "storage": "36GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "36GB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "23-m3max-48-1tb-space-black",
+        "name": "M3 Max - 48GB - 1TB - Space Black",
+        "price": 16999,
+        "stock": 10,
+        "image": "/images/products/23-macbook-pro-16-official.jpg",
+        "storage": "48GB",
+        "color": "Space Black",
+        "attributes": {
+          "storage": "48GB",
+          "color": "Space Black"
+        }
+      },
+      {
+        "id": "23-m3max-48-1tb-silver",
+        "name": "M3 Max - 48GB - 1TB - Silver",
+        "price": 16999,
+        "stock": 10,
+        "image": "/images/products/23-macbook-pro-16-official.jpg",
+        "storage": "48GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "48GB",
+          "color": "Silver"
+        }
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Mac Studio",
+    "description": "Powerful desktop workstation designed for professional performance with Apple silicon.",
+    "price": 10999,
+    "stock": 10,
+    "category": "mac",
+    "image": "/images/products/24-mac-studio-official.jpg",
+    "variants": [
+      {
+        "id": "24-m5max-36-512",
+        "name": "M5 Max - 36GB - 512GB SSD",
+        "price": 10999,
+        "stock": 10,
+        "image": "/images/products/24-mac-studio-official.jpg",
+        "storage": "36GB",
+        "color": "512GB SSD",
+        "attributes": {
+          "storage": "36GB",
+          "color": "512GB SSD"
+        }
+      },
+      {
+        "id": "24-m5max-64-1tb",
+        "name": "M5 Max - 64GB - 1TB SSD",
+        "price": 13999,
+        "stock": 10,
+        "image": "/images/products/24-mac-studio-official.jpg",
+        "storage": "64GB",
+        "color": "1TB SSD",
+        "attributes": {
+          "storage": "64GB",
+          "color": "1TB SSD"
+        }
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Studio Display",
+    "description": "27-inch 5K Retina display designed for creative professionals with a 12MP Center Stage camera.",
+    "price": 6499,
+    "stock": 10,
+    "category": "mac",
+    "image": "/images/products/25-studio-display-official.jpg"
+  },
+  {
+    "id": 26,
+    "name": "iPhone 16 Plus",
+    "description": "Large display iPhone with powerful performance, advanced camera system and excellent battery life.",
+    "price": 4499,
+    "stock": 16,
+    "category": "iphone",
+    "image": "/images/products/26-iphone-16-plus-main.jpg",
+    "variants": [
+      {
+        "id": "26-128-black",
+        "name": "128GB - Black",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-main.jpg",
+        "storage": "128GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "26-128-white",
+        "name": "128GB - White",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-white.jpg",
+        "storage": "128GB",
+        "color": "White",
+        "attributes": {
+          "storage": "128GB",
+          "color": "White"
+        }
+      },
+      {
+        "id": "26-128-pink",
+        "name": "128GB - Pink",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-pink.jpg",
+        "storage": "128GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "26-128-teal",
+        "name": "128GB - Teal",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-teal.jpg",
+        "storage": "128GB",
+        "color": "Teal",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Teal"
+        }
+      },
+      {
+        "id": "26-128-ultramarine",
+        "name": "128GB - Ultramarine",
+        "price": 4499,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-ultramarine.jpg",
+        "storage": "128GB",
+        "color": "Ultramarine",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Ultramarine"
+        }
+      },
+      {
+        "id": "26-256-black",
+        "name": "256GB - Black",
+        "price": 4999,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-main.jpg",
+        "storage": "256GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "26-256-white",
+        "name": "256GB - White",
+        "price": 4999,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-white.jpg",
+        "storage": "256GB",
+        "color": "White",
+        "attributes": {
+          "storage": "256GB",
+          "color": "White"
+        }
+      },
+      {
+        "id": "26-256-pink",
+        "name": "256GB - Pink",
+        "price": 4999,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-pink.jpg",
+        "storage": "256GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "26-256-teal",
+        "name": "256GB - Teal",
+        "price": 4999,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-teal.jpg",
+        "storage": "256GB",
+        "color": "Teal",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Teal"
+        }
+      },
+      {
+        "id": "26-256-ultramarine",
+        "name": "256GB - Ultramarine",
+        "price": 4999,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-ultramarine.jpg",
+        "storage": "256GB",
+        "color": "Ultramarine",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Ultramarine"
+        }
+      },
+      {
+        "id": "26-512-black",
+        "name": "512GB - Black",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-main.jpg",
+        "storage": "512GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "26-512-white",
+        "name": "512GB - White",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-white.jpg",
+        "storage": "512GB",
+        "color": "White",
+        "attributes": {
+          "storage": "512GB",
+          "color": "White"
+        }
+      },
+      {
+        "id": "26-512-pink",
+        "name": "512GB - Pink",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-pink.jpg",
+        "storage": "512GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "26-512-teal",
+        "name": "512GB - Teal",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-teal.jpg",
+        "storage": "512GB",
+        "color": "Teal",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Teal"
+        }
+      },
+      {
+        "id": "26-512-ultramarine",
+        "name": "512GB - Ultramarine",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/26-iphone-16-plus-26-128-ultramarine.jpg",
+        "storage": "512GB",
+        "color": "Ultramarine",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Ultramarine"
+        }
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "iPhone 15 Pro",
+    "description": "Pro performance with titanium design and advanced camera system.",
+    "price": 5499,
+    "stock": 12,
+    "category": "iphone",
+    "image": "/images/products/27-iphone-15-pro-official.jpg",
+    "variants": [
+      {
+        "id": "27-128-black",
+        "name": "128GB - Black Titanium",
+        "price": 5499,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "128GB",
+        "color": "Black Titanium",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "27-128-white",
+        "name": "128GB - White Titanium",
+        "price": 5499,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "128GB",
+        "color": "White Titanium",
+        "attributes": {
+          "storage": "128GB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "27-128-blue",
+        "name": "128GB - Blue Titanium",
+        "price": 5499,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "128GB",
+        "color": "Blue Titanium",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Blue Titanium"
+        }
+      },
+      {
+        "id": "27-128-natural",
+        "name": "128GB - Natural Titanium",
+        "price": 5499,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "128GB",
+        "color": "Natural Titanium",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Natural Titanium"
+        }
+      },
+      {
+        "id": "27-256-black",
+        "name": "256GB - Black Titanium",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "256GB",
+        "color": "Black Titanium",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "27-256-white",
+        "name": "256GB - White Titanium",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "256GB",
+        "color": "White Titanium",
+        "attributes": {
+          "storage": "256GB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "27-256-blue",
+        "name": "256GB - Blue Titanium",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "256GB",
+        "color": "Blue Titanium",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Blue Titanium"
+        }
+      },
+      {
+        "id": "27-256-natural",
+        "name": "256GB - Natural Titanium",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "256GB",
+        "color": "Natural Titanium",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Natural Titanium"
+        }
+      },
+      {
+        "id": "27-512-black",
+        "name": "512GB - Black Titanium",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "512GB",
+        "color": "Black Titanium",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "27-512-white",
+        "name": "512GB - White Titanium",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "512GB",
+        "color": "White Titanium",
+        "attributes": {
+          "storage": "512GB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "27-512-blue",
+        "name": "512GB - Blue Titanium",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "512GB",
+        "color": "Blue Titanium",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Blue Titanium"
+        }
+      },
+      {
+        "id": "27-512-natural",
+        "name": "512GB - Natural Titanium",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "512GB",
+        "color": "Natural Titanium",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Natural Titanium"
+        }
+      },
+      {
+        "id": "27-1tb-black",
+        "name": "1TB - Black Titanium",
+        "price": 7499,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "1TB",
+        "color": "Black Titanium",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Black Titanium"
+        }
+      },
+      {
+        "id": "27-1tb-white",
+        "name": "1TB - White Titanium",
+        "price": 7499,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "1TB",
+        "color": "White Titanium",
+        "attributes": {
+          "storage": "1TB",
+          "color": "White Titanium"
+        }
+      },
+      {
+        "id": "27-1tb-blue",
+        "name": "1TB - Blue Titanium",
+        "price": 7499,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "1TB",
+        "color": "Blue Titanium",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Blue Titanium"
+        }
+      },
+      {
+        "id": "27-1tb-natural",
+        "name": "1TB - Natural Titanium",
+        "price": 7499,
+        "stock": 10,
+        "image": "/images/products/27-iphone-15-pro-official.jpg",
+        "storage": "1TB",
+        "color": "Natural Titanium",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Natural Titanium"
+        }
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "iPhone 17 Pro Max",
+    "description": "Premium iPhone with a large Pro display, advanced camera system and powerful A19 Pro performance.",
+    "price": 5999,
+    "stock": 10,
+    "category": "iphone",
+    "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+    "variants": [
+      {
+        "id": "28-256-silver",
+        "name": "256GB - Silver",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "256GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "28-256-deep-blue",
+        "name": "256GB - Deep Blue",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "256GB",
+        "color": "Deep Blue",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Deep Blue"
+        }
+      },
+      {
+        "id": "28-256-cosmic-orange",
+        "name": "256GB - Cosmic Orange",
+        "price": 5999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "256GB",
+        "color": "Cosmic Orange",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Cosmic Orange"
+        }
+      },
+      {
+        "id": "28-512-silver",
+        "name": "512GB - Silver",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "512GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "28-512-deep-blue",
+        "name": "512GB - Deep Blue",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "512GB",
+        "color": "Deep Blue",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Deep Blue"
+        }
+      },
+      {
+        "id": "28-512-cosmic-orange",
+        "name": "512GB - Cosmic Orange",
+        "price": 6999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "512GB",
+        "color": "Cosmic Orange",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Cosmic Orange"
+        }
+      },
+      {
+        "id": "28-1tb-silver",
+        "name": "1TB - Silver",
+        "price": 7999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "1TB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "28-1tb-deep-blue",
+        "name": "1TB - Deep Blue",
+        "price": 7999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "1TB",
+        "color": "Deep Blue",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Deep Blue"
+        }
+      },
+      {
+        "id": "28-1tb-cosmic-orange",
+        "name": "1TB - Cosmic Orange",
+        "price": 7999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "1TB",
+        "color": "Cosmic Orange",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Cosmic Orange"
+        }
+      },
+      {
+        "id": "28-2tb-silver",
+        "name": "2TB - Silver",
+        "price": 9999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "2TB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "2TB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "28-2tb-deep-blue",
+        "name": "2TB - Deep Blue",
+        "price": 9999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "2TB",
+        "color": "Deep Blue",
+        "attributes": {
+          "storage": "2TB",
+          "color": "Deep Blue"
+        }
+      },
+      {
+        "id": "28-2tb-cosmic-orange",
+        "name": "2TB - Cosmic Orange",
+        "price": 9999,
+        "stock": 10,
+        "image": "/images/products/28-iphone-17-pro-max-official.jpg",
+        "storage": "2TB",
+        "color": "Cosmic Orange",
+        "attributes": {
+          "storage": "2TB",
+          "color": "Cosmic Orange"
+        }
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "iPhone 17 Pro",
+    "description": "Professional iPhone with advanced cameras, ProMotion display and A19 Pro performance.",
+    "price": 5499,
+    "stock": 15,
+    "category": "iphone",
+    "image": "/images/products/29-iphone-17-pro-official.jpg",
+    "variants": [
+      {
+        "id": "29-256-silver",
+        "name": "256GB - Silver",
+        "price": 5499,
+        "stock": 10,
+        "image": "/images/products/29-iphone-17-pro-official.jpg",
+        "storage": "256GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "29-256-deep-blue",
+        "name": "256GB - Deep Blue",
+        "price": 5499,
+        "stock": 10,
+        "image": "/images/products/29-iphone-17-pro-official.jpg",
+        "storage": "256GB",
+        "color": "Deep Blue",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Deep Blue"
+        }
+      },
+      {
+        "id": "29-256-cosmic-orange",
+        "name": "256GB - Cosmic Orange",
+        "price": 5499,
+        "stock": 10,
+        "image": "/images/products/29-iphone-17-pro-official.jpg",
+        "storage": "256GB",
+        "color": "Cosmic Orange",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Cosmic Orange"
+        }
+      },
+      {
+        "id": "29-512-silver",
+        "name": "512GB - Silver",
+        "price": 6499,
+        "stock": 10,
+        "image": "/images/products/29-iphone-17-pro-official.jpg",
+        "storage": "512GB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "29-512-deep-blue",
+        "name": "512GB - Deep Blue",
+        "price": 6499,
+        "stock": 10,
+        "image": "/images/products/29-iphone-17-pro-official.jpg",
+        "storage": "512GB",
+        "color": "Deep Blue",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Deep Blue"
+        }
+      },
+      {
+        "id": "29-512-cosmic-orange",
+        "name": "512GB - Cosmic Orange",
+        "price": 6499,
+        "stock": 10,
+        "image": "/images/products/29-iphone-17-pro-official.jpg",
+        "storage": "512GB",
+        "color": "Cosmic Orange",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Cosmic Orange"
+        }
+      },
+      {
+        "id": "29-1tb-silver",
+        "name": "1TB - Silver",
+        "price": 7499,
+        "stock": 10,
+        "image": "/images/products/29-iphone-17-pro-official.jpg",
+        "storage": "1TB",
+        "color": "Silver",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Silver"
+        }
+      },
+      {
+        "id": "29-1tb-deep-blue",
+        "name": "1TB - Deep Blue",
+        "price": 7499,
+        "stock": 10,
+        "image": "/images/products/29-iphone-17-pro-official.jpg",
+        "storage": "1TB",
+        "color": "Deep Blue",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Deep Blue"
+        }
+      },
+      {
+        "id": "29-1tb-cosmic-orange",
+        "name": "1TB - Cosmic Orange",
+        "price": 7499,
+        "stock": 10,
+        "image": "/images/products/29-iphone-17-pro-official.jpg",
+        "storage": "1TB",
+        "color": "Cosmic Orange",
+        "attributes": {
+          "storage": "1TB",
+          "color": "Cosmic Orange"
+        }
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "iPhone 15",
+    "description": "Reliable everyday iPhone with a Super Retina XDR display and advanced dual-camera system.",
+    "price": 4399,
+    "stock": 17,
+    "category": "iphone",
+    "image": "/images/products/30-iphone-15-main.jpg",
+    "variants": [
+      {
+        "id": "30-128-black",
+        "name": "128GB - Black",
+        "price": 4399,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-main.jpg",
+        "storage": "128GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "30-128-blue",
+        "name": "128GB - Blue",
+        "price": 4399,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-blue.jpg",
+        "storage": "128GB",
+        "color": "Blue",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Blue"
+        }
+      },
+      {
+        "id": "30-128-green",
+        "name": "128GB - Green",
+        "price": 4399,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-green.jpg",
+        "storage": "128GB",
+        "color": "Green",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Green"
+        }
+      },
+      {
+        "id": "30-128-yellow",
+        "name": "128GB - Yellow",
+        "price": 4399,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-yellow.jpg",
+        "storage": "128GB",
+        "color": "Yellow",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Yellow"
+        }
+      },
+      {
+        "id": "30-128-pink",
+        "name": "128GB - Pink",
+        "price": 4399,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-pink.jpg",
+        "storage": "128GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "30-256-black",
+        "name": "256GB - Black",
+        "price": 4899,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-main.jpg",
+        "storage": "256GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "30-256-blue",
+        "name": "256GB - Blue",
+        "price": 4899,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-blue.jpg",
+        "storage": "256GB",
+        "color": "Blue",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Blue"
+        }
+      },
+      {
+        "id": "30-256-green",
+        "name": "256GB - Green",
+        "price": 4899,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-green.jpg",
+        "storage": "256GB",
+        "color": "Green",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Green"
+        }
+      },
+      {
+        "id": "30-256-yellow",
+        "name": "256GB - Yellow",
+        "price": 4899,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-yellow.jpg",
+        "storage": "256GB",
+        "color": "Yellow",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Yellow"
+        }
+      },
+      {
+        "id": "30-256-pink",
+        "name": "256GB - Pink",
+        "price": 4899,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-pink.jpg",
+        "storage": "256GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "30-512-black",
+        "name": "512GB - Black",
+        "price": 5899,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-main.jpg",
+        "storage": "512GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "30-512-blue",
+        "name": "512GB - Blue",
+        "price": 5899,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-blue.jpg",
+        "storage": "512GB",
+        "color": "Blue",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Blue"
+        }
+      },
+      {
+        "id": "30-512-green",
+        "name": "512GB - Green",
+        "price": 5899,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-green.jpg",
+        "storage": "512GB",
+        "color": "Green",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Green"
+        }
+      },
+      {
+        "id": "30-512-yellow",
+        "name": "512GB - Yellow",
+        "price": 5899,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-yellow.jpg",
+        "storage": "512GB",
+        "color": "Yellow",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Yellow"
+        }
+      },
+      {
+        "id": "30-512-pink",
+        "name": "512GB - Pink",
+        "price": 5899,
+        "stock": 10,
+        "image": "/images/products/30-iphone-15-30-128-pink.jpg",
+        "storage": "512GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Pink"
+        }
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "iPhone 15 Plus",
+    "description": "Large-screen iPhone with excellent battery life and a Super Retina XDR display.",
+    "price": 4899,
+    "stock": 11,
+    "category": "iphone",
+    "image": "/images/products/31-iphone-15-plus-main.jpg",
+    "variants": [
+      {
+        "id": "31-128-black",
+        "name": "128GB - Black",
+        "price": 4899,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-main.jpg",
+        "storage": "128GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "31-128-blue",
+        "name": "128GB - Blue",
+        "price": 4899,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-blue.jpg",
+        "storage": "128GB",
+        "color": "Blue",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Blue"
+        }
+      },
+      {
+        "id": "31-128-green",
+        "name": "128GB - Green",
+        "price": 4899,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-green.jpg",
+        "storage": "128GB",
+        "color": "Green",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Green"
+        }
+      },
+      {
+        "id": "31-128-yellow",
+        "name": "128GB - Yellow",
+        "price": 4899,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-yellow.jpg",
+        "storage": "128GB",
+        "color": "Yellow",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Yellow"
+        }
+      },
+      {
+        "id": "31-128-pink",
+        "name": "128GB - Pink",
+        "price": 4899,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-pink.jpg",
+        "storage": "128GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "31-256-black",
+        "name": "256GB - Black",
+        "price": 5399,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-main.jpg",
+        "storage": "256GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "31-256-blue",
+        "name": "256GB - Blue",
+        "price": 5399,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-blue.jpg",
+        "storage": "256GB",
+        "color": "Blue",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Blue"
+        }
+      },
+      {
+        "id": "31-256-green",
+        "name": "256GB - Green",
+        "price": 5399,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-green.jpg",
+        "storage": "256GB",
+        "color": "Green",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Green"
+        }
+      },
+      {
+        "id": "31-256-yellow",
+        "name": "256GB - Yellow",
+        "price": 5399,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-yellow.jpg",
+        "storage": "256GB",
+        "color": "Yellow",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Yellow"
+        }
+      },
+      {
+        "id": "31-256-pink",
+        "name": "256GB - Pink",
+        "price": 5399,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-pink.jpg",
+        "storage": "256GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "31-512-black",
+        "name": "512GB - Black",
+        "price": 6399,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-main.jpg",
+        "storage": "512GB",
+        "color": "Black",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Black"
+        }
+      },
+      {
+        "id": "31-512-blue",
+        "name": "512GB - Blue",
+        "price": 6399,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-blue.jpg",
+        "storage": "512GB",
+        "color": "Blue",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Blue"
+        }
+      },
+      {
+        "id": "31-512-green",
+        "name": "512GB - Green",
+        "price": 6399,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-green.jpg",
+        "storage": "512GB",
+        "color": "Green",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Green"
+        }
+      },
+      {
+        "id": "31-512-yellow",
+        "name": "512GB - Yellow",
+        "price": 6399,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-yellow.jpg",
+        "storage": "512GB",
+        "color": "Yellow",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Yellow"
+        }
+      },
+      {
+        "id": "31-512-pink",
+        "name": "512GB - Pink",
+        "price": 6399,
+        "stock": 10,
+        "image": "/images/products/31-iphone-15-plus-31-128-pink.jpg",
+        "storage": "512GB",
+        "color": "Pink",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Pink"
+        }
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "iPhone SE (3rd generation)",
+    "description": "Compact iPhone with powerful A15 Bionic performance and classic design.",
+    "price": 2099,
+    "stock": 14,
+    "category": "iphone",
+    "image": "/images/products/32-iphone-se-3rd-generation-main.jpg",
+    "variants": [
+      {
+        "id": "32-64-midnight",
+        "name": "64GB - Midnight",
+        "price": 2099,
+        "stock": 10,
+        "image": "/images/products/32-iphone-se-3rd-generation-main.jpg",
+        "storage": "64GB",
+        "color": "Midnight",
+        "attributes": {
+          "storage": "64GB",
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "32-64-starlight",
+        "name": "64GB - Starlight",
+        "price": 2099,
+        "stock": 10,
+        "image": "/images/products/32-iphone-se-3rd-generation-32-64-starlight.jpg",
+        "storage": "64GB",
+        "color": "Starlight",
+        "attributes": {
+          "storage": "64GB",
+          "color": "Starlight"
+        }
+      },
+      {
+        "id": "32-64-red",
+        "name": "64GB - PRODUCT(RED)",
+        "price": 2099,
+        "stock": 10,
+        "image": "/images/products/32-iphone-se-3rd-generation-main.jpg",
+        "storage": "64GB",
+        "color": "PRODUCT(RED)",
+        "attributes": {
+          "storage": "64GB",
+          "color": "PRODUCT(RED)"
+        }
+      },
+      {
+        "id": "32-128-midnight",
+        "name": "128GB - Midnight",
+        "price": 2399,
+        "stock": 10,
+        "image": "/images/products/32-iphone-se-3rd-generation-main.jpg",
+        "storage": "128GB",
+        "color": "Midnight",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "32-128-starlight",
+        "name": "128GB - Starlight",
+        "price": 2399,
+        "stock": 10,
+        "image": "/images/products/32-iphone-se-3rd-generation-32-64-starlight.jpg",
+        "storage": "128GB",
+        "color": "Starlight",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Starlight"
+        }
+      },
+      {
+        "id": "32-128-red",
+        "name": "128GB - PRODUCT(RED)",
+        "price": 2399,
+        "stock": 10,
+        "image": "/images/products/32-iphone-se-3rd-generation-main.jpg",
+        "storage": "128GB",
+        "color": "PRODUCT(RED)",
+        "attributes": {
+          "storage": "128GB",
+          "color": "PRODUCT(RED)"
+        }
+      },
+      {
+        "id": "32-256-midnight",
+        "name": "256GB - Midnight",
+        "price": 2699,
+        "stock": 10,
+        "image": "/images/products/32-iphone-se-3rd-generation-main.jpg",
+        "storage": "256GB",
+        "color": "Midnight",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "32-256-starlight",
+        "name": "256GB - Starlight",
+        "price": 2699,
+        "stock": 10,
+        "image": "/images/products/32-iphone-se-3rd-generation-32-64-starlight.jpg",
+        "storage": "256GB",
+        "color": "Starlight",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Starlight"
+        }
+      },
+      {
+        "id": "32-256-red",
+        "name": "256GB - PRODUCT(RED)",
+        "price": 2699,
+        "stock": 10,
+        "image": "/images/products/32-iphone-se-3rd-generation-main.jpg",
+        "storage": "256GB",
+        "color": "PRODUCT(RED)",
+        "attributes": {
+          "storage": "256GB",
+          "color": "PRODUCT(RED)"
+        }
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "AirPods 4 with Active Noise Cancellation",
+    "description": "Wireless earbuds with Active Noise Cancellation, personalised spatial audio and a comfortable open-ear design.",
+    "price": 829,
+    "stock": 18,
+    "category": "audio",
+    "image": "/images/products/33-airpods-4-with-active-noise-cancellation-main.jpg"
+  },
+  {
+    "id": 34,
+    "name": "AirPods 3",
+    "description": "Wireless earbuds with personalised spatial audio, a lightweight design and MagSafe charging case.",
+    "price": 699,
+    "stock": 16,
+    "category": "audio",
+    "image": "/images/products/34-airpods-3-official.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Beats Solo 4",
+    "description": "Wireless on-ear headphones with personalised spatial audio, powerful sound and up to 50 hours of battery life.",
+    "price": 899,
+    "stock": 12,
+    "category": "audio",
+    "image": "/images/products/35-beats-solo-4-main.jpg",
+    "variants": [
+      {
+        "id": "35-matte-black",
+        "name": "Matte Black",
+        "price": 899,
+        "stock": 10,
+        "image": "/images/products/35-beats-solo-4-main.jpg",
+        "attributes": {
+          "color": "Matte Black"
+        }
+      },
+      {
+        "id": "35-slate-blue",
+        "name": "Slate Blue",
+        "price": 899,
+        "stock": 10,
+        "image": "/images/products/35-beats-solo-4-35-slate-blue.jpg",
+        "attributes": {
+          "color": "Slate Blue"
+        }
+      },
+      {
+        "id": "35-cloud-pink",
+        "name": "Cloud Pink",
+        "price": 899,
+        "stock": 10,
+        "image": "/images/products/35-beats-solo-4-35-cloud-pink.jpg",
+        "attributes": {
+          "color": "Cloud Pink"
+        }
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Beats Fit Pro",
+    "description": "Secure wireless earbuds designed for workouts and active lifestyles with a comfortable wingtip design.",
+    "price": 899,
+    "stock": 13,
+    "category": "audio",
+    "image": "/images/products/36-beats-fit-pro-main.jpg"
+  },
+  {
+    "id": 37,
+    "name": "HomePod mini",
+    "description": "Compact smart speaker delivering rich sound with Siri, multi-room audio and smart home features.",
+    "price": 599,
+    "stock": 15,
+    "category": "audio",
+    "image": "/images/products/37-homepod-mini-official.jpg",
+    "variants": [
+      {
+        "id": "37-blue",
+        "name": "Blue",
+        "price": 599,
+        "stock": 10,
+        "image": "/images/products/37-homepod-mini-official.jpg",
+        "attributes": {
+          "color": "Blue"
+        }
+      },
+      {
+        "id": "37-yellow",
+        "name": "Yellow",
+        "price": 599,
+        "stock": 10,
+        "image": "/images/products/37-homepod-mini-official.jpg",
+        "attributes": {
+          "color": "Yellow"
+        }
+      },
+      {
+        "id": "37-midnight",
+        "name": "Midnight",
+        "price": 599,
+        "stock": 10,
+        "image": "/images/products/37-homepod-mini-official.jpg",
+        "attributes": {
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "37-white",
+        "name": "White",
+        "price": 599,
+        "stock": 10,
+        "image": "/images/products/37-homepod-mini-official.jpg",
+        "attributes": {
+          "color": "White"
+        }
+      },
+      {
+        "id": "37-orange",
+        "name": "Orange",
+        "price": 599,
+        "stock": 10,
+        "image": "/images/products/37-homepod-mini-official.jpg",
+        "attributes": {
+          "color": "Orange"
+        }
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Apple Watch Ultra 2",
+    "description": "Rugged and capable smartwatch built for adventure, demanding workouts and outdoor activities.",
+    "price": 3299,
+    "stock": 10,
+    "category": "accessories",
+    "image": "/images/products/38-apple-watch-ultra-2-main.png",
+    "variants": [
+      {
+        "id": "38-49-natural",
+        "name": "49mm - Natural Titanium",
+        "price": 3299,
+        "stock": 10,
+        "image": "/images/products/38-apple-watch-ultra-2-main.png",
+        "attributes": {
+          "size": "49mm",
+          "color": "Natural"
+        }
+      },
+      {
+        "id": "38-49-black",
+        "name": "49mm - Black Titanium",
+        "price": 3399,
+        "stock": 10,
+        "image": "/images/products/38-apple-watch-ultra-2-main.png",
+        "attributes": {
+          "size": "49mm",
+          "color": "Black"
+        }
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Apple Watch SE 3",
+    "description": "Essential Apple Watch features for fitness, communication, health and everyday use.",
+    "price": 1049,
+    "stock": 16,
+    "category": "accessories",
+    "image": "/images/products/39-apple-watch-se-3-main.png",
+    "variants": [
+      {
+        "id": "39-40-midnight",
+        "name": "40mm - Midnight Aluminium",
+        "price": 1049,
+        "stock": 10,
+        "image": "/images/products/39-apple-watch-se-3-main.png",
+        "attributes": {
+          "size": "40mm",
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "39-40-starlight",
+        "name": "40mm - Starlight Aluminium",
+        "price": 1049,
+        "stock": 10,
+        "image": "/images/products/39-apple-watch-se-3-main.png",
+        "attributes": {
+          "size": "40mm",
+          "color": "Starlight"
+        }
+      },
+      {
+        "id": "39-44-midnight",
+        "name": "44mm - Midnight Aluminium",
+        "price": 1199,
+        "stock": 10,
+        "image": "/images/products/39-apple-watch-se-3-main.png",
+        "attributes": {
+          "size": "44mm",
+          "color": "Midnight"
+        }
+      },
+      {
+        "id": "39-44-starlight",
+        "name": "44mm - Starlight Aluminium",
+        "price": 1199,
+        "stock": 10,
+        "image": "/images/products/39-apple-watch-se-3-main.png",
+        "attributes": {
+          "size": "44mm",
+          "color": "Starlight"
+        }
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Magic Trackpad",
+    "description": "Wireless rechargeable trackpad with a large edge-to-edge Multi-Touch surface and Force Touch.",
+    "price": 489,
+    "stock": 12,
+    "category": "accessories",
+    "image": "/images/products/40-magic-trackpad-main.jpg",
+    "variants": [
+      {
+        "id": "40-white",
+        "name": "White Multi-Touch Surface",
+        "price": 489,
+        "stock": 10,
+        "image": "/images/products/40-magic-trackpad-main.jpg",
+        "attributes": {
+          "color": "White"
+        }
+      },
+      {
+        "id": "40-black",
+        "name": "Black Multi-Touch Surface",
+        "price": 599,
+        "stock": 10,
+        "image": "/images/products/40-magic-trackpad-main.jpg",
+        "attributes": {
+          "color": "Black"
+        }
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Magic Keyboard with Touch ID",
+    "description": "Wireless rechargeable keyboard with Touch ID, designed for Mac models with Apple silicon.",
+    "price": 599,
+    "stock": 11,
+    "category": "accessories",
+    "image": "/images/products/41-magic-keyboard-with-touch-id-main.jpg",
+    "variants": [
+      {
+        "id": "41-white",
+        "name": "White Keys",
+        "price": 599,
+        "stock": 10,
+        "image": "/images/products/41-magic-keyboard-with-touch-id-main.jpg",
+        "attributes": {
+          "color": "White"
+        }
+      },
+      {
+        "id": "41-black",
+        "name": "Black Keys",
+        "price": 599,
+        "stock": 10,
+        "image": "/images/products/41-magic-keyboard-with-touch-id-main.jpg",
+        "attributes": {
+          "color": "Black"
+        }
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "USB-C Power Adapter 67W",
+    "description": "Compact USB-C power adapter designed for fast and efficient charging of compatible devices.",
+    "price": 299,
+    "stock": 20,
+    "category": "accessories",
+    "image": "/images/products/42-usb-c-power-adapter-67w-official.jpg"
+  },
+  {
+    "id": 43,
+    "name": "USB-C Power Adapter 96W",
+    "description": "High-performance USB-C power adapter designed for larger MacBook models and fast charging.",
+    "price": 319,
+    "stock": 14,
+    "category": "accessories",
+    "image": "/images/products/43-usb-c-power-adapter-96w-main.jpg"
+  },
+  {
+    "id": 44,
+    "name": "MagSafe Battery Pack",
+    "description": "Magnetic portable battery designed to provide additional power while on the go.",
+    "price": 499,
+    "stock": 12,
+    "category": "accessories",
+    "image": "/images/products/44-magsafe-battery-pack-official.png"
+  },
+  {
+    "id": 45,
+    "name": "iPhone 17 Pro Max Silicone Case with MagSafe",
+    "description": "Apple-designed silicone case with MagSafe, soft-touch exterior and microfibre lining for protection.",
+    "price": 209,
+    "stock": 25,
+    "category": "accessories",
+    "image": "/images/products/45-iphone-17-pro-max-silicone-case-with-magsafe-main.jpg",
+    "variants": [
+      {
+        "id": "45-black",
+        "name": "Black",
+        "price": 209,
+        "stock": 10,
+        "image": "/images/products/45-iphone-17-pro-max-silicone-case-with-magsafe-main.jpg",
+        "attributes": {
+          "color": "Black"
+        }
+      },
+      {
+        "id": "45-orange",
+        "name": "Orange",
+        "price": 209,
+        "stock": 10,
+        "image": "/images/products/45-iphone-17-pro-max-silicone-case-with-magsafe-main.jpg",
+        "attributes": {
+          "color": "Orange"
+        }
+      },
+      {
+        "id": "45-green",
+        "name": "Green",
+        "price": 209,
+        "stock": 10,
+        "image": "/images/products/45-iphone-17-pro-max-silicone-case-with-magsafe-main.jpg",
+        "attributes": {
+          "color": "Green"
+        }
+      },
+      {
+        "id": "45-pink",
+        "name": "Pink",
+        "price": 209,
+        "stock": 10,
+        "image": "/images/products/45-iphone-17-pro-max-silicone-case-with-magsafe-main.jpg",
+        "attributes": {
+          "color": "Pink"
+        }
+      },
+      {
+        "id": "45-vanilla",
+        "name": "Vanilla",
+        "price": 209,
+        "stock": 10,
+        "image": "/images/products/45-iphone-17-pro-max-silicone-case-with-magsafe-main.jpg",
+        "attributes": {
+          "color": "Vanilla"
+        }
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "USB-C Charge Cable (2m)",
+    "description": "Durable 2-metre USB-C charging and data cable for compatible Mac, iPad, iPhone and other USB-C devices.",
+    "price": 129,
+    "stock": 30,
+    "category": "accessories",
+    "image": "/images/products/46-usb-c-charge-cable-2m.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Thunderbolt 4 Pro Cable (1.8m)",
+    "description": "Professional high-speed Thunderbolt cable designed for displays, storage devices, docks and other compatible peripherals.",
+    "price": 299,
+    "stock": 18,
+    "category": "accessories",
+    "image": "/images/products/47-thunderbolt-4-pro-cable-1-8m.jpg"
+  },
+  {
+    "id": 48,
+    "name": "USB-C Digital AV Multiport Adapter",
+    "description": "Compact adapter with HDMI, USB and USB-C ports for displays, USB devices and charging.",
+    "price": 349,
+    "stock": 16,
+    "category": "accessories",
+    "image": "/images/products/48-usb-c-digital-av-multiport-adapter-main.jpg"
+  },
+  {
+    "id": 49,
+    "name": "iPhone 16 Clear Case with MagSafe",
+    "description": "Thin and lightweight Apple-designed clear case with MagSafe compatibility and protection for iPhone 16.",
+    "price": 209,
+    "stock": 24,
+    "category": "accessories",
+    "image": "/images/products/49-iphone-16-clear-case-with-magsafe-main.jpg"
+  },
+  {
+    "id": 50,
+    "name": "iPhone 16 Pro Silicone Case with MagSafe",
+    "description": "Apple-designed silicone case with MagSafe, a soft-touch exterior and a protective microfibre lining.",
+    "price": 239,
+    "stock": 18,
+    "category": "accessories",
+    "image": "/images/products/50-iphone-16-pro-silicone-case-with-magsafe-official.jpg",
+    "variants": [
+      {
+        "id": "50-stone-grey",
+        "name": "Stone Grey",
+        "price": 239,
+        "stock": 10,
+        "image": "/images/products/50-iphone-16-pro-silicone-case-with-magsafe-official.jpg",
+        "attributes": {
+          "color": "Stone Grey"
+        }
+      },
+      {
+        "id": "50-black",
+        "name": "Black",
+        "price": 239,
+        "stock": 10,
+        "image": "/images/products/50-iphone-16-pro-silicone-case-with-magsafe-official.jpg",
+        "attributes": {
+          "color": "Black"
+        }
+      },
+      {
+        "id": "50-brown",
+        "name": "Brown",
+        "price": 239,
+        "stock": 10,
+        "image": "/images/products/50-iphone-16-pro-silicone-case-with-magsafe-official.jpg",
+        "attributes": {
+          "color": "Brown"
+        }
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Apple Pencil Pro",
+    "description": "Advanced creative stylus with precise control, squeeze, barrel roll, haptic feedback and Apple Pencil hover.",
+    "price": 549,
+    "stock": 15,
+    "category": "accessories",
+    "image": "/images/products/51-apple-pencil-pro-official.jpg"
+  },
+  {
+    "id": 52,
+    "name": "MacBook Air M5",
+    "category": "mac",
+    "description": "MacBook Air powered by the Apple M5 chip, combining exceptional performance, long battery life and an incredibly thin and light design.",
+    "price": 4699,
+    "stock": 59,
+    "image": "/images/products/52-macbook-air-m5-main.png",
+    "variants": [
+      {
+        "id": "product-1789487851700-13-sky-blue",
+        "storage": "16GB",
+        "color": "512GB",
+        "price": 4699,
+        "stock": 14,
+        "attributes": {
+          "storage": "16GB",
+          "color": "512GB"
+        }
+      },
+      {
+        "id": "product-1789487851700-13-midnight",
+        "storage": "16GB",
+        "color": "512GB",
+        "price": 4699,
+        "stock": 17,
+        "attributes": {
+          "storage": "16GB",
+          "color": "512GB"
+        }
+      },
+      {
+        "id": "product-1789487851700-13-starlight",
+        "storage": "16GB",
+        "color": "512GB",
+        "price": 4699,
+        "stock": 11,
+        "attributes": {
+          "storage": "16GB",
+          "color": "512GB"
+        }
+      },
+      {
+        "id": "product-1789487851700-13-silver",
+        "storage": "16GB",
+        "color": "512GB",
+        "price": 4699,
+        "stock": 17,
+        "attributes": {
+          "storage": "16GB",
+          "color": "512GB"
+        }
+      }
+    ]
+  },
+  {
+    "id": "53",
+    "name": "iPhone 18 pro",
+    "category": "iphone",
+    "description": "The iPhone 18 Pro is a powerful new smartphone featuring a fast A20 Pro chip and a new 48MP main camera with a variable aperture. [1] (https://www.apple.com/my/iphone-18-pro/)",
+    "price": 5499,
+    "stock": 34,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC9FKvoXTLR_cOmwcSTQyZLJR-z2MprT3ilVV9eSLG8ZxiPdq-k9nxWklN&s=10",
+    "variants": [
+      {
+        "id": "variant-1789549628123-d3ih33",
+        "storage": "256gb",
+        "color": "Marron",
+        "price": 5499,
+        "stock": 13,
+        "attributes": {
+          "storage": "256gb",
+          "color": "Marron"
+        }
+      },
+      {
+        "id": "variant-1789549628123-e9dv3i",
+        "storage": "512gb",
+        "color": "Black",
+        "price": 6499,
+        "stock": 21,
+        "attributes": {
+          "storage": "512gb",
+          "color": "Black"
+        }
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "name": "iPhone 18 pro max",
+    "category": "iphone",
+    "description": "The Apple iPhone 18 Pro Max is a large and powerful smartphone built with a big screen, a fast processor, and a long-lasting battery.",
+    "price": 5999,
+    "stock": 3,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHQc9YDOFgQ-9GrXPfVBexyYYc5IFJWHupNnQU2OUDqcJY7fSJ-IlMcc&s=10",
+    "variants": [
+      {
+        "id": "variant-1789550089795-ukb3wp",
+        "storage": "256gb",
+        "color": "Silver",
+        "price": 5999,
+        "stock": 3,
+        "attributes": {
+          "storage": "256gb",
+          "color": "Silver"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,1758 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Register — ZiqTech</title>
+
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            min-height: 100vh;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            color: #1d1d1f;
+
+            background:
+                radial-gradient(
+                    circle at 10% 10%,
+                    rgba(0, 113, 227, 0.10),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 90% 90%,
+                    rgba(88, 86, 214, 0.10),
+                    transparent 30%
+                ),
+                #f5f5f7;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        button,
+        input {
+            font: inherit;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            height: 72px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 6%;
+
+            background:
+                rgba(255, 255, 255, 0.82);
+
+            border-bottom:
+                1px solid rgba(0, 0, 0, 0.07);
+
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+
+            position: sticky;
+            top: 0;
+
+            z-index: 20;
+        }
+
+
+        .logo {
+            text-decoration: none;
+
+            color: #111827;
+
+            font-size: 23px;
+
+            font-weight: 800;
+
+            letter-spacing: -0.8px;
+        }
+
+
+        .logo span {
+            color: #0071e3;
+        }
+
+
+        .login-link {
+            text-decoration: none;
+
+            color: #0071e3;
+
+            font-size: 13px;
+
+            font-weight: 650;
+
+            transition:
+                opacity 0.2s ease;
+        }
+
+
+        .login-link:hover {
+            opacity: 0.65;
+        }
+
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        main {
+            flex: 1;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding:
+                55px 20px 70px;
+        }
+
+
+        .register-container {
+            width: 100%;
+
+            max-width: 1050px;
+
+            display: grid;
+
+            grid-template-columns:
+                0.88fr 1.12fr;
+
+            background:
+                rgba(255, 255, 255, 0.90);
+
+            border:
+                1px solid rgba(0, 0, 0, 0.07);
+
+            border-radius: 28px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.10);
+
+            animation:
+                containerIn 0.55s ease;
+        }
+
+
+        @keyframes containerIn {
+
+            from {
+                opacity: 0;
+
+                transform:
+                    translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+
+        }
+
+
+        /* =========================
+           LEFT BRAND
+        ========================= */
+
+        .brand-panel {
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 55px 45px;
+
+            color: white;
+
+            background:
+                radial-gradient(
+                    circle at 80% 15%,
+                    rgba(0, 113, 227, 0.30),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 15% 90%,
+                    rgba(88, 86, 214, 0.25),
+                    transparent 32%
+                ),
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0f172a
+                );
+
+            display: flex;
+
+            align-items: center;
+        }
+
+
+        .brand-panel::before {
+            content: "";
+
+            position: absolute;
+
+            width: 260px;
+            height: 260px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid rgba(255,255,255,0.08);
+
+            top: -110px;
+            right: -100px;
+        }
+
+
+        .brand-panel::after {
+            content: "";
+
+            position: absolute;
+
+            width: 190px;
+            height: 190px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid rgba(255,255,255,0.06);
+
+            bottom: -90px;
+            left: -70px;
+        }
+
+
+        .brand-content {
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .admin-badge {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            padding:
+                8px 12px;
+
+            margin-bottom: 27px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,0.09);
+
+            border:
+                1px solid rgba(255,255,255,0.12);
+
+            color:
+                rgba(255,255,255,0.82);
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            letter-spacing: 0.4px;
+
+            text-transform: uppercase;
+        }
+
+
+        .admin-dot {
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #60a5fa;
+
+            box-shadow:
+                0 0 12px
+                rgba(96,165,250,0.8);
+        }
+
+
+        .brand-icon {
+            width: 62px;
+            height: 62px;
+
+            border-radius: 18px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 24px;
+
+            background:
+                rgba(255,255,255,0.10);
+
+            border:
+                1px solid rgba(255,255,255,0.12);
+
+            font-size: 27px;
+
+            box-shadow:
+                0 15px 30px
+                rgba(0,0,0,0.18);
+        }
+
+
+        .brand-panel h1 {
+            font-size: 42px;
+
+            line-height: 1.08;
+
+            letter-spacing: -1.8px;
+
+            margin-bottom: 17px;
+        }
+
+
+        .brand-panel h1 span {
+            color: #60a5fa;
+        }
+
+
+        .brand-description {
+            max-width: 360px;
+
+            color:
+                rgba(255,255,255,0.68);
+
+            font-size: 14px;
+
+            line-height: 1.75;
+        }
+
+
+        .features {
+            margin-top: 32px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 14px;
+        }
+
+
+        .feature {
+            display: flex;
+
+            align-items: center;
+
+            gap: 11px;
+
+            color:
+                rgba(255,255,255,0.82);
+
+            font-size: 12px;
+        }
+
+
+        .feature-icon {
+            width: 27px;
+            height: 27px;
+
+            border-radius: 9px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background:
+                rgba(255,255,255,0.09);
+
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           FORM PANEL
+        ========================= */
+
+        .form-panel {
+            padding: 55px;
+        }
+
+
+        .form-header {
+            margin-bottom: 30px;
+        }
+
+
+        .form-header h2 {
+            font-size: 30px;
+
+            letter-spacing: -1px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .form-header p {
+            color: #6e6e73;
+
+            font-size: 13px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           FORM
+        ========================= */
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+
+        .form-group label {
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: #333;
+
+            font-size: 12px;
+
+            font-weight: 700;
+        }
+
+
+        .input-wrapper {
+            position: relative;
+        }
+
+
+        .input-icon {
+            position: absolute;
+
+            left: 15px;
+            top: 50%;
+
+            transform:
+                translateY(-50%);
+
+            color: #8e8e93;
+
+            font-size: 15px;
+
+            pointer-events: none;
+        }
+
+
+        .form-input {
+            width: 100%;
+
+            height: 52px;
+
+            padding:
+                0 15px 0 44px;
+
+            border:
+                1px solid #d2d2d7;
+
+            border-radius: 13px;
+
+            outline: none;
+
+            background: white;
+
+            color: #1d1d1f;
+
+            font-size: 14px;
+
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+
+        .form-input::placeholder {
+            color: #a1a1a6;
+        }
+
+
+        .form-input:focus {
+            border-color: #0071e3;
+
+            box-shadow:
+                0 0 0 4px
+                rgba(0,113,227,0.10);
+        }
+
+
+        .password-toggle {
+            position: absolute;
+
+            right: 10px;
+            top: 50%;
+
+            transform:
+                translateY(-50%);
+
+            border: none;
+
+            background: transparent;
+
+            color: #6e6e73;
+
+            padding: 7px 8px;
+
+            border-radius: 8px;
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+        }
+
+
+        .password-toggle:hover {
+            background: #f2f2f7;
+        }
+
+
+        /* =========================
+           PASSWORD STRENGTH
+        ========================= */
+
+        .password-strength {
+            display: none;
+
+            margin-top: 9px;
+        }
+
+
+        .strength-bar {
+            width: 100%;
+
+            height: 5px;
+
+            overflow: hidden;
+
+            border-radius: 99px;
+
+            background: #e5e5ea;
+        }
+
+
+        .strength-fill {
+            width: 0%;
+
+            height: 100%;
+
+            border-radius: inherit;
+
+            transition:
+                width 0.25s ease;
+        }
+
+
+        .strength-text {
+            margin-top: 6px;
+
+            color: #86868b;
+
+            font-size: 10px;
+        }
+
+
+        /* =========================
+           TERMS
+        ========================= */
+
+        .terms {
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 9px;
+
+            margin:
+                7px 0 21px;
+        }
+
+
+        .terms input {
+            width: 16px;
+            height: 16px;
+
+            margin-top: 2px;
+
+            accent-color: #0071e3;
+
+            cursor: pointer;
+        }
+
+
+        .terms label {
+            color: #6e6e73;
+
+            font-size: 11px;
+
+            line-height: 1.55;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           SUBMIT
+        ========================= */
+
+        .register-button {
+            width: 100%;
+
+            height: 52px;
+
+            border: none;
+
+            border-radius: 13px;
+
+            background: #0071e3;
+
+            color: white;
+
+            font-size: 14px;
+
+            font-weight: 750;
+
+            box-shadow:
+                0 10px 24px
+                rgba(0,113,227,0.20);
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+
+        .register-button:hover {
+            background: #0077ed;
+
+            transform:
+                translateY(-1px);
+
+            box-shadow:
+                0 14px 30px
+                rgba(0,113,227,0.25);
+        }
+
+
+        .register-button:active {
+            transform: translateY(0);
+        }
+
+
+        .register-button:disabled {
+            opacity: 0.65;
+
+            cursor: not-allowed;
+
+            transform: none;
+        }
+
+
+        /* =========================
+           MESSAGE
+        ========================= */
+
+        .message {
+            display: none;
+
+            margin-top: 15px;
+
+            padding: 12px 14px;
+
+            border-radius: 11px;
+
+            font-size: 12px;
+
+            line-height: 1.5;
+        }
+
+
+        .message.show {
+            display: block;
+        }
+
+
+        .message.error {
+            background: #fff2f2;
+
+            border:
+                1px solid #ffd4d4;
+
+            color: #c62828;
+        }
+
+
+        .message.success {
+            background: #effbf3;
+
+            border:
+                1px solid #c8efd5;
+
+            color: #218838;
+        }
+
+
+        /* =========================
+           LOGIN
+        ========================= */
+
+        .login-text {
+            margin-top: 23px;
+
+            text-align: center;
+
+            color: #6e6e73;
+
+            font-size: 12px;
+        }
+
+
+        .login-text a {
+            color: #0071e3;
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+
+        .login-text a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding:
+                20px;
+
+            text-align: center;
+
+            color: #86868b;
+
+            font-size: 11px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 850px) {
+
+            .register-container {
+                grid-template-columns: 1fr;
+
+                max-width: 570px;
+            }
+
+
+            .brand-panel {
+                padding: 38px 35px;
+            }
+
+
+            .brand-panel h1 {
+                font-size: 34px;
+            }
+
+
+            .features {
+                display: none;
+            }
+
+
+            .form-panel {
+                padding: 42px 35px;
+            }
+
+        }
+
+
+        @media (max-width: 520px) {
+
+            header {
+                height: 64px;
+
+                padding:
+                    0 20px;
+            }
+
+
+            .logo {
+                font-size: 20px;
+            }
+
+
+            .login-link {
+                font-size: 11px;
+            }
+
+
+            main {
+                padding:
+                    25px 13px 40px;
+            }
+
+
+            .register-container {
+                border-radius: 21px;
+            }
+
+
+            .brand-panel {
+                padding: 31px 24px;
+            }
+
+
+            .brand-icon {
+                width: 52px;
+                height: 52px;
+
+                border-radius: 15px;
+
+                font-size: 23px;
+            }
+
+
+            .brand-panel h1 {
+                font-size: 30px;
+            }
+
+
+            .form-panel {
+                padding: 32px 23px;
+            }
+
+
+            .form-header h2 {
+                font-size: 26px;
+            }
+
+        }
+
+
+        @media (
+            prefers-reduced-motion: reduce
+        ) {
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+
+                transition: none !important;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            Ziq<span>Tech</span>
+        </a>
+
+
+        <a
+            href="admin-login.html"
+            class="login-link"
+        >
+            Admin Login →
+        </a>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================= -->
+
+    <main>
+
+        <div class="register-container">
+
+
+            <!-- =========================
+                 BRAND PANEL
+            ========================= -->
+
+            <section class="brand-panel">
+
+                <div class="brand-content">
+
+
+                    <div class="admin-badge">
+
+                        <span class="admin-dot"></span>
+
+                        ZiqTech Admin Portal
+
+                    </div>
+
+
+                    <div class="brand-icon">
+                        🛡️
+                    </div>
+
+
+                    <h1>
+
+                        Manage
+                        <span>ZiqTech.</span>
+
+                    </h1>
+
+
+                    <p class="brand-description">
+
+                        Create your administrator account
+                        and access the ZiqTech management
+                        dashboard.
+
+                    </p>
+
+
+                    <div class="features">
+
+
+                        <div class="feature">
+
+                            <div class="feature-icon">
+                                📦
+                            </div>
+
+                            <span>
+                                Manage products and inventory
+                            </span>
+
+                        </div>
+
+
+                        <div class="feature">
+
+                            <div class="feature-icon">
+                                🧾
+                            </div>
+
+                            <span>
+                                Manage customer orders
+                            </span>
+
+                        </div>
+
+
+                        <div class="feature">
+
+                            <div class="feature-icon">
+                                📊
+                            </div>
+
+                            <span>
+                                Monitor store performance
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 FORM PANEL
+            ========================= -->
+
+            <section class="form-panel">
+
+
+                <div class="form-header">
+
+                    <h2>
+                        Create admin account
+                    </h2>
+
+                    <p>
+                        Set up administrator access for
+                        your ZiqTech store.
+                    </p>
+
+                </div>
+
+
+                <form id="adminRegisterForm">
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Admin Name
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                👤
+                            </span>
+
+
+                            <input
+                                type="text"
+                                id="name"
+                                class="form-input"
+                                placeholder="Enter admin name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ✉
+                            </span>
+
+
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-input"
+                                placeholder="admin@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                🔒
+                            </span>
+
+
+                            <input
+                                type="password"
+                                id="password"
+                                class="form-input"
+                                placeholder="Create a password"
+                                minlength="6"
+                                autocomplete="new-password"
+                                required
+                            >
+
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="togglePassword"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            class="password-strength"
+                            id="passwordStrength"
+                        >
+
+                            <div class="strength-bar">
+
+                                <div
+                                    class="strength-fill"
+                                    id="strengthFill"
+                                ></div>
+
+                            </div>
+
+
+                            <div
+                                class="strength-text"
+                                id="strengthText"
+                            >
+                                Password strength
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                🔐
+                            </span>
+
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                class="form-input"
+                                placeholder="Confirm your password"
+                                minlength="6"
+                                autocomplete="new-password"
+                                required
+                            >
+
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="toggleConfirmPassword"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <div class="terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+
+                        <label for="terms">
+
+                            I understand that this account
+                            has access to the ZiqTech admin
+                            dashboard and store management.
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="register-button"
+                        id="registerButton"
+                    >
+                        Create Admin Account
+                    </button>
+
+
+                    <!-- MESSAGE -->
+
+                    <div
+                        class="message"
+                        id="message"
+                    ></div>
+
+
+                </form>
+
+
+                <div class="login-text">
+
+                    Already have an admin account?
+
+                    <a href="admin-login.html">
+                        Admin Login
+                    </a>
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        © 2026 ZiqTech Admin Portal.
+        All rights reserved.
+
+    </footer>
+
+
+    <script>
+    /* =========================
+       ELEMENTS
+    ========================= */
+
+    const form =
+        document.getElementById("adminRegisterForm");
+
+    const nameInput =
+        document.getElementById("name");
+
+    const emailInput =
+        document.getElementById("email");
+
+    const passwordInput =
+        document.getElementById("password");
+
+    const confirmPasswordInput =
+        document.getElementById("confirmPassword");
+
+    const termsInput =
+        document.getElementById("terms");
+
+    const message =
+        document.getElementById("message");
+
+    const registerButton =
+        document.getElementById("registerButton");
+
+    const togglePassword =
+        document.getElementById("togglePassword");
+
+    const toggleConfirmPassword =
+        document.getElementById("toggleConfirmPassword");
+
+    const passwordStrength =
+        document.getElementById("passwordStrength");
+
+    const strengthFill =
+        document.getElementById("strengthFill");
+
+    const strengthText =
+        document.getElementById("strengthText");
+
+
+    /* =========================
+       MESSAGE
+    ========================= */
+
+    function showMessage(text, type) {
+        message.textContent = text;
+        message.className =
+            `message show ${type}`;
+    }
+
+
+    function hideMessage() {
+        message.textContent = "";
+        message.className = "message";
+    }
+
+
+    /* =========================
+       CHECK ADMIN SESSION
+    ========================= */
+
+    async function checkAdminSession() {
+        try {
+            const response = await fetch(
+                "/api/auth/me",
+                {
+                    method: "GET",
+                    credentials: "include"
+                }
+            );
+
+            const data = await response.json();
+
+            if (
+                !response.ok ||
+                !data.success ||
+                !data.user ||
+                data.user.role !== "admin"
+            ) {
+                window.location.href =
+                    "admin-login.html";
+
+                return false;
+            }
+
+            return true;
+
+        } catch (error) {
+            console.error(
+                "Admin session check error:",
+                error
+            );
+
+            window.location.href =
+                "admin-login.html";
+
+            return false;
+        }
+    }
+
+
+    /* =========================
+       PASSWORD TOGGLE
+    ========================= */
+
+    togglePassword.addEventListener(
+        "click",
+        function() {
+
+            const hidden =
+                passwordInput.type === "password";
+
+            passwordInput.type =
+                hidden
+                    ? "text"
+                    : "password";
+
+            togglePassword.textContent =
+                hidden
+                    ? "Hide"
+                    : "Show";
+        }
+    );
+
+
+    toggleConfirmPassword.addEventListener(
+        "click",
+        function() {
+
+            const hidden =
+                confirmPasswordInput.type === "password";
+
+            confirmPasswordInput.type =
+                hidden
+                    ? "text"
+                    : "password";
+
+            toggleConfirmPassword.textContent =
+                hidden
+                    ? "Hide"
+                    : "Show";
+        }
+    );
+
+
+    /* =========================
+       PASSWORD STRENGTH
+    ========================= */
+
+    function updatePasswordStrength(password) {
+
+        if (!password) {
+            passwordStrength.style.display =
+                "none";
+
+            return;
+        }
+
+        passwordStrength.style.display =
+            "block";
+
+        let score = 0;
+
+        if (password.length >= 6) {
+            score++;
+        }
+
+        if (password.length >= 10) {
+            score++;
+        }
+
+        if (/[A-Z]/.test(password)) {
+            score++;
+        }
+
+        if (/[0-9]/.test(password)) {
+            score++;
+        }
+
+        if (/[^A-Za-z0-9]/.test(password)) {
+            score++;
+        }
+
+        if (score <= 1) {
+
+            strengthFill.style.width =
+                "25%";
+
+            strengthText.textContent =
+                "Weak password";
+
+        } else if (score <= 3) {
+
+            strengthFill.style.width =
+                "60%";
+
+            strengthText.textContent =
+                "Medium password";
+
+        } else {
+
+            strengthFill.style.width =
+                "100%";
+
+            strengthText.textContent =
+                "Strong password";
+        }
+    }
+
+
+    passwordInput.addEventListener(
+        "input",
+        function() {
+            updatePasswordStrength(
+                passwordInput.value
+            );
+        }
+    );
+
+
+    /* =========================
+       CLEAR ERROR
+    ========================= */
+
+    [
+        nameInput,
+        emailInput,
+        passwordInput,
+        confirmPasswordInput
+    ].forEach(function(input) {
+
+        input.addEventListener(
+            "input",
+            function() {
+
+                if (
+                    message.classList.contains(
+                        "error"
+                    )
+                ) {
+                    hideMessage();
+                }
+            }
+        );
+    });
+
+
+    /* =========================
+       REGISTER ADMIN
+    ========================= */
+
+    form.addEventListener(
+        "submit",
+        async function(event) {
+
+            event.preventDefault();
+
+            const name =
+                nameInput.value.trim();
+
+            const email =
+                emailInput.value
+                    .trim()
+                    .toLowerCase();
+
+            const password =
+                passwordInput.value;
+
+            const confirmPassword =
+                confirmPasswordInput.value;
+
+
+            /* =========================
+               VALIDATION
+            ========================= */
+
+            if (name.length < 2) {
+
+                showMessage(
+                    "Please enter a valid admin name.",
+                    "error"
+                );
+
+                nameInput.focus();
+
+                return;
+            }
+
+
+            if (password.length < 8) {
+
+                showMessage(
+                    "Admin password must contain at least 8 characters.",
+                    "error"
+                );
+
+                passwordInput.focus();
+
+                return;
+            }
+
+
+            if (
+                password !==
+                confirmPassword
+            ) {
+
+                showMessage(
+                    "Passwords do not match.",
+                    "error"
+                );
+
+                confirmPasswordInput.focus();
+
+                return;
+            }
+
+
+            if (!termsInput.checked) {
+
+                showMessage(
+                    "Please confirm that you understand this is an admin account.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            /* =========================
+               DISABLE BUTTON
+            ========================= */
+
+            registerButton.disabled =
+                true;
+
+            registerButton.textContent =
+                "Creating Admin...";
+
+
+            /* =========================
+               SEND TO BACKEND
+            ========================= */
+
+            try {
+
+                const response =
+                    await fetch(
+                        "/api/admin/create-admin",
+                        {
+                            method: "POST",
+
+                            headers: {
+                                "Content-Type":
+                                    "application/json"
+                            },
+
+                            credentials: "include",
+
+                            body: JSON.stringify({
+                                name: name,
+                                email: email,
+                                password: password
+                            })
+                        }
+                    );
+
+
+                const data =
+                    await response.json();
+
+
+                /* =========================
+                   BACKEND ERROR
+                ========================= */
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        data.message ||
+                        "Unable to create admin account."
+                    );
+                }
+
+
+                /* =========================
+                   SUCCESS
+                ========================= */
+
+                registerButton.textContent =
+                    "Admin Account Created ✓";
+
+                showMessage(
+                    "Admin account created successfully. Redirecting to Admin Login...",
+                    "success"
+                );
+
+
+                setTimeout(
+                    function() {
+
+                        window.location.href =
+                            "admin-login.html";
+
+                    },
+                    1200
+                );
+
+
+            } catch (error) {
+
+                console.error(
+                    "Admin registration error:",
+                    error
+                );
+
+
+                registerButton.disabled =
+                    false;
+
+                registerButton.textContent =
+                    "Create Admin Account";
+
+
+                showMessage(
+                    error.message ||
+                    "Unable to create admin account. Please try again.",
+                    "error"
+                );
+            }
+        }
+    );
+
+
+    /* =========================
+       INITIALIZE
+    ========================= */
+
+    checkAdminSession();
+
+</script>
+
+</body>
+
+</html>

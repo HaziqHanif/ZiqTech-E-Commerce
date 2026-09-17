@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+
+    name="viewport"
+
+    content="width=device-width, initial-scale=1.0"
+
+>
+
+<title>Payment Successful — ZiqTech</title>
+
+<style>
+:root {
+    --bg: #f5f5f7;
+    --surface: rgba(255, 255, 255, 0.92);
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --subtle: #8b8b91;
+    --line: rgba(0, 0, 0, 0.075);
+    --blue: #0071e3;
+    --blue-dark: #0058b8;
+    --green: #22a35a;
+    --green-dark: #15733f;
+    --shadow: 0 30px 90px rgba(0, 0, 0, 0.11);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--text);
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "SF Pro Text",
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    background:
+        radial-gradient(circle at 12% -4%, rgba(0, 113, 227, 0.12), transparent 30%),
+        radial-gradient(circle at 92% 4%, rgba(52, 199, 89, 0.10), transparent 28%),
+        linear-gradient(180deg, #fafbfc 0%, var(--bg) 50%, #f0f1f3 100%);
+}
+
+button,
+a {
+    font: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =====================================================
+   NAV
+===================================================== */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 66px;
+    padding: 0 max(22px, 5vw);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.055);
+}
+
+.logo {
+    color: #121214;
+    font-size: 22px;
+    font-weight: 850;
+    letter-spacing: -0.75px;
+}
+
+.logo::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background: var(--blue);
+    vertical-align: 2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-links a {
+    padding: 9px 13px;
+    border-radius: 999px;
+    color: #4e4e53;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #111;
+    background: rgba(0, 0, 0, 0.045);
+}
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+main {
+    width: min(920px, calc(100% - 36px));
+    margin: 48px auto 36px;
+}
+
+/* =====================================================
+   SUCCESS CARD
+===================================================== */
+
+.success-card {
+    position: relative;
+    overflow: hidden;
+    padding: 54px 46px 46px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    border-radius: 34px;
+    background: var(--surface);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    box-shadow: var(--shadow);
+}
+
+.success-card::before {
+    content: "";
+    position: absolute;
+    left: -110px;
+    top: -140px;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, rgba(52, 199, 89, 0.16), rgba(52, 199, 89, 0) 68%);
+    pointer-events: none;
+}
+
+.success-card::after {
+    content: "";
+    position: absolute;
+    right: -120px;
+    top: -150px;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, rgba(0, 113, 227, 0.15), rgba(0, 113, 227, 0) 68%);
+    pointer-events: none;
+}
+
+.success-icon {
+    position: relative;
+    z-index: 1;
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 27px;
+    background:
+        linear-gradient(145deg, #37d36f 0%, var(--green) 50%, var(--green-dark) 100%);
+    color: #fff;
+    font-size: 43px;
+    font-weight: 800;
+    box-shadow:
+        0 18px 38px rgba(34, 163, 90, 0.27),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    transform: rotate(-2deg);
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 12px;
+    font-size: clamp(34px, 6vw, 48px);
+    line-height: 1;
+    letter-spacing: -2.1px;
+    font-weight: 850;
+}
+
+.subtitle {
+    position: relative;
+    z-index: 1;
+    max-width: 590px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+/* =====================================================
+   ORDER BOX
+===================================================== */
+
+.order-box {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin: 34px auto 0;
+    padding: 22px 24px;
+    border: 1px solid rgba(0, 113, 227, 0.09);
+    border-radius: 20px;
+    background:
+        linear-gradient(135deg, rgba(0, 113, 227, 0.06), rgba(255, 255, 255, 0.78));
+}
+
+.order-label {
+    margin-bottom: 7px;
+    color: var(--blue);
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+}
+
+.order-number {
+    font-size: 24px;
+    font-weight: 850;
+    letter-spacing: -0.5px;
+    word-break: break-word;
+}
+
+.order-date {
+    margin-top: 8px;
+    color: var(--subtle);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* =====================================================
+   TOTAL
+===================================================== */
+
+.total-box {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin: 18px auto 0;
+    padding: 20px 22px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.68);
+}
+
+.total-label {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.total-price {
+    color: #151517;
+    font-size: 27px;
+    font-weight: 900;
+    letter-spacing: -0.85px;
+}
+
+/* =====================================================
+   SHIPPING ADDRESS
+===================================================== */
+
+.shipping-box {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin: 14px auto 0;
+    padding: 19px 21px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: #f7f7f9;
+    text-align: left;
+}
+
+.shipping-title {
+    margin-bottom: 8px;
+    color: #8a8a90;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.shipping-address {
+    color: #303034;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.actions {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin: 26px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.btn {
+    min-height: 47px;
+    padding: 12px 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 14px;
+    font-size: 12px;
+    font-weight: 820;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    color: #fff;
+    box-shadow: 0 11px 26px rgba(0, 113, 227, 0.22);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0878e7, #0052aa);
+    box-shadow: 0 15px 32px rgba(0, 113, 227, 0.28);
+}
+
+.btn-secondary {
+    background: #111214;
+    color: #fff;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.btn-secondary:hover {
+    background: #000;
+}
+
+.btn-light {
+    border: 1px solid var(--line);
+    background: #f3f3f5;
+    color: #37373c;
+}
+
+.btn-light:hover {
+    background: #e9e9ec;
+}
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.message {
+    position: relative;
+    z-index: 1;
+    margin-top: 22px;
+    color: #929298;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.message strong {
+    color: #5e5e63;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    padding: 22px 20px 38px;
+    color: #929298;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+    nav {
+        height: 62px;
+        padding: 0 16px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 1px;
+    }
+
+    .nav-links a {
+        padding: 8px 9px;
+        font-size: 11px;
+    }
+
+    main {
+        width: min(100% - 28px, 920px);
+        margin: 28px auto;
+    }
+
+    .success-card {
+        padding: 38px 20px 30px;
+        border-radius: 26px;
+    }
+
+    .success-icon {
+        width: 76px;
+        height: 76px;
+        border-radius: 23px;
+        font-size: 37px;
+    }
+
+    h1 {
+        font-size: 34px;
+        letter-spacing: -1.7px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .order-number {
+        font-size: 20px;
+    }
+
+    .total-box {
+        align-items: center;
+    }
+
+    .total-price {
+        font-size: 22px;
+    }
+
+    .actions {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+    <a
+
+        href="index.html"
+
+        class="logo"
+
+    >
+
+        ZiqTech
+
+    </a>
+
+
+
+    <div class="nav-links">
+
+        <a href="index.html">
+
+            Store
+
+        </a>
+
+        <a href="order.html">
+
+            My Orders
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<main>
+
+    <section class="success-card">
+
+
+
+        <div class="success-icon">
+
+            ✓
+
+        </div>
+
+
+
+        <h1>
+
+            Payment Successful
+
+        </h1>
+
+
+
+        <p class="subtitle">
+
+            Thank you for your purchase from ZiqTech.
+
+            Your order has been successfully received
+
+            and is now being processed.
+
+        </p>
+
+
+
+        <div class="order-box">
+
+            <div class="order-label">
+
+                ORDER NUMBER
+
+            </div>
+
+
+
+            <div
+
+                class="order-number"
+
+                id="orderNumber"
+
+            >
+
+                Loading...
+
+            </div>
+
+
+
+            <div
+
+                class="order-date"
+
+                id="orderDate"
+
+            >
+
+                -
+
+            </div>
+
+        </div>
+
+
+
+        <div class="total-box">
+
+            <span class="total-label">
+
+                Total Paid
+
+            </span>
+
+
+
+            <span
+
+                class="total-price"
+
+                id="orderTotal"
+
+            >
+
+                RM 0.00
+
+            </span>
+
+        </div>
+
+
+
+        <!-- SHIPPING ADDRESS -->
+
+        <div class="shipping-box">
+
+            <div class="shipping-title">
+
+                Shipping Address
+
+            </div>
+
+
+
+            <div
+
+                class="shipping-address"
+
+                id="shippingAddress"
+
+            >
+
+                Loading...
+
+            </div>
+
+        </div>
+
+
+
+        <div class="actions">
+
+
+
+            <button
+
+                class="btn btn-primary"
+
+                onclick="viewInvoice()"
+
+            >
+
+                View Invoice
+
+            </button>
+
+
+
+            <button
+
+                class="btn btn-secondary"
+
+                onclick="printInvoice()"
+
+            >
+
+                Print Invoice
+
+            </button>
+
+
+
+            <a
+
+                href="order.html"
+
+                class="btn btn-light"
+
+            >
+
+                View My Orders
+
+            </a>
+
+
+
+            <a
+
+                href="index.html"
+
+                class="btn btn-light"
+
+            >
+
+                Continue Shopping
+
+            </a>
+
+
+
+        </div>
+
+
+
+        <p class="message">
+
+            Your order details are available in
+
+            <strong>My Orders</strong>.
+
+        </p>
+
+
+
+    </section>
+
+</main>
+
+
+
+<footer>
+
+    © 2026 ZiqTech. All rights reserved.
+
+</footer>
+
+<script>
+
+/* =========================================================
+
+   ZIQTECH PAYMENT SUCCESS
+
+========================================================= */
+
+
+
+/* =========================================================
+
+   GET ORDER PARAMETER
+
+========================================================= */
+
+const params =
+
+    new URLSearchParams(
+
+        window.location.search
+
+    );
+
+
+
+const orderId =
+
+    params.get("order") ||
+
+    params.get("id") ||
+
+    params.get("orderId") ||
+
+    "";
+
+
+
+/* =========================================================
+
+   FORMAT PRICE
+
+========================================================= */
+
+function formatPrice(value) {
+
+    const number =
+
+        Number(value || 0);
+
+
+
+    return (
+
+        "RM " +
+
+        number.toLocaleString(
+
+            "en-MY",
+
+            {
+
+                minimumFractionDigits: 2,
+
+                maximumFractionDigits: 2
+
+            }
+
+        )
+
+    );
+
+}
+
+
+
+/* =========================================================
+
+   GET SAVED ORDER
+
+========================================================= */
+
+function getSavedOrder() {
+
+    try {
+
+        const stored =
+
+            localStorage.getItem(
+
+                "ziqtech_last_order"
+
+            );
+
+
+
+        if (!stored) {
+
+            return null;
+
+        }
+
+
+
+        return JSON.parse(stored);
+
+    } catch (error) {
+
+        console.error(
+
+            "Failed to read saved order:",
+
+            error
+
+        );
+
+        return null;
+
+    }
+
+}
+
+
+
+/* =========================================================
+
+   SHOW UNAVAILABLE
+
+========================================================= */
+
+function showUnavailable(message) {
+
+    const orderNumber =
+
+        document.getElementById(
+
+            "orderNumber"
+
+        );
+
+
+
+    const orderDate =
+
+        document.getElementById(
+
+            "orderDate"
+
+        );
+
+
+
+    const orderTotal =
+
+        document.getElementById(
+
+            "orderTotal"
+
+        );
+
+
+
+    const shippingAddress =
+
+        document.getElementById(
+
+            "shippingAddress"
+
+        );
+
+
+
+    if (orderNumber) {
+
+        orderNumber.textContent =
+
+            orderId ||
+
+            "Unavailable";
+
+    }
+
+
+
+    if (orderDate) {
+
+        orderDate.textContent =
+
+            message;
+
+    }
+
+
+
+    if (orderTotal) {
+
+        orderTotal.textContent =
+
+            "RM 0.00";
+
+    }
+
+
+
+    if (shippingAddress) {
+
+        shippingAddress.textContent =
+
+            "Shipping address unavailable";
+
+    }
+
+}
+
+
+
+/* =========================================================
+
+   LOAD ORDER
+
+========================================================= */
+
+function loadOrder() {
+
+    console.log(
+
+        "Payment success order:",
+
+        orderId
+
+    );
+
+
+
+    const order =
+
+        getSavedOrder();
+
+
+
+    console.log(
+
+        "Saved order:",
+
+        order
+
+    );
+
+
+
+    /* =====================================================
+
+       ORDER NOT FOUND
+
+    ===================================================== */
+
+    if (!order) {
+
+        showUnavailable(
+
+            "Maklumat order tidak dijumpai."
+
+        );
+
+        return;
+
+    }
+
+
+
+    /* =====================================================
+
+       ORDER NUMBER
+
+    ===================================================== */
+
+    const orderNumber =
+
+        document.getElementById(
+
+            "orderNumber"
+
+        );
+
+
+
+    if (orderNumber) {
+
+        orderNumber.textContent =
+
+            order.orderNumber ||
+
+            order.orderId ||
+
+            order.id ||
+
+            orderId ||
+
+            "Unavailable";
+
+    }
+
+
+
+    /* =====================================================
+
+       DATE
+
+    ===================================================== */
+
+    const orderDate =
+
+        document.getElementById(
+
+            "orderDate"
+
+        );
+
+
+
+    const dateValue =
+
+        order.createdAt ||
+
+        order.created_at ||
+
+        order.date ||
+
+        order.orderDate ||
+
+        order.created;
+
+
+
+    if (orderDate) {
+
+        if (dateValue) {
+
+            const date =
+
+                new Date(dateValue);
+
+
+
+            if (
+
+                !Number.isNaN(
+
+                    date.getTime()
+
+                )
+
+            ) {
+
+                orderDate.textContent =
+
+                    date.toLocaleString(
+
+                        "en-MY",
+
+                        {
+
+                            dateStyle:
+
+                                "medium",
+
+                            timeStyle:
+
+                                "short"
+
+                        }
+
+                    );
+
+            } else {
+
+                orderDate.textContent =
+
+                    dateValue;
+
+            }
+
+        } else {
+
+            orderDate.textContent =
+
+                "Order placed successfully";
+
+        }
+
+    }
+
+
+
+    /* =====================================================
+
+       TOTAL PAID
+
+    ===================================================== */
+
+    let total = 0;
+
+
+
+    if (
+
+        order.total !== undefined &&
+
+        order.total !== null
+
+    ) {
+
+        total =
+
+            Number(order.total);
+
+    } else if (
+
+        order.amount !== undefined &&
+
+        order.amount !== null
+
+    ) {
+
+        total =
+
+            Number(order.amount);
+
+    } else if (
+
+        order.grandTotal !== undefined &&
+
+        order.grandTotal !== null
+
+    ) {
+
+        total =
+
+            Number(order.grandTotal);
+
+    } else if (
+
+        order.totalAmount !== undefined &&
+
+        order.totalAmount !== null
+
+    ) {
+
+        total =
+
+            Number(order.totalAmount);
+
+    } else if (
+
+        order.finalTotal !== undefined &&
+
+        order.finalTotal !== null
+
+    ) {
+
+        total =
+
+            Number(order.finalTotal);
+
+    } else if (
+
+        order.subtotal !== undefined &&
+
+        order.subtotal !== null
+
+    ) {
+
+        total =
+
+            Number(order.subtotal) +
+
+            Number(
+
+                order.shippingFee || 0
+
+            );
+
+    }
+
+
+
+    console.log(
+
+        "Total paid:",
+
+        total
+
+    );
+
+
+
+    const orderTotal =
+
+        document.getElementById(
+
+            "orderTotal"
+
+        );
+
+
+
+    if (orderTotal) {
+
+        orderTotal.textContent =
+
+            formatPrice(total);
+
+    }
+
+
+
+   /* =====================================================
+
+   SHIPPING ADDRESS
+
+===================================================== */
+
+const shippingAddress =
+
+    document.getElementById(
+
+        "shippingAddress"
+
+    );
+
+if (shippingAddress) {
+
+    const shipping =
+
+        order.shipping &&
+
+        typeof order.shipping === "object"
+
+            ? order.shipping
+
+            : {};
+
+    const customer =
+
+        order.customer &&
+
+        typeof order.customer === "object"
+
+            ? order.customer
+
+            : {};
+
+    const address =
+
+        shipping.address ||
+
+        order.address ||
+
+        order.shippingAddress ||
+
+        order.shipping_address ||
+
+        order.deliveryAddress ||
+
+        customer.address ||
+
+        "";
+
+    const city =
+
+        shipping.city ||
+
+        order.city ||
+
+        order.shippingCity ||
+
+        order.shipping_city ||
+
+        customer.city ||
+
+        "";
+
+    const postcode =
+
+        shipping.postcode ||
+
+        order.postcode ||
+
+        order.postalCode ||
+
+        order.zip ||
+
+        order.shippingPostcode ||
+
+        order.shipping_postcode ||
+
+        customer.postcode ||
+
+        "";
+
+    const state =
+
+        shipping.state ||
+
+        order.state ||
+
+        order.region ||
+
+        order.shippingState ||
+
+        order.shipping_state ||
+
+        customer.state ||
+
+        "";
+
+    const addressParts = [
+
+        address,
+
+        postcode,
+
+        city,
+
+        state
+
+    ].filter(
+
+        value =>
+
+            value !== undefined &&
+
+            value !== null &&
+
+            String(value).trim() !== ""
+
+    );
+
+    if (addressParts.length > 0) {
+
+        shippingAddress.textContent =
+
+            addressParts.join(", ");
+
+    } else {
+
+        shippingAddress.textContent =
+
+            "Shipping address unavailable";
+
+    }
+
+    console.log(
+
+        "Payment success shipping:",
+
+        {
+
+            address,
+
+            postcode,
+
+            city,
+
+            state,
+
+            order
+
+        }
+
+    );
+
+}
+
+}
+
+/* =========================================================
+
+   GET ACTUAL ORDER ID
+
+========================================================= */
+
+function getActualOrderId() {
+
+    const order =
+
+        getSavedOrder();
+
+
+
+    if (!order) {
+
+        return orderId;
+
+    }
+
+
+
+    return (
+
+        order.id ||
+
+        order.orderId ||
+
+        order.orderNumber ||
+
+        order.number ||
+
+        order.reference ||
+
+        order.referenceNumber ||
+
+        order.invoiceId ||
+
+        order.invoiceNumber ||
+
+        orderId
+
+    );
+
+}
+
+
+
+/* =========================================================
+
+   VIEW INVOICE
+
+========================================================= */
+
+function viewInvoice() {
+
+    const actualOrderId =
+
+        getActualOrderId();
+
+
+
+    console.log(
+
+        "Invoice order ID:",
+
+        actualOrderId
+
+    );
+
+
+
+    if (!actualOrderId) {
+
+        alert(
+
+            "Order ID not found."
+
+        );
+
+        return;
+
+    }
+
+
+
+    window.location.href =
+
+        "invoice.html?id=" +
+
+        encodeURIComponent(
+
+            actualOrderId
+
+        );
+
+}
+
+
+
+/* =========================================================
+
+   PRINT INVOICE
+
+========================================================= */
+
+function printInvoice() {
+
+    const actualOrderId =
+
+        getActualOrderId();
+
+
+
+    console.log(
+
+        "Print order ID:",
+
+        actualOrderId
+
+    );
+
+
+
+    if (!actualOrderId) {
+
+        alert(
+
+            "Order ID not found."
+
+        );
+
+        return;
+
+    }
+
+
+
+    const invoiceUrl =
+
+        "invoice.html?id=" +
+
+        encodeURIComponent(
+
+            actualOrderId
+
+        );
+
+
+
+    window.open(
+
+        invoiceUrl,
+
+        "_blank"
+
+    );
+
+}
+
+
+
+/* =========================================================
+
+   INIT
+
+========================================================= */
+
+loadOrder();
+
+</script>
+
+</body>
+
+</html>

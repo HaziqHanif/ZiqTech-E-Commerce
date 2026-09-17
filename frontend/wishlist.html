@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Wishlist — ZiqTech</title>
+<style>
+:root{
+    --bg:#f5f5f7;
+    --text:#1d1d1f;
+    --muted:#6e6e73;
+    --blue:#0071e3;
+    --red:#d92d20;
+    --line:rgba(0,0,0,.08);
+    --shadow:0 24px 70px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;
+    color:var(--text);
+    background:
+        radial-gradient(circle at 90% 0%,rgba(255,45,85,.08),transparent 28%),
+        radial-gradient(circle at 10% 10%,rgba(0,113,227,.08),transparent 26%),
+        var(--bg);
+    min-height:100vh;
+}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+.topbar{
+    height:66px;position:sticky;top:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 max(22px,5vw);
+    background:rgba(255,255,255,.78);backdrop-filter:blur(24px) saturate(180%);
+    border-bottom:1px solid rgba(0,0,0,.06);
+}
+.brand{font-size:22px;font-weight:850;letter-spacing:-.6px}
+.brand span{color:var(--blue)}
+.nav-actions{display:flex;align-items:center;gap:8px}
+.nav-link{
+    display:inline-flex;align-items:center;gap:8px;
+    min-height:40px;padding:0 14px;border-radius:999px;
+    color:#424245;font-size:13px;font-weight:650;
+}
+.nav-link:hover{background:#f1f1f3}
+.nav-badge{
+    min-width:22px;height:22px;padding:0 6px;border-radius:999px;
+    display:inline-flex;align-items:center;justify-content:center;
+    background:#111;color:#fff;font-size:11px;font-weight:800;
+}
+.shell{max-width:1240px;margin:0 auto;padding:46px 22px 80px}
+.hero{
+    position:relative;overflow:hidden;
+    display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
+    padding:42px 44px;margin-bottom:28px;
+    background:linear-gradient(135deg,#fff,#fff7fa 50%,#eef6ff);
+    border:1px solid rgba(255,255,255,.85);border-radius:34px;
+    box-shadow:var(--shadow);
+}
+.hero::after{
+    content:"♡";position:absolute;right:42px;top:-38px;
+    font-size:210px;line-height:1;color:rgba(255,45,85,.07);font-weight:200;
+    transform:rotate(-8deg);
+}
+.hero-copy{position:relative;z-index:1}
+.eyebrow{
+    display:inline-flex;gap:7px;align-items:center;
+    color:#c1274f;font-size:11px;font-weight:850;letter-spacing:.16em;text-transform:uppercase;
+    margin-bottom:13px;
+}
+.hero h1{font-size:clamp(38px,6vw,68px);letter-spacing:-3px;line-height:.96}
+.hero p{color:var(--muted);max-width:620px;line-height:1.65;margin-top:17px}
+.hero-actions{position:relative;z-index:1;display:flex;gap:10px;flex-wrap:wrap}
+.secondary-btn,.clear-btn{
+    border:0;border-radius:14px;padding:12px 16px;cursor:pointer;font-weight:750;font-size:12px;
+}
+.secondary-btn{background:#111;color:#fff}
+.clear-btn{background:#fff;color:#777;border:1px solid var(--line)}
+.clear-btn:hover{color:var(--red);border-color:#ffd0ca}
+.toolbar{
+    display:flex;justify-content:space-between;align-items:center;gap:18px;
+    margin:0 2px 18px;
+}
+.toolbar h2{font-size:21px;letter-spacing:-.4px}
+.toolbar p{color:var(--muted);font-size:12px;margin-top:3px}
+.count-chip{
+    padding:8px 12px;background:#fff;border:1px solid var(--line);border-radius:999px;
+    font-size:12px;font-weight:750;color:#555;
+}
+.grid{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;
+}
+.card{
+    position:relative;display:flex;flex-direction:column;overflow:hidden;
+    background:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.85);
+    border-radius:28px;box-shadow:0 16px 46px rgba(0,0,0,.06);
+    transition:.24s ease;
+}
+.card:hover{transform:translateY(-5px);box-shadow:0 26px 60px rgba(0,0,0,.1)}
+.image-area{
+    position:relative;height:260px;background:linear-gradient(145deg,#f8f8fa,#f0f1f4);
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
+}
+.image-area img{width:100%;height:100%;object-fit:contain;padding:22px;transition:.35s}
+.card:hover .image-area img{transform:scale(1.035)}
+.heart{
+    position:absolute;top:15px;right:15px;z-index:2;
+    width:38px;height:38px;border:0;border-radius:50%;
+    background:rgba(255,255,255,.9);backdrop-filter:blur(12px);
+    color:#e11d48;font-size:20px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+.heart:hover{transform:scale(1.07)}
+.card-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.kicker{font-size:10px;font-weight:850;letter-spacing:.13em;text-transform:uppercase;color:var(--blue)}
+.name{font-size:21px;letter-spacing:-.55px;font-weight:800;line-height:1.16;margin-top:7px}
+.name a:hover{color:var(--blue)}
+.desc{font-size:12px;line-height:1.55;color:#7a7a80;margin-top:9px;min-height:38px}
+.variant-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}
+.chip{
+    padding:6px 9px;border-radius:999px;background:#f1f1f3;
+    color:#5f5f64;font-size:10px;font-weight:750;
+}
+.stock{margin-top:12px;color:#18864b;font-size:11px;font-weight:750}
+.stock.out{color:var(--red)}
+.card-foot{
+    margin-top:auto;padding-top:18px;display:flex;align-items:flex-end;justify-content:space-between;gap:14px;
+}
+.price strong{display:block;font-size:21px;letter-spacing:-.5px}
+.price small{color:var(--muted);font-size:10px}
+.add-btn{
+    border:0;border-radius:13px;padding:11px 14px;background:#111;color:#fff;
+    font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;
+}
+.add-btn:hover{background:var(--blue)}
+.add-btn:disabled{opacity:.4;cursor:not-allowed;background:#777}
+.empty{
+    text-align:center;padding:90px 20px;background:#fff;
+    border:1px solid rgba(255,255,255,.85);border-radius:30px;box-shadow:var(--shadow);
+}
+.empty-icon{
+    width:88px;height:88px;margin:0 auto 20px;border-radius:28px;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,#fff0f5,#eef6ff);font-size:38px;
+}
+.empty h2{font-size:29px;letter-spacing:-.8px}
+.empty p{color:var(--muted);max-width:450px;margin:10px auto 22px;line-height:1.6}
+.empty a{display:inline-flex;padding:13px 19px;border-radius:14px;background:#111;color:#fff;font-size:13px;font-weight:800}
+.loading{text-align:center;padding:70px;color:var(--muted)}
+.spinner{
+    width:30px;height:30px;border:3px solid #e5e5e9;border-top-color:var(--blue);
+    border-radius:50%;margin:0 auto 14px;animation:spin .8s linear infinite;
+}
+.toast{
+    position:fixed;left:50%;bottom:28px;z-index:99;
+    transform:translate(-50%,18px);opacity:0;pointer-events:none;
+    background:#111;color:#fff;padding:12px 18px;border-radius:999px;
+    font-size:12px;font-weight:750;box-shadow:0 16px 36px rgba(0,0,0,.2);
+    transition:.25s ease;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:950px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){
+    .topbar{padding:0 16px}.nav-link .label{display:none}
+    .shell{padding:28px 14px 60px}
+    .hero{padding:32px 24px;align-items:flex-start;flex-direction:column;border-radius:26px}
+    .hero h1{letter-spacing:-2px}.hero-actions{width:100%}
+    .grid{grid-template-columns:1fr}.image-area{height:280px}
+    .toolbar{align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+    <a class="brand" href="index.html">Ziq<span>Tech</span></a>
+    <div class="nav-actions">
+        <a class="nav-link" href="profile.html"><span>◯</span><span class="label">Account</span></a>
+        <a class="nav-link" href="cart.html"><span>Cart</span><span class="nav-badge" id="cartCount">0</span></a>
+    </div>
+</header>
+
+<main class="shell">
+    <section class="hero">
+        <div class="hero-copy">
+            <div class="eyebrow">Saved for later</div>
+            <h1>Things you love.<br>All in one place.</h1>
+            <p>Keep your favourite ZiqTech products here and move them to your cart whenever you're ready.</p>
+        </div>
+        <div class="hero-actions">
+            <a class="secondary-btn" href="index.html">Explore products</a>
+            <button class="clear-btn" id="clearWishlistButton" onclick="clearWishlist()">Clear wishlist</button>
+        </div>
+    </section>
+
+    <div class="toolbar">
+        <div>
+            <h2>My Wishlist</h2>
+            <p>Your saved products and selected variants.</p>
+        </div>
+        <span class="count-chip"><span id="wishlistCount">0</span> saved</span>
+    </div>
+
+    <div id="wishlistContainer">
+        <div class="loading">
+            <div class="spinner"></div>
+            Loading your wishlist...
+        </div>
+    </div>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/store.js"></script>
+<script>
+let wishlist = [];
+let products = [];
+
+function normalizeProductsResponse(data) {
+    if (Array.isArray(data)) return data;
+    if (data && Array.isArray(data.products)) return data.products;
+    if (data && Array.isArray(data.data)) return data.data;
+    return [];
+}
+
+function readWishlist() {
+    try {
+        const data = JSON.parse(localStorage.getItem("ziqtech_wishlist"));
+        return Array.isArray(data) ? data : [];
+    } catch {
+        return [];
+    }
+}
+
+function saveWishlist() {
+    localStorage.setItem("ziqtech_wishlist", JSON.stringify(wishlist));
+}
+
+function getProductId(item) {
+    return item.productId ?? item.id;
+}
+
+function getProduct(productId) {
+    return products.find(p => String(p.id) === String(productId));
+}
+
+function getVariant(product, variantId) {
+    if (!product || variantId === null || variantId === undefined || !Array.isArray(product.variants)) return null;
+    return product.variants.find(v => String(v.id) === String(variantId)) || null;
+}
+
+function formatMoney(value) {
+    return "RM " + Number(value || 0).toLocaleString("en-MY", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    });
+}
+
+function escapeHtml(value) {
+    return String(value ?? "")
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+}
+
+function showToast(message) {
+    const toast = document.getElementById("toast");
+    toast.textContent = message;
+    toast.classList.add("show");
+    clearTimeout(showToast.timer);
+    showToast.timer = setTimeout(() => toast.classList.remove("show"), 2200);
+}
+
+function updateCartCount() {
+    let cart = [];
+    if (window.ZiqStore && typeof ZiqStore.readCart === "function") {
+        cart = ZiqStore.readCart() || [];
+    }
+    const count = Array.isArray(cart)
+        ? cart.reduce((sum,item) => sum + Number(item.quantity || 0), 0)
+        : 0;
+    document.getElementById("cartCount").textContent = String(count);
+}
+
+function removeFromWishlist(productId, variantId = "") {
+    wishlist = wishlist.filter(item =>
+        !(
+            String(getProductId(item)) === String(productId) &&
+            String(item.variantId ?? "") === String(variantId ?? "")
+        )
+    );
+    saveWishlist();
+    renderWishlist();
+    showToast("Removed from wishlist");
+}
+
+function clearWishlist() {
+    if (!wishlist.length) return;
+    if (!window.confirm("Clear semua produk dalam wishlist?")) return;
+    wishlist = [];
+    saveWishlist();
+    renderWishlist();
+}
+
+function getWishlistQuantity(item) {
+    const quantity = Number(item.quantity || 1);
+    return Number.isFinite(quantity) && quantity > 0 ? Math.floor(quantity) : 1;
+}
+
+function addWishlistToCart(productId, variantId = "") {
+    const item = wishlist.find(entry =>
+        String(getProductId(entry)) === String(productId) &&
+        String(entry.variantId ?? "") === String(variantId ?? "")
+    );
+
+    const product = getProduct(productId);
+    if (!item || !product) return;
+
+    const variant = getVariant(product, item.variantId);
+    const hasVariants = Array.isArray(product.variants) && product.variants.length > 0;
+
+    if (hasVariants && !variant) {
+        window.location.href = `product.html?id=${encodeURIComponent(product.id)}`;
+        return;
+    }
+
+    const quantity = getWishlistQuantity(item);
+    const stock = Number(variant?.stock ?? product.stock ?? 0);
+    const variantIdValue = variant?.id ?? item.variantId ?? null;
+    const variantAttributes = variant?.attributes || item.variantAttributes || item.attributes || {};
+    const variantName = variant?.name || item.variantName || "";
+
+    if (stock <= 0) {
+        showToast("This option is out of stock");
+        return;
+    }
+
+    if (window.ZiqStore && typeof ZiqStore.addToCart === "function") {
+        const result = ZiqStore.addToCart(
+            product.id,
+            quantity,
+            stock,
+            variantIdValue,
+            variantAttributes,
+            variantName
+        );
+
+        if (!result?.ok) {
+            if (result?.reason === "max_stock") {
+                showToast(`Maximum available stock: ${result.stock}`);
+            } else {
+                showToast("Unable to add this item to cart");
+            }
+            return;
+        }
+
+        updateCartCount();
+        showToast(`${product.name} added to cart`);
+        return;
+    }
+
+    window.location.href = `product.html?id=${encodeURIComponent(product.id)}`;
+}
+
+function renderEmpty() {
+    const container = document.getElementById("wishlistContainer");
+    container.innerHTML = `
+        <div class="empty">
+            <div class="empty-icon">♡</div>
+            <h2>Your wishlist is waiting.</h2>
+            <p>Save products you like and they'll stay here until you're ready to add them to your cart.</p>
+            <a href="index.html">Discover products →</a>
+        </div>
+    `;
+    document.getElementById("wishlistCount").textContent = "0";
+    document.getElementById("clearWishlistButton").style.display = "none";
+}
+
+function renderWishlist() {
+    const container = document.getElementById("wishlistContainer");
+    document.getElementById("wishlistCount").textContent = String(wishlist.length);
+
+    if (!wishlist.length) {
+        renderEmpty();
+        return;
+    }
+
+    document.getElementById("clearWishlistButton").style.display = "";
+
+    container.innerHTML = `<div class="grid">${wishlist.map(item => {
+        const productId = getProductId(item);
+        const product = getProduct(productId) || item;
+        const variant = getVariant(product, item.variantId);
+
+        const name = product.name || item.name || "ZiqTech Product";
+        const description = product.description || item.description || "Premium technology from ZiqTech.";
+        const image = variant?.image || item.variantImage || product.image || item.image || "";
+        const price = Number(variant?.price ?? item.variantPrice ?? product.price ?? item.price ?? 0);
+        const stock = Number(variant?.stock ?? product.stock ?? item.stock ?? 0);
+        const hasVariants = Array.isArray(product.variants) && product.variants.length > 0;
+        const variantValid = Boolean(variant);
+        const quantity = getWishlistQuantity(item);
+
+        const chips = [];
+        const variantName = variant?.name || item.variantName || "";
+        if (variantName) chips.push(variantName);
+
+        const attrs = variant?.attributes || item.variantAttributes || item.attributes || {};
+        ["storage","color","ram","size","type"].forEach(key => {
+            const value = attrs?.[key];
+            if (value && !chips.some(c => String(c).includes(String(value)))) chips.push(value);
+        });
+
+        const actionText = hasVariants && !variantValid
+            ? "Choose Options"
+            : (stock > 0 ? (quantity > 1 ? `Add ${quantity} to Cart` : "Add to Cart") : "Out of Stock");
+
+        const disabled = !(hasVariants && !variantValid) && stock <= 0;
+
+        return `
+            <article class="card">
+                <button class="heart"
+                    aria-label="Remove from wishlist"
+                    onclick="removeFromWishlist('${escapeHtml(productId)}','${escapeHtml(item.variantId ?? "")}')">♥</button>
+
+                <a class="image-area" href="product.html?id=${encodeURIComponent(productId)}">
+                    ${image ? `<img src="${escapeHtml(image)}" alt="${escapeHtml(name)}">` : ""}
+                </a>
+
+                <div class="card-body">
+                    <div class="kicker">ZiqTech Favourite</div>
+                    <div class="name">
+                        <a href="product.html?id=${encodeURIComponent(productId)}">${escapeHtml(name)}</a>
+                    </div>
+                    <div class="desc">${escapeHtml(description)}</div>
+
+                    ${chips.length ? `
+                        <div class="variant-row">
+                            ${chips.slice(0,4).map(chip => `<span class="chip">${escapeHtml(chip)}</span>`).join("")}
+                        </div>
+                    ` : ""}
+
+                    <div class="stock ${stock > 0 ? "" : "out"}">
+                        ${hasVariants && !variantValid ? "Choose a variant to continue" : (stock > 0 ? `${stock} in stock` : "Out of stock")}
+                    </div>
+
+                    <div class="card-foot">
+                        <div class="price">
+                            <strong>${formatMoney(price)}</strong>
+                            ${quantity > 1 ? `<small>Saved quantity: ${quantity}</small>` : `<small>Saved item</small>`}
+                        </div>
+
+                        <button class="add-btn" ${disabled ? "disabled" : ""}
+                            onclick="addWishlistToCart('${escapeHtml(productId)}','${escapeHtml(item.variantId ?? "")}')">
+                            ${escapeHtml(actionText)}
+                        </button>
+                    </div>
+                </div>
+            </article>
+        `;
+    }).join("")}</div>`;
+}
+
+async function loadWishlist() {
+    wishlist = readWishlist();
+    updateCartCount();
+
+    if (!wishlist.length) {
+        renderEmpty();
+        return;
+    }
+
+    try {
+        const response = await fetch("/api/products", {
+            method: "GET",
+            headers: { "Accept": "application/json" },
+            credentials: "include"
+        });
+
+        if (!response.ok) {
+            throw new Error(`Unable to load products. HTTP ${response.status}`);
+        }
+
+        products = normalizeProductsResponse(await response.json());
+        renderWishlist();
+    } catch (error) {
+        console.error("Wishlist load error:", error);
+        products = [];
+        renderWishlist();
+    }
+}
+
+loadWishlist();
+</script>
+</body>
+</html>
