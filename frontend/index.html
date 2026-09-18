@@ -890,6 +890,8 @@
         scrollbar-width: none;
 
         -webkit-overflow-scrolling: touch;
+
+        cursor: pointer;
     }
 
     .product-image-slider::-webkit-scrollbar {
@@ -2022,9 +2024,1140 @@
 }
 </style>
 
+
+
+<style id="ziqtech-ultimate-attraction-upgrade">
+/* =========================================================
+   ZIQTECH ULTIMATE ATTRACTION LAYER
+   Visual + static presentation only. Existing store JS untouched.
+========================================================= */
+:root {
+    --zt-ink: #05070b;
+    --zt-ink-2: #0b1020;
+    --zt-electric: #0a84ff;
+    --zt-violet: #7c5cff;
+    --zt-cyan: #58e7ff;
+    --zt-card: rgba(255,255,255,.86);
+    --zt-stroke: rgba(255,255,255,.12);
+}
+
+body {
+    background:
+        radial-gradient(circle at 18% 2%, rgba(10,132,255,.07), transparent 24%),
+        radial-gradient(circle at 84% 14%, rgba(124,92,255,.055), transparent 23%),
+        #f5f5f7;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: .22;
+    background-image:
+        linear-gradient(rgba(0,0,0,.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,.018) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 70%, transparent);
+}
+
+/* ---------------- ANNOUNCEMENT ---------------- */
+.zt-announcement {
+    position: relative;
+    z-index: 5100;
+    overflow: hidden;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    color: rgba(255,255,255,.78);
+    background:
+        radial-gradient(circle at 20% 0%, rgba(10,132,255,.34), transparent 31%),
+        linear-gradient(90deg, #05070b, #0b1020 48%, #05070b);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.zt-announcement-track {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    width: max-content;
+    white-space: nowrap;
+    animation: ztTicker 25s linear infinite;
+}
+
+.zt-announcement-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.zt-announcement-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--zt-cyan);
+    box-shadow: 0 0 14px rgba(88,231,255,.9);
+}
+
+@keyframes ztTicker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* ---------------- FLOATING NAV ---------------- */
+nav {
+    top: 10px;
+    width: min(1440px, calc(100% - 28px));
+    height: 64px;
+    margin: 10px auto 0;
+    padding: 0 22px;
+    border: 1px solid rgba(255,255,255,.68);
+    border-radius: 20px;
+    background: rgba(255,255,255,.73);
+    box-shadow:
+        0 14px 45px rgba(0,0,0,.08),
+        inset 0 1px 0 rgba(255,255,255,.92);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.logo::before {
+    content: "Z";
+    width: 29px;
+    height: 29px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+    border-radius: 9px;
+    color: #fff;
+    background: linear-gradient(135deg, #0a84ff, #6e5cff);
+    box-shadow: 0 8px 20px rgba(10,132,255,.24);
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+.nav-cart {
+    background: linear-gradient(135deg, #10131a, #000);
+    box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
+
+/* ---------------- CINEMATIC HERO ---------------- */
+.hero {
+    min-height: 690px;
+    margin-top: -84px;
+    padding: 142px 0 82px;
+    color: #fff;
+    text-align: left;
+    background:
+        radial-gradient(circle at 77% 29%, rgba(10,132,255,.28), transparent 22%),
+        radial-gradient(circle at 67% 64%, rgba(124,92,255,.21), transparent 25%),
+        radial-gradient(circle at 14% 23%, rgba(88,231,255,.08), transparent 19%),
+        linear-gradient(135deg, #04060a 0%, #070b14 48%, #0a1020 100%);
+}
+
+.hero::before,
+.hero::after {
+    border-color: rgba(255,255,255,.08);
+}
+
+.hero::before {
+    left: auto;
+    right: 7%;
+    top: 8%;
+    width: 590px;
+    height: 590px;
+}
+
+.hero::after {
+    left: auto;
+    right: 14%;
+    top: 23%;
+    width: 390px;
+    height: 390px;
+}
+
+.hero-grid-shell {
+    position: relative;
+    z-index: 4;
+    width: min(1280px, calc(100% - 48px));
+    margin: auto;
+    display: grid;
+    grid-template-columns: minmax(0, .92fr) minmax(440px, 1.08fr);
+    align-items: center;
+    gap: 46px;
+}
+
+.hero-content {
+    width: auto;
+    text-align: left;
+}
+
+.hero .welcome-user {
+    margin: 0 0 18px;
+    background: rgba(255,255,255,.09);
+    color: #fff;
+    border-color: rgba(255,255,255,.13);
+    box-shadow: 0 18px 50px rgba(0,0,0,.14);
+}
+
+.hero .welcome-user-main,
+.hero .welcome-user strong {
+    color: #fff;
+}
+
+.hero .welcome-user-kicker {
+    color: rgba(255,255,255,.58);
+}
+
+.hero-badge {
+    border-color: rgba(88,231,255,.18);
+    background: rgba(255,255,255,.07);
+    color: #91eeff;
+    box-shadow: 0 10px 30px rgba(0,0,0,.14);
+}
+
+.hero h1 {
+    max-width: 720px;
+    margin-bottom: 24px;
+    color: #fff;
+    background: none;
+    -webkit-text-fill-color: currentColor;
+    font-size: clamp(58px, 7vw, 96px);
+    line-height: .91;
+    letter-spacing: -6.5px;
+    text-wrap: balance;
+}
+
+.hero h1 .zt-gradient-word {
+    display: inline-block;
+    background: linear-gradient(90deg, #fff 0%, #81eaff 38%, #4f9cff 68%, #9b87ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    width: min(610px, 100%);
+    margin: 0 0 30px;
+    color: rgba(255,255,255,.62);
+    font-size: clamp(16px, 1.7vw, 19px);
+    line-height: 1.65;
+}
+
+.hero-buttons {
+    justify-content: flex-start;
+    gap: 11px;
+}
+
+.hero .primary-button {
+    position: relative;
+    overflow: hidden;
+    min-height: 52px;
+    padding: 0 24px;
+    background: linear-gradient(135deg, #0a84ff, #5a5cff);
+    box-shadow: 0 16px 38px rgba(10,132,255,.28);
+}
+
+.hero .primary-button::after {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(110deg, transparent 25%, rgba(255,255,255,.28) 48%, transparent 70%);
+    transform: translateX(-120%);
+    transition: transform .7s ease;
+}
+
+.hero .primary-button:hover::after {
+    transform: translateX(120%);
+}
+
+.hero .secondary-button {
+    min-height: 52px;
+    padding: 0 23px;
+    color: #fff;
+    border-color: rgba(255,255,255,.14);
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(14px);
+}
+
+.hero .secondary-button:hover {
+    background: rgba(255,255,255,.13);
+}
+
+.hero-proof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.hero-proof span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(255,255,255,.57);
+    font-size: 11px;
+    font-weight: 650;
+}
+
+.hero-proof i {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(88,231,255,.10);
+    color: #78edff;
+    font-style: normal;
+    font-size: 10px;
+}
+
+.hero-showcase {
+    position: relative;
+    min-height: 470px;
+    perspective: 1200px;
+}
+
+.showcase-halo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 430px;
+    height: 430px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(10,132,255,.25), rgba(124,92,255,.12) 38%, transparent 68%);
+    filter: blur(12px);
+}
+
+.showcase-orbit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 1px solid rgba(255,255,255,.11);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-orbit.one {
+    width: 455px;
+    height: 455px;
+    animation: ztOrbit 15s linear infinite;
+}
+
+.showcase-orbit.two {
+    width: 340px;
+    height: 340px;
+    border-style: dashed;
+    animation: ztOrbit 11s linear infinite reverse;
+}
+
+@keyframes ztOrbit {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.zt-laptop {
+    position: absolute;
+    left: 3%;
+    top: 15%;
+    width: 500px;
+    transform: rotateY(-10deg) rotateX(4deg) rotateZ(-2deg);
+    filter: drop-shadow(0 34px 42px rgba(0,0,0,.44));
+    animation: ztFloatLaptop 6s ease-in-out infinite;
+}
+
+.zt-laptop-screen {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    padding: 8px;
+    border: 2px solid rgba(255,255,255,.32);
+    border-bottom-width: 4px;
+    border-radius: 20px 20px 12px 12px;
+    background: linear-gradient(145deg, #30343d, #0a0b0f);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.09);
+}
+
+.zt-laptop-screen::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 6px;
+    width: 7px;
+    height: 7px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: rgba(255,255,255,.24);
+}
+
+.zt-laptop-wallpaper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 13px 13px 7px 7px;
+    background:
+        radial-gradient(circle at 72% 28%, rgba(88,231,255,.85), transparent 14%),
+        radial-gradient(circle at 58% 54%, rgba(10,132,255,.8), transparent 25%),
+        radial-gradient(circle at 38% 64%, rgba(124,92,255,.78), transparent 27%),
+        linear-gradient(135deg, #02040a, #0a1633 58%, #111021);
+}
+
+.zt-laptop-wallpaper::before {
+    content: "ZIQTECH";
+    position: absolute;
+    left: 26px;
+    bottom: 24px;
+    color: rgba(255,255,255,.92);
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.zt-laptop-wallpaper::after {
+    content: "Premium technology. Simple experience.";
+    position: absolute;
+    left: 27px;
+    bottom: 10px;
+    color: rgba(255,255,255,.48);
+    font-size: 7px;
+    letter-spacing: .3px;
+}
+
+.zt-laptop-base {
+    position: relative;
+    width: 108%;
+    height: 15px;
+    margin-left: -4%;
+    border-radius: 2px 2px 16px 16px;
+    background: linear-gradient(180deg, #b9bcc3, #6d7077 50%, #24262b);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
+}
+
+.zt-laptop-base::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 70px;
+    height: 4px;
+    transform: translateX(-50%);
+    border-radius: 0 0 8px 8px;
+    background: rgba(35,36,40,.45);
+}
+
+.zt-phone {
+    position: absolute;
+    right: 1%;
+    bottom: 4%;
+    width: 146px;
+    height: 296px;
+    padding: 7px;
+    border: 2px solid rgba(255,255,255,.28);
+    border-radius: 34px;
+    background: linear-gradient(145deg, #3c4049, #090b0f 48%, #252932);
+    box-shadow: 0 32px 65px rgba(0,0,0,.42), inset 0 0 0 1px rgba(255,255,255,.06);
+    transform: rotate(7deg);
+    animation: ztFloatPhone 5.2s ease-in-out infinite .4s;
+}
+
+.zt-phone-screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 27px;
+    background:
+        radial-gradient(circle at 50% 24%, rgba(88,231,255,.55), transparent 18%),
+        radial-gradient(circle at 37% 58%, rgba(124,92,255,.72), transparent 30%),
+        linear-gradient(160deg, #08111f, #080912 65%, #020305);
+}
+
+.zt-phone-screen::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    width: 42px;
+    height: 12px;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background: #020305;
+}
+
+.zt-phone-screen::after {
+    content: "Z";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255,255,255,.92);
+    font-size: 52px;
+    font-weight: 900;
+    text-shadow: 0 0 32px rgba(88,231,255,.28);
+}
+
+.zt-float-card {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1px solid rgba(255,255,255,.13);
+    border-radius: 16px;
+    background: rgba(255,255,255,.09);
+    backdrop-filter: blur(18px) saturate(140%);
+    box-shadow: 0 18px 40px rgba(0,0,0,.18);
+    color: #fff;
+}
+
+.zt-float-card strong {
+    display: block;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+.zt-float-card span {
+    display: block;
+    margin-top: 2px;
+    color: rgba(255,255,255,.48);
+    font-size: 8px;
+}
+
+.zt-float-icon {
+    width: 31px;
+    height: 31px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(10,132,255,.35), rgba(124,92,255,.35));
+    font-size: 14px;
+}
+
+.zt-float-card.a { left: -1%; bottom: 12%; animation: ztCardFloat 4.8s ease-in-out infinite; }
+.zt-float-card.b { right: 5%; top: 5%; animation: ztCardFloat 5.4s ease-in-out infinite .8s; }
+
+@keyframes ztFloatLaptop {
+    0%,100% { transform: rotateY(-10deg) rotateX(4deg) rotateZ(-2deg) translateY(0); }
+    50% { transform: rotateY(-10deg) rotateX(4deg) rotateZ(-2deg) translateY(-10px); }
+}
+
+@keyframes ztFloatPhone {
+    0%,100% { transform: rotate(7deg) translateY(0); }
+    50% { transform: rotate(5deg) translateY(-12px); }
+}
+
+@keyframes ztCardFloat {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.hero-glow {
+    bottom: -360px;
+    background: rgba(10,132,255,.22);
+}
+
+.scroll-indicator {
+    color: rgba(255,255,255,.34);
+}
+
+/* ---------------- TRUST + SIGNAL RAIL ---------------- */
+.trust-strip {
+    position: relative;
+    z-index: 10;
+    margin-top: -36px;
+    border-color: rgba(255,255,255,.7);
+    background: rgba(255,255,255,.83);
+    backdrop-filter: blur(24px) saturate(160%);
+    box-shadow: 0 24px 60px rgba(0,0,0,.11);
+}
+
+.trust-item strong {
+    letter-spacing: -.4px;
+}
+
+.zt-signal-rail {
+    width: min(1120px, calc(100% - 36px));
+    margin: 22px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.zt-signal-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    border: 1px solid rgba(0,0,0,.07);
+    border-radius: 999px;
+    background: rgba(255,255,255,.68);
+    color: #6e6e73;
+    box-shadow: 0 6px 18px rgba(0,0,0,.025);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.zt-signal-chip b {
+    color: #0071e3;
+    font-size: 11px;
+}
+
+/* ---------------- CATEGORIES ---------------- */
+.category-card {
+    border-color: rgba(255,255,255,.9);
+    background:
+        radial-gradient(circle at 100% 0%, rgba(10,132,255,.10), transparent 36%),
+        linear-gradient(145deg, #fff, #f1f2f6);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.045),
+        inset 0 1px 0 #fff;
+}
+
+.category-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(125deg, transparent 20%, rgba(255,255,255,.72) 45%, transparent 68%);
+    transform: translateX(-110%);
+    transition: transform .75s ease;
+}
+
+.category-card:hover::after {
+    transform: translateX(110%);
+}
+
+.category-card:hover {
+    border-color: rgba(10,132,255,.16);
+}
+
+/* ---------------- BENEFIT BENTO ---------------- */
+.zt-benefits {
+    padding: 18px 0 72px;
+}
+
+.zt-benefits-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 22px;
+}
+
+.zt-benefits-head p {
+    max-width: 470px;
+    color: #6e6e73;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.zt-benefit-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr .8fr;
+    grid-template-rows: repeat(2, minmax(150px, auto));
+    gap: 14px;
+}
+
+.zt-benefit-card {
+    position: relative;
+    overflow: hidden;
+    padding: 24px;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 25px;
+    background: rgba(255,255,255,.84);
+    box-shadow: 0 10px 30px rgba(0,0,0,.04);
+}
+
+.zt-benefit-card.large {
+    grid-row: 1 / 3;
+    min-height: 320px;
+    color: #fff;
+    background:
+        radial-gradient(circle at 70% 18%, rgba(88,231,255,.21), transparent 24%),
+        radial-gradient(circle at 84% 78%, rgba(124,92,255,.30), transparent 30%),
+        linear-gradient(145deg, #05070b, #0d1425);
+}
+
+.zt-benefit-number {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    color: rgba(29,29,31,.08);
+    font-size: 74px;
+    font-weight: 900;
+    letter-spacing: -6px;
+}
+
+.zt-benefit-card.large .zt-benefit-number {
+    color: rgba(255,255,255,.08);
+}
+
+.zt-benefit-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+    border-radius: 14px;
+    background: #f5f5f7;
+    font-size: 20px;
+}
+
+.zt-benefit-card.large .zt-benefit-icon {
+    background: rgba(255,255,255,.10);
+}
+
+.zt-benefit-card h3 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 7px;
+    font-size: 22px;
+    letter-spacing: -.7px;
+}
+
+.zt-benefit-card p {
+    position: relative;
+    z-index: 2;
+    max-width: 460px;
+    color: #6e6e73;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.zt-benefit-card.large h3 {
+    margin-top: 46px;
+    font-size: clamp(31px, 3vw, 42px);
+    line-height: 1.02;
+    letter-spacing: -1.8px;
+}
+
+.zt-benefit-card.large p {
+    color: rgba(255,255,255,.56);
+    font-size: 13px;
+}
+
+/* ---------------- PRODUCTS ---------------- */
+.products-section {
+    position: relative;
+}
+
+.products-section::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    width: min(980px, 92%);
+    height: 420px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(10,132,255,.055), transparent 68%);
+    pointer-events: none;
+}
+
+.product-card {
+    position: relative;
+    border: 1px solid rgba(255,255,255,.92);
+    background: rgba(255,255,255,.88);
+    backdrop-filter: blur(12px);
+    box-shadow:
+        0 10px 32px rgba(0,0,0,.045),
+        inset 0 1px 0 rgba(255,255,255,.95);
+}
+
+.product-card::before {
+    content: "";
+    position: absolute;
+    z-index: 20;
+    left: 20px;
+    right: 20px;
+    top: 0;
+    height: 2px;
+    border-radius: 0 0 999px 999px;
+    background: linear-gradient(90deg, transparent, rgba(10,132,255,.0), transparent);
+    transition: background .3s ease;
+    pointer-events: none;
+}
+
+.product-card:hover::before {
+    background: linear-gradient(90deg, transparent, rgba(10,132,255,.75), rgba(124,92,255,.62), transparent);
+}
+
+.product-card:hover {
+    transform: translateY(-9px) scale(1.008);
+    box-shadow: 0 30px 78px rgba(0,0,0,.13);
+}
+
+.product-image-wrap {
+    background:
+        radial-gradient(circle at 50% 42%, #fff 0%, #f3f4f7 52%, #ebeef4 100%);
+    border: 1px solid rgba(0,0,0,.035);
+}
+
+.product-image-wrap::before {
+    content: "View product";
+    position: absolute;
+    z-index: 8;
+    left: 50%;
+    bottom: 14px;
+    transform: translate(-50%, 10px);
+    padding: 7px 11px;
+    border-radius: 999px;
+    color: #fff;
+    background: rgba(29,29,31,.82);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+    font-size: 9px;
+    font-weight: 750;
+    letter-spacing: .2px;
+    transition: .25s ease;
+}
+
+.product-card:hover .product-image-wrap::before {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.wishlist-btn {
+    width: 42px;
+    height: 42px;
+    z-index: 15;
+    border: 1px solid rgba(255,255,255,.85);
+    background: rgba(255,255,255,.82);
+    box-shadow: 0 8px 22px rgba(0,0,0,.11);
+    font-size: 19px;
+}
+
+.wishlist-btn.active {
+    color: #ff2d55;
+    background: rgba(255,245,248,.95);
+}
+
+.product-tag {
+    display: inline-flex;
+    width: fit-content;
+    padding: 5px 8px;
+    border-radius: 999px;
+    background: rgba(10,132,255,.075);
+    letter-spacing: .7px;
+}
+
+.add-cart {
+    min-height: 39px;
+    padding-inline: 16px;
+    background: linear-gradient(135deg, #0071e3, #0a84ff);
+    box-shadow: 0 8px 18px rgba(0,113,227,.16);
+}
+
+.add-cart:hover:not(:disabled) {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0,113,227,.24);
+}
+
+/* ---------------- PROMO ---------------- */
+.promo {
+    isolation: isolate;
+    border: 1px solid rgba(255,255,255,.09);
+    background:
+        radial-gradient(circle at 18% 12%, rgba(10,132,255,.60), transparent 24%),
+        radial-gradient(circle at 86% 78%, rgba(124,92,255,.50), transparent 28%),
+        linear-gradient(135deg, #04060a, #101526 64%, #080a0f);
+    box-shadow: 0 35px 90px rgba(0,0,0,.22);
+}
+
+.promo::before {
+    width: 390px;
+    height: 390px;
+    border-color: rgba(255,255,255,.10);
+}
+
+.promo-content::before {
+    content: "Z";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255,255,255,.025);
+    font-size: 290px;
+    font-weight: 950;
+    line-height: .8;
+}
+
+.promo-button {
+    background: linear-gradient(135deg, #fff, #e9f7ff);
+}
+
+/* ---------------- FLOATING CART ---------------- */
+.cart-box {
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(7,9,14,.90);
+    box-shadow: 0 18px 50px rgba(0,0,0,.27);
+}
+
+/* ---------------- ACCESSIBILITY / MOTION ---------------- */
+@media (prefers-reduced-motion: reduce) {
+    .zt-announcement-track,
+    .showcase-orbit,
+    .zt-laptop,
+    .zt-phone,
+    .zt-float-card {
+        animation: none !important;
+    }
+}
+
+/* ---------------- TABLET ---------------- */
+@media (max-width: 1050px) {
+    .hero-grid-shell {
+        grid-template-columns: 1fr 420px;
+        gap: 20px;
+    }
+
+    .zt-laptop {
+        width: 405px;
+        left: 0;
+        top: 20%;
+    }
+
+    .zt-phone {
+        width: 122px;
+        height: 248px;
+    }
+
+    .zt-benefit-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .zt-benefit-card.large {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        min-height: 250px;
+    }
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 700px) {
+    .zt-announcement {
+        height: 30px;
+        font-size: 9px;
+    }
+
+    nav {
+        top: 7px;
+        width: calc(100% - 14px);
+        height: 58px;
+        margin-top: 7px;
+        padding: 0 11px 0 13px;
+        border-radius: 16px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .logo::before {
+        width: 26px;
+        height: 26px;
+        margin-right: 5px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 795px;
+        margin-top: -72px;
+        padding: 118px 0 58px;
+        text-align: center;
+    }
+
+    .hero-grid-shell {
+        width: min(100% - 28px, 620px);
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero .welcome-user {
+        margin: 0 auto 15px;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 15.5vw, 66px);
+        letter-spacing: -4.4px;
+    }
+
+    .hero p {
+        margin-inline: auto;
+        font-size: 15px;
+    }
+
+    .hero-buttons,
+    .hero-proof {
+        justify-content: center;
+    }
+
+    .hero-showcase {
+        min-height: 275px;
+        width: min(100%, 440px);
+        margin: 0 auto;
+    }
+
+    .showcase-orbit.one {
+        width: 290px;
+        height: 290px;
+    }
+
+    .showcase-orbit.two {
+        width: 215px;
+        height: 215px;
+    }
+
+    .showcase-halo {
+        width: 310px;
+        height: 310px;
+    }
+
+    .zt-laptop {
+        left: 50%;
+        top: 16%;
+        width: 300px;
+        transform: translateX(-56%) rotateY(-8deg) rotateX(3deg) rotateZ(-2deg);
+        animation: none;
+    }
+
+    .zt-phone {
+        right: 2%;
+        bottom: -3%;
+        width: 91px;
+        height: 185px;
+        border-radius: 23px;
+        animation: none;
+    }
+
+    .zt-phone-screen {
+        border-radius: 18px;
+    }
+
+    .zt-float-card {
+        padding: 8px 10px;
+        border-radius: 12px;
+    }
+
+    .zt-float-card.a {
+        left: 0;
+        bottom: 1%;
+    }
+
+    .zt-float-card.b {
+        right: 1%;
+        top: 0;
+    }
+
+    .zt-float-icon {
+        width: 26px;
+        height: 26px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+
+    .zt-float-card strong { font-size: 9px; }
+    .zt-float-card span { font-size: 7px; }
+
+    .trust-strip {
+        margin-top: -18px;
+    }
+
+    .zt-signal-rail {
+        width: calc(100% - 24px);
+        margin-top: 16px;
+    }
+
+    .zt-benefits {
+        padding: 8px 0 52px;
+    }
+
+    .zt-benefits-head {
+        display: block;
+        margin-bottom: 18px;
+    }
+
+    .zt-benefits-head p {
+        margin-top: 10px;
+    }
+
+    .zt-benefit-grid {
+        grid-template-columns: 1fr;
+        gap: 11px;
+    }
+
+    .zt-benefit-card.large {
+        grid-column: auto;
+        min-height: 240px;
+    }
+
+    .zt-benefit-card {
+        padding: 21px;
+        border-radius: 21px;
+    }
+
+    .zt-benefit-card:not(.large) .zt-benefit-icon {
+        margin-bottom: 20px;
+    }
+
+    .product-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .product-image-wrap::before {
+        display: none;
+    }
+}
+</style>
+
 </head>
 
 <body>
+
+
+<!-- ZIQTECH PREMIUM ANNOUNCEMENT -->
+<div class="zt-announcement" aria-label="ZiqTech highlights">
+    <div class="zt-announcement-track">
+        <span class="zt-announcement-item"><span class="zt-announcement-dot"></span> Premium technology, made simple</span>
+        <span class="zt-announcement-item"><span class="zt-announcement-dot"></span> Save favourites to your wishlist</span>
+        <span class="zt-announcement-item"><span class="zt-announcement-dot"></span> Smart product variants</span>
+        <span class="zt-announcement-item"><span class="zt-announcement-dot"></span> Live stock-aware shopping</span>
+        <span class="zt-announcement-item"><span class="zt-announcement-dot"></span> Premium technology, made simple</span>
+        <span class="zt-announcement-item"><span class="zt-announcement-dot"></span> Save favourites to your wishlist</span>
+        <span class="zt-announcement-item"><span class="zt-announcement-dot"></span> Smart product variants</span>
+        <span class="zt-announcement-item"><span class="zt-announcement-dot"></span> Live stock-aware shopping</span>
+    </div>
+</div>
 
 <!-- =========================================================
      NAVBAR
@@ -2172,52 +3305,95 @@
 
 <section class="hero">
 
-    <div class="hero-content">
+    <div class="hero-grid-shell">
 
-        <div
-            class="welcome-user"
-            id="welcomeUser"
-            hidden
-        >
-            <span class="welcome-user-kicker">Welcome back</span>
+        <div class="hero-content">
 
-            <span class="welcome-user-main">
-                <strong id="welcomeUserName">Customer</strong>
-                <span class="welcome-user-wave">👋</span>
-            </span>
+            <div
+                class="welcome-user"
+                id="welcomeUser"
+                hidden
+            >
+                <span class="welcome-user-kicker">Welcome back</span>
+
+                <span class="welcome-user-main">
+                    <strong id="welcomeUserName">Customer</strong>
+                    <span class="welcome-user-wave">👋</span>
+                </span>
+            </div>
+
+            <div class="hero-badge">
+                ✦ Premium Technology Store
+            </div>
+
+            <h1>
+                Technology.<br>
+                <span class="zt-gradient-word">Reimagined.</span>
+            </h1>
+
+            <p>
+                Discover premium devices, powerful performance
+                and accessories designed to elevate the way
+                you work, create and live.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#products"
+                    class="primary-button"
+                >
+                    Shop ZiqTech →
+                </a>
+
+                <a
+                    href="#categories"
+                    class="secondary-button"
+                >
+                    Explore Collection
+                </a>
+
+            </div>
+
+            <div class="hero-proof" aria-label="Store features">
+                <span><i>✓</i> Stock-aware cart</span>
+                <span><i>✓</i> Smart variants</span>
+                <span><i>✓</i> Wishlist & orders</span>
+            </div>
+
         </div>
 
-        <div class="hero-badge">
-            ✦ Premium Technology Store
-        </div>
+        <div class="hero-showcase" aria-hidden="true">
+            <div class="showcase-halo"></div>
+            <div class="showcase-orbit one"></div>
+            <div class="showcase-orbit two"></div>
 
-        <h1>
-            Technology.<br>
-            Reimagined.
-        </h1>
+            <div class="zt-laptop">
+                <div class="zt-laptop-screen">
+                    <div class="zt-laptop-wallpaper"></div>
+                </div>
+                <div class="zt-laptop-base"></div>
+            </div>
 
-        <p>
-            Discover premium devices, powerful performance
-            and accessories designed to elevate the way
-            you work, create and live.
-        </p>
+            <div class="zt-phone">
+                <div class="zt-phone-screen"></div>
+            </div>
 
-        <div class="hero-buttons">
+            <div class="zt-float-card a">
+                <div class="zt-float-icon">♡</div>
+                <div>
+                    <strong>Save your favourites</strong>
+                    <span>Wishlist any product instantly</span>
+                </div>
+            </div>
 
-            <a
-                href="#products"
-                class="primary-button"
-            >
-                Shop ZiqTech →
-            </a>
-
-            <a
-                href="#categories"
-                class="secondary-button"
-            >
-                Explore Collection
-            </a>
-
+            <div class="zt-float-card b">
+                <div class="zt-float-icon">⚡</div>
+                <div>
+                    <strong>Choose your exact setup</strong>
+                    <span>Variants, stock and pricing</span>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -2253,6 +3429,13 @@
         <span>Built for a seamless purchase</span>
     </div>
 
+</div>
+
+<div class="zt-signal-rail reveal" aria-label="Shopping experience highlights">
+    <span class="zt-signal-chip"><b>01</b> Browse fast</span>
+    <span class="zt-signal-chip"><b>02</b> Pick your variant</span>
+    <span class="zt-signal-chip"><b>03</b> Save favourites</span>
+    <span class="zt-signal-chip"><b>04</b> Track your orders</span>
 </div>
 
 
@@ -2393,6 +3576,71 @@
 
     </div>
 
+</section>
+
+
+
+
+<!-- =========================================================
+     ZIQTECH SHOPPING EXPERIENCE
+========================================================= -->
+<section class="zt-benefits reveal" aria-label="ZiqTech shopping experience">
+    <div class="container">
+
+        <div class="zt-benefits-head">
+            <div>
+                <div class="eyebrow">Built around you</div>
+                <h2 class="section-title">A smoother way to shop.</h2>
+            </div>
+
+            <p>
+                Explore, compare and save the products you like without
+                losing track of the details that matter.
+            </p>
+        </div>
+
+        <div class="zt-benefit-grid">
+
+            <article class="zt-benefit-card large">
+                <span class="zt-benefit-number">01</span>
+                <div class="zt-benefit-icon">✦</div>
+                <h3>Find the right tech.<br>Without the clutter.</h3>
+                <p>
+                    Clean categories, quick search and focused product cards
+                    keep the experience simple from discovery to checkout.
+                </p>
+            </article>
+
+            <article class="zt-benefit-card">
+                <span class="zt-benefit-number">02</span>
+                <div class="zt-benefit-icon">♡</div>
+                <h3>Wishlist anything.</h3>
+                <p>Save products straight from the collection and come back to them anytime.</p>
+            </article>
+
+            <article class="zt-benefit-card">
+                <span class="zt-benefit-number">03</span>
+                <div class="zt-benefit-icon">◫</div>
+                <h3>Choose your setup.</h3>
+                <p>Variants make it easier to select the storage, colour or configuration you want.</p>
+            </article>
+
+            <article class="zt-benefit-card">
+                <span class="zt-benefit-number">04</span>
+                <div class="zt-benefit-icon">↗</div>
+                <h3>Know what is available.</h3>
+                <p>Stock-aware shopping helps you see availability before adding items to your cart.</p>
+            </article>
+
+            <article class="zt-benefit-card">
+                <span class="zt-benefit-number">05</span>
+                <div class="zt-benefit-icon">◎</div>
+                <h3>Keep orders organised.</h3>
+                <p>Your account experience keeps profile, wishlist and order access within reach.</p>
+            </article>
+
+        </div>
+    </div>
 </section>
 
 
@@ -4005,8 +5253,54 @@ function renderProducts(products) {
 
                 ${arrowsHTML}
 
+                <button
+                    class="wishlist-btn ${
+                        isWishlisted
+                            ? "active"
+                            : ""
+                    }"
+                    type="button"
+                    aria-label="${
+                        isWishlisted
+                            ? "Remove from wishlist"
+                            : "Add to wishlist"
+                    }"
+                    title="${
+                        isWishlisted
+                            ? "Remove from wishlist"
+                            : "Add to wishlist"
+                    }"
+                    onclick="
+                        toggleWishlistProduct(
+                            ${Number(product.id)},
+                            event
+                        );
+
+                        localStorage.setItem(
+                            'ziqtech_wishlist',
+                            JSON.stringify(wishlist)
+                        );
+                    "
+                >
+                    ${
+                        isWishlisted
+                            ? "♥"
+                            : "♡"
+                    }
+                </button>
+
                 <div
                     class="product-image-slider"
+                    title="View ${escapeHtml(
+                        product.name ||
+                        "product"
+                    )}"
+                    onclick="
+                        window.location.href =
+                            'product.html?id=${encodeURIComponent(
+                                product.id
+                            )}';
+                    "
                 >
 
                     ${imagesHTML}
@@ -9059,6 +10353,150 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
+
+
+
+<!-- =========================================================
+     ZIQTECH HERO READABILITY FIX
+     CSS only — no store/application functions changed.
+========================================================= -->
+<style id="ziqtech-hero-readability-fix">
+/* Keep the cinematic hero below the floating navbar instead of underneath it. */
+.hero {
+    margin-top: 0;
+    min-height: 690px;
+    padding: 92px 20px 88px;
+    color: #ffffff;
+    background:
+        radial-gradient(circle at 77% 28%, rgba(10,132,255,.34), transparent 24%),
+        radial-gradient(circle at 67% 66%, rgba(124,92,255,.25), transparent 27%),
+        radial-gradient(circle at 12% 22%, rgba(88,231,255,.10), transparent 21%),
+        linear-gradient(135deg, #03050a 0%, #07101f 49%, #0a1225 100%);
+}
+
+/* Prevent the content from disappearing behind decorative layers. */
+.hero-grid-shell,
+.hero-content {
+    position: relative;
+    z-index: 6;
+}
+
+/* Welcome card: stronger glass and fully readable text. */
+.hero .welcome-user {
+    background: rgba(8,15,30,.76);
+    border-color: rgba(129,234,255,.30);
+    box-shadow:
+        0 18px 46px rgba(0,0,0,.30),
+        inset 0 1px 0 rgba(255,255,255,.10);
+}
+
+.hero .welcome-user-kicker {
+    color: rgba(255,255,255,.82);
+}
+
+.hero .welcome-user-main,
+.hero .welcome-user strong {
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    text-shadow: 0 2px 16px rgba(0,0,0,.34);
+}
+
+/* Badge now sits clearly below the navbar and has higher contrast. */
+.hero .hero-badge {
+    position: relative;
+    z-index: 8;
+    margin-bottom: 20px;
+    color: #b8f5ff;
+    background: rgba(8,20,39,.82);
+    border: 1px solid rgba(129,234,255,.38);
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.25),
+        inset 0 1px 0 rgba(255,255,255,.08);
+    text-shadow: 0 1px 12px rgba(88,231,255,.20);
+}
+
+/* Main heading: force a bright foreground after the later light-theme override. */
+.hero h1 {
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    text-shadow: 0 8px 34px rgba(0,0,0,.30);
+}
+
+.hero h1 .zt-gradient-word {
+    background: linear-gradient(90deg, #ffffff 0%, #9cf2ff 34%, #6fa8ff 68%, #c2b4ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 6px 20px rgba(49,132,255,.18));
+}
+
+/* Description: raise contrast substantially while keeping the premium soft look. */
+.hero p {
+    color: rgba(244,248,255,.88);
+    text-shadow: 0 2px 14px rgba(0,0,0,.24);
+}
+
+.hero .secondary-button {
+    color: #ffffff;
+    background: rgba(255,255,255,.10);
+    border-color: rgba(255,255,255,.28);
+}
+
+.hero .secondary-button:hover {
+    color: #111318;
+    background: #ffffff;
+}
+
+.hero-proof {
+    color: rgba(255,255,255,.86);
+}
+
+.hero-proof span {
+    background: rgba(255,255,255,.08);
+    border-color: rgba(255,255,255,.13);
+}
+
+.zt-float-card {
+    background: rgba(8,15,30,.88);
+    border-color: rgba(255,255,255,.16);
+    box-shadow: 0 18px 50px rgba(0,0,0,.32);
+}
+
+.zt-float-card strong {
+    color: #ffffff;
+}
+
+.zt-float-card span {
+    color: rgba(255,255,255,.72);
+}
+
+.scroll-indicator {
+    color: rgba(255,255,255,.62);
+}
+
+@media (max-width: 1050px) {
+    .hero {
+        padding-top: 82px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        margin-top: 0;
+        min-height: 640px;
+        padding: 74px 14px 74px;
+    }
+
+    .hero .hero-badge {
+        margin-top: 2px;
+        margin-bottom: 17px;
+    }
+
+    .hero p {
+        color: rgba(247,250,255,.90);
+    }
+}
+</style>
 
 </body>
 </html>

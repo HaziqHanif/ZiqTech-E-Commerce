@@ -520,6 +520,730 @@
 }
 
     </style>
+
+
+<style id="ziqtech-invoice-ultimate-visuals">
+/* =========================================================
+   ZIQTECH ULTIMATE INVOICE — VISUAL LAYER ONLY
+   No JavaScript or invoice logic changed.
+========================================================= */
+:root {
+    --inv-blue: #0a84ff;
+    --inv-blue-2: #5b5cff;
+    --inv-cyan: #5de7ff;
+    --inv-ink: #0b0d12;
+    --inv-ink-2: #141824;
+    --inv-soft: #f3f5f9;
+    --inv-line: rgba(15, 23, 42, .09);
+}
+
+html {
+    background: #eef2f8;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at 12% 8%, rgba(10,132,255,.16), transparent 26%),
+        radial-gradient(circle at 88% 14%, rgba(91,92,255,.14), transparent 24%),
+        radial-gradient(circle at 50% 100%, rgba(93,231,255,.08), transparent 30%),
+        linear-gradient(180deg, #f8faff 0%, #eef2f8 100%);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    opacity: .26;
+    background-image:
+        linear-gradient(rgba(13, 20, 35, .025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(13, 20, 35, .025) 1px, transparent 1px);
+    background-size: 36px 36px;
+    mask-image: linear-gradient(to bottom, #000, transparent 78%);
+}
+
+.topbar {
+    width: min(1180px, calc(100% - 28px));
+    height: 68px;
+    margin: 14px auto 0;
+    padding: 0 18px 0 20px;
+    border: 1px solid rgba(255,255,255,.76);
+    border-radius: 20px;
+    background: rgba(255,255,255,.76);
+    backdrop-filter: blur(26px) saturate(170%);
+    -webkit-backdrop-filter: blur(26px) saturate(170%);
+    box-shadow:
+        0 18px 55px rgba(17, 24, 39, .10),
+        inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 1px;
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.brand::before {
+    content: "Z";
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    border-radius: 11px;
+    color: #fff;
+    background: linear-gradient(135deg, var(--inv-blue), var(--inv-blue-2));
+    box-shadow: 0 9px 24px rgba(10,132,255,.28);
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.top-actions {
+    gap: 8px;
+}
+
+.btn {
+    min-height: 42px;
+    padding: 0 17px;
+    border-radius: 13px;
+    font-size: 13px;
+    font-weight: 750;
+    letter-spacing: -.1px;
+    transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-light {
+    background: rgba(246,247,250,.96);
+    color: #20242d;
+    border: 1px solid rgba(17,24,39,.07);
+}
+
+.btn-light:hover {
+    background: #fff;
+    box-shadow: 0 9px 22px rgba(17,24,39,.08);
+}
+
+.btn-blue {
+    color: #fff;
+    background: linear-gradient(135deg, var(--inv-blue), var(--inv-blue-2));
+    box-shadow: 0 12px 26px rgba(10,132,255,.22);
+}
+
+.btn-blue:hover {
+    box-shadow: 0 16px 32px rgba(10,132,255,.32);
+}
+
+.page {
+    width: min(1120px, calc(100% - 30px));
+    margin: 30px auto 72px;
+}
+
+.invoice {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid rgba(255,255,255,.88);
+    border-radius: 34px;
+    background: rgba(255,255,255,.96);
+    box-shadow:
+        0 36px 90px rgba(16, 24, 40, .14),
+        0 8px 24px rgba(16, 24, 40, .06),
+        inset 0 1px 0 rgba(255,255,255,.95);
+}
+
+.invoice::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    z-index: 4;
+    background: linear-gradient(90deg, #0a84ff, #5de7ff 40%, #6e5cff 72%, #0a84ff);
+}
+
+.invoice::after {
+    content: "ZIQTECH";
+    position: absolute;
+    right: -26px;
+    bottom: 135px;
+    z-index: -1;
+    color: rgba(8, 15, 32, .026);
+    font-size: clamp(90px, 15vw, 190px);
+    font-weight: 950;
+    letter-spacing: -12px;
+    line-height: 1;
+    transform: rotate(-90deg) translateX(18%);
+    transform-origin: bottom right;
+    pointer-events: none;
+    user-select: none;
+}
+
+.invoice-header {
+    position: relative;
+    padding: 46px 48px 38px;
+    border-bottom: 1px solid var(--inv-line);
+    background:
+        radial-gradient(circle at 84% 12%, rgba(10,132,255,.13), transparent 28%),
+        linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+}
+
+.invoice-header::after {
+    content: "";
+    position: absolute;
+    left: 48px;
+    right: 48px;
+    bottom: -1px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(10,132,255,.55), rgba(91,92,255,.16), transparent 78%);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: baseline;
+    position: relative;
+    font-size: 39px;
+    font-weight: 920;
+    letter-spacing: -2px;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 5px;
+    left: 0;
+    top: -13px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, var(--inv-blue), var(--inv-cyan));
+    box-shadow: 0 4px 14px rgba(10,132,255,.2);
+}
+
+.company-info {
+    max-width: 300px;
+    margin-top: 12px;
+    color: #6f7683;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.invoice-title {
+    min-width: 300px;
+    padding: 24px 26px 22px;
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 24px;
+    color: #fff;
+    background:
+        radial-gradient(circle at 85% 0%, rgba(93,231,255,.20), transparent 28%),
+        radial-gradient(circle at 0% 100%, rgba(91,92,255,.28), transparent 35%),
+        linear-gradient(135deg, #0a0d14, #111827 58%, #0d1322);
+    box-shadow:
+        0 20px 50px rgba(9, 14, 26, .17),
+        inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.invoice-title h1 {
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -2.5px;
+    line-height: .95;
+}
+
+.invoice-number {
+    color: rgba(255,255,255,.62);
+    font-size: 12.5px;
+    line-height: 1.8;
+}
+
+.invoice-number strong {
+    color: #fff;
+    font-weight: 760;
+}
+
+.status {
+    position: relative;
+    margin-top: 15px;
+    padding: 7px 12px 7px 25px;
+    border: 1px solid rgba(72, 199, 116, .28);
+    color: #a9f7c4;
+    background: rgba(52,199,89,.12);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+    letter-spacing: .8px;
+}
+
+.status::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #34c759;
+    box-shadow: 0 0 14px rgba(52,199,89,.7);
+}
+
+.info-grid {
+    margin: 0;
+    padding: 30px 48px 8px;
+    gap: 14px;
+}
+
+.info-card {
+    position: relative;
+    min-height: 145px;
+    padding: 22px 22px 20px;
+    overflow: hidden;
+    border: 1px solid rgba(15,23,42,.07);
+    border-radius: 20px;
+    background:
+        linear-gradient(180deg, rgba(248,250,253,.96), rgba(243,246,251,.92));
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.95),
+        0 10px 28px rgba(16,24,40,.035);
+}
+
+.info-card::before {
+    position: absolute;
+    right: 14px;
+    top: 9px;
+    font-size: 33px;
+    opacity: .10;
+    filter: grayscale(1);
+}
+
+.info-card:nth-child(1)::before { content: "👤"; }
+.info-card:nth-child(2)::before { content: "⌖"; font-weight: 900; }
+.info-card:nth-child(3)::before { content: "◎"; font-weight: 900; }
+.info-card:nth-child(4)::before { content: "◷"; font-weight: 900; }
+
+.info-card h3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 13px;
+    color: #697181;
+    font-size: 10px;
+    font-weight: 850;
+    letter-spacing: 1.4px;
+}
+
+.info-card h3::before {
+    content: "";
+    width: 17px;
+    height: 3px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, var(--inv-blue), var(--inv-blue-2));
+}
+
+.info-card p {
+    position: relative;
+    z-index: 1;
+    color: #20242d;
+    font-size: 13.5px;
+    line-height: 1.72;
+}
+
+.info-card p strong {
+    color: #10131a;
+    font-weight: 800;
+}
+
+.section-title {
+    margin: 29px 48px 14px;
+    color: #111827;
+    font-size: 22px;
+    font-weight: 850;
+    letter-spacing: -.7px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 4px;
+    margin-top: 9px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, var(--inv-blue), var(--inv-blue-2));
+}
+
+.items-wrapper {
+    width: auto;
+    margin: 0 48px;
+    overflow: hidden;
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(16,24,40,.035);
+}
+
+.items-table {
+    min-width: 650px;
+}
+
+.items-table thead {
+    background: linear-gradient(180deg, #f7f9fc, #f1f4f8);
+}
+
+.items-table th {
+    padding: 14px 17px;
+    color: #7a8291;
+    border-bottom: 1px solid rgba(15,23,42,.08);
+    font-size: 10px;
+    font-weight: 850;
+    letter-spacing: 1.2px;
+}
+
+.items-table td {
+    padding: 20px 17px;
+    border-bottom: 1px solid rgba(15,23,42,.055);
+    color: #252a34;
+    font-size: 13.5px;
+    vertical-align: middle;
+}
+
+.items-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.items-table tbody tr {
+    transition: background .18s ease;
+}
+
+.items-table tbody tr:hover {
+    background: #fbfcff;
+}
+
+.product-name {
+    color: #10131a;
+    font-weight: 820;
+    letter-spacing: -.15px;
+}
+
+.variant {
+    margin-top: 6px;
+    color: #7b8493;
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+.totals {
+    width: min(430px, calc(100% - 96px));
+    margin: 28px 48px 0 auto;
+    padding: 20px 22px;
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 20px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(10,132,255,.08), transparent 34%),
+        linear-gradient(180deg, #fbfcff, #f5f7fb);
+    box-shadow:
+        0 12px 34px rgba(16,24,40,.045),
+        inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+.total-row {
+    padding: 7px 0;
+    font-size: 13.5px;
+}
+
+.total-row span:first-child {
+    color: #737b89;
+}
+
+.total-row strong {
+    color: #111827;
+    font-weight: 800;
+}
+
+.grand-total {
+    position: relative;
+    margin-top: 12px;
+    padding: 18px 18px;
+    border: 0;
+    border-radius: 16px;
+    color: #fff;
+    background:
+        radial-gradient(circle at 90% 0%, rgba(93,231,255,.16), transparent 30%),
+        linear-gradient(135deg, #0a0d14, #111827 60%, #121a2b);
+    box-shadow: 0 14px 32px rgba(17,24,39,.14);
+}
+
+.grand-total span:first-child,
+.grand-total span:last-child {
+    color: #fff;
+}
+
+.grand-total span:last-child {
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: -.7px;
+}
+
+.footer {
+    margin: 38px 48px 0;
+    padding: 26px 0 34px;
+    border-top: 1px solid rgba(15,23,42,.07);
+    color: #8b92a0;
+    font-size: 11.5px;
+}
+
+.footer strong {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #2d3340;
+    font-size: 13px;
+}
+
+.loading,
+.error-page {
+    border: 1px solid rgba(255,255,255,.8);
+    border-radius: 28px;
+    background: rgba(255,255,255,.88);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    box-shadow: 0 28px 70px rgba(16,24,40,.12);
+}
+
+.spinner {
+    width: 46px;
+    height: 46px;
+    border-width: 3px;
+    border-color: rgba(10,132,255,.14);
+    border-top-color: var(--inv-blue);
+    box-shadow: 0 0 30px rgba(10,132,255,.11);
+}
+
+.error-icon {
+    background: linear-gradient(135deg, #fff0f0, #ffe5e7);
+    box-shadow: inset 0 0 0 1px rgba(215,0,21,.06);
+}
+
+.error-order-id {
+    border: 1px solid rgba(15,23,42,.07);
+    background: #f7f9fc;
+}
+
+@media (max-width: 760px) {
+    .topbar {
+        width: calc(100% - 20px);
+        height: auto;
+        min-height: 64px;
+        margin-top: 10px;
+        padding: 10px 12px 10px 14px;
+        border-radius: 17px;
+    }
+
+    .brand {
+        font-size: 20px;
+    }
+
+    .brand::before {
+        width: 30px;
+        height: 30px;
+        border-radius: 9px;
+    }
+
+    .top-actions .btn {
+        min-height: 38px;
+        padding: 0 12px;
+        font-size: 11px;
+    }
+
+    .page {
+        width: calc(100% - 20px);
+        margin-top: 18px;
+    }
+
+    .invoice {
+        border-radius: 24px;
+    }
+
+    .invoice-header {
+        flex-direction: column;
+        padding: 34px 24px 28px;
+    }
+
+    .invoice-header::after {
+        left: 24px;
+        right: 24px;
+    }
+
+    .invoice-title {
+        width: 100%;
+        min-width: 0;
+        text-align: left;
+    }
+
+    .invoice-title h1 {
+        font-size: 35px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        padding: 24px 24px 6px;
+    }
+
+    .info-card {
+        min-height: 0;
+    }
+
+    .section-title {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .items-wrapper {
+        margin: 0 24px;
+        overflow-x: auto;
+    }
+
+    .totals {
+        width: auto;
+        margin: 24px 24px 0;
+    }
+
+    .footer {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
+/* Keep PDF / print output clean and business-ready. */
+@media print {
+    html,
+    body {
+        background: #fff !important;
+    }
+
+    body::before,
+    .invoice::after {
+        display: none !important;
+    }
+
+    .invoice {
+        border: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        background: #fff !important;
+    }
+
+    .invoice::before {
+        height: 2px !important;
+    }
+
+    .invoice-header {
+        padding: 6mm 7mm 5mm !important;
+        background: #fff !important;
+    }
+
+    .invoice-header::after {
+        left: 7mm !important;
+        right: 7mm !important;
+    }
+
+    .logo::before {
+        display: none !important;
+    }
+
+    .invoice-title {
+        min-width: 0 !important;
+        padding: 5mm !important;
+        border: 1px solid #d9dde5 !important;
+        border-radius: 4mm !important;
+        color: #111 !important;
+        background: #f7f8fa !important;
+        box-shadow: none !important;
+    }
+
+    .invoice-title h1,
+    .invoice-number strong {
+        color: #111 !important;
+    }
+
+    .invoice-number {
+        color: #555 !important;
+    }
+
+    .status {
+        color: #16803c !important;
+        background: #eaf8ef !important;
+        border-color: #cbeed8 !important;
+    }
+
+    .info-grid {
+        padding: 5mm 7mm 1mm !important;
+    }
+
+    .info-card {
+        min-height: 0 !important;
+        border: 1px solid #e4e7ec !important;
+        background: #fafbfc !important;
+        box-shadow: none !important;
+    }
+
+    .info-card::before,
+    .info-card h3::before,
+    .section-title::after {
+        display: none !important;
+    }
+
+    .section-title {
+        margin-left: 7mm !important;
+        margin-right: 7mm !important;
+    }
+
+    .items-wrapper {
+        margin: 0 7mm !important;
+        border: 1px solid #e2e5ea !important;
+        border-radius: 3mm !important;
+        box-shadow: none !important;
+    }
+
+    .totals {
+        width: 70mm !important;
+        margin-right: 7mm !important;
+        padding: 4mm !important;
+        border: 1px solid #e2e5ea !important;
+        border-radius: 3mm !important;
+        background: #fafbfc !important;
+        box-shadow: none !important;
+    }
+
+    .grand-total {
+        padding: 3mm !important;
+        color: #111 !important;
+        background: #f0f2f5 !important;
+        box-shadow: none !important;
+    }
+
+    .grand-total span:first-child,
+    .grand-total span:last-child {
+        color: #111 !important;
+    }
+
+    .footer {
+        margin-left: 7mm !important;
+        margin-right: 7mm !important;
+        padding-bottom: 3mm !important;
+    }
+}
+</style>
+
 </head>
 
 <body>
