@@ -7530,6 +7530,240 @@ body {
     }
 }
 
+
+/* Manage Admin and User: wrap long addresses without affecting other tables. */
+#adminsSection .table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+#adminsSection .users-management-table {
+    width: 100%;
+}
+
+#adminsSection .users-management-table .users-address-cell {
+    width: 240px;
+    min-width: 180px;
+    max-width: 260px;
+    white-space: normal !important;
+    vertical-align: top;
+}
+
+#adminsSection .users-table-address {
+    width: 100%;
+    min-width: 0;
+    max-width: 240px;
+    line-height: 1.5;
+    white-space: normal !important;
+}
+
+#adminsSection .users-table-address-main,
+#adminsSection .users-table-address-meta {
+    white-space: normal !important;
+    overflow: visible;
+    text-overflow: clip;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+#adminsSection .users-table-address-main {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+#adminsSection .users-table-address-meta {
+    margin-top: 4px;
+    font-size: 11px;
+    color: #86868b;
+}
+
+
+/* =========================================================
+   ZIQTECH ADMIN — PREMIUM WORKSPACE 2026
+   Visual-only enhancements. All existing CRUD/API IDs retained.
+========================================================= */
+:root {
+    --zt-workspace-navy: #0a1324;
+    --zt-workspace-blue: #2563eb;
+    --zt-workspace-border: #e7ebf2;
+    --zt-workspace-muted: #68758b;
+    --zt-workspace-shadow: 0 14px 45px rgba(24, 45, 78, .065);
+}
+body {
+    background: radial-gradient(circle at 82% -10%, rgba(100, 149, 237, .12), transparent 35%),
+                linear-gradient(180deg, #f8faff 0%, #f4f7fc 100%);
+    color: #17243b;
+}
+.admin-layout { isolation: isolate; }
+.sidebar {
+    width: 264px;
+    padding: 26px 18px 22px;
+    background: linear-gradient(155deg, #101b30 0%, #0b1323 52%, #11172a 100%);
+    border-right: 1px solid rgba(255,255,255,.09);
+    box-shadow: 12px 0 40px rgba(14, 29, 56, .09);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.sidebar::before { opacity: .46; }
+.zt-sidebar-head { display: flex; align-items: center; gap: 12px; padding: 2px 4px 23px; margin-bottom: 23px; border-bottom: 1px solid rgba(255,255,255,.10); }
+.zt-brand-mark {
+    display: grid; place-items: center; flex: 0 0 44px; width: 44px; height: 44px;
+    border: 1px solid rgba(255,255,255,.23); border-radius: 14px;
+    background: linear-gradient(145deg, #3996ff, #5a5cee 75%);
+    box-shadow: 0 8px 22px rgba(47,109,255,.26); color: white;
+    font-size: 14px; font-weight: 900; letter-spacing: -.65px;
+}
+.zt-brand-identity { min-width: 0; }
+.sidebar .brand { margin: 0; padding: 0; line-height: 1.05; font-size: 24px; letter-spacing: -.9px; text-shadow: none; }
+.sidebar .brand span { color: #69b2ff; text-shadow: none; }
+.zt-brand-caption { display: block; margin-top: 5px; color: #8294ad; font-size: 9px; letter-spacing: 1.7px; font-weight: 800; }
+.zt-sidebar-label { position: relative; margin: 0 0 11px 13px; font-size: 10px; letter-spacing: 1.6px; font-weight: 800; color: #8191ac; }
+.sidebar-nav { display: flex; flex-direction: column; gap: 5px; }
+.sidebar-nav button, .sidebar-nav a {
+    display: flex; align-items: center; gap: 12px; text-align: left;
+    min-height: 47px; padding: 9px 12px; border-radius: 13px;
+    border: 1px solid transparent; font-size: 12.5px; line-height: 1.25;
+    font-weight: 660; color: #a7b5ca; transform: none;
+}
+.sidebar-nav button::before, .sidebar-nav a::before { display: none; }
+.sidebar-nav button:hover, .sidebar-nav a:hover {
+    transform: none; color: white; background: rgba(255,255,255,.07);
+    border-color: rgba(255,255,255,.07);
+}
+.sidebar-nav button.active {
+    color: #fff; background: linear-gradient(110deg, rgba(51,121,255,.32), rgba(73,105,230,.16));
+    border-color: rgba(117,170,255,.23);
+    box-shadow: inset 3px 0 #74b3ff, 0 9px 20px rgba(9,25,75,.13);
+}
+.zt-nav-icon {
+    display: grid; place-items: center; flex: 0 0 31px; width: 31px; height: 31px;
+    border-radius: 10px; background: rgba(255,255,255,.065);
+    font-size: 17px; font-weight: 700; line-height: 1; color: #bcd0ea;
+}
+.sidebar-nav .active .zt-nav-icon { color: #fff; background: rgba(96,164,255,.22); }
+.sidebar-bottom { position: static; margin-top: 34px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.10); }
+.zt-sidebar-account { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; padding: 12px; border-radius: 14px; background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.07); }
+.zt-account-avatar { display: grid; place-items: center; flex: 0 0 34px; width: 34px; height: 34px; border-radius: 10px; color: #fff; background: #3555ba; font-size: 14px; font-weight: 800; }
+.zt-account-copy { min-width: 0; display: grid; gap: 4px; }
+.zt-account-copy strong { color: #eef4ff; font-size: 11px; font-weight: 700; }
+.zt-account-copy small { color: #8191a9; font-size: 10px; }
+.sidebar-bottom .logout-button { min-height: 42px; display: flex; align-items: center; justify-content: center; gap: 10px; background: rgba(251,76,81,.10); border: 1px solid rgba(255,94,104,.16); color: #ff8f9a; border-radius: 12px; }
+.sidebar-bottom .logout-button:hover { background: rgba(251,76,81,.20); color: #ffd7db; transform: none; }
+.main { margin-left: 264px; width: calc(100% - 264px); padding: 30px clamp(19px, 3vw, 44px) 52px; min-width: 0; }
+.topbar {
+    position: relative; display: flex; justify-content: space-between; align-items: center; gap: 18px;
+    padding: 22px 24px; margin-bottom: 26px; border-radius: 22px;
+    border: 1px solid rgba(255,255,255,.98); background: rgba(255,255,255,.78);
+    box-shadow: var(--zt-workspace-shadow); backdrop-filter: blur(18px);
+}
+.zt-topbar-eyebrow { display: flex; align-items: center; gap: 8px; color: #5d77a5; font-size: 10px; letter-spacing: 1.5px; font-weight: 850; }
+.zt-topbar-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #4b80fb; box-shadow: 0 0 0 4px rgba(75,128,251,.12); }
+.topbar h1 { margin-top: 8px; font-size: clamp(26px, 2.7vw, 34px); font-weight: 850; letter-spacing: -1.2px; color: #14233e; }
+.topbar p { color: var(--zt-workspace-muted); font-size: 13px; margin-top: 5px; }
+.zt-topbar-store { display: inline-flex; align-items: center; gap: 10px; padding: 12px 15px; flex-shrink: 0; border: 1px solid #dbe6f8; border-radius: 12px; background: #f6f9ff; color: #2456b4; text-decoration: none; font-size: 12px; font-weight: 800; transition: background .2s, border-color .2s, transform .2s; }
+.zt-topbar-store:hover { background: #e9f1ff; border-color: #afc9f6; transform: translateY(-1px); }
+.dashboard-hero {
+    min-height: 234px; padding: clamp(25px, 3.2vw, 45px); border-radius: 25px;
+    background: radial-gradient(circle at 83% 8%, rgba(79,143,255,.31), transparent 30%),
+                radial-gradient(circle at 95% 95%, rgba(130,91,233,.26), transparent 36%),
+                linear-gradient(112deg,#111d34,#152b51 70%,#152452);
+    box-shadow: 0 19px 38px rgba(20,45,96,.15);
+}
+.dashboard-hero::before { opacity: .35; }
+.dashboard-hero h2 { max-width: 750px; font-size: clamp(27px, 3vw, 41px); line-height: 1.13; }
+.dashboard-hero p { max-width: 520px; color: #bac9e4; font-size: 13px; }
+.zt-hero-bottom { display: flex; align-items: center; gap: 17px; flex-wrap: wrap; margin-top: 23px; position: relative; z-index: 2; }
+.zt-hero-cta { display: inline-flex; align-items: center; gap: 13px; padding: 12px 16px; border: 1px solid rgba(255,255,255,.76); border-radius: 12px; background: #fff; color: #173a77; font-size: 12px; font-weight: 800; box-shadow: 0 10px 28px rgba(0,0,0,.12); transition: transform .2s, background .2s; }
+.zt-hero-cta:hover { transform: translateY(-2px); background: #eaf3ff; }
+.zt-hero-caption { color: #b2c5e3; font-size: 11px; }
+.dashboard-stat, .stat-card, .dashboard-panel, .table-card, .order-card {
+    border: 1px solid var(--zt-workspace-border); border-radius: 20px;
+    background: #fff; box-shadow: var(--zt-workspace-shadow);
+}
+.dashboard-stat { min-width: 0; overflow: hidden; }
+.dashboard-stat .stat-value { overflow-wrap: anywhere; color: #172743; }
+.dashboard-stat-icon { background: linear-gradient(145deg,#e9f1ff,#f4edff); }
+.dashboard-panel::before { opacity: .7; }
+.section-header { gap: 14px; flex-wrap: wrap; }
+.section-header h2 { color: #1b2b46; font-size: clamp(21px, 2.2vw, 26px); }
+.section-header p { color: var(--zt-workspace-muted) !important; line-height: 1.6; }
+.primary-button { border-radius: 12px; background: linear-gradient(135deg,#327fff,#235cd6); box-shadow: 0 8px 18px rgba(34,101,222,.18); }
+.primary-button:hover { background: #1e57c4; }
+.table-card { overflow: hidden; }
+.table-wrapper { max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; }
+.table-card th { background: #f8faff; color: #697991; font-size: 11px; letter-spacing: .8px; }
+.table-card td { color: #27364f; }
+.table-card tbody tr:hover { background: #f7faff; }
+#adminsSection .zt-user-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin: 18px 0 12px; padding: 16px; border: 1px solid var(--zt-workspace-border); border-radius: 18px; background: #fff; box-shadow: 0 9px 22px rgba(25,49,83,.045); }
+#adminsSection .zt-user-filters { display: flex; flex-wrap: wrap; gap: 9px; }
+#adminsSection .zt-user-filters .user-filter { min-height: 41px !important; padding: 0 15px !important; font-size: 12px !important; border-radius: 12px !important; box-shadow: none !important; }
+#adminsSection .zt-user-filters .user-filter.active { background: linear-gradient(120deg, #194bb8, #377bfb) !important; border-color: #2869e8 !important; box-shadow: 0 5px 14px rgba(40,105,232,.19) !important; transform: none !important; }
+.zt-user-search { display: flex; align-items: center; gap: 7px; min-width: min(100%, 285px); height: 42px; padding: 0 12px; border: 1px solid #dce4f0; border-radius: 12px; background: #f8faff; color: #6380a3; transition: border-color .2s, box-shadow .2s; }
+.zt-user-search:focus-within { border-color: #6f9ff8; box-shadow: 0 0 0 3px rgba(65,125,238,.10); }
+.zt-user-search > span { font-size: 22px; line-height: 1; }
+.zt-user-search input { min-width: 0; width: 100%; border: 0; padding: 0; outline: 0; background: transparent; color: #20334f; font: inherit; font-size: 12px; }
+.zt-user-search input::placeholder { color: #8291a7; }
+.zt-user-results { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin: 0 4px 14px; color: #6b7b92; font-size: 11px; }
+#userResultsCount { color: #3c5b89; font-weight: 800; }
+#adminsSection .users-management-table { min-width: 1080px; table-layout: auto; }
+#adminsSection .users-management-table td { vertical-align: middle; }
+#adminsSection .users-management-table th, #adminsSection .users-management-table td { padding: 17px 14px; }
+#adminsSection .users-management-table .users-address-cell { width: 235px; min-width: 180px; max-width: 245px; white-space: normal !important; vertical-align: middle; }
+#adminsSection .users-table-address { max-width: 225px; }
+#adminsSection .users-table-address-main, #adminsSection .users-table-address-meta { overflow-wrap: anywhere; word-break: normal; white-space: normal !important; }
+#adminsSection .users-management-table td:nth-child(2) { max-width: 215px; white-space: normal; overflow-wrap: anywhere; }
+#adminsSection .user-cell { min-width: 155px; }
+#adminsSection .user-cell > div:last-child { min-width: 0; }
+#adminsSection .user-name, #adminsSection .user-id { white-space: normal; overflow-wrap: anywhere; }
+#adminsSection .user-avatar-small { background: linear-gradient(145deg,#2556c4,#6295f2); box-shadow: 0 4px 12px rgba(45,103,203,.19); }
+#adminsSection .user-role-badge.admin { color: #6642bd; background: #f1ecff; }
+#adminsSection .user-role-badge.customer { color: #1d65bb; background: #e8f3ff; }
+#adminsSection .user-actions { justify-content: flex-start !important; }
+#adminsSection .user-action-btn { box-shadow: none !important; border-radius: 10px !important; }
+#adminsSection .user-action-btn:disabled { opacity: .55; }
+.modal-content, .order-details-modal, .edit-user-modal-card { border-radius: 22px; }
+.form-group input:focus-visible, .form-group select:focus-visible, .form-group textarea:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid rgba(41,116,240,.32); outline-offset: 3px; }
+@media (max-width: 1020px) {
+    .admin-layout { display: block; }
+    .sidebar { position: relative; inset: auto; width: 100%; min-height: 0; height: auto; padding: 17px 20px; }
+    .zt-sidebar-head { padding: 0 0 14px; margin-bottom: 12px; }
+    .zt-sidebar-label { display: none; }
+    .sidebar-nav { display: flex; flex-direction: row; flex-wrap: wrap; gap: 7px; }
+    .sidebar-nav button, .sidebar-nav a { width: auto; min-height: 42px; padding: 6px 12px; flex: 0 0 auto; }
+    .zt-nav-icon { width: 27px; height: 27px; flex-basis: 27px; font-size: 16px; }
+    .sidebar-bottom { position: static; margin-top: 12px; padding-top: 11px; display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+    .zt-sidebar-account { margin-bottom: 0; padding: 7px 10px; }
+    .sidebar-bottom .logout-button { width: auto; padding: 9px 16px; flex: 0 0 auto; }
+    .main { margin-left: 0; width: 100%; padding: 22px 24px 42px; }
+}
+@media (max-width: 660px) {
+    .sidebar { padding: 15px 13px; }
+    .sidebar-nav { display: flex; flex-direction: row; flex-wrap: nowrap; overflow-x: auto; gap: 7px; padding-bottom: 8px; }
+    .sidebar-nav button, .sidebar-nav a { width: auto; min-width: max-content; white-space: nowrap; }
+    .sidebar-bottom { margin-top: 7px; }
+    .main { padding: 16px 13px 36px; }
+    .topbar { padding: 18px; border-radius: 17px; align-items: flex-start; }
+    .topbar h1 { font-size: 25px; }
+    .zt-topbar-store { padding: 10px; font-size: 11px; }
+    .dashboard-hero { min-height: 210px; padding: 25px 21px; border-radius: 20px; }
+    .zt-hero-caption, .zt-results-note { display: none; }
+    #adminsSection .zt-user-toolbar { padding: 12px; }
+    #adminsSection .zt-user-filters { width: 100%; }
+    #adminsSection .zt-user-filters .user-filter { flex: 1 1 auto; }
+    .zt-user-search { width: 100%; min-width: 0; }
+}
+@media (max-width: 400px) {
+    .zt-topbar-store { font-size: 0; gap: 0; }
+    .zt-topbar-store span { font-size: 17px; }
+    .dashboard-stats { grid-template-columns: 1fr 1fr; }
+    .dashboard-stat .stat-value { font-size: 21px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .dashboard-hero::before, body::before, body::after { animation: none !important; }
+    .stat-card, .dashboard-panel, .quick-action, .primary-button { transition-duration: .01ms !important; }
+}
+
 </style>
 </head>
 
@@ -7541,65 +7775,52 @@ body {
          SIDEBAR
     ========================= -->
 
-    <aside class="sidebar">
-
-        <div class="brand">
-            Ziq<span>Tech</span>
+    <aside class="sidebar" aria-label="Admin sidebar">
+        <div class="zt-sidebar-head">
+            <div class="zt-brand-mark" aria-hidden="true">ZT</div>
+            <div class="zt-brand-identity">
+                <div class="brand">Ziq<span>Tech</span></div>
+                <span class="zt-brand-caption">ADMIN WORKSPACE</span>
+            </div>
         </div>
 
-        <nav class="sidebar-nav">
-
-            <button
-                type="button"
-                class="active"
-                data-section="dashboard">
-                📊 Dashboard
+        <div class="zt-sidebar-label">WORKSPACE</div>
+        <nav class="sidebar-nav" aria-label="Admin navigation">
+            <button type="button" class="active" data-section="dashboard">
+                <span class="zt-nav-icon" aria-hidden="true">◫</span>
+                <span>Dashboard</span>
             </button>
-
-            <button
-                type="button"
-                data-section="products">
-                📦 Products
+            <button type="button" data-section="products">
+                <span class="zt-nav-icon" aria-hidden="true">▦</span>
+                <span>Products</span>
             </button>
-
-            <button
-                type="button"
-                data-section="orders">
-                🧾 Orders
+            <button type="button" data-section="orders">
+                <span class="zt-nav-icon" aria-hidden="true">▤</span>
+                <span>Orders</span>
             </button>
-          <button
-    type="button"
-    data-section="admins"
-    onclick="openManageAdmins()"
->
-    <span>👥</span>
-    Manage Admins
-</button>
-
-<button
-    type="button"
-    data-section="admin"
-    onclick="openCreateAdminModal()"
->
-    <span>👤</span>
-    Create New Admin
-</button>
-
-            <a href="index.html">
-                🛍️ View Store
+            <button type="button" data-section="admins" onclick="openManageAdmins()">
+                <span class="zt-nav-icon" aria-hidden="true">♙</span>
+                <span>Manage Admin and User</span>
+            </button>
+            <button type="button" data-section="admin" onclick="openCreateAdminModal()">
+                <span class="zt-nav-icon" aria-hidden="true">＋</span>
+                <span>Create New Admin</span>
+            </button>
+            <a href="index.html" target="_blank" rel="noopener noreferrer">
+                <span class="zt-nav-icon" aria-hidden="true">↗</span>
+                <span>View Store</span>
             </a>
-
         </nav>
 
         <div class="sidebar-bottom">
-            <button
-                type="button"
-                class="logout-button"
-                onclick="logoutAdmin()">
-                Logout
+            <div class="zt-sidebar-account">
+                <span class="zt-account-avatar" aria-hidden="true">A</span>
+                <span class="zt-account-copy"><strong>Admin workspace</strong><small>Store management</small></span>
+            </div>
+            <button type="button" class="logout-button" onclick="logoutAdmin()">
+                <span aria-hidden="true">↪</span> Logout
             </button>
         </div>
-
     </aside>
 
 
@@ -7610,12 +7831,14 @@ body {
     <main class="main">
 
         <div class="topbar">
-
-            <div>
+            <div class="zt-topbar-title">
+                <span class="zt-topbar-eyebrow"><span class="zt-topbar-dot" aria-hidden="true"></span> STORE OPERATIONS</span>
                 <h1 id="pageTitle">Dashboard</h1>
                 <p>Manage your ZiqTech store.</p>
             </div>
-
+            <a class="zt-topbar-store" href="index.html" target="_blank" rel="noopener noreferrer">
+                View Store <span aria-hidden="true">↗</span>
+            </a>
         </div>
 
 
@@ -7647,8 +7870,14 @@ body {
             </h2>
 
             <p>
-                Here's what's happening with your store today.
+                Your products, sales and customers — all in one place.
             </p>
+            <div class="zt-hero-bottom">
+                <button type="button" class="zt-hero-cta" onclick="openManageProducts()">
+                    Manage Products <span aria-hidden="true">↗</span>
+                </button>
+                <span class="zt-hero-caption">Built for everyday store operations</span>
+            </div>
 
         </div>
 
@@ -8024,7 +8253,7 @@ body {
 
                 <span>
                     <strong>
-    Manage Users
+    Manage Admin and User
 </strong>
 
 <small>
@@ -8080,14 +8309,14 @@ body {
                       <tbody id="productsTableBody">
     <tr>
         <td
-            colspan="7"
+            colspan="5"
             style="
                 padding:40px;
                 text-align:center;
                 color:#86868b;
             "
         >
-            Loading users...
+            Loading products...
         </td>
     </tr>
 </tbody>
@@ -8245,7 +8474,7 @@ body {
     <div class="section-header">
 
         <div>
-            <h2>Manage Users</h2>
+            <h2>Manage Admin and User</h2>
 
             <p
                 style="
@@ -8269,43 +8498,23 @@ body {
     </div>
 
 
-    <!-- USER FILTER -->
-
-    <div
-        style="
-            display:flex;
-            gap:10px;
-            margin-bottom:18px;
-            flex-wrap:wrap;
-        "
-    >
-
-        <button
-            type="button"
-            class="user-filter active"
-            onclick="filterUsers('all', this)"
-        >
-            All Users
-        </button>
-
-        <button
-            type="button"
-            class="user-filter"
-            onclick="filterUsers('customer', this)"
-        >
-            👤 Customers
-        </button>
-
-        <button
-            type="button"
-            class="user-filter"
-            onclick="filterUsers('admin', this)"
-        >
-            🛡️ Admins
-        </button>
-
+    <!-- SEARCH + ROLE FILTER: searches loaded users without an additional request. -->
+    <div class="zt-user-toolbar">
+        <div class="zt-user-filters" role="group" aria-label="Filter accounts by role">
+            <button type="button" class="user-filter active" onclick="filterUsers('all', this)">All Users</button>
+            <button type="button" class="user-filter" onclick="filterUsers('customer', this)">👤 Customers</button>
+            <button type="button" class="user-filter" onclick="filterUsers('admin', this)">🛡️ Admins</button>
+        </div>
+        <label class="zt-user-search">
+            <span aria-hidden="true">⌕</span>
+            <input id="userSearchInput" type="search" placeholder="Search accounts..."
+                   autocomplete="off" oninput="renderUsers()" aria-label="Search accounts by name, email, phone or address">
+        </label>
     </div>
-
+    <div class="zt-user-results">
+        <span id="userResultsCount" aria-live="polite">Loading accounts...</span>
+        <span class="zt-results-note">Scroll the table sideways on smaller screens <span aria-hidden="true">↔</span></span>
+    </div>
 
     <!-- USERS TABLE -->
 
@@ -8313,7 +8522,7 @@ body {
 
         <div class="table-wrapper">
 
-            <table>
+            <table class="users-management-table">
 
                <thead>
     <tr>
@@ -13536,7 +13745,7 @@ async function openManageAdmins() {
     if (pageTitle) {
 
         pageTitle.textContent =
-            "Manage Users";
+            "Manage Admin and User";
 
     }
 
@@ -13806,6 +14015,24 @@ function renderUsers() {
     }
 
 
+    /* Search only within the accounts the admin has already loaded. */
+    const searchTerm = String(
+        document.getElementById("userSearchInput")?.value || ""
+    ).trim().toLocaleLowerCase();
+
+    if (searchTerm) {
+        users = users.filter(user => [
+            user.name, user.email, user.phone,
+            user.address, user.postcode, user.city, user.state,
+            user.role, user.id
+        ].some(field => String(field ?? "").toLocaleLowerCase().includes(searchTerm)));
+    }
+
+    const resultsLabel = document.getElementById("userResultsCount");
+    if (resultsLabel) {
+        resultsLabel.textContent = `${users.length} of ${allUsers.length} account${allUsers.length === 1 ? "" : "s"}`;
+    }
+
     /* EMPTY */
 
     if (
@@ -14024,20 +14251,9 @@ function createUserRow(
     )}
 </td>
 
-<td>
-    <div
-        style="
-            max-width:220px;
-            line-height:1.4;
-        "
-    >
-        <div
-            style="
-                font-size:13px;
-                font-weight:600;
-                color:#1d1d1f;
-            "
-        >
+<td class="users-address-cell">
+    <div class="users-table-address">
+        <div class="users-table-address-main">
             ${escapeHtml(
                 user.address || "—"
             )}
@@ -14048,13 +14264,7 @@ function createUserRow(
             user.state ||
             user.postcode
                 ? `
-                    <div
-                        style="
-                            margin-top:3px;
-                            font-size:11px;
-                            color:#86868b;
-                        "
-                    >
+                    <div class="users-table-address-meta">
                         ${escapeHtml(
                             [
                                 user.postcode,
@@ -15381,7 +15591,7 @@ document
         "Orders",
 
     admins:
-        "Manage Admins"
+        "Manage Admin and User"
 
 };
 
